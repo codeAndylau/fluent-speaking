@@ -1,0 +1,60 @@
+{
+  "id": "w05d6",
+  "voice": "en-US-AndrewNeural",
+  "synthetic": true,
+  "duration": 22.704,
+  "sourceSha256": "2fa9a0561b8c06ead1dacdfee03b1acb79f7ac4b9126d95a2fae32a2226b095c",
+  "sha256": "8f28c49616d750d2b61ae181d886c175678dcab39f0f055d02eddadfa75e937d",
+  "coverageVerified": true,
+  "fullDecodeVerified": true,
+  "lines": [
+    {
+      "text": "Hi, I'm here for a class at Cedar Workshop.",
+      "speaker": "Jia",
+      "start": 0.07250000000000001,
+      "end": 2.63
+    },
+    {
+      "text": "Is it the cooking class or the camera class?",
+      "speaker": "Seth",
+      "start": 2.9225,
+      "end": 5.3175
+    },
+    {
+      "text": "The camera class. It starts in fifteen minutes.",
+      "speaker": "Jia",
+      "start": 5.6225,
+      "end": 8.505
+    },
+    {
+      "text": "That's at the west building. Take the free shuttle from here.",
+      "speaker": "Seth",
+      "start": 8.81,
+      "end": 11.6425
+    },
+    {
+      "text": "How long does the shuttle take?",
+      "speaker": "Jia",
+      "start": 11.935,
+      "end": 13.4175
+    },
+    {
+      "text": "It takes five minutes. Get off at the second stop.",
+      "speaker": "Seth",
+      "start": 13.7225,
+      "end": 16.505
+    },
+    {
+      "text": "Do I go in through the blue door by the bike racks?",
+      "speaker": "Jia",
+      "start": 16.7975,
+      "end": 19.167499999999997
+    },
+    {
+      "text": "Use the glass door. The blue door is closed today.",
+      "speaker": "Seth",
+      "start": 19.46,
+      "end": 22.404999999999998
+    }
+  ]
+}

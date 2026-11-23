@@ -1,0 +1,60 @@
+{
+  "id": "w05d4",
+  "voice": "en-US-AndrewNeural",
+  "synthetic": true,
+  "duration": 21.0,
+  "sourceSha256": "8820c44a588fc9eec40c2e68eb11cfb854f1c46c8dd4ffd28d2397b4f7852e76",
+  "sha256": "aeaef39dcd6374d655a090f5f3056267e2cf4d33032bcb052716586a8c51dea4",
+  "coverageVerified": true,
+  "fullDecodeVerified": true,
+  "lines": [
+    {
+      "text": "I'm looking for the East Gate of Lake Hall.",
+      "speaker": "Tao",
+      "start": 0.060000000000000005,
+      "end": 2.0425
+    },
+    {
+      "text": "There's a gate right here. Do you mean this one?",
+      "speaker": "Ella",
+      "start": 2.335,
+      "end": 4.5175
+    },
+    {
+      "text": "Is this the entrance on Mill Road?",
+      "speaker": "Tao",
+      "start": 4.81,
+      "end": 6.38
+    },
+    {
+      "text": "No, this is the South Gate on Hill Road.",
+      "speaker": "Ella",
+      "start": 6.6725,
+      "end": 8.9425
+    },
+    {
+      "text": "My ticket says East Gate, next to a coffee shop.",
+      "speaker": "Tao",
+      "start": 9.2475,
+      "end": 11.98
+    },
+    {
+      "text": "Right, that's the one on Mill Road.",
+      "speaker": "Ella",
+      "start": 12.2725,
+      "end": 14.205
+    },
+    {
+      "text": "So I need Mill Road, not Hill Road. Is that right?",
+      "speaker": "Tao",
+      "start": 14.510000000000002,
+      "end": 17.529999999999998
+    },
+    {
+      "text": "Yes. Walk around the building to the coffee shop.",
+      "speaker": "Ella",
+      "start": 17.835,
+      "end": 20.705
+    }
+  ]
+}

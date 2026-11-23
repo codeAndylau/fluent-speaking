@@ -1,0 +1,60 @@
+{
+  "id": "w04d2",
+  "voice": "en-US-AndrewNeural",
+  "synthetic": true,
+  "duration": 18.6,
+  "sourceSha256": "cfb447e884f61a407713d9ade146fe3d07506613e2210db246a1e0ef11806de4",
+  "sha256": "dbbbbca0fc1d0d51caa1552a1d9bb431ede453e547cdd1b0e27dff7fb51e8f7a",
+  "coverageVerified": true,
+  "fullDecodeVerified": true,
+  "lines": [
+    {
+      "text": "Can we meet on the fifteenth?",
+      "speaker": "Moe",
+      "start": 0.060000000000000005,
+      "end": 1.355
+    },
+    {
+      "text": "Did you say the fifth or the fifteenth?",
+      "speaker": "Kim",
+      "start": 1.6475,
+      "end": 3.705
+    },
+    {
+      "text": "The fifteenth. That's a Friday.",
+      "speaker": "Moe",
+      "start": 4.01,
+      "end": 5.8675
+    },
+    {
+      "text": "What time should we meet?",
+      "speaker": "Kim",
+      "start": 6.16,
+      "end": 7.18
+    },
+    {
+      "text": "How about half past two in the afternoon?",
+      "speaker": "Moe",
+      "start": 7.4725,
+      "end": 9.5925
+    },
+    {
+      "text": "That works. Where should we meet?",
+      "speaker": "Kim",
+      "start": 9.8975,
+      "end": 11.68
+    },
+    {
+      "text": "Outside the library, by the main door.",
+      "speaker": "Moe",
+      "start": 11.9725,
+      "end": 14.205
+    },
+    {
+      "text": "Okay. Friday the fifteenth, two thirty, at the library.",
+      "speaker": "Kim",
+      "start": 14.4975,
+      "end": 18.3175
+    }
+  ]
+}

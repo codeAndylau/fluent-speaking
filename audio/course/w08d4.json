@@ -1,0 +1,60 @@
+{
+  "id": "w08d4",
+  "voice": "en-US-AndrewNeural",
+  "synthetic": true,
+  "duration": 22.896,
+  "sourceSha256": "101180f4e27ceddf773d0585b0ca2b04e06899d02f7a018943d32671d183e62a",
+  "sha256": "924e5f03e5d896246c4935edebe46c97ed389b0c99c52897de3f951761d11270",
+  "coverageVerified": true,
+  "fullDecodeVerified": true,
+  "lines": [
+    {
+      "text": "Are we still meeting at the park at eleven tomorrow?",
+      "speaker": "Qi",
+      "start": 0.060000000000000005,
+      "end": 2.33
+    },
+    {
+      "text": "I'd like to, but it's going to rain tomorrow morning.",
+      "speaker": "Pat",
+      "start": 2.6225,
+      "end": 5.18
+    },
+    {
+      "text": "Could we meet somewhere indoors instead?",
+      "speaker": "Qi",
+      "start": 5.4725,
+      "end": 7.28
+    },
+    {
+      "text": "Sure. How about the café by Oak Station?",
+      "speaker": "Pat",
+      "start": 7.5725,
+      "end": 10.18
+    },
+    {
+      "text": "That café is closed on Mondays. Is the bakery open?",
+      "speaker": "Qi",
+      "start": 10.485000000000001,
+      "end": 13.755
+    },
+    {
+      "text": "Yes, and there are tables inside. Eleven still works for me.",
+      "speaker": "Pat",
+      "start": 14.047500000000001,
+      "end": 17.555
+    },
+    {
+      "text": "Great, let's meet inside the bakery at eleven.",
+      "speaker": "Qi",
+      "start": 17.8475,
+      "end": 20.3175
+    },
+    {
+      "text": "Okay, see you tomorrow at the bakery.",
+      "speaker": "Pat",
+      "start": 20.61,
+      "end": 22.604999999999997
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "id": "w04d5",
+  "voice": "en-US-AndrewNeural",
+  "synthetic": true,
+  "duration": 20.28,
+  "sourceSha256": "d065494789d1adf562e6bd2d4a4fca243e4d2e4f67ff87ac5ba6b62470dec2ab",
+  "sha256": "f02efb300b8b11c755a95c68e4f84554babcc160bb3193649631c06b6abbb929",
+  "coverageVerified": true,
+  "fullDecodeVerified": true,
+  "lines": [
+    {
+      "text": "Would you like to see the photo show with me?",
+      "speaker": "Dan",
+      "start": 0.060000000000000005,
+      "end": 1.7175
+    },
+    {
+      "text": "I'd love to. Are you free on Sunday?",
+      "speaker": "Zoe",
+      "start": 2.01,
+      "end": 3.98
+    },
+    {
+      "text": "Do you mean Sunday the eighth?",
+      "speaker": "Dan",
+      "start": 4.2725,
+      "end": 5.5175
+    },
+    {
+      "text": "Yes. Shall we go at eleven in the morning?",
+      "speaker": "Zoe",
+      "start": 5.8225,
+      "end": 8.1925
+    },
+    {
+      "text": "Eleven won't work. The show opens at one.",
+      "speaker": "Dan",
+      "start": 8.485000000000001,
+      "end": 10.9175
+    },
+    {
+      "text": "Then could we make it one thirty instead?",
+      "speaker": "Zoe",
+      "start": 11.2225,
+      "end": 13.055
+    },
+    {
+      "text": "That works. Let's meet by the ticket desk.",
+      "speaker": "Dan",
+      "start": 13.360000000000001,
+      "end": 15.78
+    },
+    {
+      "text": "Okay. Sunday the eighth, one thirty, by the ticket desk.",
+      "speaker": "Zoe",
+      "start": 16.0725,
+      "end": 19.9925
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "id": "w12d5",
+  "voice": "en-US-AndrewNeural",
+  "synthetic": true,
+  "duration": 36.528,
+  "sourceSha256": "816c869283eca1b94087a632046dfe0cb596c45d5c477ba2888dae10acf8d578",
+  "sha256": "97e3375e454c27df89553ccb3170a301fc2acadbcef12209216c64a9744ac818",
+  "coverageVerified": true,
+  "fullDecodeVerified": true,
+  "lines": [
+    {
+      "text": "Hi, I will get to Maple Station at two. Where should we meet?",
+      "speaker": "Nora",
+      "start": 0.07250000000000001,
+      "end": 3.3925
+    },
+    {
+      "text": "Meet me at the east door. The west door is closed, and the east door is by the taxi stop.",
+      "speaker": "Eli",
+      "start": 3.6725,
+      "end": 8.955
+    },
+    {
+      "text": "Got it, the east door. Can we buy a small gift for my host before we go?",
+      "speaker": "Nora",
+      "start": 9.235000000000001,
+      "end": 13.305
+    },
+    {
+      "text": "Sure. There is a tea shop near the station. How much do you want to spend?",
+      "speaker": "Eli",
+      "start": 13.5975,
+      "end": 17.592499999999998
+    },
+    {
+      "text": "About twelve dollars. I saw a nice tin of tea on the shop's website yesterday.",
+      "speaker": "Nora",
+      "start": 17.885,
+      "end": 22.217499999999998
+    },
+    {
+      "text": "The tin costs sixteen dollars, but a small box of tea is ten. The shop closes at three.",
+      "speaker": "Eli",
+      "start": 22.5225,
+      "end": 28.33
+    },
+    {
+      "text": "I will get the small box then. We can walk straight to the shop after we meet.",
+      "speaker": "Nora",
+      "start": 28.622500000000002,
+      "end": 32.4925
+    },
+    {
+      "text": "Good idea. Two at the east door, then we go to the tea shop.",
+      "speaker": "Eli",
+      "start": 32.785000000000004,
+      "end": 36.23
+    }
+  ]
+}

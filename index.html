@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#173e34"><meta name="description" content="每天一个真实对话，把认识的英语变成说得出口的日常。">
+  <title>开口 Fluent · 让英语成为日常</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="stories.css">
+  <link rel="stylesheet" href="vocabulary.css">
+</head>
+<body>
+  <aside class="sidebar">
+    <a href="#home" class="brand" aria-label="开口 Fluent 首页"><span class="brand-icon">f<span>●</span></span><span>开口<span class="brand-en">FLUENT</span></span></a>
+    <div class="side-caption">一点点练习，一点点自在。</div>
+    <nav aria-label="主导航">
+      <a href="#home" data-nav="home"><i data-icon="home"></i>今日学习</a>
+      <a href="#path" data-nav="path"><i data-icon="map"></i>学习路径<span class="nav-tag">12 周</span></a>
+      <a href="#stories" data-nav="stories"><i data-icon="headphones"></i>故事听说</a>
+      <a href="#vocabulary" data-nav="vocabulary"><i data-icon="book"></i>词汇练习</a>
+      <a href="#phrases" data-nav="phrases"><i data-icon="bookmark"></i>表达本</a>
+    </nav>
+    <div class="sidebar-bottom"><div class="small-leaf">✳</div><strong>不用完美，先说出来。</strong><p>一次真实的表达，<br>就是一次小小的进步。</p><div class="side-divider"></div><span class="preview-label">12 周完整课程</span><small>72 个学习日 · 入门诊断</small></div>
+  </aside>
+  <div class="app-shell">
+    <header class="topbar"><span id="breadcrumb">我的学习 / 今日学习</span><div class="top-right"><span class="local-note"><i data-icon="shield"></i>学习记录保存在本机</span><span class="avatar">我</span></div></header>
+    <main id="app"></main>
+    <footer><a href="#method" data-nav="method">怎么学，更有效</a><span>开口 FLUENT · 为真实交流而练习</span></footer>
+  </div>
+  <dialog id="module-dialog"><button class="dialog-close icon-button" aria-label="关闭弹窗"><i data-icon="close"></i></button><div id="dialog-content"></div></dialog>
+  <div id="toast" role="status" aria-live="polite"></div>
+  <audio id="lesson-audio" preload="metadata"></audio>
+  <audio id="line-audio" preload="none"></audio>
+  <script type="module" src="app.js?v=platform-1"></script>
+</body>
+</html>

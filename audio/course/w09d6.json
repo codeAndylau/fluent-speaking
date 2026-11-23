@@ -1,0 +1,60 @@
+{
+  "id": "w09d6",
+  "voice": "en-US-AvaNeural",
+  "synthetic": true,
+  "duration": 36.936,
+  "sourceSha256": "3f387280b20c3b2e35db59266d47d736d60348808326bff87937c84421433f45",
+  "sha256": "8199394ce1e513340781b8d6f3bac7d90d72e14ebe74cb123ef9c72d66bde340",
+  "coverageVerified": true,
+  "fullDecodeVerified": true,
+  "lines": [
+    {
+      "text": "Hi, can you help with the book sale? I have more books than I thought.",
+      "speaker": "Nora",
+      "start": 0.060000000000000005,
+      "end": 3.9425
+    },
+    {
+      "text": "Sure. Are the books ready to move, or do they still need price tags?",
+      "speaker": "Eli",
+      "start": 4.185,
+      "end": 8.78
+    },
+    {
+      "text": "The prices are on the books. I just need two strong boxes to carry them.",
+      "speaker": "Nora",
+      "start": 9.0225,
+      "end": 13.405
+    },
+    {
+      "text": "There are two boxes under my desk. One is small, and one is quite big.",
+      "speaker": "Eli",
+      "start": 13.6475,
+      "end": 18.217499999999998
+    },
+    {
+      "text": "Are you talking about the desk near the window? I cannot see any boxes there.",
+      "speaker": "Nora",
+      "start": 18.46,
+      "end": 22.6425
+    },
+    {
+      "text": "No, my desk is next to the back door. I am taking the small box at five.",
+      "speaker": "Eli",
+      "start": 22.885,
+      "end": 27.83
+    },
+    {
+      "text": "Okay, I will pick up both at four. I can bring the small one back before five.",
+      "speaker": "Nora",
+      "start": 28.0725,
+      "end": 32.879999999999995
+    },
+    {
+      "text": "Thanks. Leave the small one on my chair when you bring it back.",
+      "speaker": "Eli",
+      "start": 33.1225,
+      "end": 36.6425
+    }
+  ]
+}

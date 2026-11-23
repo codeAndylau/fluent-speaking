@@ -1,0 +1,60 @@
+{
+  "id": "w05d2",
+  "voice": "en-US-AndrewNeural",
+  "synthetic": true,
+  "duration": 19.176,
+  "sourceSha256": "41ed4e4ce25aecfe801a5b5a9d595aae9320be2445c7ae897fd6aa4b746d469e",
+  "sha256": "420c551d9c75fea773a60bebce36af7b00a3ed544b72384d9756bf3b79cfaf7a",
+  "coverageVerified": true,
+  "fullDecodeVerified": true,
+  "lines": [
+    {
+      "text": "Hi, how do I get to the park from here?",
+      "speaker": "Yan",
+      "start": 0.07250000000000001,
+      "end": 2.0925000000000002
+    },
+    {
+      "text": "Go straight to the first corner.",
+      "speaker": "Nora",
+      "start": 2.385,
+      "end": 3.8425000000000002
+    },
+    {
+      "text": "Do I turn left at the corner?",
+      "speaker": "Yan",
+      "start": 4.135,
+      "end": 5.48
+    },
+    {
+      "text": "Turn right at the corner, then turn left at the library.",
+      "speaker": "Nora",
+      "start": 5.785,
+      "end": 8.7925
+    },
+    {
+      "text": "Is the park far from the library?",
+      "speaker": "Yan",
+      "start": 9.085,
+      "end": 10.73
+    },
+    {
+      "text": "No, it's just past the library on your right.",
+      "speaker": "Nora",
+      "start": 11.035,
+      "end": 13.5675
+    },
+    {
+      "text": "So I turn right first and left at the library.",
+      "speaker": "Yan",
+      "start": 13.8725,
+      "end": 16.467499999999998
+    },
+    {
+      "text": "Yes. Look for the big green gate.",
+      "speaker": "Nora",
+      "start": 16.7725,
+      "end": 18.88
+    }
+  ]
+}

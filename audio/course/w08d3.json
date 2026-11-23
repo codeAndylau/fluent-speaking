@@ -1,0 +1,60 @@
+{
+  "id": "w08d3",
+  "voice": "en-US-AndrewNeural",
+  "synthetic": true,
+  "duration": 21.84,
+  "sourceSha256": "9a3ef7b1bf4d3cef5a44f364af79c9e102c2dbe56ac60e8792f07556bdabb1df",
+  "sha256": "18f180ff6d6de9e7a5168a1e140e98a5a2f29adf9a4e039c951bfb02753914ba",
+  "coverageVerified": true,
+  "fullDecodeVerified": true,
+  "lines": [
+    {
+      "text": "Would you like to see a movie with me on Friday?",
+      "speaker": "Lan",
+      "start": 0.07250000000000001,
+      "end": 1.905
+    },
+    {
+      "text": "I'd love to, but I'm working late on Friday.",
+      "speaker": "Oli",
+      "start": 2.21,
+      "end": 4.755
+    },
+    {
+      "text": "I see. The movie is on Saturday too.",
+      "speaker": "Lan",
+      "start": 5.0475,
+      "end": 7.4425
+    },
+    {
+      "text": "Saturday works for me. What time is the movie?",
+      "speaker": "Oli",
+      "start": 7.7475,
+      "end": 10.205
+    },
+    {
+      "text": "There's a show at two and another one at five.",
+      "speaker": "Lan",
+      "start": 10.510000000000002,
+      "end": 12.7425
+    },
+    {
+      "text": "Two is a little early for me. Is five okay?",
+      "speaker": "Oli",
+      "start": 13.047500000000001,
+      "end": 15.4925
+    },
+    {
+      "text": "Yes, five is fine. Let's meet at the cinema at four thirty.",
+      "speaker": "Lan",
+      "start": 15.785,
+      "end": 19.3925
+    },
+    {
+      "text": "Great. See you there on Saturday.",
+      "speaker": "Oli",
+      "start": 19.685000000000002,
+      "end": 21.555
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "id": "w07d1",
+  "voice": "en-US-AndrewNeural",
+  "synthetic": true,
+  "duration": 18.648,
+  "sourceSha256": "c349cffad2cc0dd811024d4552916b6d74a0fd679f047f1a203687d46a074621",
+  "sha256": "23f361324d04ecb21b52c73fa22a01cd0060f500728739dc204cb55507fd3f73",
+  "coverageVerified": true,
+  "fullDecodeVerified": true,
+  "lines": [
+    {
+      "text": "What did you do after work yesterday?",
+      "speaker": "Ping",
+      "start": 0.060000000000000005,
+      "end": 1.7550000000000001
+    },
+    {
+      "text": "I went to the market and bought some fruit.",
+      "speaker": "Uma",
+      "start": 2.0475,
+      "end": 4.03
+    },
+    {
+      "text": "What time did you get to the market?",
+      "speaker": "Ping",
+      "start": 4.3225,
+      "end": 5.7425
+    },
+    {
+      "text": "Around seven. It was still open when I got there.",
+      "speaker": "Uma",
+      "start": 6.035,
+      "end": 8.63
+    },
+    {
+      "text": "Did you go straight home after that?",
+      "speaker": "Ping",
+      "start": 8.922500000000001,
+      "end": 10.3425
+    },
+    {
+      "text": "No, I met my sister for dinner near the market.",
+      "speaker": "Uma",
+      "start": 10.635000000000002,
+      "end": 13.2175
+    },
+    {
+      "text": "Where did you eat? I'm looking for a place nearby.",
+      "speaker": "Ping",
+      "start": 13.510000000000002,
+      "end": 15.905
+    },
+    {
+      "text": "We ate at a little café on Plum Street.",
+      "speaker": "Uma",
+      "start": 16.21,
+      "end": 18.3675
+    }
+  ]
+}

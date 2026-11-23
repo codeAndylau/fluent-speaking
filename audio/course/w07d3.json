@@ -1,0 +1,60 @@
+{
+  "id": "w07d3",
+  "voice": "en-US-AndrewNeural",
+  "synthetic": true,
+  "duration": 19.416,
+  "sourceSha256": "1336916182d4c8e39b3ca8b062bd9c5e742b133001eab1f993ef7707146301ad",
+  "sha256": "833e1ae473610d6f8e4b619b6c8462fb166dbb7209b62622c8dd9d23addacef9",
+  "coverageVerified": true,
+  "fullDecodeVerified": true,
+  "lines": [
+    {
+      "text": "What did you do when you got to the garden sale?",
+      "speaker": "Xiu",
+      "start": 0.060000000000000005,
+      "end": 2.1675
+    },
+    {
+      "text": "First, I looked at the plants by the gate.",
+      "speaker": "Raj",
+      "start": 2.4975,
+      "end": 4.6675
+    },
+    {
+      "text": "Did you buy any plants there?",
+      "speaker": "Xiu",
+      "start": 4.96,
+      "end": 6.155
+    },
+    {
+      "text": "Yes. Then I bought two small plants for my desk.",
+      "speaker": "Raj",
+      "start": 6.46,
+      "end": 9.455
+    },
+    {
+      "text": "Where did you go after that?",
+      "speaker": "Xiu",
+      "start": 9.7475,
+      "end": 10.9425
+    },
+    {
+      "text": "After that, I helped my friend at her table.",
+      "speaker": "Raj",
+      "start": 11.235000000000001,
+      "end": 13.53
+    },
+    {
+      "text": "Did you stay until the end of the sale?",
+      "speaker": "Xiu",
+      "start": 13.822500000000002,
+      "end": 15.5175
+    },
+    {
+      "text": "Yes. Finally, we packed the boxes and went home.",
+      "speaker": "Raj",
+      "start": 15.822500000000002,
+      "end": 19.13
+    }
+  ]
+}

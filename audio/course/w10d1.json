@@ -1,0 +1,60 @@
+{
+  "id": "w10d1",
+  "voice": "en-US-AndrewNeural",
+  "synthetic": true,
+  "duration": 30.456,
+  "sourceSha256": "756d1c1c70c2a7c638abe4e8a30bf5ac5d233af174760edaf9d4e8f62d4be03e",
+  "sha256": "f8169a07671fd0c432b83bbdf4ea47ff3c6140b7578ac18208d82405dd78869c",
+  "coverageVerified": true,
+  "fullDecodeVerified": true,
+  "lines": [
+    {
+      "text": "I have some news. I started a new job at the flower shop last week.",
+      "speaker": "Nora",
+      "start": 0.060000000000000005,
+      "end": 3.7425
+    },
+    {
+      "text": "That's good news! How was your first week there?",
+      "speaker": "Eli",
+      "start": 4.0475,
+      "end": 6.4175
+    },
+    {
+      "text": "It was busy, but my coworkers helped me a lot. I learned to make small gifts.",
+      "speaker": "Nora",
+      "start": 6.71,
+      "end": 11.18
+    },
+    {
+      "text": "That sounds fun. What kind of gifts did you make?",
+      "speaker": "Eli",
+      "start": 11.485000000000001,
+      "end": 14.0175
+    },
+    {
+      "text": "Small bags with flowers and a card inside. People buy them for birthdays.",
+      "speaker": "Nora",
+      "start": 14.31,
+      "end": 18.542499999999997
+    },
+    {
+      "text": "Nice. My sister has a birthday next week. Is the shop open on Sunday?",
+      "speaker": "Eli",
+      "start": 18.835,
+      "end": 23.279999999999998
+    },
+    {
+      "text": "Yes, from ten until four. I will be there in the morning.",
+      "speaker": "Nora",
+      "start": 23.5725,
+      "end": 26.967499999999998
+    },
+    {
+      "text": "Great, I might come by before lunch and see what you make.",
+      "speaker": "Eli",
+      "start": 27.26,
+      "end": 30.167499999999997
+    }
+  ]
+}

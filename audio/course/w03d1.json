@@ -1,0 +1,60 @@
+{
+  "id": "w03d1",
+  "voice": "en-US-AndrewNeural",
+  "synthetic": true,
+  "duration": 16.44,
+  "sourceSha256": "54fba532d2cd864d0f66c5322701454c8f86cb731f6ca3f8f9e7d3fb5c694143",
+  "sha256": "236d3fed43e039f6def52c06069591b9300b8940aaaa5713083fea238c5f7536",
+  "coverageVerified": true,
+  "fullDecodeVerified": true,
+  "lines": [
+    {
+      "text": "Hi! What can I get for you?",
+      "speaker": "Amy",
+      "start": 0.08499999999999999,
+      "end": 1.605
+    },
+    {
+      "text": "I'd like a hot tea, please.",
+      "speaker": "Dee",
+      "start": 1.8975,
+      "end": 3.355
+    },
+    {
+      "text": "Small or large?",
+      "speaker": "Amy",
+      "start": 3.6475,
+      "end": 4.78
+    },
+    {
+      "text": "Small, please. Do you have green tea?",
+      "speaker": "Dee",
+      "start": 5.0725,
+      "end": 7.1425
+    },
+    {
+      "text": "Yes, we do. Is that for here or to go?",
+      "speaker": "Amy",
+      "start": 7.435,
+      "end": 10.0175
+    },
+    {
+      "text": "To go, please. No milk.",
+      "speaker": "Dee",
+      "start": 10.322500000000002,
+      "end": 12.08
+    },
+    {
+      "text": "One small hot green tea to go, then.",
+      "speaker": "Amy",
+      "start": 12.385000000000002,
+      "end": 14.555
+    },
+    {
+      "text": "That's right. Thank you.",
+      "speaker": "Dee",
+      "start": 14.860000000000001,
+      "end": 16.154999999999998
+    }
+  ]
+}

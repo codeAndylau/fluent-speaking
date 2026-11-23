@@ -1,0 +1,60 @@
+{
+  "id": "w03d2",
+  "voice": "en-US-AndrewNeural",
+  "synthetic": true,
+  "duration": 17.136,
+  "sourceSha256": "f96e8f9da98bd8d8a0e990edbc7b49f23ec8f1f5adf7f5199c740cab387a59cb",
+  "sha256": "705a8b19c7ebbe9a2c908fcbfdf1219634b31aaa6cf7aa1aa7487e20c10165e7",
+  "coverageVerified": true,
+  "fullDecodeVerified": true,
+  "lines": [
+    {
+      "text": "Are you ready to order?",
+      "speaker": "Nell",
+      "start": 0.060000000000000005,
+      "end": 1.0050000000000001
+    },
+    {
+      "text": "Yes. Can we have two bowls of soup, please?",
+      "speaker": "Hao",
+      "start": 1.31,
+      "end": 4.0424999999999995
+    },
+    {
+      "text": "Sure. Would you like any bread?",
+      "speaker": "Nell",
+      "start": 4.335,
+      "end": 6.0925
+    },
+    {
+      "text": "Yes, one bread roll to share.",
+      "speaker": "Hao",
+      "start": 6.385,
+      "end": 8.1675
+    },
+    {
+      "text": "Anything else?",
+      "speaker": "Nell",
+      "start": 8.46,
+      "end": 9.305
+    },
+    {
+      "text": "One salad, please. That's all.",
+      "speaker": "Hao",
+      "start": 9.5975,
+      "end": 11.6425
+    },
+    {
+      "text": "So, two soups, one roll, and one salad?",
+      "speaker": "Nell",
+      "start": 11.935,
+      "end": 14.93
+    },
+    {
+      "text": "Yes. Thanks for checking.",
+      "speaker": "Hao",
+      "start": 15.235000000000001,
+      "end": 16.842499999999998
+    }
+  ]
+}

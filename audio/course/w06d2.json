@@ -1,0 +1,60 @@
+{
+  "id": "w06d2",
+  "voice": "en-US-AndrewNeural",
+  "synthetic": true,
+  "duration": 17.064,
+  "sourceSha256": "76b43b2e70a85c0b2b6c20d4353a6c0a003a53b34dbb87e9fd5bdc5c88315568",
+  "sha256": "e5499d2a12d5fa71ab16daf4600f0f3614e3fcc43f0ac5a5965201a861475231",
+  "coverageVerified": true,
+  "fullDecodeVerified": true,
+  "lines": [
+    {
+      "text": "Do you have this shirt in medium?",
+      "speaker": "Jin",
+      "start": 0.060000000000000005,
+      "end": 1.3925
+    },
+    {
+      "text": "Yes, we have a blue one in medium.",
+      "speaker": "Vera",
+      "start": 1.685,
+      "end": 3.6925
+    },
+    {
+      "text": "Do you have it in white too?",
+      "speaker": "Jin",
+      "start": 3.9850000000000003,
+      "end": 5.0425
+    },
+    {
+      "text": "Only in large. Would you like to try it on?",
+      "speaker": "Vera",
+      "start": 5.335,
+      "end": 7.605
+    },
+    {
+      "text": "I'll try the blue one first, please.",
+      "speaker": "Jin",
+      "start": 7.8975,
+      "end": 9.855
+    },
+    {
+      "text": "Sure. The fitting room is by the mirror.",
+      "speaker": "Vera",
+      "start": 10.1475,
+      "end": 12.5925
+    },
+    {
+      "text": "This one fits well. I'll take it.",
+      "speaker": "Jin",
+      "start": 12.8975,
+      "end": 14.7425
+    },
+    {
+      "text": "Great, you can pay at the counter.",
+      "speaker": "Vera",
+      "start": 15.035,
+      "end": 16.779999999999998
+    }
+  ]
+}

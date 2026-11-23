@@ -1,0 +1,60 @@
+{
+  "id": "w06d1",
+  "voice": "en-US-AndrewNeural",
+  "synthetic": true,
+  "duration": 21.024,
+  "sourceSha256": "27b541d3b90f64dbd3b3fe7eda3dfc41c0070cbf7e4d9f01086eb150c70424b3",
+  "sha256": "7614e732c4158e18670268d4b015c09e19a85d106462d3a12cdf3d5b395fbf57",
+  "coverageVerified": true,
+  "fullDecodeVerified": true,
+  "lines": [
+    {
+      "text": "Hi, how much is this blue notebook?",
+      "speaker": "Mei",
+      "start": 0.07250000000000001,
+      "end": 2.03
+    },
+    {
+      "text": "It's six dollars. The black one is the same price.",
+      "speaker": "Cal",
+      "start": 2.3225,
+      "end": 5.43
+    },
+    {
+      "text": "How much are these two notebooks together?",
+      "speaker": "Mei",
+      "start": 5.735,
+      "end": 7.5675
+    },
+    {
+      "text": "They're ten dollars together today.",
+      "speaker": "Cal",
+      "start": 7.8725,
+      "end": 9.405
+    },
+    {
+      "text": "Can I get one blue and one black for ten dollars?",
+      "speaker": "Mei",
+      "start": 9.697500000000002,
+      "end": 12.4425
+    },
+    {
+      "text": "Yes, you can choose any two colors.",
+      "speaker": "Cal",
+      "start": 12.735000000000001,
+      "end": 14.8675
+    },
+    {
+      "text": "Great, I'll take these two, please.",
+      "speaker": "Mei",
+      "start": 15.16,
+      "end": 17.167499999999997
+    },
+    {
+      "text": "Sure. Your total for both notebooks is ten dollars.",
+      "speaker": "Cal",
+      "start": 17.46,
+      "end": 20.729999999999997
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "id": "w08d5",
+  "voice": "en-US-AndrewNeural",
+  "synthetic": true,
+  "duration": 21.144,
+  "sourceSha256": "f39fbf188fcbfeb1fa7146083e729d014135a4ab528d2929f60214930f8f3deb",
+  "sha256": "c70784278c18c411855c09ae5cd794730ff16e71cff5326b0094f59401a850be",
+  "coverageVerified": true,
+  "fullDecodeVerified": true,
+  "lines": [
+    {
+      "text": "Are we still having lunch together on Wednesday?",
+      "speaker": "Hui",
+      "start": 0.060000000000000005,
+      "end": 2.055
+    },
+    {
+      "text": "I'm going to meet a new client at noon.",
+      "speaker": "Mia",
+      "start": 2.3475,
+      "end": 4.0925
+    },
+    {
+      "text": "Could we have lunch a little later, around one?",
+      "speaker": "Hui",
+      "start": 4.385,
+      "end": 6.4425
+    },
+    {
+      "text": "I'd love to, but I have a call at one.",
+      "speaker": "Mia",
+      "start": 6.7475,
+      "end": 9.0675
+    },
+    {
+      "text": "How about Thursday at twelve thirty, then?",
+      "speaker": "Hui",
+      "start": 9.360000000000001,
+      "end": 11.505
+    },
+    {
+      "text": "Thursday works for me. Can we eat near the office?",
+      "speaker": "Mia",
+      "start": 11.81,
+      "end": 14.5175
+    },
+    {
+      "text": "Sure. Let's meet at the noodle shop across the street.",
+      "speaker": "Hui",
+      "start": 14.81,
+      "end": 17.6175
+    },
+    {
+      "text": "Great. Thursday at twelve thirty at the noodle shop.",
+      "speaker": "Mia",
+      "start": 17.91,
+      "end": 20.854999999999997
+    }
+  ]
+}

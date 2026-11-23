@@ -1,0 +1,60 @@
+{
+  "id": "w11d3",
+  "voice": "en-US-AndrewNeural",
+  "synthetic": true,
+  "duration": 29.856,
+  "sourceSha256": "c98dcc646915e791c944ee36083587c059087f1c875f0f32ecb6f2a490655d80",
+  "sha256": "3b2a710f7768024f0c918dbe585d4615147735dd3475d08e92dfefdc23c43d35",
+  "coverageVerified": true,
+  "fullDecodeVerified": true,
+  "lines": [
+    {
+      "text": "I need something for these vegetables, but I do not know the word in English.",
+      "speaker": "Nora",
+      "start": 0.07250000000000001,
+      "end": 3.755
+    },
+    {
+      "text": "That's okay. What do you use it for? Do you need to cut the vegetables?",
+      "speaker": "Eli",
+      "start": 4.06,
+      "end": 7.555
+    },
+    {
+      "text": "No, it is for washing them. It is like a bowl with small holes.",
+      "speaker": "Nora",
+      "start": 7.86,
+      "end": 11.43
+    },
+    {
+      "text": "Do you mean a colander? Water goes through the holes and the vegetables stay inside.",
+      "speaker": "Eli",
+      "start": 11.7225,
+      "end": 16.055
+    },
+    {
+      "text": "Yes, that is it. Do you have a small one with a handle?",
+      "speaker": "Nora",
+      "start": 16.36,
+      "end": 19.154999999999998
+    },
+    {
+      "text": "There is a red one under the sink, but it does not have a handle.",
+      "speaker": "Eli",
+      "start": 19.46,
+      "end": 22.7425
+    },
+    {
+      "text": "Is there another one? I need to hold it with one hand.",
+      "speaker": "Nora",
+      "start": 23.035,
+      "end": 25.705
+    },
+    {
+      "text": "Yes, there is a blue one next to the plates. Try that one.",
+      "speaker": "Eli",
+      "start": 25.997500000000002,
+      "end": 29.5675
+    }
+  ]
+}

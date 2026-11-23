@@ -1,0 +1,60 @@
+{
+  "id": "w02d4",
+  "voice": "en-US-AndrewNeural",
+  "synthetic": true,
+  "duration": 16.776,
+  "sourceSha256": "c608d8ccad74a9e070db579264753f7bfed981dced338bbb326e350152e5bbe0",
+  "sha256": "9a475457a48b86db778e97bd64c070b1d08b74838f4c5c409efeae9082b9af0d",
+  "coverageVerified": true,
+  "fullDecodeVerified": true,
+  "lines": [
+    {
+      "text": "Do you take the bus to work?",
+      "speaker": "Fay",
+      "start": 0.060000000000000005,
+      "end": 1.2175
+    },
+    {
+      "text": "Usually, yes. But I walk on Fridays.",
+      "speaker": "Ren",
+      "start": 1.51,
+      "end": 3.8925
+    },
+    {
+      "text": "Why do you walk on Fridays?",
+      "speaker": "Fay",
+      "start": 4.185,
+      "end": 5.4425
+    },
+    {
+      "text": "Because I have more time on Fridays.",
+      "speaker": "Ren",
+      "start": 5.7475,
+      "end": 7.4925
+    },
+    {
+      "text": "Which route do you take?",
+      "speaker": "Fay",
+      "start": 7.785,
+      "end": 8.7175
+    },
+    {
+      "text": "I walk through the park because it's quiet.",
+      "speaker": "Ren",
+      "start": 9.010000000000002,
+      "end": 10.8925
+    },
+    {
+      "text": "I prefer the main road. There's a bakery I like.",
+      "speaker": "Fay",
+      "start": 11.185,
+      "end": 13.8925
+    },
+    {
+      "text": "Oh, I know that bakery. The bread is good.",
+      "speaker": "Ren",
+      "start": 14.197500000000002,
+      "end": 16.479999999999997
+    }
+  ]
+}

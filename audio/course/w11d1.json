@@ -1,0 +1,60 @@
+{
+  "id": "w11d1",
+  "voice": "en-US-AndrewNeural",
+  "synthetic": true,
+  "duration": 31.44,
+  "sourceSha256": "9a854cee5e1db2b2eba3eb8b95091b95634b37f21c357da5f4452ce7f65f937e",
+  "sha256": "3d933628d0b1134205f072bec32fdff1781b8d003be76394469966f57612732e",
+  "coverageVerified": true,
+  "fullDecodeVerified": true,
+  "lines": [
+    {
+      "text": "Hi, the walking group will meet by the old clock at nine forty tomorrow morning.",
+      "speaker": "Nora",
+      "start": 0.07250000000000001,
+      "end": 4.405
+    },
+    {
+      "text": "Sorry, could you say that again more slowly? I missed the time.",
+      "speaker": "Eli",
+      "start": 4.6975,
+      "end": 8.1425
+    },
+    {
+      "text": "Of course. We meet at nine forty. That is twenty minutes before ten.",
+      "speaker": "Nora",
+      "start": 8.435,
+      "end": 12.5425
+    },
+    {
+      "text": "Nine forty, got it. Where is the old clock? I know the bus station.",
+      "speaker": "Eli",
+      "start": 12.835,
+      "end": 16.705
+    },
+    {
+      "text": "It is next to the main door of the bus station. Look for a tall black clock.",
+      "speaker": "Nora",
+      "start": 16.997500000000002,
+      "end": 21.104999999999997
+    },
+    {
+      "text": "Thanks. So I should wait outside the main door at nine forty?",
+      "speaker": "Eli",
+      "start": 21.4225,
+      "end": 24.467499999999998
+    },
+    {
+      "text": "Yes, that is right. I will be there in a green jacket.",
+      "speaker": "Nora",
+      "start": 24.7725,
+      "end": 27.93
+    },
+    {
+      "text": "Great. I will look for the clock and your green jacket.",
+      "speaker": "Eli",
+      "start": 28.2225,
+      "end": 31.1425
+    }
+  ]
+}

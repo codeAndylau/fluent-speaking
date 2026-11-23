@@ -1,0 +1,66 @@
+{
+  "id": "w01d6",
+  "voice": "en-US-AndrewNeural",
+  "synthetic": true,
+  "duration": 19.896,
+  "sourceSha256": "bb54a4c1a8bf4a29d2664dd888448e0f1d24617abefd4f50c080db00959c2555",
+  "sha256": "3764020a7adce188af36ac4fdf6a5f771607d9b2fb268228eac95583b2212edf",
+  "coverageVerified": true,
+  "fullDecodeVerified": true,
+  "lines": [
+    {
+      "text": "Hello, are you on the building tour?",
+      "speaker": "Uma",
+      "start": 0.07250000000000001,
+      "end": 1.7925
+    },
+    {
+      "text": "Yes, I'm Leo. I work at the bike shop nearby.",
+      "speaker": "Leo",
+      "start": 2.085,
+      "end": 4.8425
+    },
+    {
+      "text": "I'm Uma. I'm learning how to fix bikes.",
+      "speaker": "Uma",
+      "start": 5.1475,
+      "end": 7.355
+    },
+    {
+      "text": "Where do you take classes?",
+      "speaker": "Leo",
+      "start": 7.6475,
+      "end": 8.83
+    },
+    {
+      "text": "At the Hinton Center. Where's your bike shop?",
+      "speaker": "Uma",
+      "start": 9.1225,
+      "end": 11.38
+    },
+    {
+      "text": "On Hall Street. The tour starts at the side door.",
+      "speaker": "Leo",
+      "start": 11.672500000000001,
+      "end": 14.305
+    },
+    {
+      "text": "Did you say the front door?",
+      "speaker": "Uma",
+      "start": 14.5975,
+      "end": 15.6175
+    },
+    {
+      "text": "The side door, by the lift.",
+      "speaker": "Leo",
+      "start": 15.922500000000001,
+      "end": 17.3675
+    },
+    {
+      "text": "Okay, the side door by the lift.",
+      "speaker": "Uma",
+      "start": 17.66,
+      "end": 19.604999999999997
+    }
+  ]
+}

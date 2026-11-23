@@ -1,0 +1,60 @@
+{
+  "id": "w01d4",
+  "voice": "en-US-AndrewNeural",
+  "synthetic": true,
+  "duration": 14.112,
+  "sourceSha256": "8cabb91a29750bb74edabe1598a2a5667235ba89132cab3bec1ba1d6a948988d",
+  "sha256": "d675a409d3ac9dd72b5a2542aaaf1eeda322b32769720d194e37e976aa1a0107",
+  "coverageVerified": true,
+  "fullDecodeVerified": true,
+  "lines": [
+    {
+      "text": "Can we meet in Room B at ten?",
+      "speaker": "Mia",
+      "start": 0.060000000000000005,
+      "end": 1.48
+    },
+    {
+      "text": "Sorry, could you say that again?",
+      "speaker": "Ken",
+      "start": 1.7725,
+      "end": 3.3175
+    },
+    {
+      "text": "Room B, at ten.",
+      "speaker": "Mia",
+      "start": 3.61,
+      "end": 4.6425
+    },
+    {
+      "text": "Did you say Room D?",
+      "speaker": "Ken",
+      "start": 4.935,
+      "end": 5.855
+    },
+    {
+      "text": "No, Room B. B as in book.",
+      "speaker": "Mia",
+      "start": 6.1475,
+      "end": 8.6675
+    },
+    {
+      "text": "Got it, Room B at ten.",
+      "speaker": "Ken",
+      "start": 8.96,
+      "end": 10.4925
+    },
+    {
+      "text": "Yes, that's right.",
+      "speaker": "Mia",
+      "start": 10.785,
+      "end": 11.755
+    },
+    {
+      "text": "Thanks. See you in the morning.",
+      "speaker": "Ken",
+      "start": 12.072500000000002,
+      "end": 13.8175
+    }
+  ]
+}

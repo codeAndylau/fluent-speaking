@@ -1,0 +1,60 @@
+{
+  "id": "w06d5",
+  "voice": "en-US-AndrewNeural",
+  "synthetic": true,
+  "duration": 22.008,
+  "sourceSha256": "4783c0c329155c151c9d3ddb2371e8edd469352a6f89e938c21de3328f349db1",
+  "sha256": "943af50b60dda66274e3ba7f9df1f3204480f212434a1406e9dade46637035fd",
+  "coverageVerified": true,
+  "fullDecodeVerified": true,
+  "lines": [
+    {
+      "text": "How much is the small bottle on the top shelf?",
+      "speaker": "Yun",
+      "start": 0.060000000000000005,
+      "end": 2.4425
+    },
+    {
+      "text": "It's fourteen dollars. We have it in red and gray.",
+      "speaker": "Ira",
+      "start": 2.735,
+      "end": 5.4675
+    },
+    {
+      "text": "Is it lighter than the large gray one?",
+      "speaker": "Yun",
+      "start": 5.76,
+      "end": 7.5675
+    },
+    {
+      "text": "Yes, and the large one is four dollars more.",
+      "speaker": "Ira",
+      "start": 7.86,
+      "end": 10.4675
+    },
+    {
+      "text": "I'd like the small gray one. Can I check the lid?",
+      "speaker": "Yun",
+      "start": 10.760000000000002,
+      "end": 13.355
+    },
+    {
+      "text": "Of course. Go ahead and open it.",
+      "speaker": "Ira",
+      "start": 13.6475,
+      "end": 15.68
+    },
+    {
+      "text": "The lid doesn't close. Do you have another one?",
+      "speaker": "Yun",
+      "start": 15.9725,
+      "end": 18.3925
+    },
+    {
+      "text": "Yes. Here's another small gray bottle you can check.",
+      "speaker": "Ira",
+      "start": 18.6975,
+      "end": 21.705
+    }
+  ]
+}

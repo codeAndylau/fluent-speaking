@@ -1,0 +1,60 @@
+{
+  "id": "w07d2",
+  "voice": "en-US-AndrewNeural",
+  "synthetic": true,
+  "duration": 19.032,
+  "sourceSha256": "7df3ec8785eb09280a4ce6a79166bb28ca0036ae6ed509e711189e0acac71e10",
+  "sha256": "df273e0aa78acb95bea14f7c07f36b15f96e86497a22e0d216b2849079668186",
+  "coverageVerified": true,
+  "fullDecodeVerified": true,
+  "lines": [
+    {
+      "text": "How was your weekend? Did you get outside at all?",
+      "speaker": "Fang",
+      "start": 0.07250000000000001,
+      "end": 2.38
+    },
+    {
+      "text": "Yes, I went to Reed Lake on Sunday.",
+      "speaker": "Zed",
+      "start": 2.6725,
+      "end": 4.7675
+    },
+    {
+      "text": "Did you go there alone or with friends?",
+      "speaker": "Fang",
+      "start": 5.06,
+      "end": 7.055
+    },
+    {
+      "text": "I went with my cousin. We took a picnic lunch.",
+      "speaker": "Zed",
+      "start": 7.3475,
+      "end": 9.705
+    },
+    {
+      "text": "What did you do after you ate?",
+      "speaker": "Fang",
+      "start": 9.9975,
+      "end": 11.3425
+    },
+    {
+      "text": "We walked around the lake for an hour.",
+      "speaker": "Zed",
+      "start": 11.635000000000002,
+      "end": 13.3175
+    },
+    {
+      "text": "Was the path busy in the afternoon?",
+      "speaker": "Fang",
+      "start": 13.610000000000001,
+      "end": 15.43
+    },
+    {
+      "text": "No, it was quiet. Most people left after lunch.",
+      "speaker": "Zed",
+      "start": 15.7225,
+      "end": 18.7425
+    }
+  ]
+}

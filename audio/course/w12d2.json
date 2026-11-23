@@ -1,0 +1,60 @@
+{
+  "id": "w12d2",
+  "voice": "en-US-AndrewNeural",
+  "synthetic": true,
+  "duration": 35.136,
+  "sourceSha256": "6efc7afd53bcfbe89072ecd54a33e93cc827cf9fa06bf7a98bb072c0acd0a4db",
+  "sha256": "000b7ecc966d47e568a3e701340cafd540e60617de0cfea13b95014d775244a2",
+  "coverageVerified": true,
+  "fullDecodeVerified": true,
+  "lines": [
+    {
+      "text": "Excuse me, I am going to Pine Station. Is this the right bus stop?",
+      "speaker": "Nora",
+      "start": 0.060000000000000005,
+      "end": 3.955
+    },
+    {
+      "text": "Usually, yes. Today the bus stops on Hill Street because this road is closed.",
+      "speaker": "Eli",
+      "start": 4.2475,
+      "end": 8.6925
+    },
+    {
+      "text": "How do I get to Hill Street from here? I need to catch a train at five.",
+      "speaker": "Nora",
+      "start": 8.9975,
+      "end": 12.28
+    },
+    {
+      "text": "Go past the bank and turn left. It is a five-minute walk to the stop.",
+      "speaker": "Eli",
+      "start": 12.572500000000002,
+      "end": 16.604999999999997
+    },
+    {
+      "text": "Is the bus fast? It is already half past four, and I still need to buy a ticket.",
+      "speaker": "Nora",
+      "start": 16.8975,
+      "end": 21.43
+    },
+    {
+      "text": "The bus takes twenty minutes. You can walk to the station in fifteen minutes through the park.",
+      "speaker": "Eli",
+      "start": 21.735,
+      "end": 26.467499999999998
+    },
+    {
+      "text": "I will walk through the park, then. Is the park gate right after the bank?",
+      "speaker": "Nora",
+      "start": 26.76,
+      "end": 30.529999999999998
+    },
+    {
+      "text": "Yes, turn right after the bank for the park. Turn left for the bus stop.",
+      "speaker": "Eli",
+      "start": 30.8225,
+      "end": 34.855
+    }
+  ]
+}

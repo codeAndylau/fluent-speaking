@@ -1,0 +1,60 @@
+{
+  "id": "w11d5",
+  "voice": "en-US-AndrewNeural",
+  "synthetic": true,
+  "duration": 34.176,
+  "sourceSha256": "48fa96b4575664edbe405b8b2db67f6e2c48344cb65891e2ba4110abffc7baf9",
+  "sha256": "a60fa5dca82f6ea5171597d17990dab9d3bf83348ecc9f5db48f30cfa91c7994",
+  "coverageVerified": true,
+  "fullDecodeVerified": true,
+  "lines": [
+    {
+      "text": "Hello, I left something at the station. It is a small case for my glasses.",
+      "speaker": "Nora",
+      "start": 0.07250000000000001,
+      "end": 4.1425
+    },
+    {
+      "text": "We found two glasses cases today. What does yours look like?",
+      "speaker": "Eli",
+      "start": 4.4475,
+      "end": 7.5925
+    },
+    {
+      "text": "It is brown, and it has a white star on top. It opens like a little box.",
+      "speaker": "Nora",
+      "start": 7.885,
+      "end": 12.2425
+    },
+    {
+      "text": "I have that case here. You can collect it from the front desk before five fifteen.",
+      "speaker": "Eli",
+      "start": 12.547500000000001,
+      "end": 16.8175
+    },
+    {
+      "text": "Could you repeat the time more slowly? Did you say five fifty?",
+      "speaker": "Nora",
+      "start": 17.11,
+      "end": 20.404999999999998
+    },
+    {
+      "text": "Five fifteen, a quarter past five. After that, come to the ticket office instead.",
+      "speaker": "Eli",
+      "start": 20.76,
+      "end": 25.505
+    },
+    {
+      "text": "Thanks. I will be there at five thirty, so I should go to the ticket office.",
+      "speaker": "Nora",
+      "start": 25.8225,
+      "end": 29.755
+    },
+    {
+      "text": "Exactly. Tell them it is the brown case with the white star on top.",
+      "speaker": "Eli",
+      "start": 30.0475,
+      "end": 33.879999999999995
+    }
+  ]
+}

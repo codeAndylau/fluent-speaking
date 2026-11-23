@@ -1,0 +1,60 @@
+{
+  "id": "w01d2",
+  "voice": "en-US-AndrewNeural",
+  "synthetic": true,
+  "duration": 15.552,
+  "sourceSha256": "28d82fc84422367dc8a3aadea661314acc95abb31a8a9646a9e8b49c0cc594d3",
+  "sha256": "79de2daf8f135a4184e9ed5253c415b6412ee51c492ffd6b2e8c851390dc11b1",
+  "coverageVerified": true,
+  "fullDecodeVerified": true,
+  "lines": [
+    {
+      "text": "Hi, Rui. Do you work here?",
+      "speaker": "Rui",
+      "start": 0.07250000000000001,
+      "end": 1.7175
+    },
+    {
+      "text": "Yes, I work at the front desk.",
+      "speaker": "Sam",
+      "start": 2.01,
+      "end": 3.805
+    },
+    {
+      "text": "What do you do there?",
+      "speaker": "Rui",
+      "start": 4.0975,
+      "end": 4.855
+    },
+    {
+      "text": "I help visitors find the right room.",
+      "speaker": "Sam",
+      "start": 5.16,
+      "end": 6.8175
+    },
+    {
+      "text": "Do you study after work?",
+      "speaker": "Rui",
+      "start": 7.11,
+      "end": 8.255
+    },
+    {
+      "text": "Yes. I'm learning English online.",
+      "speaker": "Sam",
+      "start": 8.56,
+      "end": 10.655
+    },
+    {
+      "text": "When do you have class?",
+      "speaker": "Rui",
+      "start": 10.947500000000002,
+      "end": 11.98
+    },
+    {
+      "text": "On Tuesdays, after dinner. I have class at home.",
+      "speaker": "Sam",
+      "start": 12.2725,
+      "end": 15.255
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "id": "w05d5",
+  "voice": "en-US-AndrewNeural",
+  "synthetic": true,
+  "duration": 22.152,
+  "sourceSha256": "4c8890fa25a6e0e94ece0634ab8c64f0ea34b30e08c1f2953d18d6b9e410668d",
+  "sha256": "9c224af7bb0677399167bad489d05ab7902f59af596b3a554ca831f54e2f2163",
+  "coverageVerified": true,
+  "fullDecodeVerified": true,
+  "lines": [
+    {
+      "text": "Excuse me, is the gallery near this station?",
+      "speaker": "Lin",
+      "start": 0.060000000000000005,
+      "end": 2.605
+    },
+    {
+      "text": "Yes, but the front door is on Garden Lane.",
+      "speaker": "Owen",
+      "start": 2.8975,
+      "end": 5.4175
+    },
+    {
+      "text": "Which exit should I use for Garden Lane?",
+      "speaker": "Lin",
+      "start": 5.71,
+      "end": 7.555
+    },
+    {
+      "text": "Use exit two. Turn left at the small bookshop.",
+      "speaker": "Owen",
+      "start": 7.8475,
+      "end": 10.555
+    },
+    {
+      "text": "My bag is heavy. Can I take a bus instead?",
+      "speaker": "Lin",
+      "start": 10.8475,
+      "end": 13.33
+    },
+    {
+      "text": "Yes, take bus nine from exit one. Get off at Garden Lane.",
+      "speaker": "Owen",
+      "start": 13.6225,
+      "end": 17.292499999999997
+    },
+    {
+      "text": "Does that stop put me near the front door?",
+      "speaker": "Lin",
+      "start": 17.585,
+      "end": 19.38
+    },
+    {
+      "text": "Yes, it's right across from the front door.",
+      "speaker": "Owen",
+      "start": 19.6725,
+      "end": 21.8675
+    }
+  ]
+}

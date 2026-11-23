@@ -1,0 +1,60 @@
+{
+  "id": "w09d1",
+  "voice": "en-US-AndrewNeural",
+  "synthetic": true,
+  "duration": 29.712,
+  "sourceSha256": "44f00d812a9e6fc64a319891b9a9d8c66b6686d4d5de02f788c08b5df4ccde75",
+  "sha256": "3e64cdac43c51c6836fb2cb3372b72b8a2cf17e1cfe1630256b422ab9a6428ab",
+  "coverageVerified": true,
+  "fullDecodeVerified": true,
+  "lines": [
+    {
+      "text": "Could you help me with the printer? I need six maps for the meeting this morning.",
+      "speaker": "Nora",
+      "start": 0.060000000000000005,
+      "end": 3.6925
+    },
+    {
+      "text": "Sure. Is it out of paper, or is something stuck inside?",
+      "speaker": "Eli",
+      "start": 3.9850000000000003,
+      "end": 7.2675
+    },
+    {
+      "text": "The paper is stuck. I turned it off, but I did not pull the paper out.",
+      "speaker": "Nora",
+      "start": 7.5725,
+      "end": 11.4175
+    },
+    {
+      "text": "Leave it there for now. You can use the printer in the blue room.",
+      "speaker": "Eli",
+      "start": 11.71,
+      "end": 14.58
+    },
+    {
+      "text": "Can it print in color? The red line shows people where to go.",
+      "speaker": "Nora",
+      "start": 14.8725,
+      "end": 18.029999999999998
+    },
+    {
+      "text": "Yes, it can. Take the paper from this box because that printer is empty.",
+      "speaker": "Eli",
+      "start": 18.3225,
+      "end": 22.4425
+    },
+    {
+      "text": "Great, I will take some paper with me. Thanks for your help.",
+      "speaker": "Nora",
+      "start": 22.735,
+      "end": 25.805
+    },
+    {
+      "text": "No problem. I will put a note on this printer for the next person.",
+      "speaker": "Eli",
+      "start": 26.0975,
+      "end": 29.43
+    }
+  ]
+}

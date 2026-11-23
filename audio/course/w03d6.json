@@ -1,0 +1,66 @@
+{
+  "id": "w03d6",
+  "voice": "en-US-AndrewNeural",
+  "synthetic": true,
+  "duration": 23.616,
+  "sourceSha256": "ccc9daf647d94669a3ecbb877792b04ddcc0db26295aaf8680694a35ddc51424",
+  "sha256": "bc412e1b23ff9c56ef422ad2bfceb580437129f7033ce38f962088647aba2c8a",
+  "coverageVerified": true,
+  "fullDecodeVerified": true,
+  "lines": [
+    {
+      "text": "Could we get three pizzas for here?",
+      "speaker": "Ash",
+      "start": 0.060000000000000005,
+      "end": 1.5925
+    },
+    {
+      "text": "Sure. Which ones would you like?",
+      "speaker": "Lin",
+      "start": 1.885,
+      "end": 3.68
+    },
+    {
+      "text": "Two mushroom pizzas and one cheese pizza, please.",
+      "speaker": "Ash",
+      "start": 3.9850000000000003,
+      "end": 7.055
+    },
+    {
+      "text": "We only have one mushroom pizza left.",
+      "speaker": "Lin",
+      "start": 7.3475,
+      "end": 9.255
+    },
+    {
+      "text": "Then one mushroom and two cheese, please.",
+      "speaker": "Ash",
+      "start": 9.547500000000001,
+      "end": 12.205
+    },
+    {
+      "text": "Would you like chili oil with those?",
+      "speaker": "Lin",
+      "start": 12.4975,
+      "end": 14.0675
+    },
+    {
+      "text": "Yes, on the side, please. And two glasses of water.",
+      "speaker": "Ash",
+      "start": 14.360000000000001,
+      "end": 17.88
+    },
+    {
+      "text": "Three pizzas and three waters?",
+      "speaker": "Lin",
+      "start": 18.1975,
+      "end": 20.18
+    },
+    {
+      "text": "Two waters, please. Three pizzas is right.",
+      "speaker": "Ash",
+      "start": 20.485,
+      "end": 23.33
+    }
+  ]
+}

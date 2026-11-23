@@ -1,0 +1,60 @@
+{
+  "id": "w03d4",
+  "voice": "en-US-AndrewNeural",
+  "synthetic": true,
+  "duration": 16.92,
+  "sourceSha256": "c6cc2cbcf8831ec3e4f3ae74a713c098fe6c31ab794622a9f0fc6a4790bd8483",
+  "sha256": "811ee176cd0eb5035527f30cfde8aa491a3cdb49294a243c2cbb3c5601a71648",
+  "coverageVerified": true,
+  "fullDecodeVerified": true,
+  "lines": [
+    {
+      "text": "Could I have a chicken sandwich, please?",
+      "speaker": "Pam",
+      "start": 0.060000000000000005,
+      "end": 1.8675000000000002
+    },
+    {
+      "text": "Sorry, we're out of chicken sandwiches.",
+      "speaker": "Vic",
+      "start": 2.16,
+      "end": 4.2675
+    },
+    {
+      "text": "What else do you have?",
+      "speaker": "Pam",
+      "start": 4.56,
+      "end": 5.4675
+    },
+    {
+      "text": "We have egg sandwiches and vegetable wraps.",
+      "speaker": "Vic",
+      "start": 5.76,
+      "end": 8.2425
+    },
+    {
+      "text": "Are the wraps warm?",
+      "speaker": "Pam",
+      "start": 8.535,
+      "end": 9.43
+    },
+    {
+      "text": "No, they're cold, but the soup is hot.",
+      "speaker": "Vic",
+      "start": 9.7225,
+      "end": 12.3175
+    },
+    {
+      "text": "I'll have the soup instead, please.",
+      "speaker": "Pam",
+      "start": 12.610000000000001,
+      "end": 14.53
+    },
+    {
+      "text": "Sure. I'll bring it right over.",
+      "speaker": "Vic",
+      "start": 14.822500000000002,
+      "end": 16.63
+    }
+  ]
+}

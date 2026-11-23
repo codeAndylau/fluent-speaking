@@ -1,0 +1,60 @@
+{
+  "id": "w02d3",
+  "voice": "en-US-AndrewNeural",
+  "synthetic": true,
+  "duration": 15.408,
+  "sourceSha256": "9d63dccb0c46a260b97897646ab019e5f4ca01ed6961a44bfd38c7008ce89c00",
+  "sha256": "e2631f744cf809be88b0c1a4a126a2c0263fcaad25794f7f925f737e81cca569",
+  "coverageVerified": true,
+  "fullDecodeVerified": true,
+  "lines": [
+    {
+      "text": "Do you like indoor sports?",
+      "speaker": "Ben",
+      "start": 0.060000000000000005,
+      "end": 1.2425000000000002
+    },
+    {
+      "text": "Yes, I like swimming.",
+      "speaker": "Lan",
+      "start": 1.535,
+      "end": 2.8675
+    },
+    {
+      "text": "How about table tennis?",
+      "speaker": "Ben",
+      "start": 3.1725,
+      "end": 4.4425
+    },
+    {
+      "text": "I don't really like it. Do you like it?",
+      "speaker": "Lan",
+      "start": 4.735,
+      "end": 6.6675
+    },
+    {
+      "text": "Yes, but I like swimming too.",
+      "speaker": "Ben",
+      "start": 6.96,
+      "end": 8.73
+    },
+    {
+      "text": "Do you like the pool near work?",
+      "speaker": "Lan",
+      "start": 9.0225,
+      "end": 10.2675
+    },
+    {
+      "text": "Yes. I go there on Fridays.",
+      "speaker": "Ben",
+      "start": 10.572500000000002,
+      "end": 12.5425
+    },
+    {
+      "text": "Great. Let's go after work this Friday.",
+      "speaker": "Lan",
+      "start": 12.835,
+      "end": 15.1175
+    }
+  ]
+}

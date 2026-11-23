@@ -1,0 +1,60 @@
+{
+  "id": "w08d6",
+  "voice": "en-US-AndrewNeural",
+  "synthetic": true,
+  "duration": 22.92,
+  "sourceSha256": "6e04e3019e47d7b7bbe686ea8b78a428288db308af1dd034bc1f1e091a27ecfc",
+  "sha256": "9ea0ad0f205b43ef0128ebe8ebb2bd7bd998dde1a92bbccc26e5969080cdff37",
+  "coverageVerified": true,
+  "fullDecodeVerified": true,
+  "lines": [
+    {
+      "text": "When are you going to pick up the boards for the fair?",
+      "speaker": "Nan",
+      "start": 0.060000000000000005,
+      "end": 1.9925000000000002
+    },
+    {
+      "text": "I planned to go at five on Saturday.",
+      "speaker": "Sol",
+      "start": 2.2975,
+      "end": 4.005
+    },
+    {
+      "text": "The shop closes at four that day. Could we go earlier?",
+      "speaker": "Nan",
+      "start": 4.31,
+      "end": 7.18
+    },
+    {
+      "text": "I can't get there before four. I'm helping my neighbor move.",
+      "speaker": "Sol",
+      "start": 7.4725,
+      "end": 10.555
+    },
+    {
+      "text": "How about Sunday morning instead? The shop opens at nine.",
+      "speaker": "Nan",
+      "start": 10.8475,
+      "end": 13.955
+    },
+    {
+      "text": "That works. Can we meet by the shop door at nine fifteen?",
+      "speaker": "Sol",
+      "start": 14.260000000000002,
+      "end": 17.292499999999997
+    },
+    {
+      "text": "Yes, I'll bring my cart to carry the boards.",
+      "speaker": "Nan",
+      "start": 17.585,
+      "end": 20.104999999999997
+    },
+    {
+      "text": "Perfect. See you by the door on Sunday.",
+      "speaker": "Sol",
+      "start": 20.41,
+      "end": 22.63
+    }
+  ]
+}

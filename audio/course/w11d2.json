@@ -1,0 +1,60 @@
+{
+  "id": "w11d2",
+  "voice": "en-US-AndrewNeural",
+  "synthetic": true,
+  "duration": 29.592,
+  "sourceSha256": "cc9862d29ee0290c3bb51e06f8b3e80d773e23c50d90eae7173d1f724cf3456f",
+  "sha256": "94eb7c9bca2db26a66932b0a9c46affaf5b728533806cb694db79d0d6bfd38ca",
+  "coverageVerified": true,
+  "fullDecodeVerified": true,
+  "lines": [
+    {
+      "text": "We have a lunch set today. It is twelve dollars for a sandwich and soup.",
+      "speaker": "Nora",
+      "start": 0.060000000000000005,
+      "end": 3.7175000000000002
+    },
+    {
+      "text": "Does that include a drink, or do I need to pay for a drink separately?",
+      "speaker": "Eli",
+      "start": 4.01,
+      "end": 7.38
+    },
+    {
+      "text": "A cup of tea is included. Coffee costs two dollars more.",
+      "speaker": "Nora",
+      "start": 7.6725,
+      "end": 11.43
+    },
+    {
+      "text": "So the lunch with coffee is fourteen dollars in total, right?",
+      "speaker": "Eli",
+      "start": 11.7225,
+      "end": 15.1675
+    },
+    {
+      "text": "That is right. We also have free water by the window.",
+      "speaker": "Nora",
+      "start": 15.4725,
+      "end": 18.3925
+    },
+    {
+      "text": "I will have the lunch with tea then. Is it hot tea?",
+      "speaker": "Eli",
+      "start": 18.685000000000002,
+      "end": 21.3175
+    },
+    {
+      "text": "Yes, the tea is hot. I can bring some ice if you want cold tea.",
+      "speaker": "Nora",
+      "start": 21.61,
+      "end": 25.342499999999998
+    },
+    {
+      "text": "Hot tea is fine, thank you. I will have the set as it comes.",
+      "speaker": "Eli",
+      "start": 25.6475,
+      "end": 29.305
+    }
+  ]
+}

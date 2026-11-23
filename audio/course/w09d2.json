@@ -1,0 +1,60 @@
+{
+  "id": "w09d2",
+  "voice": "en-US-AndrewNeural",
+  "synthetic": true,
+  "duration": 29.256,
+  "sourceSha256": "df1115b19e19a26c3d02f96c03841d3d729e9b089ef9450b0f74582f2f664b9c",
+  "sha256": "421d76d3b33cd56bfcdc347cd474d5639bfe9f985f4c1deb50b309ed6255d7d7",
+  "coverageVerified": true,
+  "fullDecodeVerified": true,
+  "lines": [
+    {
+      "text": "How is the front desk going? The guests will be here in about an hour.",
+      "speaker": "Nora",
+      "start": 0.060000000000000005,
+      "end": 3.6175
+    },
+    {
+      "text": "The lists are ready, and the pens are on the desk. I still need the name cards.",
+      "speaker": "Eli",
+      "start": 3.9225,
+      "end": 8.18
+    },
+    {
+      "text": "I think the cards are in the green bag. Do you want me to look?",
+      "speaker": "Nora",
+      "start": 8.4725,
+      "end": 11.355
+    },
+    {
+      "text": "Yes, please. I can put the signs by the doors while you look.",
+      "speaker": "Eli",
+      "start": 11.6475,
+      "end": 14.98
+    },
+    {
+      "text": "I found them. I can bring them to you in ten minutes.",
+      "speaker": "Nora",
+      "start": 15.285,
+      "end": 18.1425
+    },
+    {
+      "text": "That works. I will leave some space on the left side of the desk.",
+      "speaker": "Eli",
+      "start": 18.4475,
+      "end": 21.83
+    },
+    {
+      "text": "Do we also need a chair for the guest who checks the names?",
+      "speaker": "Nora",
+      "start": 22.122500000000002,
+      "end": 24.8175
+    },
+    {
+      "text": "Yes, one chair is enough. I will get it after I put up the signs.",
+      "speaker": "Eli",
+      "start": 25.11,
+      "end": 28.955
+    }
+  ]
+}

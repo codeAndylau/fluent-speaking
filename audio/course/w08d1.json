@@ -1,0 +1,60 @@
+{
+  "id": "w08d1",
+  "voice": "en-US-AndrewNeural",
+  "synthetic": true,
+  "duration": 17.28,
+  "sourceSha256": "f9e127991432082352a988fdd9847c0985c1996daaf6697ca36fe48a717bd495",
+  "sha256": "4e96e470bf8e1eb056658baf4884b8000ea50436dba2b4c3e3273b595d15d774",
+  "coverageVerified": true,
+  "fullDecodeVerified": true,
+  "lines": [
+    {
+      "text": "What are you doing after work tonight?",
+      "speaker": "Lin",
+      "start": 0.060000000000000005,
+      "end": 1.6425
+    },
+    {
+      "text": "I'm going to pick up a package at six.",
+      "speaker": "Dev",
+      "start": 1.935,
+      "end": 3.73
+    },
+    {
+      "text": "Are you busy for the rest of the evening?",
+      "speaker": "Lin",
+      "start": 4.0225,
+      "end": 5.7175
+    },
+    {
+      "text": "I need to cook dinner, but I'm free after eight.",
+      "speaker": "Dev",
+      "start": 6.01,
+      "end": 8.3675
+    },
+    {
+      "text": "Are you going to call Mei tonight?",
+      "speaker": "Lin",
+      "start": 8.66,
+      "end": 9.88
+    },
+    {
+      "text": "No, I'm going to call her tomorrow at lunch.",
+      "speaker": "Dev",
+      "start": 10.172500000000001,
+      "end": 12.555
+    },
+    {
+      "text": "Okay. Can I call you after eight tonight?",
+      "speaker": "Lin",
+      "start": 12.8475,
+      "end": 15.0425
+    },
+    {
+      "text": "Sure. I'll be at home then.",
+      "speaker": "Dev",
+      "start": 15.335,
+      "end": 16.9925
+    }
+  ]
+}

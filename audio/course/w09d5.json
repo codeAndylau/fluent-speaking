@@ -1,0 +1,60 @@
+{
+  "id": "w09d5",
+  "voice": "en-US-AndrewNeural",
+  "synthetic": true,
+  "duration": 30.672,
+  "sourceSha256": "99fba7b11b324a0fa3c0dffa5c9c65e5b2226798ddef208e70a8f6fc477468e7",
+  "sha256": "cb73b250ff50781aef38921233e66e574870574e1f53e344a349d9326395a605",
+  "coverageVerified": true,
+  "fullDecodeVerified": true,
+  "lines": [
+    {
+      "text": "The art class has moved. Could you help me with the signs for tonight?",
+      "speaker": "Nora",
+      "start": 0.07250000000000001,
+      "end": 3.455
+    },
+    {
+      "text": "Yes. The sign at the front door is ready, but I still need the room number.",
+      "speaker": "Eli",
+      "start": 3.76,
+      "end": 7.9425
+    },
+    {
+      "text": "We are in room sixteen now. It is the first room on the left.",
+      "speaker": "Nora",
+      "start": 8.235000000000001,
+      "end": 11.4925
+    },
+    {
+      "text": "Do you mean the room by the stairs? I can put a sign there, too.",
+      "speaker": "Eli",
+      "start": 11.785,
+      "end": 15.0925
+    },
+    {
+      "text": "Yes, that is the room. Could you also tell the group about the change?",
+      "speaker": "Nora",
+      "start": 15.385000000000002,
+      "end": 19.0175
+    },
+    {
+      "text": "The group message is ready. When do you need me to send it?",
+      "speaker": "Eli",
+      "start": 19.3225,
+      "end": 22.042499999999997
+    },
+    {
+      "text": "Please send it by three. People may leave home early to get here.",
+      "speaker": "Nora",
+      "start": 22.385,
+      "end": 25.792499999999997
+    },
+    {
+      "text": "Okay. I will send the message now and put up the second sign after lunch.",
+      "speaker": "Eli",
+      "start": 26.085,
+      "end": 30.38
+    }
+  ]
+}

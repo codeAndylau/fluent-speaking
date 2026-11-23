@@ -1,0 +1,60 @@
+{
+  "id": "w01d5",
+  "voice": "en-US-AndrewNeural",
+  "synthetic": true,
+  "duration": 18.192,
+  "sourceSha256": "20e3f60056c50953e81da655cc0d09578df8159ff5bc84fb7e98e89e96efeeb6",
+  "sha256": "23d4a9778d6b6cb062d21e17af279e7189c1f322bb09327a5c6184a7036f1102",
+  "coverageVerified": true,
+  "fullDecodeVerified": true,
+  "lines": [
+    {
+      "text": "Hi, I'm Tess. Are you here for the training?",
+      "speaker": "Tess",
+      "start": 0.07250000000000001,
+      "end": 2.355
+    },
+    {
+      "text": "Yes. I'm Ren, from Suzhou.",
+      "speaker": "Ren",
+      "start": 2.66,
+      "end": 4.98
+    },
+    {
+      "text": "Do you work in this building?",
+      "speaker": "Tess",
+      "start": 5.2725,
+      "end": 6.3925
+    },
+    {
+      "text": "Yes, I work at the help desk. What about you?",
+      "speaker": "Ren",
+      "start": 6.685,
+      "end": 9.4675
+    },
+    {
+      "text": "I work at a small hotel.",
+      "speaker": "Tess",
+      "start": 9.760000000000002,
+      "end": 11.0175
+    },
+    {
+      "text": "Sorry, could you say that again?",
+      "speaker": "Ren",
+      "start": 11.31,
+      "end": 12.855
+    },
+    {
+      "text": "At a hotel. It's across the street.",
+      "speaker": "Tess",
+      "start": 13.1475,
+      "end": 15.2675
+    },
+    {
+      "text": "Oh, the hotel across the street. Got it.",
+      "speaker": "Ren",
+      "start": 15.56,
+      "end": 17.8925
+    }
+  ]
+}

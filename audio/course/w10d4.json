@@ -1,0 +1,60 @@
+{
+  "id": "w10d4",
+  "voice": "en-US-AndrewNeural",
+  "synthetic": true,
+  "duration": 28.416,
+  "sourceSha256": "3ed0963d749acf2adea7f10b33f3b737e4418373478f06300f6bd47065414e8e",
+  "sha256": "e97e22958e0d897d29c266a74ca2369aa9e7ec7b3d5f4501451bdddf848e12ee",
+  "coverageVerified": true,
+  "fullDecodeVerified": true,
+  "lines": [
+    {
+      "text": "It was nice talking to you. I need to go now or I will miss my bus.",
+      "speaker": "Nora",
+      "start": 0.060000000000000005,
+      "end": 3.7675
+    },
+    {
+      "text": "Of course. Are we still meeting at the park on Saturday morning?",
+      "speaker": "Eli",
+      "start": 4.06,
+      "end": 7.28
+    },
+    {
+      "text": "Yes. Can we meet at the gate near the lake at ten?",
+      "speaker": "Nora",
+      "start": 7.585,
+      "end": 10.355
+    },
+    {
+      "text": "The lake gate at ten works for me. Do you still have my blue book?",
+      "speaker": "Eli",
+      "start": 10.6475,
+      "end": 13.7425
+    },
+    {
+      "text": "Yes, I will bring it on Saturday. Thanks for letting me keep it this week.",
+      "speaker": "Nora",
+      "start": 14.035,
+      "end": 17.842499999999998
+    },
+    {
+      "text": "You are welcome. I hope you have time to finish the last story.",
+      "speaker": "Eli",
+      "start": 18.135,
+      "end": 21.13
+    },
+    {
+      "text": "I think I can finish it tonight. All right, see you on Saturday.",
+      "speaker": "Nora",
+      "start": 21.4225,
+      "end": 24.779999999999998
+    },
+    {
+      "text": "See you then. Have a good evening and good luck with the bus!",
+      "speaker": "Eli",
+      "start": 25.085,
+      "end": 28.1175
+    }
+  ]
+}

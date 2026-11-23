@@ -1,0 +1,60 @@
+{
+  "id": "w02d5",
+  "voice": "en-US-AndrewNeural",
+  "synthetic": true,
+  "duration": 20.088,
+  "sourceSha256": "c143d3c376cd14670fd419d5f9b3b1a22328a88d90bfecaa6cf79b25d9912b90",
+  "sha256": "7e3d4c294ec091154ba412e8da0915033b94ef47aa2fd205c4a1f0c96c27bcba",
+  "coverageVerified": true,
+  "fullDecodeVerified": true,
+  "lines": [
+    {
+      "text": "Our visitor has an hour free at lunch.",
+      "speaker": "Mina",
+      "start": 0.060000000000000005,
+      "end": 2.105
+    },
+    {
+      "text": "Do you finish your morning work at twelve?",
+      "speaker": "Oli",
+      "start": 2.3975,
+      "end": 4.08
+    },
+    {
+      "text": "Usually, yes. What does she like to do?",
+      "speaker": "Mina",
+      "start": 4.3725,
+      "end": 6.5175
+    },
+    {
+      "text": "She likes gardens, but she doesn't like long walks.",
+      "speaker": "Oli",
+      "start": 6.8225,
+      "end": 9.655
+    },
+    {
+      "text": "How about the garden behind our office?",
+      "speaker": "Mina",
+      "start": 9.947500000000002,
+      "end": 11.855
+    },
+    {
+      "text": "Good idea. We can go there because it's close.",
+      "speaker": "Oli",
+      "start": 12.1475,
+      "end": 14.6675
+    },
+    {
+      "text": "I usually eat at twelve. Can we go at twelve thirty?",
+      "speaker": "Mina",
+      "start": 14.96,
+      "end": 17.854999999999997
+    },
+    {
+      "text": "Sure. We can call her now.",
+      "speaker": "Oli",
+      "start": 18.1475,
+      "end": 19.805
+    }
+  ]
+}

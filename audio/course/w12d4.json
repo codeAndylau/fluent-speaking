@@ -1,0 +1,60 @@
+{
+  "id": "w12d4",
+  "voice": "en-US-AndrewNeural",
+  "synthetic": true,
+  "duration": 32.76,
+  "sourceSha256": "0d04679a52cb0798fb1838fe87eb567b24606bb97f78fa637ada1a8b20cddec3",
+  "sha256": "2427fb88af58b3e417fa27894439adb12a39525284dc6f8c54f4d666445a4707",
+  "coverageVerified": true,
+  "fullDecodeVerified": true,
+  "lines": [
+    {
+      "text": "Hi, I would like to try the short dance class. Do you have a place this Saturday?",
+      "speaker": "Nora",
+      "start": 0.07250000000000001,
+      "end": 4.2175
+    },
+    {
+      "text": "Saturday is full, but we have a place on Sunday at eleven. Are you free then?",
+      "speaker": "Eli",
+      "start": 4.5225,
+      "end": 8.9425
+    },
+    {
+      "text": "I am free on Sunday morning. Do I need to bring any special shoes?",
+      "speaker": "Nora",
+      "start": 9.2475,
+      "end": 12.5675
+    },
+    {
+      "text": "Clean shoes are fine. Please come ten minutes early so we can show you the room.",
+      "speaker": "Eli",
+      "start": 12.860000000000001,
+      "end": 16.93
+    },
+    {
+      "text": "So I should be there at ten fifty. Is the class in the room by the front door?",
+      "speaker": "Nora",
+      "start": 17.235,
+      "end": 21.0175
+    },
+    {
+      "text": "It is in the back room, but please come to the front desk first.",
+      "speaker": "Eli",
+      "start": 21.310000000000002,
+      "end": 24.542499999999997
+    },
+    {
+      "text": "Got it. I will bring clean shoes and come to the front desk before eleven.",
+      "speaker": "Nora",
+      "start": 24.835,
+      "end": 28.93
+    },
+    {
+      "text": "Great. I will put your name down for Sunday. See you then.",
+      "speaker": "Eli",
+      "start": 29.2225,
+      "end": 32.4675
+    }
+  ]
+}

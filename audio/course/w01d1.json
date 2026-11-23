@@ -1,0 +1,66 @@
+{
+  "id": "w01d1",
+  "voice": "en-US-AndrewNeural",
+  "synthetic": true,
+  "duration": 17.496,
+  "sourceSha256": "26d595ef3f02af58022184aacb611fe84af2cbf00963ece91f2d6c6af7f4f7b4",
+  "sha256": "7396e96b7eb488f2e57acf54df0753b19e87d1f65f0452a4991d4b59affcb78e",
+  "coverageVerified": true,
+  "fullDecodeVerified": true,
+  "lines": [
+    {
+      "text": "Hi, I'm Alex. Are you new here?",
+      "speaker": "Alex",
+      "start": 0.07250000000000001,
+      "end": 1.98
+    },
+    {
+      "text": "Yes, I am. I'm Lin. Nice to meet you.",
+      "speaker": "Lin",
+      "start": 2.2725,
+      "end": 4.855
+    },
+    {
+      "text": "Nice to meet you, too. Where are you from?",
+      "speaker": "Alex",
+      "start": 5.1475,
+      "end": 7.2425
+    },
+    {
+      "text": "I'm from Chengdu. What about you?",
+      "speaker": "Lin",
+      "start": 7.535,
+      "end": 9.38
+    },
+    {
+      "text": "I'm from Bristol.",
+      "speaker": "Alex",
+      "start": 9.672500000000001,
+      "end": 10.555
+    },
+    {
+      "text": "Sorry, could you say that again?",
+      "speaker": "Lin",
+      "start": 10.8475,
+      "end": 12.3925
+    },
+    {
+      "text": "Bristol. It's a city in the UK.",
+      "speaker": "Alex",
+      "start": 12.697500000000002,
+      "end": 14.88
+    },
+    {
+      "text": "Oh, I see.",
+      "speaker": "Lin",
+      "start": 15.185,
+      "end": 15.8925
+    },
+    {
+      "text": "Welcome to the team!",
+      "speaker": "Alex",
+      "start": 16.185000000000002,
+      "end": 17.205
+    }
+  ]
+}

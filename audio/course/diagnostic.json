@@ -1,0 +1,60 @@
+{
+  "id": "diagnostic",
+  "voice": "en-US-AndrewNeural",
+  "synthetic": true,
+  "duration": 18.384,
+  "sourceSha256": "bef2a5a8627436837e5938939794843416a7e1c6cfe71ab913d8186e262804ca",
+  "sha256": "9a86fd58e43c6100cbb86b04afb42094fde3f05ff5f9deb6d22aca4770bea46c",
+  "coverageVerified": true,
+  "fullDecodeVerified": true,
+  "lines": [
+    {
+      "text": "Hi, Ben. Are you free on Saturday?",
+      "speaker": "Mia",
+      "start": 0.07250000000000001,
+      "end": 2.13
+    },
+    {
+      "text": "Yes, in the afternoon. Why?",
+      "speaker": "Ben",
+      "start": 2.4225,
+      "end": 4.605
+    },
+    {
+      "text": "Let's go to the park at two.",
+      "speaker": "Mia",
+      "start": 4.8975,
+      "end": 6.1175
+    },
+    {
+      "text": "Sorry, I can't get there before three.",
+      "speaker": "Ben",
+      "start": 6.41,
+      "end": 8.5175
+    },
+    {
+      "text": "Three is fine. Meet at the west gate?",
+      "speaker": "Mia",
+      "start": 8.8475,
+      "end": 10.9675
+    },
+    {
+      "text": "Could you say that again? Which gate?",
+      "speaker": "Ben",
+      "start": 11.260000000000002,
+      "end": 13.13
+    },
+    {
+      "text": "The west gate, next to the bus stop.",
+      "speaker": "Mia",
+      "start": 13.435,
+      "end": 15.48
+    },
+    {
+      "text": "OK. See you there at three on Saturday.",
+      "speaker": "Ben",
+      "start": 15.7725,
+      "end": 18.092499999999998
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "id": "w06d6",
+  "voice": "en-US-AndrewNeural",
+  "synthetic": true,
+  "duration": 22.392,
+  "sourceSha256": "210bc97ac8831aa70f29e897b5b698ed8bb6abfa3d3a3542bd94cbf87e33322c",
+  "sha256": "3d98f289239ae923bf91864e9d16e0035c798715bb28483559a45cabbe35f61e",
+  "coverageVerified": true,
+  "fullDecodeVerified": true,
+  "lines": [
+    {
+      "text": "Hello, can I exchange these shoes? One sole is loose.",
+      "speaker": "Wei",
+      "start": 0.060000000000000005,
+      "end": 3.305
+    },
+    {
+      "text": "Sure. What size are they?",
+      "speaker": "Bo",
+      "start": 3.5975,
+      "end": 5.2175
+    },
+    {
+      "text": "They're size forty-one. Do you have a black pair in that size?",
+      "speaker": "Wei",
+      "start": 5.5225,
+      "end": 8.605
+    },
+    {
+      "text": "We only have brown, but it's the same price.",
+      "speaker": "Bo",
+      "start": 8.8975,
+      "end": 11.4425
+    },
+    {
+      "text": "Do you have a lighter pair for work?",
+      "speaker": "Wei",
+      "start": 11.735000000000001,
+      "end": 13.13
+    },
+    {
+      "text": "Yes. This black pair is lighter, but it's five dollars more.",
+      "speaker": "Bo",
+      "start": 13.435,
+      "end": 17.154999999999998
+    },
+    {
+      "text": "Can I try the lighter pair on before I decide?",
+      "speaker": "Wei",
+      "start": 17.4475,
+      "end": 19.58
+    },
+    {
+      "text": "Of course. There's a seat by the mirror.",
+      "speaker": "Bo",
+      "start": 19.872500000000002,
+      "end": 22.104999999999997
+    }
+  ]
+}

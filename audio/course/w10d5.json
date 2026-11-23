@@ -1,0 +1,60 @@
+{
+  "id": "w10d5",
+  "voice": "en-US-AndrewNeural",
+  "synthetic": true,
+  "duration": 29.088,
+  "sourceSha256": "9461a068c3b9f2adf31d10b0fa362f3931db0e732b56e5a55add6b06399a1576",
+  "sha256": "7677911ba05dd710e54143f76cd3cfa899be45319a6022af1be94247b118a374",
+  "coverageVerified": true,
+  "fullDecodeVerified": true,
+  "lines": [
+    {
+      "text": "I found a new place for breakfast. It has tables outside by the river.",
+      "speaker": "Nora",
+      "start": 0.07250000000000001,
+      "end": 3.83
+    },
+    {
+      "text": "That sounds lovely. What time does it open on Sunday?",
+      "speaker": "Eli",
+      "start": 4.135,
+      "end": 6.83
+    },
+    {
+      "text": "It opens at nine. My friend said there is a long line after ten.",
+      "speaker": "Nora",
+      "start": 7.1225,
+      "end": 10.7175
+    },
+    {
+      "text": "I would rather go early because I have a class at eleven.",
+      "speaker": "Eli",
+      "start": 11.010000000000002,
+      "end": 13.5175
+    },
+    {
+      "text": "How about nine fifteen at the bridge? We can walk to the place together.",
+      "speaker": "Nora",
+      "start": 13.822500000000002,
+      "end": 17.4425
+    },
+    {
+      "text": "That works. Could you send me the name of the place in case I am late?",
+      "speaker": "Eli",
+      "start": 17.747500000000002,
+      "end": 21.13
+    },
+    {
+      "text": "Sure, I will send it now. I have to get back to work, so see you on Sunday.",
+      "speaker": "Nora",
+      "start": 21.4225,
+      "end": 25.555
+    },
+    {
+      "text": "See you! I will send you a message when I get to the bridge.",
+      "speaker": "Eli",
+      "start": 25.8475,
+      "end": 28.805
+    }
+  ]
+}

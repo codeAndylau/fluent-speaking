@@ -1,0 +1,60 @@
+{
+  "id": "w04d1",
+  "voice": "en-US-AndrewNeural",
+  "synthetic": true,
+  "duration": 16.536,
+  "sourceSha256": "4f82949e22179437fc2816572917b7076bd257114fcaf0264260e7a07f24d6c7",
+  "sha256": "f7c5f10027b3a35982968a510db975f591c31938411d3a9f8b56ceceb3796258",
+  "coverageVerified": true,
+  "fullDecodeVerified": true,
+  "lines": [
+    {
+      "text": "Are you free sometime this week?",
+      "speaker": "Nel",
+      "start": 0.060000000000000005,
+      "end": 1.4300000000000002
+    },
+    {
+      "text": "I'm free on Thursday after work.",
+      "speaker": "Ian",
+      "start": 1.7225,
+      "end": 3.4425
+    },
+    {
+      "text": "How about Friday? I work late on Thursday.",
+      "speaker": "Nel",
+      "start": 3.735,
+      "end": 6.1675
+    },
+    {
+      "text": "I can't do Friday. I have a class.",
+      "speaker": "Ian",
+      "start": 6.4725,
+      "end": 8.605
+    },
+    {
+      "text": "Are you free on Saturday morning?",
+      "speaker": "Nel",
+      "start": 8.8975,
+      "end": 10.33
+    },
+    {
+      "text": "Yes, after ten. Are you free then?",
+      "speaker": "Ian",
+      "start": 10.6225,
+      "end": 12.855
+    },
+    {
+      "text": "Yes. Let's meet at eleven.",
+      "speaker": "Nel",
+      "start": 13.16,
+      "end": 14.955
+    },
+    {
+      "text": "Eleven works for me.",
+      "speaker": "Ian",
+      "start": 15.2475,
+      "end": 16.255
+    }
+  ]
+}

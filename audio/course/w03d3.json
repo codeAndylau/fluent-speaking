@@ -1,0 +1,60 @@
+{
+  "id": "w03d3",
+  "voice": "en-US-AndrewNeural",
+  "synthetic": true,
+  "duration": 19.68,
+  "sourceSha256": "95a5b151fa86fcaa68cecdbf1d4e2738c4e5ca6aa1e68901e933a27e8ab5a0a8",
+  "sha256": "e952803908330f1d14f1643c989792ee8b449a3eeb99056dc5496d518ccbba4a",
+  "coverageVerified": true,
+  "fullDecodeVerified": true,
+  "lines": [
+    {
+      "text": "What would you like today?",
+      "speaker": "Dee",
+      "start": 0.060000000000000005,
+      "end": 0.9924999999999999
+    },
+    {
+      "text": "I'd like the noodles. Are they spicy?",
+      "speaker": "Li",
+      "start": 1.285,
+      "end": 3.4050000000000002
+    },
+    {
+      "text": "A little. We can make them mild.",
+      "speaker": "Dee",
+      "start": 3.6975,
+      "end": 5.5175
+    },
+    {
+      "text": "Mild, please. Can I get them without onions?",
+      "speaker": "Li",
+      "start": 5.81,
+      "end": 8.4175
+    },
+    {
+      "text": "Yes. Do you want the sauce on the side?",
+      "speaker": "Dee",
+      "start": 8.7225,
+      "end": 10.905
+    },
+    {
+      "text": "Yes, please. I'd like to try a little first.",
+      "speaker": "Li",
+      "start": 11.197500000000002,
+      "end": 13.855
+    },
+    {
+      "text": "Okay. Mild noodles, no onions, sauce on the side.",
+      "speaker": "Dee",
+      "start": 14.1475,
+      "end": 17.717499999999998
+    },
+    {
+      "text": "Perfect. Thanks.",
+      "speaker": "Li",
+      "start": 18.0225,
+      "end": 19.38
+    }
+  ]
+}

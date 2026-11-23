@@ -1,0 +1,479 @@
+{
+  "full": {
+    "file": "lesson-01.mp3",
+    "duration": 22.376,
+    "speechTimelineDuration": 22.376,
+    "sha256": "89fea013b607ea45f3efa5cdcf4f401c7c4861579b04d9442589830019c9b65e"
+  },
+  "voice": "en-US-AndrewNeural",
+  "voices": {
+    "Alex": "en-US-AndrewNeural",
+    "Lin": "en-US-AndrewNeural"
+  },
+  "rate": "+0%",
+  "pitch": "+0Hz",
+  "sampleRate": 24000,
+  "gapSeconds": 0.55,
+  "synthetic": true,
+  "lines": [
+    {
+      "id": 1,
+      "file": "line-01.mp3",
+      "speaker": "Alex",
+      "text": "Hi, I'm Alex. Are you new here?",
+      "start": 0.0,
+      "end": 2.28,
+      "duration": 2.28,
+      "voice": "en-US-AndrewNeural",
+      "coverageVerified": true,
+      "fullDecodeVerified": true,
+      "audioSha256": "ee771d6a5c07227f8047eb37263147dcef168d50ba018dde1079ff0264cad948",
+      "boundaries": [
+        {
+          "type": "WordBoundary",
+          "offset": 1125000,
+          "duration": 1625000,
+          "text": "Hi"
+        },
+        {
+          "type": "WordBoundary",
+          "offset": 3000000,
+          "duration": 1125000,
+          "text": "I'm"
+        },
+        {
+          "type": "WordBoundary",
+          "offset": 4250000,
+          "duration": 4750000,
+          "text": "Alex"
+        },
+        {
+          "type": "WordBoundary",
+          "offset": 13125000,
+          "duration": 750000,
+          "text": "Are"
+        },
+        {
+          "type": "WordBoundary",
+          "offset": 14000000,
+          "duration": 750000,
+          "text": "you"
+        },
+        {
+          "type": "WordBoundary",
+          "offset": 14875000,
+          "duration": 1250000,
+          "text": "new"
+        },
+        {
+          "type": "WordBoundary",
+          "offset": 16250000,
+          "duration": 2750000,
+          "text": "here"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "file": "line-02.mp3",
+      "speaker": "Lin",
+      "text": "Yes, I am. I'm Lin. Nice to meet you.",
+      "start": 2.83,
+      "end": 5.758,
+      "duration": 2.928,
+      "voice": "en-US-AndrewNeural",
+      "coverageVerified": true,
+      "fullDecodeVerified": true,
+      "audioSha256": "fe4c385a0dcd6da547ebd0f41bf9eebb7c4afe7dbee9e0d37b90dbcdec7c2747",
+      "boundaries": [
+        {
+          "type": "WordBoundary",
+          "offset": 1000000,
+          "duration": 2125000,
+          "text": "Yes"
+        },
+        {
+          "type": "WordBoundary",
+          "offset": 3375000,
+          "duration": 1125000,
+          "text": "I"
+        },
+        {
+          "type": "WordBoundary",
+          "offset": 4625000,
+          "duration": 2000000,
+          "text": "am"
+        },
+        {
+          "type": "WordBoundary",
+          "offset": 10750000,
+          "duration": 1500000,
+          "text": "I'm"
+        },
+        {
+          "type": "WordBoundary",
+          "offset": 12375000,
+          "duration": 2750000,
+          "text": "Lin"
+        },
+        {
+          "type": "WordBoundary",
+          "offset": 19250000,
+          "duration": 1750000,
+          "text": "Nice"
+        },
+        {
+          "type": "WordBoundary",
+          "offset": 21125000,
+          "duration": 750000,
+          "text": "to"
+        },
+        {
+          "type": "WordBoundary",
+          "offset": 22000000,
+          "duration": 1750000,
+          "text": "meet"
+        },
+        {
+          "type": "WordBoundary",
+          "offset": 23875000,
+          "duration": 1750000,
+          "text": "you"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "file": "line-03.mp3",
+      "speaker": "Alex",
+      "text": "Nice to meet you, too. Where are you from?",
+      "start": 6.308,
+      "end": 8.756,
+      "duration": 2.4480000000000004,
+      "voice": "en-US-AndrewNeural",
+      "coverageVerified": true,
+      "fullDecodeVerified": true,
+      "audioSha256": "a3d6c528ad7871d5656b1c3a29a29fadc99c25e6a29b29601413f84919c26004",
+      "boundaries": [
+        {
+          "type": "WordBoundary",
+          "offset": 1000000,
+          "duration": 1875000,
+          "text": "Nice"
+        },
+        {
+          "type": "WordBoundary",
+          "offset": 3000000,
+          "duration": 750000,
+          "text": "to"
+        },
+        {
+          "type": "WordBoundary",
+          "offset": 3875000,
+          "duration": 1875000,
+          "text": "meet"
+        },
+        {
+          "type": "WordBoundary",
+          "offset": 5875000,
+          "duration": 1500000,
+          "text": "you"
+        },
+        {
+          "type": "WordBoundary",
+          "offset": 7625000,
+          "duration": 3000000,
+          "text": "too"
+        },
+        {
+          "type": "WordBoundary",
+          "offset": 14750000,
+          "duration": 750000,
+          "text": "Where"
+        },
+        {
+          "type": "WordBoundary",
+          "offset": 15625000,
+          "duration": 750000,
+          "text": "are"
+        },
+        {
+          "type": "WordBoundary",
+          "offset": 16500000,
+          "duration": 1375000,
+          "text": "you"
+        },
+        {
+          "type": "WordBoundary",
+          "offset": 18000000,
+          "duration": 2750000,
+          "text": "from"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "file": "line-04.mp3",
+      "speaker": "Lin",
+      "text": "I'm from Chengdu. What about you?",
+      "start": 9.306,
+      "end": 11.514,
+      "duration": 2.208,
+      "voice": "en-US-AndrewNeural",
+      "coverageVerified": true,
+      "fullDecodeVerified": true,
+      "audioSha256": "83a0195e564f045744b7c4dd212a8b04fbc6eed0d5b6446ab87d9781f630e924",
+      "boundaries": [
+        {
+          "type": "WordBoundary",
+          "offset": 1000000,
+          "duration": 1375000,
+          "text": "I'm"
+        },
+        {
+          "type": "WordBoundary",
+          "offset": 2500000,
+          "duration": 1500000,
+          "text": "from"
+        },
+        {
+          "type": "WordBoundary",
+          "offset": 4125000,
+          "duration": 4500000,
+          "text": "Chengdu"
+        },
+        {
+          "type": "WordBoundary",
+          "offset": 12750000,
+          "duration": 1000000,
+          "text": "What"
+        },
+        {
+          "type": "WordBoundary",
+          "offset": 13875000,
+          "duration": 2375000,
+          "text": "about"
+        },
+        {
+          "type": "WordBoundary",
+          "offset": 16375000,
+          "duration": 1875000,
+          "text": "you"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "file": "line-05.mp3",
+      "speaker": "Alex",
+      "text": "I'm from Bristol.",
+      "start": 12.064,
+      "end": 13.288,
+      "duration": 1.2240000000000002,
+      "voice": "en-US-AndrewNeural",
+      "coverageVerified": true,
+      "fullDecodeVerified": true,
+      "audioSha256": "506b9c111d6f4b951cd2f2006eab57a5a451a8271880da14d83b1ac60b1ede50",
+      "boundaries": [
+        {
+          "type": "WordBoundary",
+          "offset": 1000000,
+          "duration": 1375000,
+          "text": "I'm"
+        },
+        {
+          "type": "WordBoundary",
+          "offset": 2500000,
+          "duration": 1375000,
+          "text": "from"
+        },
+        {
+          "type": "WordBoundary",
+          "offset": 4000000,
+          "duration": 4625000,
+          "text": "Bristol"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "file": "line-06.mp3",
+      "speaker": "Lin",
+      "text": "Sorry, could you say that again?",
+      "start": 13.838,
+      "end": 15.734,
+      "duration": 1.8960000000000008,
+      "voice": "en-US-AndrewNeural",
+      "coverageVerified": true,
+      "fullDecodeVerified": true,
+      "audioSha256": "d4644183b6a48617255273780d7a31dfeede217af0ac2d04f760baff086097b6",
+      "boundaries": [
+        {
+          "type": "WordBoundary",
+          "offset": 1000000,
+          "duration": 3750000,
+          "text": "Sorry"
+        },
+        {
+          "type": "WordBoundary",
+          "offset": 6625000,
+          "duration": 1500000,
+          "text": "could"
+        },
+        {
+          "type": "WordBoundary",
+          "offset": 8250000,
+          "duration": 875000,
+          "text": "you"
+        },
+        {
+          "type": "WordBoundary",
+          "offset": 9250000,
+          "duration": 1500000,
+          "text": "say"
+        },
+        {
+          "type": "WordBoundary",
+          "offset": 10875000,
+          "duration": 1250000,
+          "text": "that"
+        },
+        {
+          "type": "WordBoundary",
+          "offset": 12250000,
+          "duration": 3000000,
+          "text": "again"
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "file": "line-07.mp3",
+      "speaker": "Alex",
+      "text": "Bristol. It's a city in the UK.",
+      "start": 16.284,
+      "end": 18.828,
+      "duration": 2.5440000000000005,
+      "voice": "en-US-AndrewNeural",
+      "coverageVerified": true,
+      "fullDecodeVerified": true,
+      "audioSha256": "b0a6404c9be4a2f8898495625667deec02fe460db5dadd8bf3cd11ea188f98e9",
+      "boundaries": [
+        {
+          "type": "WordBoundary",
+          "offset": 1125000,
+          "duration": 4000000,
+          "text": "Bristol"
+        },
+        {
+          "type": "WordBoundary",
+          "offset": 9250000,
+          "duration": 1000000,
+          "text": "It's"
+        },
+        {
+          "type": "WordBoundary",
+          "offset": 10375000,
+          "duration": 500000,
+          "text": "a"
+        },
+        {
+          "type": "WordBoundary",
+          "offset": 11000000,
+          "duration": 3875000,
+          "text": "city"
+        },
+        {
+          "type": "WordBoundary",
+          "offset": 15000000,
+          "duration": 750000,
+          "text": "in"
+        },
+        {
+          "type": "WordBoundary",
+          "offset": 15875000,
+          "duration": 625000,
+          "text": "the"
+        },
+        {
+          "type": "WordBoundary",
+          "offset": 16625000,
+          "duration": 5125000,
+          "text": "UK"
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "file": "line-08.mp3",
+      "speaker": "Lin",
+      "text": "Oh, I see.",
+      "start": 19.378,
+      "end": 20.458,
+      "duration": 1.0799999999999983,
+      "voice": "en-US-AndrewNeural",
+      "coverageVerified": true,
+      "fullDecodeVerified": true,
+      "audioSha256": "a166f1d734134a53cd90810a4c5a1ee4d0a28dd489a12242f5c615be34180f77",
+      "boundaries": [
+        {
+          "type": "WordBoundary",
+          "offset": 1125000,
+          "duration": 1125000,
+          "text": "Oh"
+        },
+        {
+          "type": "WordBoundary",
+          "offset": 2500000,
+          "duration": 875000,
+          "text": "I"
+        },
+        {
+          "type": "WordBoundary",
+          "offset": 3500000,
+          "duration": 3500000,
+          "text": "see"
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "file": "line-09.mp3",
+      "speaker": "Alex",
+      "text": "Welcome to the team!",
+      "start": 21.008,
+      "end": 22.376,
+      "duration": 1.368000000000002,
+      "voice": "en-US-AndrewNeural",
+      "coverageVerified": true,
+      "fullDecodeVerified": true,
+      "audioSha256": "4dfdf8f938d7580523101c1f3631d33b1c7a59308fe299053683470c2c31b5b2",
+      "boundaries": [
+        {
+          "type": "WordBoundary",
+          "offset": 1000000,
+          "duration": 3125000,
+          "text": "Welcome"
+        },
+        {
+          "type": "WordBoundary",
+          "offset": 4250000,
+          "duration": 1000000,
+          "text": "to"
+        },
+        {
+          "type": "WordBoundary",
+          "offset": 5375000,
+          "duration": 875000,
+          "text": "the"
+        },
+        {
+          "type": "WordBoundary",
+          "offset": 6375000,
+          "duration": 3625000,
+          "text": "team"
+        }
+      ]
+    }
+  ]
+}

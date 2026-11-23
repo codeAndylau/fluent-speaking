@@ -1,0 +1,60 @@
+{
+  "id": "w09d3",
+  "voice": "en-US-AndrewNeural",
+  "synthetic": true,
+  "duration": 28.536,
+  "sourceSha256": "4653d6998764e1052084858b472e22d1f26910786230ee5b54944deece79f370",
+  "sha256": "8b3443d11cba4711db20f66bf1f3fd903c7c1a4d6e076ecd0acc0468f09bbe61",
+  "coverageVerified": true,
+  "fullDecodeVerified": true,
+  "lines": [
+    {
+      "text": "Can you send the new poster to the class? They need it before lunch.",
+      "speaker": "Nora",
+      "start": 0.060000000000000005,
+      "end": 3.4925
+    },
+    {
+      "text": "Which file should I send? I see one with a photo and one with a map.",
+      "speaker": "Eli",
+      "start": 3.7975,
+      "end": 7.5425
+    },
+    {
+      "text": "Use the one with the map. It shows the new room for Friday's class.",
+      "speaker": "Nora",
+      "start": 7.835,
+      "end": 11.6175
+    },
+    {
+      "text": "Got it. Should I send it by email or put it in the group chat?",
+      "speaker": "Eli",
+      "start": 11.91,
+      "end": 15.2925
+    },
+    {
+      "text": "Please put it in the group chat. A few people do not check email at work.",
+      "speaker": "Nora",
+      "start": 15.635000000000002,
+      "end": 19.229999999999997
+    },
+    {
+      "text": "Do you want a short note with it, too?",
+      "speaker": "Eli",
+      "start": 19.5225,
+      "end": 20.88
+    },
+    {
+      "text": "Yes, please say that the class starts at the usual time.",
+      "speaker": "Nora",
+      "start": 21.1725,
+      "end": 24.229999999999997
+    },
+    {
+      "text": "Okay, I will send the map poster now and add a note about the time.",
+      "speaker": "Eli",
+      "start": 24.5225,
+      "end": 28.2425
+    }
+  ]
+}

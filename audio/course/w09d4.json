@@ -1,0 +1,60 @@
+{
+  "id": "w09d4",
+  "voice": "en-US-AndrewNeural",
+  "synthetic": true,
+  "duration": 30.072,
+  "sourceSha256": "d6df348998b42a39cac8b2d402c6b672f41b83af821ac79193e08620fdc89412",
+  "sha256": "81ae6115d89d54bd985c7555ba14e7022aa4165936d25ec6ce74b2b8f1b53c6e",
+  "coverageVerified": true,
+  "fullDecodeVerified": true,
+  "lines": [
+    {
+      "text": "Here is the list of prices for the new menu. Can you check it this week?",
+      "speaker": "Nora",
+      "start": 0.08499999999999999,
+      "end": 3.5175
+    },
+    {
+      "text": "When do you need it by? I can start on Thursday morning.",
+      "speaker": "Eli",
+      "start": 3.81,
+      "end": 6.4425
+    },
+    {
+      "text": "I need the first page by noon on Friday. The rest can wait until Monday.",
+      "speaker": "Nora",
+      "start": 6.735,
+      "end": 10.83
+    },
+    {
+      "text": "I can give you the first page on Thursday afternoon. Is four okay?",
+      "speaker": "Eli",
+      "start": 11.1225,
+      "end": 14.655
+    },
+    {
+      "text": "Four is fine. Could you finish the rest by Monday at ten?",
+      "speaker": "Nora",
+      "start": 14.9725,
+      "end": 17.8175
+    },
+    {
+      "text": "Yes. Do you need the paper copy, or can I send a photo?",
+      "speaker": "Eli",
+      "start": 18.122500000000002,
+      "end": 21.354999999999997
+    },
+    {
+      "text": "A photo is fine for Thursday. Please bring the whole list on Monday.",
+      "speaker": "Nora",
+      "start": 21.6475,
+      "end": 25.2675
+    },
+    {
+      "text": "Okay, a photo on Thursday at four and the full list by ten on Monday.",
+      "speaker": "Eli",
+      "start": 25.5725,
+      "end": 29.779999999999998
+    }
+  ]
+}

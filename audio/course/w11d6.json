@@ -1,0 +1,60 @@
+{
+  "id": "w11d6",
+  "voice": "en-US-AvaNeural",
+  "synthetic": true,
+  "duration": 34.296,
+  "sourceSha256": "d6f5f9c517481c7992f563cf478f773e43ed1b19b93c2af2f602d77707d872c0",
+  "sha256": "7fee46b2f7ea3bbdf09bdf1d0213d4bc5c74c86fe8a3397dae68606c4b8a95f2",
+  "coverageVerified": true,
+  "fullDecodeVerified": true,
+  "lines": [
+    {
+      "text": "Excuse me, does this bus go to the music room near West Park?",
+      "speaker": "Nora",
+      "start": 0.060000000000000005,
+      "end": 4.055
+    },
+    {
+      "text": "Do you mean the music shop? The shop is near Green Street.",
+      "speaker": "Eli",
+      "start": 4.2975,
+      "end": 7.6175
+    },
+    {
+      "text": "I mean the place where people go for music lessons. It is next to a bakery.",
+      "speaker": "Nora",
+      "start": 7.86,
+      "end": 12.355
+    },
+    {
+      "text": "Oh, yes. Get off at Lake Road, and walk past the small park.",
+      "speaker": "Eli",
+      "start": 12.5975,
+      "end": 16.9925
+    },
+    {
+      "text": "Could you say the stop again? Did you say Lake Road or Lake Street?",
+      "speaker": "Nora",
+      "start": 17.235,
+      "end": 20.779999999999998
+    },
+    {
+      "text": "Lake Road. There is a big blue sign at the stop, so it is easy to see.",
+      "speaker": "Eli",
+      "start": 21.0225,
+      "end": 25.592499999999998
+    },
+    {
+      "text": "Thanks. I get off at Lake Road, and the room is by the bakery, right?",
+      "speaker": "Nora",
+      "start": 25.835,
+      "end": 30.029999999999998
+    },
+    {
+      "text": "Yes, that is right. The music room is on the second floor.",
+      "speaker": "Eli",
+      "start": 30.2725,
+      "end": 34.004999999999995
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "id": "w06d4",
+  "voice": "en-US-AndrewNeural",
+  "synthetic": true,
+  "duration": 17.736,
+  "sourceSha256": "9afecb5cd6a554a916b042d6afa1c289c058788b3c5980f18e943e9171d40763",
+  "sha256": "d9e59efde9455b0b8f2ccb3d15ab2ddcb7370d6ce009b5d870c154df63421d27",
+  "coverageVerified": true,
+  "fullDecodeVerified": true,
+  "lines": [
+    {
+      "text": "Hi, I bought this mug here yesterday.",
+      "speaker": "Hui",
+      "start": 0.07250000000000001,
+      "end": 2.0925000000000002
+    },
+    {
+      "text": "Is there a problem with it?",
+      "speaker": "Ava",
+      "start": 2.385,
+      "end": 3.455
+    },
+    {
+      "text": "Yes, there's a crack near the handle.",
+      "speaker": "Hui",
+      "start": 3.7475,
+      "end": 5.6925
+    },
+    {
+      "text": "I see it. Do you have the receipt?",
+      "speaker": "Ava",
+      "start": 5.9975,
+      "end": 7.78
+    },
+    {
+      "text": "Yes, here it is. Can I exchange it?",
+      "speaker": "Hui",
+      "start": 8.072500000000002,
+      "end": 10.2925
+    },
+    {
+      "text": "Yes. We have the same mug in yellow.",
+      "speaker": "Ava",
+      "start": 10.5975,
+      "end": 12.78
+    },
+    {
+      "text": "Do you have another blue one like this?",
+      "speaker": "Hui",
+      "start": 13.072500000000002,
+      "end": 14.6925
+    },
+    {
+      "text": "I'm afraid not. We only have yellow today.",
+      "speaker": "Ava",
+      "start": 14.985000000000001,
+      "end": 17.455
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "id": "w04d6",
+  "voice": "en-US-AndrewNeural",
+  "synthetic": true,
+  "duration": 23.784,
+  "sourceSha256": "508038ee34b22fd0e285d982a29d92eb216886c78bca123ad7a89924ee70f72c",
+  "sha256": "14fbf8e61313d744e310a183bde7964dccec1020ce42b05087f2bc3dacb4ae61",
+  "coverageVerified": true,
+  "fullDecodeVerified": true,
+  "lines": [
+    {
+      "text": "Our practice room is closed this Saturday.",
+      "speaker": "Kit",
+      "start": 0.060000000000000005,
+      "end": 2.2175000000000002
+    },
+    {
+      "text": "Oh. Could we use the room at the library?",
+      "speaker": "Ira",
+      "start": 2.51,
+      "end": 4.78
+    },
+    {
+      "text": "Yes, but it's only free from three to four.",
+      "speaker": "Kit",
+      "start": 5.085,
+      "end": 7.6925
+    },
+    {
+      "text": "I pick up my daughter at three. Is Sunday an option?",
+      "speaker": "Ira",
+      "start": 7.9975,
+      "end": 10.6175
+    },
+    {
+      "text": "Yes. Sunday the twenty-first, at two or at four.",
+      "speaker": "Kit",
+      "start": 10.922500000000001,
+      "end": 14.5925
+    },
+    {
+      "text": "Four is better for me. Is that at the library?",
+      "speaker": "Ira",
+      "start": 14.91,
+      "end": 17.13
+    },
+    {
+      "text": "Yes, in Room C on the second floor.",
+      "speaker": "Kit",
+      "start": 17.4225,
+      "end": 19.755
+    },
+    {
+      "text": "Got it. Sunday at four, Room C, second floor.",
+      "speaker": "Ira",
+      "start": 20.0475,
+      "end": 23.4925
+    }
+  ]
+}

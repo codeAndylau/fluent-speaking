@@ -1,0 +1,60 @@
+{
+  "id": "w04d3",
+  "voice": "en-US-AndrewNeural",
+  "synthetic": true,
+  "duration": 19.416,
+  "sourceSha256": "c14b0c8972924161bebdbd23fc0f052fcbb2bf71242b21fe4d9ae6704557aeae",
+  "sha256": "6f561e36d4e5fa16e0f33389a7b4d6ed7ddd94d839f8cab41885b0d3588e8030",
+  "coverageVerified": true,
+  "fullDecodeVerified": true,
+  "lines": [
+    {
+      "text": "Would you like to join us for lunch on Wednesday?",
+      "speaker": "Rae",
+      "start": 0.060000000000000005,
+      "end": 1.8925
+    },
+    {
+      "text": "Thanks for asking. I can't make it on Wednesday.",
+      "speaker": "Bo",
+      "start": 2.1975,
+      "end": 4.605
+    },
+    {
+      "text": "No problem. We're going for coffee on Friday, too.",
+      "speaker": "Rae",
+      "start": 4.8975,
+      "end": 7.63
+    },
+    {
+      "text": "I'd love to join you for coffee. What time?",
+      "speaker": "Bo",
+      "start": 7.9225,
+      "end": 10.2425
+    },
+    {
+      "text": "At three, at the little café near the station.",
+      "speaker": "Rae",
+      "start": 10.535,
+      "end": 13.28
+    },
+    {
+      "text": "Is that the café next to the bookshop?",
+      "speaker": "Bo",
+      "start": 13.572500000000002,
+      "end": 15.4175
+    },
+    {
+      "text": "Yes, that's the one.",
+      "speaker": "Rae",
+      "start": 15.71,
+      "end": 17.08
+    },
+    {
+      "text": "Great. See you there on Friday.",
+      "speaker": "Bo",
+      "start": 17.372500000000002,
+      "end": 19.1175
+    }
+  ]
+}

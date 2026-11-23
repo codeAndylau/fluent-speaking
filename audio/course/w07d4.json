@@ -1,0 +1,60 @@
+{
+  "id": "w07d4",
+  "voice": "en-US-AndrewNeural",
+  "synthetic": true,
+  "duration": 18.432,
+  "sourceSha256": "b27cb9df7aaf6003b1dc15c839e3823bd6d9cd6cbaa8315faa2071a61b13d163",
+  "sha256": "c968cc1eb56d684f0335a7993fc66ad52e1af4663d6fa6cca73631c40b457b4c",
+  "coverageVerified": true,
+  "fullDecodeVerified": true,
+  "lines": [
+    {
+      "text": "How did your first cooking class go yesterday?",
+      "speaker": "Chen",
+      "start": 0.060000000000000005,
+      "end": 2.1925
+    },
+    {
+      "text": "I was nervous at first. I didn't know anyone.",
+      "speaker": "Eli",
+      "start": 2.485,
+      "end": 5.055
+    },
+    {
+      "text": "Did you cook by yourself in the class?",
+      "speaker": "Chen",
+      "start": 5.3475,
+      "end": 7.0925
+    },
+    {
+      "text": "No, I worked with a woman at my table.",
+      "speaker": "Eli",
+      "start": 7.385,
+      "end": 9.5675
+    },
+    {
+      "text": "What did the two of you make?",
+      "speaker": "Chen",
+      "start": 9.860000000000001,
+      "end": 11.08
+    },
+    {
+      "text": "We made soup, and it tasted good in the end.",
+      "speaker": "Eli",
+      "start": 11.385000000000002,
+      "end": 13.8425
+    },
+    {
+      "text": "So how did you feel after the class?",
+      "speaker": "Chen",
+      "start": 14.135000000000002,
+      "end": 15.8175
+    },
+    {
+      "text": "I was glad because I learned something new.",
+      "speaker": "Eli",
+      "start": 16.11,
+      "end": 18.1425
+    }
+  ]
+}

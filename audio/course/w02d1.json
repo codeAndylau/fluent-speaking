@@ -1,0 +1,60 @@
+{
+  "id": "w02d1",
+  "voice": "en-US-AndrewNeural",
+  "synthetic": true,
+  "duration": 15.456,
+  "sourceSha256": "1cb882296eaa3c992ef34e6d5d8c33480eb93a869627ef1004b5247c0ace1107",
+  "sha256": "9a98f8283624b8cab4e144c8e6915eadb3b1b06a6ba9f72e26e392515f6bc11f",
+  "coverageVerified": true,
+  "fullDecodeVerified": true,
+  "lines": [
+    {
+      "text": "What time do you start work?",
+      "speaker": "Ivy",
+      "start": 0.060000000000000005,
+      "end": 1.2425000000000002
+    },
+    {
+      "text": "I start at nine, but I leave home at eight.",
+      "speaker": "Noah",
+      "start": 1.535,
+      "end": 3.7800000000000002
+    },
+    {
+      "text": "Do you eat breakfast at home?",
+      "speaker": "Ivy",
+      "start": 4.0725,
+      "end": 5.305
+    },
+    {
+      "text": "No, I have breakfast at work.",
+      "speaker": "Noah",
+      "start": 5.5975,
+      "end": 7.43
+    },
+    {
+      "text": "What do you do after work?",
+      "speaker": "Ivy",
+      "start": 7.7225,
+      "end": 8.8675
+    },
+    {
+      "text": "I usually take a walk by the river.",
+      "speaker": "Noah",
+      "start": 9.16,
+      "end": 10.8675
+    },
+    {
+      "text": "Do you walk every day?",
+      "speaker": "Ivy",
+      "start": 11.16,
+      "end": 12.155
+    },
+    {
+      "text": "Only on weekdays. I stay home on Saturdays.",
+      "speaker": "Noah",
+      "start": 12.447500000000002,
+      "end": 15.1675
+    }
+  ]
+}

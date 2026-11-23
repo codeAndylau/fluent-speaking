@@ -1,0 +1,60 @@
+{
+  "id": "w02d6",
+  "voice": "en-US-AndrewNeural",
+  "synthetic": true,
+  "duration": 18.864,
+  "sourceSha256": "ac4251d4a64a8a4d47049374405b96a2d843f5fca8a972cd41cc3acfb1d2d7b7",
+  "sha256": "9c70496c99bbcf6f97b5afdfb9b66d43ff5587d60cffaf5b2612c18411c2f7d6",
+  "coverageVerified": true,
+  "fullDecodeVerified": true,
+  "lines": [
+    {
+      "text": "What do you usually do on Saturday mornings?",
+      "speaker": "Kai",
+      "start": 0.060000000000000005,
+      "end": 2.205
+    },
+    {
+      "text": "I shop for food, but I'm free after eleven.",
+      "speaker": "Sol",
+      "start": 2.4975,
+      "end": 5.0675
+    },
+    {
+      "text": "Do you want to go to the market together?",
+      "speaker": "Kai",
+      "start": 5.36,
+      "end": 6.905
+    },
+    {
+      "text": "I don't really like busy places.",
+      "speaker": "Sol",
+      "start": 7.21,
+      "end": 8.8425
+    },
+    {
+      "text": "What do you like to do outdoors?",
+      "speaker": "Kai",
+      "start": 9.135000000000002,
+      "end": 10.5425
+    },
+    {
+      "text": "I like riding my bike. Do you ride?",
+      "speaker": "Sol",
+      "start": 10.8475,
+      "end": 12.855
+    },
+    {
+      "text": "Yes. We could ride along the canal because it's quiet.",
+      "speaker": "Kai",
+      "start": 13.16,
+      "end": 16.255
+    },
+    {
+      "text": "Okay. Let's go at eleven thirty.",
+      "speaker": "Sol",
+      "start": 16.5475,
+      "end": 18.58
+    }
+  ]
+}

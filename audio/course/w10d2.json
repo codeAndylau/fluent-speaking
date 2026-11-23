@@ -1,0 +1,60 @@
+{
+  "id": "w10d2",
+  "voice": "en-US-AndrewNeural",
+  "synthetic": true,
+  "duration": 28.8,
+  "sourceSha256": "2b7efd097206e895e52afe259e4ab03f800aff3d01f419908c76c41a277d671b",
+  "sha256": "f5a92d5174bbda83cec8a93babd17f3877f0f86dfe86956ab0b0f4ca044b57f5",
+  "coverageVerified": true,
+  "fullDecodeVerified": true,
+  "lines": [
+    {
+      "text": "I got two tickets for the film on Friday. My brother is coming with me.",
+      "speaker": "Nora",
+      "start": 0.060000000000000005,
+      "end": 3.5300000000000002
+    },
+    {
+      "text": "Nice! What time does it end? I might meet you after the film.",
+      "speaker": "Eli",
+      "start": 3.8225,
+      "end": 7.28
+    },
+    {
+      "text": "It ends around eight. Would you like to get something to drink then?",
+      "speaker": "Nora",
+      "start": 7.5725,
+      "end": 10.305
+    },
+    {
+      "text": "Sure. Where should we meet? I have never been to that cinema.",
+      "speaker": "Eli",
+      "start": 10.5975,
+      "end": 13.8425
+    },
+    {
+      "text": "There is a small cafe across from the cinema. It stays open until ten.",
+      "speaker": "Nora",
+      "start": 14.1475,
+      "end": 18.205
+    },
+    {
+      "text": "Is that the cafe with the yellow door? I think I saw it yesterday.",
+      "speaker": "Eli",
+      "start": 18.497500000000002,
+      "end": 21.7675
+    },
+    {
+      "text": "Yes, that's the one. Let us meet inside at eight fifteen.",
+      "speaker": "Nora",
+      "start": 22.060000000000002,
+      "end": 25.467499999999998
+    },
+    {
+      "text": "Sounds good. I will get a table if I get there first.",
+      "speaker": "Eli",
+      "start": 25.7725,
+      "end": 28.5175
+    }
+  ]
+}

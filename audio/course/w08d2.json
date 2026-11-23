@@ -1,0 +1,60 @@
+{
+  "id": "w08d2",
+  "voice": "en-US-AndrewNeural",
+  "synthetic": true,
+  "duration": 20.952,
+  "sourceSha256": "11141e882e39301135750b5dd139fb91d6e7c22ed37d0b241d8edcc1cd28809c",
+  "sha256": "64d80d53626135765d8eb8961c78ea79ab641d2fab98d099f5410240fef1139a",
+  "coverageVerified": true,
+  "fullDecodeVerified": true,
+  "lines": [
+    {
+      "text": "We have some time before dinner. What can we do?",
+      "speaker": "Mao",
+      "start": 0.060000000000000005,
+      "end": 2.455
+    },
+    {
+      "text": "How about a short walk by the river?",
+      "speaker": "June",
+      "start": 2.7475,
+      "end": 4.4175
+    },
+    {
+      "text": "That sounds nice. Which path should we take?",
+      "speaker": "Mao",
+      "start": 4.7225,
+      "end": 7.105
+    },
+    {
+      "text": "Let's take the path behind the coffee shop.",
+      "speaker": "June",
+      "start": 7.3975,
+      "end": 9.4675
+    },
+    {
+      "text": "Do we have time to walk all the way to the bridge?",
+      "speaker": "Mao",
+      "start": 9.760000000000002,
+      "end": 12.0425
+    },
+    {
+      "text": "Yes, but let's leave at six so we have enough time.",
+      "speaker": "June",
+      "start": 12.335,
+      "end": 15.33
+    },
+    {
+      "text": "Okay. Shall we meet outside the coffee shop first?",
+      "speaker": "Mao",
+      "start": 15.6225,
+      "end": 18.58
+    },
+    {
+      "text": "Yes, I'll see you there at six.",
+      "speaker": "June",
+      "start": 18.872500000000002,
+      "end": 20.667499999999997
+    }
+  ]
+}

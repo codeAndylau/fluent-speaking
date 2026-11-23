@@ -1,0 +1,60 @@
+{
+  "id": "w12d6",
+  "voice": "en-US-AvaNeural",
+  "synthetic": true,
+  "duration": 42.6,
+  "sourceSha256": "0e03666fca7f31358281cb8bbbe28e76aadb10d0ba9a77b95d226996ed2f3431",
+  "sha256": "936f059cc8d4f9b07529ccfa24dcf3f2302c0f2771e44b0f98b85d17299803dc",
+  "coverageVerified": true,
+  "fullDecodeVerified": true,
+  "lines": [
+    {
+      "text": "Hi, I am Nora from the photo group. Are you the new member coming to the show with me?",
+      "speaker": "Nora",
+      "start": 0.060000000000000005,
+      "end": 4.455
+    },
+    {
+      "text": "Yes, I am Eli. My bus gets to Elm Stop at ten thirty. Is that near the hall?",
+      "speaker": "Eli",
+      "start": 4.6975,
+      "end": 10.18
+    },
+    {
+      "text": "Yes, but the hall's main door is closed today. We can meet at the side door by the bookshop.",
+      "speaker": "Nora",
+      "start": 10.422500000000001,
+      "end": 15.93
+    },
+    {
+      "text": "Did you say the door by the bus stop? I have not been there before.",
+      "speaker": "Eli",
+      "start": 16.1725,
+      "end": 19.717499999999998
+    },
+    {
+      "text": "The door by the bookshop. From the bus stop, cross the street and turn right.",
+      "speaker": "Nora",
+      "start": 19.96,
+      "end": 24.8925
+    },
+    {
+      "text": "Thanks. Can we get a snack before we go in? I have eight dollars, and I do not eat meat.",
+      "speaker": "Eli",
+      "start": 25.135,
+      "end": 30.805
+    },
+    {
+      "text": "The fruit cup is six dollars, but the cheese roll is nine. We can get the fruit cup at the bookshop cafe.",
+      "speaker": "Nora",
+      "start": 31.0475,
+      "end": 37.33
+    },
+    {
+      "text": "Great. I'll see you at the side door at ten forty, then we can get the fruit.",
+      "speaker": "Eli",
+      "start": 37.5725,
+      "end": 42.317499999999995
+    }
+  ]
+}

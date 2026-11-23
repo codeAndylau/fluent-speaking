@@ -1,0 +1,60 @@
+{
+  "id": "w12d1",
+  "voice": "en-US-AndrewNeural",
+  "synthetic": true,
+  "duration": 32.784,
+  "sourceSha256": "fcd8fbf5fd76bd3f03b9ee8d6b9e137de6e9c6d9d5a401c5ef2671d4ab89c253",
+  "sha256": "34597f057f148fb0bf0d9396c038bcccaefc3bff48f471e1615aae309edb0473",
+  "coverageVerified": true,
+  "fullDecodeVerified": true,
+  "lines": [
+    {
+      "text": "Hi, I am Nora. Is this your first time at the art table, too?",
+      "speaker": "Nora",
+      "start": 0.07250000000000001,
+      "end": 3.73
+    },
+    {
+      "text": "Yes, I am Eli. I moved here last month, and I am still learning where things are.",
+      "speaker": "Eli",
+      "start": 4.0225,
+      "end": 8.3675
+    },
+    {
+      "text": "Nice to meet you. Do you like drawing, or are you here to try something new?",
+      "speaker": "Nora",
+      "start": 8.66,
+      "end": 12.2925
+    },
+    {
+      "text": "I like drawing outside. Last weekend I drew the trees in Plum Park.",
+      "speaker": "Eli",
+      "start": 12.585,
+      "end": 16.729999999999997
+    },
+    {
+      "text": "Would you like to draw together on Saturday? I know a quiet place in the park.",
+      "speaker": "Nora",
+      "start": 17.0225,
+      "end": 20.667499999999997
+    },
+    {
+      "text": "Sure. I work in the morning, but I am free after two. Can we meet at three?",
+      "speaker": "Eli",
+      "start": 20.96,
+      "end": 25.455
+    },
+    {
+      "text": "Three works for me. Let us meet at the park gate by the bridge.",
+      "speaker": "Nora",
+      "start": 25.7725,
+      "end": 28.9925
+    },
+    {
+      "text": "Great, Saturday at three by the bridge. See you there!",
+      "speaker": "Eli",
+      "start": 29.285,
+      "end": 32.48
+    }
+  ]
+}

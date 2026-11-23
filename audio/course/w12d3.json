@@ -1,0 +1,60 @@
+{
+  "id": "w12d3",
+  "voice": "en-US-AndrewNeural",
+  "synthetic": true,
+  "duration": 32.544,
+  "sourceSha256": "405a2fd47afdda721948ca0dea224f5122595bf77fcb1ca56fabc306834a94a6",
+  "sha256": "ea98a656c22c006d9894e3b1f03ec16869c0c82d404c8f349d6a1ebf27fa59e1",
+  "coverageVerified": true,
+  "fullDecodeVerified": true,
+  "lines": [
+    {
+      "text": "Can I get two small apple pies to take away, please?",
+      "speaker": "Nora",
+      "start": 0.060000000000000005,
+      "end": 2.805
+    },
+    {
+      "text": "We only have one apple pie left. We also have small lemon cakes for four dollars each.",
+      "speaker": "Eli",
+      "start": 3.0975,
+      "end": 7.805
+    },
+    {
+      "text": "Is the lemon cake very sweet? One of us likes things that are less sweet.",
+      "speaker": "Nora",
+      "start": 8.0975,
+      "end": 11.8425
+    },
+    {
+      "text": "It is less sweet than the apple pie. Would you like one of each?",
+      "speaker": "Eli",
+      "start": 12.135000000000002,
+      "end": 15.38
+    },
+    {
+      "text": "Yes, please. How much is that in total? I have ten dollars in cash.",
+      "speaker": "Nora",
+      "start": 15.672500000000001,
+      "end": 19.8925
+    },
+    {
+      "text": "The pie is five dollars, so it is nine dollars for both.",
+      "speaker": "Eli",
+      "start": 20.1975,
+      "end": 23.305
+    },
+    {
+      "text": "Great. Can you put them in separate bags? The lemon cake is for my friend.",
+      "speaker": "Nora",
+      "start": 23.5975,
+      "end": 27.88
+    },
+    {
+      "text": "Sure. One apple pie in this bag, and one lemon cake in the other bag.",
+      "speaker": "Eli",
+      "start": 28.1725,
+      "end": 32.2425
+    }
+  ]
+}

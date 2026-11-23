@@ -1,0 +1,60 @@
+{
+  "id": "w04d4",
+  "voice": "en-US-AndrewNeural",
+  "synthetic": true,
+  "duration": 19.776,
+  "sourceSha256": "56c4bd1742ebc76eca6383c634b12b654beb94708b5bab8ce8c6c74e60b67f3d",
+  "sha256": "813ab5b4054107312bde4cf05d9a37e6bc3870774cbacd784040ce4297366edf",
+  "coverageVerified": true,
+  "fullDecodeVerified": true,
+  "lines": [
+    {
+      "text": "Hi, are we still on for Tuesday at five?",
+      "speaker": "Eve",
+      "start": 0.07250000000000001,
+      "end": 2.3675
+    },
+    {
+      "text": "Sorry, can we move it to Wednesday?",
+      "speaker": "Han",
+      "start": 2.66,
+      "end": 4.2425
+    },
+    {
+      "text": "Sure. Does five still work for you?",
+      "speaker": "Eve",
+      "start": 4.535,
+      "end": 6.505
+    },
+    {
+      "text": "Could we make it half past five instead?",
+      "speaker": "Han",
+      "start": 6.7975,
+      "end": 8.58
+    },
+    {
+      "text": "Yes, that's fine. Same place?",
+      "speaker": "Eve",
+      "start": 8.8725,
+      "end": 11.055
+    },
+    {
+      "text": "Let's meet at the station café this time.",
+      "speaker": "Han",
+      "start": 11.3475,
+      "end": 13.355
+    },
+    {
+      "text": "Okay. Wednesday, five thirty, at the station café.",
+      "speaker": "Eve",
+      "start": 13.6475,
+      "end": 17.354999999999997
+    },
+    {
+      "text": "That's right. Thanks for changing it.",
+      "speaker": "Han",
+      "start": 17.66,
+      "end": 19.479999999999997
+    }
+  ]
+}

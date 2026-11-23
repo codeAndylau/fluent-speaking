@@ -1,0 +1,60 @@
+{
+  "id": "w01d3",
+  "voice": "en-US-AndrewNeural",
+  "synthetic": true,
+  "duration": 13.392,
+  "sourceSha256": "5d6ca77f06df2ddb77e47e3b243d210659d474b4c6df30716a656bf537f16255",
+  "sha256": "2606f9b83ce73d46c194d328d4e71b1b098343001672cc2f9ef2c5f412156f34",
+  "coverageVerified": true,
+  "fullDecodeVerified": true,
+  "lines": [
+    {
+      "text": "Is this your first day in class?",
+      "speaker": "Nia",
+      "start": 0.060000000000000005,
+      "end": 1.6300000000000001
+    },
+    {
+      "text": "Yes, it is. How about you?",
+      "speaker": "Bo",
+      "start": 1.9224999999999999,
+      "end": 3.73
+    },
+    {
+      "text": "It's my second day.",
+      "speaker": "Nia",
+      "start": 4.0225,
+      "end": 4.98
+    },
+    {
+      "text": "Where do you sit?",
+      "speaker": "Bo",
+      "start": 5.2725,
+      "end": 5.98
+    },
+    {
+      "text": "Near the door. What about you?",
+      "speaker": "Nia",
+      "start": 6.2725,
+      "end": 7.9425
+    },
+    {
+      "text": "I sit near the window.",
+      "speaker": "Bo",
+      "start": 8.2475,
+      "end": 9.3675
+    },
+    {
+      "text": "Is there a free seat next to you?",
+      "speaker": "Nia",
+      "start": 9.66,
+      "end": 11.13
+    },
+    {
+      "text": "Yes. Come and sit here.",
+      "speaker": "Bo",
+      "start": 11.435,
+      "end": 13.105
+    }
+  ]
+}

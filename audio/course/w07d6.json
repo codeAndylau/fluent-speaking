@@ -1,0 +1,60 @@
+{
+  "id": "w07d6",
+  "voice": "en-US-AndrewNeural",
+  "synthetic": true,
+  "duration": 21.048,
+  "sourceSha256": "4728edc3cdcfc8c3d40851f19f89b72af7415eca550ba5bbbaeb9ff7ac45c432",
+  "sha256": "e65275e10ef63a9f5cf197626a5aacb324561b70ac7f708bfab9223619c61eea",
+  "coverageVerified": true,
+  "fullDecodeVerified": true,
+  "lines": [
+    {
+      "text": "How was the dance class in the square yesterday?",
+      "speaker": "Yan",
+      "start": 0.060000000000000005,
+      "end": 2.2800000000000002
+    },
+    {
+      "text": "It started to rain right before the class.",
+      "speaker": "Ada",
+      "start": 2.5725,
+      "end": 4.78
+    },
+    {
+      "text": "Did the teacher cancel the class because of the rain?",
+      "speaker": "Yan",
+      "start": 5.0725,
+      "end": 7.4925
+    },
+    {
+      "text": "No. First, she checked a room at Maple Hall.",
+      "speaker": "Ada",
+      "start": 7.7975,
+      "end": 10.68
+    },
+    {
+      "text": "What happened after she checked the room?",
+      "speaker": "Yan",
+      "start": 10.9725,
+      "end": 12.5425
+    },
+    {
+      "text": "Then we carried the speakers inside and started dancing.",
+      "speaker": "Ada",
+      "start": 12.8475,
+      "end": 15.705
+    },
+    {
+      "text": "Were you happy with the new place?",
+      "speaker": "Yan",
+      "start": 15.997500000000002,
+      "end": 17.417499999999997
+    },
+    {
+      "text": "Yes, I was surprised. We had more space inside.",
+      "speaker": "Ada",
+      "start": 17.71,
+      "end": 20.7675
+    }
+  ]
+}

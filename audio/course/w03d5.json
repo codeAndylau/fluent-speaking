@@ -1,0 +1,60 @@
+{
+  "id": "w03d5",
+  "voice": "en-US-AndrewNeural",
+  "synthetic": true,
+  "duration": 25.2,
+  "sourceSha256": "6a3b099c45f37fdfc208db9e173245c2b8cf78915868b80573e52030a9d9669c",
+  "sha256": "cbdb3dae955cfbb12c6e34e02708c84eb2cbda00a269d8c0cbdaf2ff8925d9d2",
+  "coverageVerified": true,
+  "fullDecodeVerified": true,
+  "lines": [
+    {
+      "text": "Hi, can I get two rice bowls to go?",
+      "speaker": "Han",
+      "start": 0.07250000000000001,
+      "end": 2.2425
+    },
+    {
+      "text": "Sure. Chicken or vegetable?",
+      "speaker": "Pia",
+      "start": 2.535,
+      "end": 4.5675
+    },
+    {
+      "text": "One of each, please. No onions on the vegetable one.",
+      "speaker": "Han",
+      "start": 4.86,
+      "end": 8.2925
+    },
+    {
+      "text": "We're out of chicken. We have beef today.",
+      "speaker": "Pia",
+      "start": 8.585,
+      "end": 10.655
+    },
+    {
+      "text": "Okay, one beef bowl instead. Is it spicy?",
+      "speaker": "Han",
+      "start": 10.947500000000002,
+      "end": 13.855
+    },
+    {
+      "text": "A little. I can put the sauce on the side.",
+      "speaker": "Pia",
+      "start": 14.1475,
+      "end": 16.4425
+    },
+    {
+      "text": "Please do. And one small iced tea, please.",
+      "speaker": "Han",
+      "start": 16.7725,
+      "end": 19.6425
+    },
+    {
+      "text": "One beef, one vegetable without onions, and one small iced tea. All to go.",
+      "speaker": "Pia",
+      "start": 19.9475,
+      "end": 24.904999999999998
+    }
+  ]
+}

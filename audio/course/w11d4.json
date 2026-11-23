@@ -1,0 +1,60 @@
+{
+  "id": "w11d4",
+  "voice": "en-US-AndrewNeural",
+  "synthetic": true,
+  "duration": 30.528,
+  "sourceSha256": "2aec207a7989efd067016e04576f63c0ae7ada571c4261e325cd2490b6c1c378",
+  "sha256": "d9705b54262b11d1a4b98f9e39cc60e4b1b3d89d1646f7d147ebd8b8df3a7162",
+  "coverageVerified": true,
+  "fullDecodeVerified": true,
+  "lines": [
+    {
+      "text": "Here are your sandwiches in a bag. Do you need anything else to take away?",
+      "speaker": "Nora",
+      "start": 0.07250000000000001,
+      "end": 3.5175
+    },
+    {
+      "text": "Sorry, I think there is a mix-up. We want to eat here, please.",
+      "speaker": "Eli",
+      "start": 3.81,
+      "end": 7.28
+    },
+    {
+      "text": "Oh, you said for here. I will put the sandwiches on plates for you.",
+      "speaker": "Nora",
+      "start": 7.5725,
+      "end": 11.0675
+    },
+    {
+      "text": "Thank you. One more thing: we asked for one chicken sandwich and one cheese sandwich.",
+      "speaker": "Eli",
+      "start": 11.3725,
+      "end": 16.255
+    },
+    {
+      "text": "I have two chicken sandwiches on the order. Let me change the second one to cheese.",
+      "speaker": "Nora",
+      "start": 16.5475,
+      "end": 20.779999999999998
+    },
+    {
+      "text": "Great. Could you tell me what the order says now?",
+      "speaker": "Eli",
+      "start": 21.0725,
+      "end": 23.479999999999997
+    },
+    {
+      "text": "One chicken, one cheese, both for here. Is that right?",
+      "speaker": "Nora",
+      "start": 23.785,
+      "end": 27.479999999999997
+    },
+    {
+      "text": "Yes, that is right. Thank you for fixing it.",
+      "speaker": "Eli",
+      "start": 27.785,
+      "end": 30.2425
+    }
+  ]
+}

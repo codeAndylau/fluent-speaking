@@ -1,0 +1,60 @@
+{
+  "id": "w02d2",
+  "voice": "en-US-AndrewNeural",
+  "synthetic": true,
+  "duration": 16.104,
+  "sourceSha256": "b2d5af577ff5c3e2502adb4c1182583c1d79a30c83ac1b9eb30c66d3b901adb8",
+  "sha256": "d7bfdf39ab0eab3fa9397928a6fb6d670f47f2dd05c871d71c94c3fbaa219562",
+  "coverageVerified": true,
+  "fullDecodeVerified": true,
+  "lines": [
+    {
+      "text": "What do you do in your free time?",
+      "speaker": "Ada",
+      "start": 0.060000000000000005,
+      "end": 1.3675000000000002
+    },
+    {
+      "text": "I take photos, mostly on weekends.",
+      "speaker": "Jun",
+      "start": 1.6724999999999999,
+      "end": 3.88
+    },
+    {
+      "text": "What do you take photos of?",
+      "speaker": "Ada",
+      "start": 4.1725,
+      "end": 5.2925
+    },
+    {
+      "text": "Old buildings. I go out early on Sundays.",
+      "speaker": "Jun",
+      "start": 5.585,
+      "end": 8.155
+    },
+    {
+      "text": "Do you go alone?",
+      "speaker": "Ada",
+      "start": 8.447500000000002,
+      "end": 9.3175
+    },
+    {
+      "text": "Not always. I sometimes go with my cousin.",
+      "speaker": "Jun",
+      "start": 9.610000000000001,
+      "end": 12.005
+    },
+    {
+      "text": "That sounds fun. I draw in my free time.",
+      "speaker": "Ada",
+      "start": 12.31,
+      "end": 14.6175
+    },
+    {
+      "text": "What do you like to draw?",
+      "speaker": "Jun",
+      "start": 14.91,
+      "end": 15.8175
+    }
+  ]
+}

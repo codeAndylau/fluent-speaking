@@ -1,0 +1,60 @@
+{
+  "id": "w06d3",
+  "voice": "en-US-AndrewNeural",
+  "synthetic": true,
+  "duration": 20.28,
+  "sourceSha256": "f706219f017209082cd01fe2c79a59dddc907ebde96c99f8a6ebc8f5e9c2dff9",
+  "sha256": "b97ac45e2a3def6904577c3921ee7c6839c85dee1b03c81557dbe346bd7f12c3",
+  "coverageVerified": true,
+  "fullDecodeVerified": true,
+  "lines": [
+    {
+      "text": "I'm looking at these two bags for work.",
+      "speaker": "Fei",
+      "start": 0.060000000000000005,
+      "end": 1.98
+    },
+    {
+      "text": "The gray one is cheaper. It's twenty dollars.",
+      "speaker": "Ned",
+      "start": 2.285,
+      "end": 4.905
+    },
+    {
+      "text": "Which one is lighter? I walk to work.",
+      "speaker": "Fei",
+      "start": 5.1975,
+      "end": 7.38
+    },
+    {
+      "text": "The green one is lighter, but it's thirty dollars.",
+      "speaker": "Ned",
+      "start": 7.685,
+      "end": 10.2925
+    },
+    {
+      "text": "Can both bags hold a laptop?",
+      "speaker": "Fei",
+      "start": 10.585,
+      "end": 12.2175
+    },
+    {
+      "text": "Yes, both have a big pocket for a laptop.",
+      "speaker": "Ned",
+      "start": 12.510000000000002,
+      "end": 15.0675
+    },
+    {
+      "text": "I'll take the green one because it's lighter.",
+      "speaker": "Fei",
+      "start": 15.360000000000001,
+      "end": 17.255
+    },
+    {
+      "text": "Good. Would you like to check the pockets first?",
+      "speaker": "Ned",
+      "start": 17.5475,
+      "end": 19.979999999999997
+    }
+  ]
+}

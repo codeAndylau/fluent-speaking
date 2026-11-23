@@ -1,0 +1,60 @@
+{
+  "id": "w10d3",
+  "voice": "en-US-AndrewNeural",
+  "synthetic": true,
+  "duration": 28.56,
+  "sourceSha256": "1ad0ba765b53615211ff11d6b0074820a2ec808d4fcf47602d446292fa2c4c8b",
+  "sha256": "974607e467d22145d44a83c267861f23ba48cf66b7a72a6a7a03fc740bcb1274",
+  "coverageVerified": true,
+  "fullDecodeVerified": true,
+  "lines": [
+    {
+      "text": "How should we get to the market tomorrow? We could take the bus or walk.",
+      "speaker": "Nora",
+      "start": 0.060000000000000005,
+      "end": 3.605
+    },
+    {
+      "text": "I prefer to walk because the streets are quiet in the morning.",
+      "speaker": "Eli",
+      "start": 3.8975,
+      "end": 6.855
+    },
+    {
+      "text": "I like walking, too. But I need to carry a big bag home from the market.",
+      "speaker": "Nora",
+      "start": 7.1475,
+      "end": 10.9675
+    },
+    {
+      "text": "Good point. How about walking there and taking the bus home?",
+      "speaker": "Eli",
+      "start": 11.260000000000002,
+      "end": 14.5425
+    },
+    {
+      "text": "That sounds good. The bus stop is right next to the market door.",
+      "speaker": "Nora",
+      "start": 14.8475,
+      "end": 18.13
+    },
+    {
+      "text": "Do you know how often the bus comes on a Saturday?",
+      "speaker": "Eli",
+      "start": 18.435000000000002,
+      "end": 20.654999999999998
+    },
+    {
+      "text": "Every twenty minutes, I think. We can check the time at the stop.",
+      "speaker": "Nora",
+      "start": 20.9475,
+      "end": 24.417499999999997
+    },
+    {
+      "text": "Okay, let's take a walk there and check the bus time before we shop.",
+      "speaker": "Eli",
+      "start": 24.7225,
+      "end": 28.2675
+    }
+  ]
+}

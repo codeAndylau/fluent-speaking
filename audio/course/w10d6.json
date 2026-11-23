@@ -1,0 +1,60 @@
+{
+  "id": "w10d6",
+  "voice": "en-US-AvaNeural",
+  "synthetic": true,
+  "duration": 34.032,
+  "sourceSha256": "650eabf92e5df362b2fd3051f17f75710e4c316a463859101859431eb9037082",
+  "sha256": "8c5c69374d921b0c8f90c755e18155393a23fcc8fa0eb63cdd8f4b50bdbd9305",
+  "coverageVerified": true,
+  "fullDecodeVerified": true,
+  "lines": [
+    {
+      "text": "I went to a book club yesterday. We read a short story and talked about it.",
+      "speaker": "Nora",
+      "start": 0.060000000000000005,
+      "end": 4.6175
+    },
+    {
+      "text": "That sounds interesting. Do I need to read the story before I go?",
+      "speaker": "Eli",
+      "start": 4.86,
+      "end": 8.3675
+    },
+    {
+      "text": "No, they give you a copy when you arrive. We read it there together.",
+      "speaker": "Nora",
+      "start": 8.610000000000001,
+      "end": 12.7675
+    },
+    {
+      "text": "I would like to try it because I want to read more in English. When is it?",
+      "speaker": "Eli",
+      "start": 13.010000000000002,
+      "end": 17.1175
+    },
+    {
+      "text": "Next Thursday at seven. The front door is locked after the meeting starts.",
+      "speaker": "Nora",
+      "start": 17.36,
+      "end": 21.904999999999998
+    },
+    {
+      "text": "I can get there at six fifty. Which door should I use then?",
+      "speaker": "Eli",
+      "start": 22.1475,
+      "end": 25.779999999999998
+    },
+    {
+      "text": "Use the front door. I need to leave now, but I can meet you there.",
+      "speaker": "Nora",
+      "start": 26.0225,
+      "end": 29.854999999999997
+    },
+    {
+      "text": "Great, see you at the front door on Thursday at six fifty.",
+      "speaker": "Eli",
+      "start": 30.0975,
+      "end": 33.73
+    }
+  ]
+}

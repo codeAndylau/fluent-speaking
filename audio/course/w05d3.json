@@ -1,0 +1,60 @@
+{
+  "id": "w05d3",
+  "voice": "en-US-AndrewNeural",
+  "synthetic": true,
+  "duration": 21.576,
+  "sourceSha256": "0fa356a0721c9e2a9ed2fbf2ad5b8690afe2a16ed3d35eb06a24c7d6502a095c",
+  "sha256": "a4627e894358df71125affb7a4549d7bf890b5d55c62c6fdd526002deff5d835",
+  "coverageVerified": true,
+  "fullDecodeVerified": true,
+  "lines": [
+    {
+      "text": "Can I get to Pine Hall by bus?",
+      "speaker": "Lina",
+      "start": 0.060000000000000005,
+      "end": 1.6675
+    },
+    {
+      "text": "Yes. You can take bus six or bus ten.",
+      "speaker": "Ben",
+      "start": 1.9725000000000001,
+      "end": 4.83
+    },
+    {
+      "text": "Which bus is faster in the morning?",
+      "speaker": "Lina",
+      "start": 5.135,
+      "end": 6.8425
+    },
+    {
+      "text": "Bus six takes about ten minutes. Bus ten takes twenty.",
+      "speaker": "Ben",
+      "start": 7.1475,
+      "end": 10.6175
+    },
+    {
+      "text": "Where do I get off if I take bus six?",
+      "speaker": "Lina",
+      "start": 10.922500000000001,
+      "end": 12.855
+    },
+    {
+      "text": "Get off at Market Square. Walk past the market.",
+      "speaker": "Ben",
+      "start": 13.1475,
+      "end": 15.7425
+    },
+    {
+      "text": "Is the hall next to the market?",
+      "speaker": "Lina",
+      "start": 16.035,
+      "end": 17.479999999999997
+    },
+    {
+      "text": "Yes, the entrance is on the left, just past the fruit shop.",
+      "speaker": "Ben",
+      "start": 17.7725,
+      "end": 21.292499999999997
+    }
+  ]
+}

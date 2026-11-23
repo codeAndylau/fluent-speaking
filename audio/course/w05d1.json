@@ -1,0 +1,60 @@
+{
+  "id": "w05d1",
+  "voice": "en-US-AndrewNeural",
+  "synthetic": true,
+  "duration": 20.352,
+  "sourceSha256": "1a383344a2f81cb821a0e853e8d47d500eaf78992fc1af135cfbcea8f1a5a967",
+  "sha256": "3dc131851180fb94de0af89926fe82dbd6537446d212c986cba0b6c56af2d172",
+  "coverageVerified": true,
+  "fullDecodeVerified": true,
+  "lines": [
+    {
+      "text": "Excuse me, is there a pharmacy near here?",
+      "speaker": "Mina",
+      "start": 0.060000000000000005,
+      "end": 2.3675
+    },
+    {
+      "text": "Yes, there is one next to the bakery.",
+      "speaker": "Leo",
+      "start": 2.66,
+      "end": 4.805
+    },
+    {
+      "text": "Is the bakery on this side of the street?",
+      "speaker": "Mina",
+      "start": 5.0975,
+      "end": 6.8675
+    },
+    {
+      "text": "No, it's across the street, beside the bank.",
+      "speaker": "Leo",
+      "start": 7.16,
+      "end": 9.9425
+    },
+    {
+      "text": "Is that the bank with the blue door?",
+      "speaker": "Mina",
+      "start": 10.235000000000001,
+      "end": 11.7425
+    },
+    {
+      "text": "Yes, that's it. The bakery has a yellow sign.",
+      "speaker": "Leo",
+      "start": 12.035,
+      "end": 14.805
+    },
+    {
+      "text": "Great, so the pharmacy is next to the bakery.",
+      "speaker": "Mina",
+      "start": 15.0975,
+      "end": 17.904999999999998
+    },
+    {
+      "text": "That's right. You can see it from here.",
+      "speaker": "Leo",
+      "start": 18.21,
+      "end": 20.0675
+    }
+  ]
+}

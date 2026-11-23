@@ -1,0 +1,60 @@
+{
+  "id": "w07d5",
+  "voice": "en-US-AndrewNeural",
+  "synthetic": true,
+  "duration": 18.456,
+  "sourceSha256": "0f1e1e523d52fa83d9ff8d9746377ded029869f3e7293501de0c89bdd5bfc0e7",
+  "sha256": "a4c17d5175be1d224c2c155783c07fc5b5e5cc623778d3966796a229a7e27816",
+  "coverageVerified": true,
+  "fullDecodeVerified": true,
+  "lines": [
+    {
+      "text": "What did you do last Saturday afternoon?",
+      "speaker": "Ming",
+      "start": 0.060000000000000005,
+      "end": 1.98
+    },
+    {
+      "text": "I went to a movie, but the first show was full.",
+      "speaker": "Liv",
+      "start": 2.2725,
+      "end": 4.68
+    },
+    {
+      "text": "What did you do after you saw that?",
+      "speaker": "Ming",
+      "start": 4.9725,
+      "end": 6.5675
+    },
+    {
+      "text": "First, I bought a ticket for the next show.",
+      "speaker": "Liv",
+      "start": 6.8975,
+      "end": 8.9425
+    },
+    {
+      "text": "Did you have to wait there for long?",
+      "speaker": "Ming",
+      "start": 9.235000000000001,
+      "end": 10.6175
+    },
+    {
+      "text": "About an hour, so I went to a bookshop nearby.",
+      "speaker": "Liv",
+      "start": 10.91,
+      "end": 13.505
+    },
+    {
+      "text": "How was the movie in the end?",
+      "speaker": "Ming",
+      "start": 13.797500000000001,
+      "end": 15.1675
+    },
+    {
+      "text": "It was funny. I was glad I stayed for the next show.",
+      "speaker": "Liv",
+      "start": 15.46,
+      "end": 18.167499999999997
+    }
+  ]
+}
