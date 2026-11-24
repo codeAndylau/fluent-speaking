@@ -1,0 +1,996 @@
+[
+  {
+    "id": "coffee",
+    "title": "点一杯咖啡",
+    "context": "你赶着上班，需要一杯无糖咖啡，并保留报销凭证。",
+    "items": [
+      {
+        "word": "without",
+        "meaning": "不加糖",
+        "phrase": "without sugar",
+        "sentence": "Could I get a latte without sugar?",
+        "cue": "点拿铁时补充「不加糖」。",
+        "transfer": "点冰茶也想不加糖，用同一短语说明。",
+        "answer": "without sugar",
+        "sentenceZh": "我要一杯不加糖的拿铁，可以吗？"
+      },
+      {
+        "word": "go",
+        "meaning": "外带",
+        "phrase": "to go",
+        "sentence": "Two coffees to go, please.",
+        "cue": "店员问堂食还是外带，你选择外带。",
+        "transfer": "买三明治赶火车，用短语说明要带走。",
+        "answer": "to go",
+        "sentenceZh": "请给我两杯外带咖啡。"
+      },
+      {
+        "word": "pay",
+        "meaning": "刷卡付款",
+        "phrase": "pay by card",
+        "sentence": "Can I pay by card?",
+        "cue": "你想问能否刷卡，说出付款方式。",
+        "transfer": "在售票处想刷卡，用刚学的动词短语。",
+        "answer": "pay by card",
+        "sentenceZh": "可以刷卡吗？"
+      },
+      {
+        "word": "receipt",
+        "meaning": "一张小票",
+        "phrase": "a receipt",
+        "sentence": "Could I have a receipt, please?",
+        "cue": "结账后要留凭证，说出你要的东西。",
+        "transfer": "买完办公用品要报销，说出需要的单据。",
+        "answer": "a receipt",
+        "sentenceZh": "请给我一张小票，好吗？"
+      }
+    ],
+    "related": {
+      "href": "#lesson/w03d1/listen",
+      "title": "点一杯饮料"
+    }
+  },
+  {
+    "id": "appointment",
+    "title": "更改预约",
+    "context": "你周四临时有事，诊所接待员帮你另约时间。",
+    "items": [
+      {
+        "word": "book",
+        "meaning": "预约",
+        "phrase": "book an appointment",
+        "sentence": "I'd like to book an appointment for Friday.",
+        "cue": "说出「预约」这个动作。",
+        "transfer": "在理发店想先约时间，用相同的动词短语。",
+        "answer": "book an appointment",
+        "sentenceZh": "我想约在周五。"
+      },
+      {
+        "word": "reschedule",
+        "meaning": "改约",
+        "phrase": "reschedule",
+        "sentence": "Could we reschedule for next week?",
+        "cue": "已经约好周四，现在想改期，说出动词。",
+        "transfer": "老师问是否取消辅导，你只想改期，用哪个动词？",
+        "answer": "reschedule",
+        "sentenceZh": "我们可以改到下周吗？"
+      },
+      {
+        "word": "fine",
+        "meaning": "那个时间可以",
+        "phrase": "that's fine",
+        "sentence": "Friday at ten? That's fine with me.",
+        "cue": "诊所建议周五十点，你表示可以。",
+        "transfer": "同事提议换会议室，用简短回应表示没问题。",
+        "answer": "that's fine",
+        "sentenceZh": "周五十点？我可以。"
+      }
+    ],
+    "related": {
+      "href": "#lesson/w04d4/listen",
+      "title": "已有约定怎么改"
+    }
+  },
+  {
+    "id": "return",
+    "title": "购物退换",
+    "context": "鞋子尺码不合适，你带着鞋盒回到店里。",
+    "items": [
+      {
+        "word": "return",
+        "meaning": "退掉这双鞋",
+        "phrase": "return these shoes",
+        "sentence": "I'd like to return these shoes.",
+        "cue": "向店员说出你要对这双鞋做什么。",
+        "transfer": "网购鞋子颜色不对，给客服描述同一动作。",
+        "answer": "return these shoes",
+        "sentenceZh": "我想退掉这双鞋。"
+      },
+      {
+        "word": "size",
+        "meaning": "大一号",
+        "phrase": "a size up",
+        "sentence": "Could I try a size up?",
+        "cue": "鞋头有点挤，告诉店员要试大一号。",
+        "transfer": "试穿外套肩膀太紧，你要换到什么尺码？",
+        "answer": "a size up",
+        "sentenceZh": "我可以试试大一号的吗？"
+      },
+      {
+        "word": "refund",
+        "meaning": "全额退款",
+        "phrase": "a full refund",
+        "sentence": "Can I get a full refund?",
+        "cue": "没有合适尺码，你想要全部货款退回。",
+        "transfer": "包裹丢失，向客服说明你想要哪种退款。",
+        "answer": "a full refund",
+        "sentenceZh": "可以给我全额退款吗？"
+      }
+    ],
+    "related": {
+      "href": "#lesson/w06d6/listen",
+      "title": "换一双能上班穿的鞋"
+    }
+  },
+  {
+    "id": "train",
+    "title": "赶火车",
+    "context": "你来到陌生车站，需要辨认站台并确认是否换乘。",
+    "items": [
+      {
+        "word": "platform",
+        "meaning": "几号站台",
+        "phrase": "which platform",
+        "sentence": "Which platform does the train leave from?",
+        "cue": "询问列车在哪个站台发车，用疑问短语开头。",
+        "transfer": "到新站换乘，想问发车站台，用同一个开头。",
+        "answer": "which platform",
+        "sentenceZh": "这班火车从哪个站台发车？"
+      },
+      {
+        "word": "change",
+        "meaning": "换火车",
+        "phrase": "change trains",
+        "sentence": "Do I need to change trains in York?",
+        "cue": "想问是否需要换火车，说出这个动作。",
+        "transfer": "朋友问怎样去机场，你说要中途换火车。",
+        "answer": "change trains",
+        "sentenceZh": "我需要在约克换火车吗？"
+      },
+      {
+        "word": "seat",
+        "meaning": "靠窗的座位",
+        "phrase": "a window seat",
+        "sentence": "Is a window seat available?",
+        "cue": "订票时想看看风景，说出座位偏好。",
+        "transfer": "在飞机上也想坐窗边，说出你想要的座位。",
+        "answer": "a window seat",
+        "sentenceZh": "还有靠窗的座位吗？"
+      }
+    ],
+    "related": {
+      "href": "#lesson/w05d3/listen",
+      "title": "坐哪班车"
+    }
+  },
+  {
+    "id": "hotel",
+    "title": "入住酒店",
+    "context": "夜里到店，你需要办理入住并确认离店时间。",
+    "items": [
+      {
+        "word": "check",
+        "meaning": "办理入住",
+        "phrase": "check in",
+        "sentence": "I'd like to check in, please.",
+        "cue": "到前台后说出你要办理的动作。",
+        "transfer": "参加展会前先去登记台报到，用同一短语。",
+        "answer": "check in",
+        "sentenceZh": "我想办理入住。"
+      },
+      {
+        "word": "reservation",
+        "meaning": "登记在我的名字下",
+        "phrase": "under my name",
+        "sentence": "The reservation is under my name.",
+        "cue": "前台找订单，你说明预订登记在自己名下。",
+        "transfer": "餐厅接待员查预订，你说明登记在谁名下。",
+        "answer": "under my name",
+        "sentenceZh": "预订登记在我的名字下。"
+      },
+      {
+        "word": "late",
+        "meaning": "延迟退房",
+        "phrase": "late checkout",
+        "sentence": "Is late checkout available tomorrow?",
+        "cue": "返程车在下午，你想申请晚一点离店。",
+        "transfer": "航班临时推迟，致电前台询问同一服务。",
+        "answer": "late checkout",
+        "sentenceZh": "明天可以延迟退房吗？"
+      }
+    ],
+    "related": {
+      "href": "#lesson/w11d2/listen",
+      "title": "确认对方的意思"
+    }
+  },
+  {
+    "id": "directions",
+    "title": "步行问路",
+    "context": "手机没电了，你要从路口步行到图书馆。",
+    "items": [
+      {
+        "word": "straight",
+        "meaning": "直走",
+        "phrase": "go straight",
+        "sentence": "Go straight until you reach the lights.",
+        "cue": "路人问第一步怎么走，你让他直走。",
+        "transfer": "带朋友逛校园，告诉她先沿路直走。",
+        "answer": "go straight",
+        "sentenceZh": "直走到红绿灯那里。"
+      },
+      {
+        "word": "corner",
+        "meaning": "在拐角处",
+        "phrase": "at the corner",
+        "sentence": "Turn left at the corner.",
+        "cue": "要在拐角处左转，说出转弯的位置。",
+        "transfer": "约同事在街角等，说出碰头的位置。",
+        "answer": "at the corner",
+        "sentenceZh": "在拐角处左转。"
+      },
+      {
+        "word": "opposite",
+        "meaning": "在银行对面",
+        "phrase": "opposite the bank",
+        "sentence": "The library is opposite the bank.",
+        "cue": "以银行作参照，说明图书馆在它对面。",
+        "transfer": "面包店也在银行对面，用同一短语说位置。",
+        "answer": "opposite the bank",
+        "sentenceZh": "图书馆在银行对面。"
+      }
+    ],
+    "related": {
+      "href": "#lesson/w05d2/listen",
+      "title": "听懂两个转弯"
+    }
+  },
+  {
+    "id": "restaurant",
+    "title": "餐厅点餐",
+    "context": "朋友晚到，你先问空桌、饮用水和账单。",
+    "items": [
+      {
+        "word": "table",
+        "meaning": "两人桌",
+        "phrase": "a table for two",
+        "sentence": "Could we have a table for two?",
+        "cue": "你和同伴一起用餐，说明要几人桌。",
+        "transfer": "打电话预约周年晚餐，说出所需桌位。",
+        "answer": "a table for two",
+        "sentenceZh": "请问有两人桌吗？"
+      },
+      {
+        "word": "tap",
+        "meaning": "自来水",
+        "phrase": "tap water",
+        "sentence": "Tap water is fine, thanks.",
+        "cue": "服务员问瓶装水还是自来水，你选后者。",
+        "transfer": "朋友问水壶里装什么，你说是自来水。",
+        "answer": "tap water",
+        "sentenceZh": "自来水就好，谢谢。"
+      },
+      {
+        "word": "bill",
+        "meaning": "要账单",
+        "phrase": "ask for the bill",
+        "sentence": "Shall we ask for the bill?",
+        "cue": "用餐结束，提议向服务员要账单，说出动作。",
+        "transfer": "朋友准备离开茶室，你提醒先要账单。",
+        "answer": "ask for the bill",
+        "sentenceZh": "我们要账单吧？"
+      }
+    ],
+    "related": {
+      "href": "#lesson/w03d2/listen",
+      "title": "说清点餐数量"
+    }
+  },
+  {
+    "id": "meeting",
+    "title": "线上开会",
+    "context": "视频会议开始后，声音断续，你要确认下一步工作。",
+    "items": [
+      {
+        "word": "mute",
+        "meaning": "关掉麦克风",
+        "phrase": "mute your microphone",
+        "sentence": "Could you mute your microphone for a moment?",
+        "cue": "请背景嘈杂的同事暂时关闭麦克风。",
+        "transfer": "线上课里提醒同桌关闭麦克风，说出动作。",
+        "answer": "mute your microphone",
+        "sentenceZh": "可以暂时把麦克风静音吗？"
+      },
+      {
+        "word": "repeat",
+        "meaning": "重复一下刚才的话",
+        "phrase": "repeat that",
+        "sentence": "Could you repeat that a little more slowly?",
+        "cue": "没听清会议时间，请对方重复刚才的话。",
+        "transfer": "前台报了门牌号，你想请对方再说一次。",
+        "answer": "repeat that",
+        "sentenceZh": "可以说慢一点，再说一遍吗？"
+      },
+      {
+        "word": "deadline",
+        "meaning": "赶上截止日期",
+        "phrase": "meet the deadline",
+        "sentence": "Can we meet the deadline with two people?",
+        "cue": "讨论两个人是否能按期完成，说出「按期完成」。",
+        "transfer": "申请表明晚到期，说明你打算按时提交。",
+        "answer": "meet the deadline",
+        "sentenceZh": "我们两个人能按期完成吗？"
+      }
+    ],
+    "related": {
+      "href": "#lesson/w09d2/listen",
+      "title": "签到桌进度"
+    }
+  },
+  {
+    "id": "groceries",
+    "title": "购买食材",
+    "context": "你照着购物清单买晚餐食材，要确认存货和数量。",
+    "items": [
+      {
+        "word": "stock",
+        "meaning": "有现货",
+        "phrase": "in stock",
+        "sentence": "Do you have brown rice in stock?",
+        "cue": "询问糙米现在是否有货，用表示库存状态的短语。",
+        "transfer": "打电话问书店某本书是否有货，用同一短语。",
+        "answer": "in stock",
+        "sentenceZh": "你们店里有糙米现货吗？"
+      },
+      {
+        "word": "bunch",
+        "meaning": "一串香蕉",
+        "phrase": "a bunch of bananas",
+        "sentence": "I'll take a bunch of bananas.",
+        "cue": "买水果时说出你要一整串香蕉。",
+        "transfer": "准备野餐时请朋友带一串香蕉，说出物品和数量。",
+        "answer": "a bunch of bananas",
+        "sentenceZh": "我要一串香蕉。"
+      },
+      {
+        "word": "bag",
+        "meaning": "一个纸袋",
+        "phrase": "a paper bag",
+        "sentence": "Could I have a paper bag for these?",
+        "cue": "结账时你想用纸质袋子装东西。",
+        "transfer": "买明信片后想用纸袋装起来，说出需要的物品。",
+        "answer": "a paper bag",
+        "sentenceZh": "能给我一个纸袋装这些东西吗？"
+      }
+    ],
+    "related": {
+      "href": "#lesson/w06d1/listen",
+      "title": "问清单价"
+    }
+  },
+  {
+    "id": "parcel",
+    "title": "领取包裹",
+    "context": "你去代收点取包裹，工作人员核对号码并请你签收。",
+    "items": [
+      {
+        "word": "pick",
+        "meaning": "领取包裹",
+        "phrase": "pick up a parcel",
+        "sentence": "I'm here to pick up a parcel.",
+        "cue": "到柜台说明自己要领取一个包裹。",
+        "transfer": "拜托室友替你去邮局取件，说出这件事。",
+        "answer": "pick up a parcel",
+        "sentenceZh": "我来取一个包裹。"
+      },
+      {
+        "word": "tracking",
+        "meaning": "运单号",
+        "phrase": "tracking number",
+        "sentence": "Do you have your tracking number?",
+        "cue": "查询物流时需要哪个号码？",
+        "transfer": "客服要你提供追踪包裹用的编号，说出名称。",
+        "answer": "tracking number",
+        "sentenceZh": "你有运单号吗？"
+      },
+      {
+        "word": "sign",
+        "meaning": "在这里签名",
+        "phrase": "sign here",
+        "sentence": "Please sign here to confirm delivery.",
+        "cue": "请收件人在你指出的位置签名。",
+        "transfer": "前台让访客在登记簿指定处签名，你怎么说？",
+        "answer": "sign here",
+        "sentenceZh": "请在这里签字确认收货。"
+      }
+    ],
+    "related": {
+      "href": "#lesson/w08d6/listen",
+      "title": "改约取展板"
+    }
+  },
+  {
+    "id": "weather",
+    "title": "商量周末计划",
+    "context": "周末可能下雨，你和朋友商量出行及替代安排。",
+    "items": [
+      {
+        "word": "forecast",
+        "meaning": "天气预报",
+        "phrase": "weather forecast",
+        "sentence": "Have you checked the weather forecast?",
+        "cue": "出行前想看明天天气，说出要查的信息。",
+        "transfer": "决定晾不晾衣服前，告诉家人先看什么。",
+        "answer": "weather forecast",
+        "sentenceZh": "你看过天气预报了吗？"
+      },
+      {
+        "word": "umbrella",
+        "meaning": "带把雨伞",
+        "phrase": "bring an umbrella",
+        "sentence": "You might want to bring an umbrella.",
+        "cue": "可能下雨，提醒即将来找你的朋友带伞。",
+        "transfer": "朋友要来露天音乐会，你给出同样的建议。",
+        "answer": "bring an umbrella",
+        "sentenceZh": "你最好带把伞。"
+      },
+      {
+        "word": "indoors",
+        "meaning": "待在室内",
+        "phrase": "stay indoors",
+        "sentence": "If it rains hard, let's stay indoors.",
+        "cue": "大雨时建议留在室内，说出动作。",
+        "transfer": "室外烟尘很大，你建议大家暂时待在室内。",
+        "answer": "stay indoors",
+        "sentenceZh": "如果雨下得很大，我们就待在室内吧。"
+      }
+    ],
+    "related": {
+      "href": "#lesson/w10d5/listen",
+      "title": "商量周末活动"
+    }
+  },
+  {
+    "id": "library",
+    "title": "借书和续借",
+    "context": "一本书还没读完，你向图书管理员询问借期。",
+    "items": [
+      {
+        "word": "borrow",
+        "meaning": "借一本书",
+        "phrase": "borrow a book",
+        "sentence": "Can I borrow a book with this card?",
+        "cue": "拿着新借书证，说明想借一本书。",
+        "transfer": "向朋友问能否借一本书，用同一动词短语。",
+        "answer": "borrow a book",
+        "sentenceZh": "我可以用这张卡借一本书吗？"
+      },
+      {
+        "word": "due",
+        "meaning": "归还期限",
+        "phrase": "due date",
+        "sentence": "Where can I find the due date?",
+        "cue": "想知道最迟哪天还书，说出要查询的信息。",
+        "transfer": "老师布置作业，你想问最晚提交日期，用哪个短语？",
+        "answer": "due date",
+        "sentenceZh": "在哪里可以查到还书期限？"
+      },
+      {
+        "word": "renew",
+        "meaning": "给这本书续借",
+        "phrase": "renew this book",
+        "sentence": "Can I renew this book online?",
+        "cue": "书还没读完，向管理员说明想续借这本书。",
+        "transfer": "在网站客服窗口询问如何给手上这本书续借。",
+        "answer": "renew this book",
+        "sentenceZh": "我可以在网上续借这本书吗？"
+      }
+    ],
+    "related": {
+      "href": "#lesson/w10d6/listen",
+      "title": "第一次参加读书会"
+    }
+  },
+  {
+    "id": "airport",
+    "title": "在机场托运行李",
+    "context": "你要赶早班飞机，先托运行李，再找登机口。",
+    "items": [
+      {
+        "word": "boarding",
+        "meaning": "登机牌",
+        "phrase": "boarding pass",
+        "sentence": "May I see your boarding pass?",
+        "sentenceZh": "可以给我看一下你的登机牌吗？",
+        "cue": "在登机口，工作人员要查看哪张凭证？",
+        "transfer": "同伴上飞机前发现手机没电，想打印哪张凭证？",
+        "answer": "boarding pass"
+      },
+      {
+        "word": "check",
+        "meaning": "托运一个包",
+        "phrase": "check a bag",
+        "sentence": "I'd like to check a bag for this flight.",
+        "sentenceZh": "这趟航班我想托运一个包。",
+        "cue": "你的包太大不能随身带，想办什么手续？",
+        "transfer": "朋友带着大行李箱转机，提醒他可能要办理什么？",
+        "answer": "check a bag"
+      },
+      {
+        "word": "gate",
+        "meaning": "登机口号码",
+        "phrase": "gate number",
+        "sentence": "Has the gate number changed?",
+        "sentenceZh": "登机口号码变了吗？",
+        "cue": "航班显示屏上，哪个号码告诉你去哪里登机？",
+        "transfer": "广播通知换登机口了，发消息请朋友确认什么？",
+        "answer": "gate number"
+      }
+    ],
+    "related": {
+      "href": "#lesson/w11d5/listen",
+      "title": "找回忘在车站的物品"
+    }
+  },
+  {
+    "id": "laundry",
+    "title": "在自助洗衣店",
+    "context": "深色衣物要分开洗，你还需要换零钱。",
+    "items": [
+      {
+        "word": "load",
+        "meaning": "一桶衣物",
+        "phrase": "a load of laundry",
+        "sentence": "I've got a load of laundry to do.",
+        "sentenceZh": "我有一桶衣服要洗。",
+        "cue": "描述一次放进洗衣机的那批衣物。",
+        "transfer": "室友准备洗衣服，你说自己也有一桶要洗。",
+        "answer": "a load of laundry"
+      },
+      {
+        "word": "change",
+        "meaning": "零钱",
+        "phrase": "change",
+        "sentence": "Do you have change for a ten?",
+        "sentenceZh": "你能帮我把十元钞票换成零钱吗？",
+        "cue": "机器只收硬币，你要把纸币换成什么？",
+        "transfer": "乘车需要投币，你问旁边的人有没有什么？",
+        "answer": "change"
+      },
+      {
+        "word": "dry",
+        "meaning": "自然晾干",
+        "phrase": "air dry",
+        "sentence": "Let this sweater air dry.",
+        "sentenceZh": "让这件毛衣自然晾干吧。",
+        "cue": "毛衣不能烘，你想让它怎么干？",
+        "transfer": "刚洗的围巾不能进烘干机，建议用同一方法。",
+        "answer": "air dry"
+      }
+    ],
+    "related": {
+      "href": "#lesson/w06d4/listen",
+      "title": "说明哪里有问题"
+    }
+  },
+  {
+    "id": "cinema",
+    "title": "买电影票",
+    "context": "你和朋友想看晚场，还要选两个相邻的座位。",
+    "items": [
+      {
+        "word": "showing",
+        "meaning": "下一场",
+        "phrase": "the next showing",
+        "sentence": "What time is the next showing?",
+        "sentenceZh": "下一场几点开始？",
+        "cue": "这场已经开演，你要问哪一场？",
+        "transfer": "动画片首场售罄，打听下一场，用什么短语？",
+        "answer": "the next showing"
+      },
+      {
+        "word": "together",
+        "meaning": "相邻的两个座位",
+        "phrase": "two seats together",
+        "sentence": "Are there two seats together near the back?",
+        "sentenceZh": "后排附近还有两个相邻的座位吗？",
+        "cue": "你想和朋友坐在一起，告诉售票员座位要求。",
+        "transfer": "在音乐厅选座，你和同伴也想坐在一起。",
+        "answer": "two seats together"
+      },
+      {
+        "word": "sold",
+        "meaning": "票已售罄",
+        "phrase": "sold out",
+        "sentence": "The early showing is sold out.",
+        "sentenceZh": "早场的票已经卖完了。",
+        "cue": "售票员说早场一张票都没有了，怎么描述？",
+        "transfer": "演唱会门票也一张不剩，怎么说？",
+        "answer": "sold out"
+      }
+    ],
+    "related": {
+      "href": "#lesson/w10d2/listen",
+      "title": "追问电影场次"
+    }
+  },
+  {
+    "id": "bus",
+    "title": "坐公交去市场",
+    "context": "你不熟悉线路，上车前要确认终点和下车站。",
+    "items": [
+      {
+        "word": "stop",
+        "meaning": "下一站",
+        "phrase": "the next stop",
+        "sentence": "Is the market the next stop?",
+        "sentenceZh": "下一站是市场吗？",
+        "cue": "你想问车马上要停的那一站，怎么说？",
+        "transfer": "坐有轨电车时也要问即将到达的站点。",
+        "answer": "the next stop"
+      },
+      {
+        "word": "fare",
+        "meaning": "车费",
+        "phrase": "bus fare",
+        "sentence": "How much is the bus fare?",
+        "sentenceZh": "公交车费是多少？",
+        "cue": "上车前想知道要花多少钱，说出费用名称。",
+        "transfer": "和朋友分摊旅行费用，说明其中哪项是公交车费。",
+        "answer": "bus fare"
+      },
+      {
+        "word": "get",
+        "meaning": "下车",
+        "phrase": "get off",
+        "sentence": "We need to get off at City Hall.",
+        "sentenceZh": "我们需要在市政厅下车。",
+        "cue": "提醒朋友到市政厅该做什么。",
+        "transfer": "坐火车去海边，到站后要做同一个动作。",
+        "answer": "get off"
+      }
+    ],
+    "related": {
+      "href": "#lesson/w05d3/listen",
+      "title": "坐哪班车"
+    }
+  },
+  {
+    "id": "office",
+    "title": "借用办公室设备",
+    "context": "你得打印文件，却发现打印机缺纸，还要请同事帮忙。",
+    "items": [
+      {
+        "word": "print",
+        "meaning": "打印一份",
+        "phrase": "print a copy",
+        "sentence": "Could you print a copy for me?",
+        "sentenceZh": "你能帮我打印一份吗？",
+        "cue": "你需要一份纸质文件，请同事做什么？",
+        "transfer": "老师把电子表格发来了，你想把它打印一份。",
+        "answer": "print a copy"
+      },
+      {
+        "word": "paper",
+        "meaning": "缺纸了",
+        "phrase": "out of paper",
+        "sentence": "The printer is out of paper.",
+        "sentenceZh": "打印机没纸了。",
+        "cue": "纸盒已经空了，怎么描述打印机的状态？",
+        "transfer": "收银机打不出小票，因为纸用完了，怎么说？",
+        "answer": "out of paper"
+      },
+      {
+        "word": "staple",
+        "meaning": "订在一起",
+        "phrase": "staple together",
+        "sentence": "Which pages should I staple together?",
+        "sentenceZh": "哪些页面需要订在一起？",
+        "cue": "请同事用订书机把几张纸合起来，说出动作。",
+        "transfer": "交作业前，你想把报告的几页订在一起。",
+        "answer": "staple together"
+      }
+    ],
+    "related": {
+      "href": "#lesson/w09d1/listen",
+      "title": "打印机卡纸"
+    }
+  },
+  {
+    "id": "picnic",
+    "title": "约朋友野餐",
+    "context": "大家在消息里商量碰头地点和各自要带的东西。",
+    "items": [
+      {
+        "word": "entrance",
+        "meaning": "正门",
+        "phrase": "the main entrance",
+        "sentence": "Let's meet at the main entrance.",
+        "sentenceZh": "我们在正门碰头吧。",
+        "cue": "公园有好几个门，你指定正门。",
+        "transfer": "博物馆有侧门，你提醒朋友在正门等。",
+        "answer": "the main entrance"
+      },
+      {
+        "word": "split",
+        "meaning": "分摊费用",
+        "phrase": "split the cost",
+        "sentence": "Shall we split the cost of the food?",
+        "sentenceZh": "我们分摊食物的费用好吗？",
+        "cue": "你提议大家一起分摊费用，用哪个短语？",
+        "transfer": "和朋友一起租车，你提议分摊费用。",
+        "answer": "split the cost"
+      },
+      {
+        "word": "blanket",
+        "meaning": "野餐毯",
+        "phrase": "a picnic blanket",
+        "sentence": "I'll bring a picnic blanket for us.",
+        "sentenceZh": "我给大家带一条野餐毯。",
+        "cue": "草地有点湿，要带什么铺在地上？",
+        "transfer": "朋友要去河边吃午餐，你借给她什么毯子？",
+        "answer": "a picnic blanket"
+      }
+    ],
+    "related": {
+      "href": "#lesson/w04d3/listen",
+      "title": "邀请与回应"
+    }
+  },
+  {
+    "id": "repair",
+    "title": "报修漏水",
+    "context": "厨房水槽下方漏水，你联系房东并商定上门时间。",
+    "items": [
+      {
+        "word": "leak",
+        "meaning": "漏水处",
+        "phrase": "a leak",
+        "sentence": "There's a leak under the sink.",
+        "sentenceZh": "水槽下面有一处漏水。",
+        "cue": "你在水槽下面发现水往外滴，告诉房东有一处什么？",
+        "transfer": "看到天花板有水滴下来，想报告同样的问题。",
+        "answer": "a leak"
+      },
+      {
+        "word": "fix",
+        "meaning": "把它修好",
+        "phrase": "fix it",
+        "sentence": "Can someone come and fix it today?",
+        "sentenceZh": "今天能有人来把它修好吗？",
+        "cue": "水管坏了，你希望维修人员过来做什么？",
+        "transfer": "朋友的自行车链条坏了，问你能否把它修好。",
+        "answer": "fix it"
+      },
+      {
+        "word": "available",
+        "meaning": "方便、有空",
+        "phrase": "available",
+        "sentence": "Will you be available after four?",
+        "sentenceZh": "四点后你有空吗？",
+        "cue": "预约维修，你想确认房东四点后有没有空，用哪个形容词？",
+        "transfer": "同伴约你一起练习，他问明早你是否有空。",
+        "answer": "available"
+      }
+    ],
+    "related": {
+      "href": "#lesson/w06d4/listen",
+      "title": "说明哪里有问题"
+    }
+  },
+  {
+    "id": "museum",
+    "title": "参观博物馆",
+    "context": "你到博物馆买票，希望参加讲解并了解拍照规则。",
+    "items": [
+      {
+        "word": "admission",
+        "meaning": "免费入场",
+        "phrase": "free admission",
+        "sentence": "Is there free admission for students?",
+        "sentenceZh": "学生可以免费入场吗？",
+        "cue": "询问学生能否免门票，用哪个短语？",
+        "transfer": "艺术馆周日免门票，你告诉朋友有这项待遇。",
+        "answer": "free admission"
+      },
+      {
+        "word": "tour",
+        "meaning": "带讲解的参观",
+        "phrase": "a guided tour",
+        "sentence": "I'd like to join a guided tour.",
+        "sentenceZh": "我想参加有导览讲解的参观。",
+        "cue": "你想跟讲解员参观，告诉售票员要参加什么。",
+        "transfer": "参观老城时希望有人带领讲解，要订什么？",
+        "answer": "a guided tour"
+      },
+      {
+        "word": "flash",
+        "meaning": "不开闪光灯",
+        "phrase": "without flash",
+        "sentence": "You can take pictures without flash.",
+        "sentenceZh": "你可以拍照，但不能开闪光灯。",
+        "cue": "展厅允许拍照，你说明需要关掉闪光灯。",
+        "transfer": "剧场谢幕时能拍照，工作人员要求用同样的方式。",
+        "answer": "without flash"
+      }
+    ],
+    "related": {
+      "href": "#lesson/w04d5/listen",
+      "title": "一起去看摄影展"
+    }
+  },
+  {
+    "id": "gym",
+    "title": "第一次去健身房",
+    "context": "你想体验一次健身房，先问储物和使用时间。",
+    "items": [
+      {
+        "word": "trial",
+        "meaning": "体验课",
+        "phrase": "a trial class",
+        "sentence": "Can I book a trial class first?",
+        "sentenceZh": "我可以先预约一节体验课吗？",
+        "cue": "决定是否报名之前，你想先上一节什么课？",
+        "transfer": "到舞蹈学校咨询，你也希望先上一节体验课。",
+        "answer": "a trial class"
+      },
+      {
+        "word": "locker",
+        "meaning": "储物柜",
+        "phrase": "a locker",
+        "sentence": "Do I need a coin for a locker?",
+        "sentenceZh": "用储物柜需要投硬币吗？",
+        "cue": "更衣室里你要找什么来放包？",
+        "transfer": "在游泳馆想锁好衣物，需要找什么？",
+        "answer": "a locker"
+      },
+      {
+        "word": "closing",
+        "meaning": "关门时间",
+        "phrase": "closing time",
+        "sentence": "What is your closing time on Fridays?",
+        "sentenceZh": "你们周五几点关门？",
+        "cue": "你想问健身房晚上停止营业的时间。",
+        "transfer": "快到书店了，你打电话问他们什么时候关门。",
+        "answer": "closing time"
+      }
+    ],
+    "related": {
+      "href": "#lesson/w02d2/listen",
+      "title": "聊聊兴趣"
+    }
+  },
+  {
+    "id": "birthday",
+    "title": "准备生日聚会",
+    "context": "你给朋友准备惊喜，需要邀请宾客并约好保密。",
+    "items": [
+      {
+        "word": "invite",
+        "meaning": "邀请她",
+        "phrase": "invite her",
+        "sentence": "Let's invite her to dinner on Saturday.",
+        "sentenceZh": "我们请她周六来吃晚饭吧。",
+        "cue": "要请一位女性朋友参加聚餐，说出这个动作。",
+        "transfer": "球队还少一人，你提议邀请她加入。",
+        "answer": "invite her"
+      },
+      {
+        "word": "secret",
+        "meaning": "保密",
+        "phrase": "keep it a secret",
+        "sentence": "Please keep it a secret until Friday.",
+        "sentenceZh": "请把这件事保密到周五。",
+        "cue": "筹划惊喜派对时，你怎么叮嘱知情的朋友？",
+        "transfer": "共同准备一份礼物时，你也想让同伴先保密。",
+        "answer": "keep it a secret"
+      },
+      {
+        "word": "wrap",
+        "meaning": "把它包起来",
+        "phrase": "wrap it",
+        "sentence": "Can you wrap it in blue paper?",
+        "sentenceZh": "你能用蓝色的纸把它包起来吗？",
+        "cue": "买好礼物，请店员用纸把它包起来。",
+        "transfer": "书要送人，你请朋友帮你把它包起来。",
+        "answer": "wrap it"
+      }
+    ],
+    "related": {
+      "href": "#lesson/w04d3/listen",
+      "title": "邀请与回应"
+    }
+  },
+  {
+    "id": "bakery",
+    "title": "在面包房订蛋糕",
+    "context": "明天有聚会，你要订蛋糕，问清份量和取货时间。",
+    "items": [
+      {
+        "word": "order",
+        "meaning": "下单",
+        "phrase": "place an order",
+        "sentence": "I'd like to place an order for tomorrow.",
+        "sentenceZh": "我想下一单，明天要。",
+        "cue": "明天需要蛋糕，你打电话想做什么？",
+        "transfer": "你在花店网站选好花束，接下来想做什么？",
+        "answer": "place an order"
+      },
+      {
+        "word": "serve",
+        "meaning": "够六个人吃",
+        "phrase": "serve six",
+        "sentence": "Will this cake serve six?",
+        "sentenceZh": "这个蛋糕够六个人吃吗？",
+        "cue": "有六位客人，想问这个蛋糕的份量够不够六人。",
+        "transfer": "朋友做了一锅汤，你问是否够六个人喝。",
+        "answer": "serve six"
+      },
+      {
+        "word": "ready",
+        "meaning": "可以取了",
+        "phrase": "ready for pickup",
+        "sentence": "Your cake will be ready for pickup at noon.",
+        "sentenceZh": "你的蛋糕中午就可以取了。",
+        "cue": "店员说蛋糕做好可以来取了，怎么描述这个状态？",
+        "transfer": "网上订的书已到店，可以去取了，用同一短语。",
+        "answer": "ready for pickup"
+      }
+    ],
+    "related": {
+      "href": "#lesson/w12d3/listen",
+      "title": "店里临时改订单"
+    }
+  },
+  {
+    "id": "phone",
+    "title": "电话留言",
+    "context": "你打电话找同事，对方暂时不在，你留下回电信息。",
+    "items": [
+      {
+        "word": "message",
+        "meaning": "留言",
+        "phrase": "leave a message",
+        "sentence": "May I leave a message for Sam?",
+        "sentenceZh": "我能给萨姆留个言吗？",
+        "cue": "接电话的人说萨姆不在，你想做什么？",
+        "transfer": "听到语音信箱的提示音，你打算做什么？",
+        "answer": "leave a message"
+      },
+      {
+        "word": "call",
+        "meaning": "给我回电话",
+        "phrase": "call me back",
+        "sentence": "Could you ask her to call me back?",
+        "sentenceZh": "你可以请她给我回电话吗？",
+        "cue": "你希望同事稍后给你回电话，用哪个短语？",
+        "transfer": "和朋友通话中断，你发消息请她回拨。",
+        "answer": "call me back"
+      },
+      {
+        "word": "spell",
+        "meaning": "拼出你的名字",
+        "phrase": "spell your name",
+        "sentence": "Could you spell your name for me?",
+        "sentenceZh": "请你拼一下你的名字好吗？",
+        "cue": "电话里没听清名字，你请对方逐个字母报出来。",
+        "transfer": "做入住登记，接待员请你拼写名字，用哪个短语？",
+        "answer": "spell your name"
+      }
+    ],
+    "related": {
+      "href": "#lesson/w01d4/listen",
+      "title": "请对方重复"
+    }
+  }
+]
