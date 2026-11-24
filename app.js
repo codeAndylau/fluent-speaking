@@ -1,6 +1,6 @@
 import {renderConversation} from './conversation.mjs?v=20261124-6';
 import {installMobileInput} from './mobile-input.mjs?v=20261124-6';
-import {initLanguage} from './i18n.mjs?v=20261124-6';
+import {initLanguage} from './i18n.mjs?v=20261124-7';
 import {renderSettings} from './settings.mjs?v=20261124-6';
 import {guideHTML} from './guide.mjs?v=20261124-6';
 import {createThemeController} from './theme.mjs';
@@ -172,7 +172,7 @@ function renderLesson(l,step){if(!steps.some(s=>s[0]===step)&&step!=='complete')
  updatePlayer();
 }
 function transcript(l){const d=draft(l);return `<div class="transcript"><div class="player-actions"><span>点一句，单独听</span><button data-act="translation">${d.translation?'隐藏中文':'显示中文'}</button></div>${l.dialogue.map((v,i)=>`<div class="transcript-line" data-line="${i}"><span class="name">${esc(v.speaker)}</span><div><button class="sentence quiet" data-act="line" data-lesson="${l.id}" data-index="${i}">${esc(v.en)}</button><p class="translation" ${d.translation?'':'hidden'}>${esc(v.zh)}</p></div></div>`).join('')}</div>`;}
-function player(l){return `<div class="audio-scene"><div class="speaker-pair">${[...new Set(l.dialogue.map(d=>d.speaker))].slice(0,2).map(s=>`<div class="chat-face">${esc(s[0])}</div>`).join('')}</div><div><h3>${esc(l.englishTitle)}</h3><p>${voice(l)} · 美式 · 合成语音</p></div></div><div class="player"><button class="play-button" data-act="play" aria-label="播放对话">${icon('play')}</button><div class="progress-wrap"><input type="range" id="audio-progress" min="0" max="100" step="0.1" value="0" aria-label="音频播放进度"><div class="player-times"><span id="current-time">0:00</span><span id="duration">加载中</span></div></div><button class="speed-button" data-act="speed" aria-label="切换播放速度">${audio.playbackRate}×</button></div>`;}
+function player(l){return `<div class="audio-scene"><div class="speaker-pair">${[...new Set(l.dialogue.map(d=>d.speaker))].slice(0,2).map(s=>`<div class="chat-face">${esc(s[0])}</div>`).join('')}</div><div><h3>${esc(l.englishTitle)}</h3><p>${voice(l)} · 美式 · 合成语音</p></div></div><div class="player"><button type="button" class="play-button" data-act="play" data-playback-icon="play" aria-label="播放对话">${icon('play')}</button><div class="progress-wrap"><input type="range" id="audio-progress" min="0" max="100" step="0.1" value="0" aria-label="音频播放进度"><div class="player-times"><span id="current-time">0:00</span><span id="duration">加载中</span></div></div><button class="speed-button" data-act="speed" aria-label="切换播放速度">${audio.playbackRate}×</button></div><p id="audio-status" class="playback-status" role="status" aria-live="polite">点击播放对话。</p>`;}
 function stepContent(l,step){const d=draft(l),diag=l.id==='diagnostic';
  if(step==='listen'){const locked=restricted(l)&&!firstQuiz(l);return `<div class="eyebrow">LISTEN FIRST</div><h2>先听意思，不急着看答案。</h2><p>${diag?'先听两遍，不查词。答完以后，再看文字观察理解是否改善。':restricted(l)?'这是本周的新对话。先听两遍并作答，再查看文本与解析。':'先听两遍，想想他们在做什么，需要解决什么问题。'}</p>${player(l)}<div class="player-actions"><button data-act="transcript" ${locked?'disabled':''} aria-expanded="${!!d.showText}">${icon('text')}${locked?'提交理解题后显示文本':d.showText?'收起对话文本':'需要帮助？展开文本'}</button></div><div id="transcript-area">${d.showText&&!locked?transcript(l):''}</div><div class="lesson-bottom"><span>逐句重听也有帮助，但先抓住整体意思。</span><a class="primary" href="${lessonURL(l.id,'understand')}">听好了，确认一下</a></div>`;}
  if(step==='understand'){const reading=diag&&firstQuiz(l);if(reading&&!d.readingStarted){d.readingStarted=true;d.answers={};d.checked=Number.isInteger(memory.diagnostic.reading);d.textSeen=true;}return `<div class="eyebrow">${reading?'READ AND COMPARE':'CHECK THE MEANING'}</div><h2>${reading?'看过文字后，再核对一次。':'你听懂了哪些信息？'}</h2><p>${reading?'用同一组题观察文字能否帮助理解；这包含重复作答的影响，不能当作标准诊断。':d.textSeen?'你已经看过文本，本次会标记为借助文本作答。':'先选答案，再查看解释。答错也可以继续学习。'}</p>${player(l)}${reading?transcript(l):''}${l.questions.map((q,i)=>`<fieldset class="question-block"><legend>${i+1}. ${esc(q.prompt)}</legend><div class="quiz-options">${q.options.map((o,j)=>`<label class="quiz-option"><input type="radio" name="question-${i}" value="${j}" ${d.answers[i]===j?'checked':''} ${d.checked?'disabled':''}>${esc(o)}</label>`).join('')}</div></fieldset>`).join('')}<div id="quiz-feedback" role="status">${d.checked?quizFeedback(l):''}</div><div class="lesson-bottom"><a class="quiet" href="${lessonURL(l.id,'listen')}">返回听力</a>${d.checked?`<a class="primary" href="${lessonURL(l.id,'speak')}">轮到我开口了</a><button class="secondary" data-act="retry-quiz">再练理解题</button>`:`<button class="primary" data-act="check-quiz">${reading?'保存阅读辅助结果':'提交我的回答'}</button>`}</div>`;}
@@ -227,8 +227,41 @@ function completeLesson(){const l=currentLesson,d=draft(l),feedback=$('#review-f
  const report={ratings:d.ratings,partner:d.partner,note:d.note};if(l.id==='diagnostic'){memory.diagnostic={...memory.diagnostic,...report,completed:true,date:dateKey()};}else{memory=finishLesson(memory,l.id,report,dateKey());for(let i=0;i<l.phrases.length;i++){const id=`${l.id}:p${i}`;if(memory.saved.includes(id)&&!memory.reviews[id])memory=reviewPhrase(memory,id,false,dateKey());}}
  persist();go(`lesson/${l.id}/complete`);
 }
-function updatePlayer(){const b=$('[data-act="play"]');if(b){b.innerHTML=icon(audio.paused?'play':'pause');b.setAttribute('aria-label',audio.paused?'播放对话':'暂停对话');}const progress=$('#audio-progress');if(progress){progress.value=audio.duration?audio.currentTime/audio.duration*100:0;$('#current-time').textContent=formatTime(audio.currentTime);$('#duration').textContent=Number.isFinite(audio.duration)?formatTime(audio.duration):'加载中';}}
-async function playFull(){prepareDemoPlayback();lineAudio.pause();segmentEnd=null;const token=++audioRequest;if(!audio.paused){audio.pause();return;}try{if(audio.ended)audio.currentTime=0;await audio.play();}catch{if(token===audioRequest)toast('音频暂时无法播放，请刷新后重试。')}if(token===audioRequest)updatePlayer();}
+function updatePlayer(){
+ const b=$('[data-act="play"]'),active=!audio.paused&&!audio.ended;
+ const busy=active&&audio.readyState<3;
+ if(b){
+  const name=active?'pause':'play';
+  // Progress events must not replace the SVG between pointer-down and pointer-up.
+  if(b.dataset.playbackIcon!==name){
+   b.innerHTML=icon(name);b.dataset.playbackIcon=name;
+   b.setAttribute('aria-label',active?'暂停对话':'播放对话');
+  }
+  if(b.dataset.playbackBusy!==String(busy)){
+   b.dataset.playbackBusy=String(busy);b.setAttribute('aria-busy',String(busy));
+  }
+ }
+ const status=$('#audio-status');
+ if(status){
+  const state=audio.error?'error':audio.ended?'ended':busy?'loading':active?'playing':audio.currentTime>0?'paused':'idle';
+  if(status.dataset.playbackState!==state){
+   status.dataset.playbackState=state;
+   status.textContent={idle:'点击播放对话。',loading:'正在加载音频，再点一次可取消。',playing:'正在播放，再点一次可暂停。',paused:'已暂停，点击继续播放。',ended:'播放结束，点击可重新播放。',error:'音频暂时无法播放，请刷新后重试。'}[state];
+  }
+ }
+ const progress=$('#audio-progress');
+ if(progress){progress.value=audio.duration?audio.currentTime/audio.duration*100:0;$('#current-time').textContent=formatTime(audio.currentTime);$('#duration').textContent=Number.isFinite(audio.duration)?formatTime(audio.duration):'加载中';}
+}
+async function playFull(){
+ prepareDemoPlayback();lineAudio.pause();segmentEnd=null;
+ const token=++audioRequest;
+ if(!audio.paused){audio.pause();updatePlayer();return;}
+ try{
+  if(audio.ended)audio.currentTime=0;
+  const pending=audio.play();updatePlayer();await pending;
+ }catch{if(token===audioRequest){audio.pause();toast('音频暂时无法播放，请刷新后重试。')}}
+ if(token===audioRequest)updatePlayer();
+}
 async function playLine(id,index){prepareDemoPlayback();stopPlayback();const token=audioRequest;try{const meta=await getTimeline(id);if(token!==audioRequest)return;const line=meta.lines[index];if(!line)throw Error();lineAudio.src=`audio/course/${id}.mp3`;lineAudio.playbackRate=audio.playbackRate;lineAudio.currentTime=line.start;segmentEnd=line.end;await lineAudio.play();}catch{if(token===audioRequest)toast('这句音频暂时无法播放，请重试。')}}
 async function toggleRecording(){
  if(recording){stopRecording({keepResult:true});return;}
@@ -358,7 +391,7 @@ document.addEventListener('click',event=>{const b=event.target.closest('[data-ac
 });
 document.addEventListener('change',event=>{if(!currentLesson)return;const d=draft(currentLesson),t=event.target;if(t.name?.startsWith('question-'))d.answers[Number(t.name.split('-')[1])]=Number(t.value);if(t.name?.startsWith('rating-'))d.ratings[Number(t.name.split('-')[1])]=t.value===''?null:Number(t.value);if(t.name==='spoken')d.spoken=t.checked;if(t.name==='partner')d.partner=t.checked;});
 document.addEventListener('input',event=>{if(event.target.id==='audio-progress'&&Number.isFinite(audio.duration))audio.currentTime=audio.duration*Number(event.target.value)/100;if(event.target.name==='note'&&currentLesson)draft(currentLesson).note=event.target.value;});
-['timeupdate','loadedmetadata','play','pause','ended'].forEach(type=>audio.addEventListener(type,updatePlayer));
+['timeupdate','loadedmetadata','play','pause','ended','waiting','playing','error','emptied'].forEach(type=>audio.addEventListener(type,updatePlayer));
 lineAudio.addEventListener('timeupdate',()=>{if(segmentEnd!==null&&lineAudio.currentTime>=segmentEnd){lineAudio.pause();segmentEnd=null;}});
 document.addEventListener('visibilitychange',()=>{if(document.hidden)pauseCourseMedia();});
 window.addEventListener('hashchange',()=>{if(course)render()});window.addEventListener('pagehide',cleanup);window.addEventListener('pageshow',event=>{if(event.persisted&&course)render();});

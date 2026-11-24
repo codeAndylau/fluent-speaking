@@ -1118,5 +1118,10 @@
   "没有找到麦克风": "No microphone found",
   "连接或启用麦克风后重试，或使用手机录音机。": "Connect or enable a microphone and try again, or use your phone’s recorder.",
   "麦克风可能被占用或无法读取": "Your microphone may be busy or unavailable",
-  "关闭其他正在使用麦克风的应用后重试。": "Close other apps using the microphone and try again."
+  "关闭其他正在使用麦克风的应用后重试。": "Close other apps using the microphone and try again.",
+  "点击播放对话。": "Tap to play the dialogue.",
+  "正在加载音频，再点一次可取消。": "Loading audio. Tap again to cancel.",
+  "正在播放，再点一次可暂停。": "Playing. Tap again to pause.",
+  "已暂停，点击继续播放。": "Paused. Tap to continue.",
+  "播放结束，点击可重新播放。": "Finished. Tap to play again."
 }

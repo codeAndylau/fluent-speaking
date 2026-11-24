@@ -38,3 +38,7 @@ footer a { color: var(--green); text-decoration: underline; text-underline-offse
  #record-result audio{width:100%;max-width:100%}
  #conversation-prompt{font-size:16px;line-height:1.6}
 }
+
+/* Keep the hit target stable even while media events change the icon. */
+.play-button svg{pointer-events:none}
+.playback-status{font-size:13px;color:var(--muted);min-height:1.6em;margin:8px 0 12px}
