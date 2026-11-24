@@ -1,0 +1,567 @@
+{
+ "voice": "en-US-AndrewNeural",
+ "profile": "sentence-packs-24khz-gap500ms-v1",
+ "units": 7000,
+ "packs": [
+  {
+   "sourceSHA256": "4849f1d961eaefa8c960fc1df8d8f09542f10a60c566e70a38692b35680dd34e",
+   "audioSHA256": "95435db9835fe38520044f1e7d36b1782b789723f09f5244a9d74d08f9621294",
+   "voice": "en-US-AndrewNeural",
+   "profile": "sentence-packs-24khz-gap500ms-v1",
+   "file": "audio-packs/pack-001-4849f1d961ea.mp3",
+   "duration": 249.092
+  },
+  {
+   "sourceSHA256": "9a0fbd259efc7fc3e8642c9ac50ab80eb71321e102d863dd09ee618e3c03a713",
+   "audioSHA256": "7667953da4cc1388601246a52d6aa128730520c35949ddf5fee45a71bb00ac1c",
+   "voice": "en-US-AndrewNeural",
+   "profile": "sentence-packs-24khz-gap500ms-v1",
+   "file": "audio-packs/pack-002-9a0fbd259efc.mp3",
+   "duration": 273.812
+  },
+  {
+   "sourceSHA256": "99e4e609f0d8cf07c7608bfc7fd50a8c43dea310324fdccb7402571bc2bf8b9c",
+   "audioSHA256": "dadc64244a4b7d0d8686271bc0218968ce5a8313d7a855b2c898c526bf71b4bf",
+   "voice": "en-US-AndrewNeural",
+   "profile": "sentence-packs-24khz-gap500ms-v1",
+   "file": "audio-packs/pack-003-99e4e609f0d8.mp3",
+   "duration": 283.1835
+  },
+  {
+   "sourceSHA256": "e6d4dc1d8f23611901b303ee197e473923df461d070c0063244a8f937fc4c1bb",
+   "audioSHA256": "cc46e8c3af66edf17ac82180845de01892fdaaea9a10796d4ea00f96cdf13d93",
+   "voice": "en-US-AndrewNeural",
+   "profile": "sentence-packs-24khz-gap500ms-v1",
+   "file": "audio-packs/pack-004-e6d4dc1d8f23.mp3",
+   "duration": 274.2315
+  },
+  {
+   "sourceSHA256": "f6084f4cb234396f572813efeec7264c0cad8031dc8d601fd88b261023a611fe",
+   "audioSHA256": "01eb89b9add4f7ef03d14fb8afec126bf2bf1429cb5b13374ff2ecf562d737ba",
+   "voice": "en-US-AndrewNeural",
+   "profile": "sentence-packs-24khz-gap500ms-v1",
+   "file": "audio-packs/pack-005-f6084f4cb234.mp3",
+   "duration": 286.364
+  },
+  {
+   "sourceSHA256": "435cd24046be863491f3c076062b6e7ca5d93daeb970b4b3d456d70d508e5d6b",
+   "audioSHA256": "f5094f8aaf71086271d6607dca30a7d8b662f25bf2a59eea69c77399eb4f20fd",
+   "voice": "en-US-AndrewNeural",
+   "profile": "sentence-packs-24khz-gap500ms-v1",
+   "file": "audio-packs/pack-006-435cd24046be.mp3",
+   "duration": 284.9
+  },
+  {
+   "sourceSHA256": "da03ec9a4c5ba7c5840ea7a97b276c8e37b043ec50680b6a9e57d1d4375daa72",
+   "audioSHA256": "de52f0f3e0582f86640b000b450250dcbb0eecf074947fe6922ce9fdb0e59ab0",
+   "voice": "en-US-AndrewNeural",
+   "profile": "sentence-packs-24khz-gap500ms-v1",
+   "file": "audio-packs/pack-007-da03ec9a4c5b.mp3",
+   "duration": 284.228
+  },
+  {
+   "sourceSHA256": "dffce54d176ef5fbbd0fefc6348d6930f51e88af6f199ab1478fb4c49745794d",
+   "audioSHA256": "44f6c0678eda7af9aeeb1725b5fdf399b926fc350eba845c2713a97d064d7c67",
+   "voice": "en-US-AndrewNeural",
+   "profile": "sentence-packs-24khz-gap500ms-v1",
+   "file": "audio-packs/pack-008-dffce54d176e.mp3",
+   "duration": 292.4715
+  },
+  {
+   "sourceSHA256": "5918b4c52289e0b3dbd24bc896e5e96dd3b50f23584f0e585d58852a94035d1c",
+   "audioSHA256": "e06e2d3647eb0c192194ed3270fddd59bfc417c13cc8fe5e8ee191fc7b340d46",
+   "voice": "en-US-AndrewNeural",
+   "profile": "sentence-packs-24khz-gap500ms-v1",
+   "file": "audio-packs/pack-009-5918b4c52289.mp3",
+   "duration": 301.964
+  },
+  {
+   "sourceSHA256": "ceb5d228005e51c97349e7229e9b6fd3a9f191fec5a09b61f2facbfc4e0a7958",
+   "audioSHA256": "2994cad6a14f3f32db213381f3c4bc9c84813d9917733df1b5ccea5afcdd2d4c",
+   "voice": "en-US-AndrewNeural",
+   "profile": "sentence-packs-24khz-gap500ms-v1",
+   "file": "audio-packs/pack-010-ceb5d228005e.mp3",
+   "duration": 304.436
+  },
+  {
+   "sourceSHA256": "f97c469084c31feafa9d146a7f1cc5e6a8e7bcdb6a11c33925b4702b8e62bf6b",
+   "audioSHA256": "d4586d31a72c1bc969bf7a78c2b0ea8b3a842a1cb27710b237fb4a3105d6cdb3",
+   "voice": "en-US-AndrewNeural",
+   "profile": "sentence-packs-24khz-gap500ms-v1",
+   "file": "audio-packs/pack-011-f97c469084c3.mp3",
+   "duration": 291.6315
+  },
+  {
+   "sourceSHA256": "329ef2f7d99603936bcc10134a3d1029a135d6be59588e1c70025075ca53f2fd",
+   "audioSHA256": "583780a07dc0358776d618193bd465b05c40cc3103c28c8d270c83448d6e6ee9",
+   "voice": "en-US-AndrewNeural",
+   "profile": "sentence-packs-24khz-gap500ms-v1",
+   "file": "audio-packs/pack-012-329ef2f7d996.mp3",
+   "duration": 300.02
+  },
+  {
+   "sourceSHA256": "b2cb73976bc69f83b817c4bf3d36095cbb8c1e134f8786b8e314eb6fe89f8f2e",
+   "audioSHA256": "fdd9ca6f2d231ba0792dbbadfcd4a04a93f1bba5b357348fa4c321b151e27666",
+   "voice": "en-US-AndrewNeural",
+   "profile": "sentence-packs-24khz-gap500ms-v1",
+   "file": "audio-packs/pack-013-b2cb73976bc6.mp3",
+   "duration": 299.54
+  },
+  {
+   "sourceSHA256": "5abcbf449e1bd715ec5ebf3aeafa5776d727e6e5a0fa9379aada658aa90abc96",
+   "audioSHA256": "be550bad5644d072b265b005cd9b8cedf86d9a3c8535b0bd1ddbdcb225df5cda",
+   "voice": "en-US-AndrewNeural",
+   "profile": "sentence-packs-24khz-gap500ms-v1",
+   "file": "audio-packs/pack-014-5abcbf449e1b.mp3",
+   "duration": 304.172
+  },
+  {
+   "sourceSHA256": "94e653d344ad0d4c8e593f7acb415aa68e463d13ba1b0fbd8f7562e38c5527e1",
+   "audioSHA256": "7c3cef265afd533d540c8dd6c7c4ac3103135fa4a934c6ed3e59908935fe1e59",
+   "voice": "en-US-AndrewNeural",
+   "profile": "sentence-packs-24khz-gap500ms-v1",
+   "file": "audio-packs/pack-015-94e653d344ad.mp3",
+   "duration": 301.6635
+  },
+  {
+   "sourceSHA256": "a681481cac30a8077197bb9af127a2e178d2f8f642050ca642bae85255f87572",
+   "audioSHA256": "ece61b04eaae973c21c683c96d690e028c4a68ef298555860493f47dcc25c19f",
+   "voice": "en-US-AndrewNeural",
+   "profile": "sentence-packs-24khz-gap500ms-v1",
+   "file": "audio-packs/pack-016-a681481cac30.mp3",
+   "duration": 305.108
+  },
+  {
+   "sourceSHA256": "de344d60d76812ce4ce8d57e97a514b353b3f3390ba6e609b60da4cba55fdbca",
+   "audioSHA256": "7e5c179c5cc9d4fa3bea3e803530d3a29125b1350902c48dcfa8fde3e13bc4d1",
+   "voice": "en-US-AndrewNeural",
+   "profile": "sentence-packs-24khz-gap500ms-v1",
+   "file": "audio-packs/pack-017-de344d60d768.mp3",
+   "duration": 306.02
+  },
+  {
+   "sourceSHA256": "440bcc2dd8bc4eb15dbb1ce343b452b9f56d6fe9b62b9f576cf494adae469337",
+   "audioSHA256": "791b0db61aac264faf479d925f8f25d1ecd198984399fd050bf4699277c1dac4",
+   "voice": "en-US-AndrewNeural",
+   "profile": "sentence-packs-24khz-gap500ms-v1",
+   "file": "audio-packs/pack-018-440bcc2dd8bc.mp3",
+   "duration": 312.836
+  },
+  {
+   "sourceSHA256": "1de63ff6822de25f48e12ddc966f6db6b9319891ef962ee98ec1225313cb8e6f",
+   "audioSHA256": "2885c31c3a9eb58fed53dd23784fca40a8b374e80c2fe427dca6e52d03d9c552",
+   "voice": "en-US-AndrewNeural",
+   "profile": "sentence-packs-24khz-gap500ms-v1",
+   "file": "audio-packs/pack-019-1de63ff6822d.mp3",
+   "duration": 309.452
+  },
+  {
+   "sourceSHA256": "0a91c344934c9a79d39b5113a6086cd30c33a03630f800074d9a1ad5bdf4d4c3",
+   "audioSHA256": "8be0baf358fab719c9d46010596b8a43d34477f36765183a3245b432a00ecb9c",
+   "voice": "en-US-AndrewNeural",
+   "profile": "sentence-packs-24khz-gap500ms-v1",
+   "file": "audio-packs/pack-020-0a91c344934c.mp3",
+   "duration": 311.0955
+  },
+  {
+   "sourceSHA256": "c7de517638f3a4e1cd61a5ca0f288a0bdc5cc28057307faa028e66d77e0d25df",
+   "audioSHA256": "f842f5ec1305aaafab107b1486cec7f2e6906267e81ab171dd7fa98f0fe4750d",
+   "voice": "en-US-AndrewNeural",
+   "profile": "sentence-packs-24khz-gap500ms-v1",
+   "file": "audio-packs/pack-021-c7de517638f3.mp3",
+   "duration": 322.148
+  },
+  {
+   "sourceSHA256": "cf30195a5dcec0f1dfbcf71bbf32d4a81e03900aff8499d306545c9cf91902b3",
+   "audioSHA256": "0e4b9e346262b489171da5138a4c9843395bedaa6baf3993f48fad5185ed3b6c",
+   "voice": "en-US-AndrewNeural",
+   "profile": "sentence-packs-24khz-gap500ms-v1",
+   "file": "audio-packs/pack-022-cf30195a5dce.mp3",
+   "duration": 308.036
+  },
+  {
+   "sourceSHA256": "f67f76a45793b8e398f62cd71ddaf59f2050acad3a0da8f073cc2d159755ae53",
+   "audioSHA256": "94e6a32e886f99e924a6a4d943f71dfea88b650c5dabfa8afc9aee2f437a0173",
+   "voice": "en-US-AndrewNeural",
+   "profile": "sentence-packs-24khz-gap500ms-v1",
+   "file": "audio-packs/pack-023-f67f76a45793.mp3",
+   "duration": 310.196
+  },
+  {
+   "sourceSHA256": "843bbefee68dc7c0d71672395ae50d180a9fc20f99074016234c7c33180eeb57",
+   "audioSHA256": "f5b3a83b8568bbca31e53ea82bc0239681335e00c5d3a745505edf2f6ad14719",
+   "voice": "en-US-AndrewNeural",
+   "profile": "sentence-packs-24khz-gap500ms-v1",
+   "file": "audio-packs/pack-024-843bbefee68d.mp3",
+   "duration": 336.764
+  },
+  {
+   "sourceSHA256": "c7f881721c122f04be104d83f5375a79b3ce5e12f9c034ebad262e6e5ec7b700",
+   "audioSHA256": "a3aa75cd7d94771d1aa47fae8957e5e28e621e106efd63aeb528858d121910e5",
+   "voice": "en-US-AndrewNeural",
+   "profile": "sentence-packs-24khz-gap500ms-v1",
+   "file": "audio-packs/pack-025-c7f881721c12.mp3",
+   "duration": 322.268
+  },
+  {
+   "sourceSHA256": "8def24c1098b8913ff9ba0f71fcce0cc2a15b167117d1082e1aeea88fd5ccb0c",
+   "audioSHA256": "0ab257624caa3a7eb0d5461b249931ef3456226fae9f0b84ea8690c8d45075c5",
+   "voice": "en-US-AndrewNeural",
+   "profile": "sentence-packs-24khz-gap500ms-v1",
+   "file": "audio-packs/pack-026-8def24c1098b.mp3",
+   "duration": 334.22
+  },
+  {
+   "sourceSHA256": "78de862b91c6797502a05c6e3e2c4f79d17e19d363d6c3aafa76c57eff684e88",
+   "audioSHA256": "f3d49c71f70fb71bbb81a29aeeba1f0f03b3bb34627bf4a8cdc9d8eeec49c9e1",
+   "voice": "en-US-AndrewNeural",
+   "profile": "sentence-packs-24khz-gap500ms-v1",
+   "file": "audio-packs/pack-027-78de862b91c6.mp3",
+   "duration": 326.276
+  },
+  {
+   "sourceSHA256": "4715b9be9abba98894182a9d43b9b9f794321fabd1b7da1bdcc826d3e8725262",
+   "audioSHA256": "eb41ddac1079e8596f9bce20ae90aebe59fbcadbcc6201b81ec63b2cf8d9c467",
+   "voice": "en-US-AndrewNeural",
+   "profile": "sentence-packs-24khz-gap500ms-v1",
+   "file": "audio-packs/pack-028-4715b9be9abb.mp3",
+   "duration": 329.18
+  },
+  {
+   "sourceSHA256": "a5758ebed1a642427ef561ea3a4697070fd112178cdafd872d940a3cc44f9e9f",
+   "audioSHA256": "71559e925786fc78866bdb5af5529bf6b700780b591a0f816ec6a14f58155d0a",
+   "voice": "en-US-AndrewNeural",
+   "profile": "sentence-packs-24khz-gap500ms-v1",
+   "file": "audio-packs/pack-029-a5758ebed1a6.mp3",
+   "duration": 325.7115
+  },
+  {
+   "sourceSHA256": "bb60e7a4c3606de3583b606a4ddc426013f02b98f7b324ec8d0eed1c94741ab4",
+   "audioSHA256": "d49fe974a5d0ab07c59ebb972dc0760b3df4de2c314df5b0e32666661c488a72",
+   "voice": "en-US-AndrewNeural",
+   "profile": "sentence-packs-24khz-gap500ms-v1",
+   "file": "audio-packs/pack-030-bb60e7a4c360.mp3",
+   "duration": 335.156
+  },
+  {
+   "sourceSHA256": "688d00299413d992d116face1808261867498166b91184c219f4285d866acd0e",
+   "audioSHA256": "8fa0bbb9660667aaa6f4bb63748cbc660de92f8dc8c4082600f7167184176664",
+   "voice": "en-US-AndrewNeural",
+   "profile": "sentence-packs-24khz-gap500ms-v1",
+   "file": "audio-packs/pack-031-688d00299413.mp3",
+   "duration": 336.3195
+  },
+  {
+   "sourceSHA256": "1c49f8bdc8bb86a5d1a5316015e7d911dfbd10df2665557d0a54c235d54121ce",
+   "audioSHA256": "018795ac5e0b88656b0ba08ead91a2fe18b07e252da33c1e595bf82f567422ef",
+   "voice": "en-US-AndrewNeural",
+   "profile": "sentence-packs-24khz-gap500ms-v1",
+   "file": "audio-packs/pack-032-1c49f8bdc8bb.mp3",
+   "duration": 332.9
+  },
+  {
+   "sourceSHA256": "fb6e516c2401043ec38632af8dcc830abe3a295895032284c345d1ae5d416981",
+   "audioSHA256": "f08d9dcb703ffd548566e820baeafc0a14c920d46d6e40bdaf17618310aaac81",
+   "voice": "en-US-AndrewNeural",
+   "profile": "sentence-packs-24khz-gap500ms-v1",
+   "file": "audio-packs/pack-033-fb6e516c2401.mp3",
+   "duration": 332.4075
+  },
+  {
+   "sourceSHA256": "41a61cb2cfb495cb1f9e75571d217cc5565b48db02ebedec1ac1a5d1475ef9d4",
+   "audioSHA256": "463cc363f231d4e2f9f45d53250dce022992431de329e25411e07d07e2599b09",
+   "voice": "en-US-AndrewNeural",
+   "profile": "sentence-packs-24khz-gap500ms-v1",
+   "file": "audio-packs/pack-034-41a61cb2cfb4.mp3",
+   "duration": 324.044
+  },
+  {
+   "sourceSHA256": "304ba77e058a0e85eb658dc8e822b6c6150506da1709feb62323e21ee315f6fb",
+   "audioSHA256": "5891349eaec44c0aad7bfc1473306c71e97017bf728e20d829206201ce4199d3",
+   "voice": "en-US-AndrewNeural",
+   "profile": "sentence-packs-24khz-gap500ms-v1",
+   "file": "audio-packs/pack-035-304ba77e058a.mp3",
+   "duration": 340.8315
+  },
+  {
+   "sourceSHA256": "9458ab57837b50abaefb6c2457d27ad0901552d3503b3e23c9bd28278adc7603",
+   "audioSHA256": "56728159b984422fa7befa90c7ac6fb63fb1335da9af25b6efc0a8e1650b3233",
+   "voice": "en-US-AndrewNeural",
+   "profile": "sentence-packs-24khz-gap500ms-v1",
+   "file": "audio-packs/pack-036-9458ab57837b.mp3",
+   "duration": 340.508
+  },
+  {
+   "sourceSHA256": "51211d1dd3bb3f9d3bc37fa829b0c60a55d30e5d1e882459ef949e29c68bb584",
+   "audioSHA256": "994b3229122ae70119f84e3f12187bd11a8ff48e9824ba8956059c09ea2b1d61",
+   "voice": "en-US-AndrewNeural",
+   "profile": "sentence-packs-24khz-gap500ms-v1",
+   "file": "audio-packs/pack-037-51211d1dd3bb.mp3",
+   "duration": 328.124
+  },
+  {
+   "sourceSHA256": "29c07f683eb45a5e6f505514fbb9cce2c5424d2ac9817a0c0c3113dbf7658c64",
+   "audioSHA256": "49492b6a75908f012c1ec4c17b0d530e07f5a3e97ba937ed0900daa058b179d4",
+   "voice": "en-US-AndrewNeural",
+   "profile": "sentence-packs-24khz-gap500ms-v1",
+   "file": "audio-packs/pack-038-29c07f683eb4.mp3",
+   "duration": 334.868
+  },
+  {
+   "sourceSHA256": "c06df6f85b5a6924817ebf81ed48255d2fd4911f622257c9860b7e7f934c3a5f",
+   "audioSHA256": "c0285f75409dd2f941850ce4a706854c32d5114373c3f6e58202bfb341601b18",
+   "voice": "en-US-AndrewNeural",
+   "profile": "sentence-packs-24khz-gap500ms-v1",
+   "file": "audio-packs/pack-039-c06df6f85b5a.mp3",
+   "duration": 330.2235
+  },
+  {
+   "sourceSHA256": "f8f5900d1fba40ccb603fd619992dc10d2d47bc65434d63d0cc8543989f2742f",
+   "audioSHA256": "27eca8b4bfb86287cdec974d847aca7d07c24092aa4c97b0cf72e9d91b8a541e",
+   "voice": "en-US-AndrewNeural",
+   "profile": "sentence-packs-24khz-gap500ms-v1",
+   "file": "audio-packs/pack-040-f8f5900d1fba.mp3",
+   "duration": 340.2075
+  },
+  {
+   "sourceSHA256": "e8fa3adec52d1ee6e48043c4a80003dd3fc673f52ec02b8bea90737e67842bbf",
+   "audioSHA256": "870037fe3a7a275ab838a8e199ce3fae2475623f4e537d418f2ba53e273b55c3",
+   "voice": "en-US-AndrewNeural",
+   "profile": "sentence-packs-24khz-gap500ms-v1",
+   "file": "audio-packs/pack-041-e8fa3adec52d.mp3",
+   "duration": 335.324
+  },
+  {
+   "sourceSHA256": "b21827d9068cd69a2ac30402df7afef042b0d889e1928a0f057778ca92712353",
+   "audioSHA256": "d2ee746f80208dc419e87ccbd5768df1c5eafeec53cf4b196a5e296335c7c901",
+   "voice": "en-US-AndrewNeural",
+   "profile": "sentence-packs-24khz-gap500ms-v1",
+   "file": "audio-packs/pack-042-b21827d9068c.mp3",
+   "duration": 329.516
+  },
+  {
+   "sourceSHA256": "1846f88b8eed67168c8fb2436f2f7050e343195a46d7241d9bc56f26abec34ce",
+   "audioSHA256": "f7a89bab7406b9191588f9cdee80759589e4ffa2f0e87800f512a67452817694",
+   "voice": "en-US-AndrewNeural",
+   "profile": "sentence-packs-24khz-gap500ms-v1",
+   "file": "audio-packs/pack-043-1846f88b8eed.mp3",
+   "duration": 344.252
+  },
+  {
+   "sourceSHA256": "e08d63892ef4fbd6b75303bbb4965137e121cf97bb9619e89b2d693b2bc10d69",
+   "audioSHA256": "e81b53dd0365b95afb054fcfd9e9b2a0bc69e96387619a242d19f9c289ddc8fe",
+   "voice": "en-US-AndrewNeural",
+   "profile": "sentence-packs-24khz-gap500ms-v1",
+   "file": "audio-packs/pack-044-e08d63892ef4.mp3",
+   "duration": 339.092
+  },
+  {
+   "sourceSHA256": "d4c357eee3c1ba6b22c57f7c3e67d3805133cb4a15f3c95e21ab1a80e9d5e7b4",
+   "audioSHA256": "89ceacbd835e0ddb578e3e9e231a59e855e49f6a066a95a655d0a89bb6048f5d",
+   "voice": "en-US-AndrewNeural",
+   "profile": "sentence-packs-24khz-gap500ms-v1",
+   "file": "audio-packs/pack-045-d4c357eee3c1.mp3",
+   "duration": 337.436
+  },
+  {
+   "sourceSHA256": "3a47dc376365a603d521a39c07bcd282102a30769d18f0e98ce6cc711debbec0",
+   "audioSHA256": "becd74053e1cd7588b32d992349b1df0486f62932ed3f262c40d8f7285ac2a39",
+   "voice": "en-US-AndrewNeural",
+   "profile": "sentence-packs-24khz-gap500ms-v1",
+   "file": "audio-packs/pack-046-3a47dc376365.mp3",
+   "duration": 319.868
+  },
+  {
+   "sourceSHA256": "97512a818d44ec3de68d3bfa97b4897409cae1478d257581c36b81d6bef12dbc",
+   "audioSHA256": "908dee6661b6957d7a60063d1421f59c14e994a76f41fae5022b07135b4fa2cc",
+   "voice": "en-US-AndrewNeural",
+   "profile": "sentence-packs-24khz-gap500ms-v1",
+   "file": "audio-packs/pack-047-97512a818d44.mp3",
+   "duration": 349.244
+  },
+  {
+   "sourceSHA256": "688f24201c8b87342a8629874253037002d4f2d2703b6af72938574c89b0012c",
+   "audioSHA256": "14c8fd42c6d613f280cd88652c18ff12cd4aa1d4b1f826bae5a53caee01b16d0",
+   "voice": "en-US-AndrewNeural",
+   "profile": "sentence-packs-24khz-gap500ms-v1",
+   "file": "audio-packs/pack-048-688f24201c8b.mp3",
+   "duration": 356.3355
+  },
+  {
+   "sourceSHA256": "b00d147b0460be5173e7f34f607bbad7835bb30a7ec9838b4fab855b46f3ff78",
+   "audioSHA256": "945b66e3cf11168fdce07cd51986442d3bc63c8dfc939aba04b48da01ea7e921",
+   "voice": "en-US-AndrewNeural",
+   "profile": "sentence-packs-24khz-gap500ms-v1",
+   "file": "audio-packs/pack-049-b00d147b0460.mp3",
+   "duration": 369.38
+  },
+  {
+   "sourceSHA256": "eb7995891b38c3fb54f48ca8c8fdc390345fbfe840e127b58df91633c5ed2c59",
+   "audioSHA256": "4885ec5f1936008e325f2a6a048f6f0067b71aace4a975769ed10667d2a0a048",
+   "voice": "en-US-AndrewNeural",
+   "profile": "sentence-packs-24khz-gap500ms-v1",
+   "file": "audio-packs/pack-050-eb7995891b38.mp3",
+   "duration": 347.3815
+  },
+  {
+   "sourceSHA256": "b4dfd9933b290aceed13e0396007723d3c06115060f078ed74ed749c38b64b68",
+   "audioSHA256": "5331fa9a2ebb4e6690fbfc26f84a8936f715cf369149c82d375f1d3873f65f25",
+   "voice": "en-US-AndrewNeural",
+   "profile": "sentence-packs-24khz-gap500ms-v1",
+   "file": "audio-packs/pack-051-b4dfd9933b29.mp3",
+   "duration": 357.404
+  },
+  {
+   "sourceSHA256": "8a4c039ed1b2d2cb8e1c7062ec4b25d6c04851013c4acf6753442ed9abda45ee",
+   "audioSHA256": "79ed9e2ee1aac3d7c8433bd9a95d0bebe550893bd3647c3de661a98a94e568d6",
+   "voice": "en-US-AndrewNeural",
+   "profile": "sentence-packs-24khz-gap500ms-v1",
+   "file": "audio-packs/pack-052-8a4c039ed1b2.mp3",
+   "duration": 368.3355
+  },
+  {
+   "sourceSHA256": "96cab31e54c5dbd76e1e878387596fe39583fe4d3805630c02411778b1da50de",
+   "audioSHA256": "9cdea1a3b885059f96f32ca81888cb742fc00a8c26a01859c72e6cd10bcf1160",
+   "voice": "en-US-AndrewNeural",
+   "profile": "sentence-packs-24khz-gap500ms-v1",
+   "file": "audio-packs/pack-053-96cab31e54c5.mp3",
+   "duration": 360.548
+  },
+  {
+   "sourceSHA256": "51027ec21d74df1a08e47c6703caeb985ba18174012891aebe9570a2ab7a48ee",
+   "audioSHA256": "ac2c6a3b2ff01f8b353d2e0e4b1f250c6e003b3beee421d1e0ce250b19acae29",
+   "voice": "en-US-AndrewNeural",
+   "profile": "sentence-packs-24khz-gap500ms-v1",
+   "file": "audio-packs/pack-054-51027ec21d74.mp3",
+   "duration": 352.8795
+  },
+  {
+   "sourceSHA256": "2d7a679856aaf80fce307fd64abbed3058e3d5ecbfecb8d042981ef89baa4a47",
+   "audioSHA256": "cabe38a7562150cfc32191059cab95629918e474a434190a4e06f379c20479dd",
+   "voice": "en-US-AndrewNeural",
+   "profile": "sentence-packs-24khz-gap500ms-v1",
+   "file": "audio-packs/pack-055-2d7a679856aa.mp3",
+   "duration": 349.028
+  },
+  {
+   "sourceSHA256": "6979fd571ae66ca19b7e4527d0b70f7c2573ac93a23adc9ab0c5d4f037680fa0",
+   "audioSHA256": "e32a647a6acf95240997e10e96b79caed42a9bdab927fc55bc717cad7bbf7568",
+   "voice": "en-US-AndrewNeural",
+   "profile": "sentence-packs-24khz-gap500ms-v1",
+   "file": "audio-packs/pack-056-6979fd571ae6.mp3",
+   "duration": 344.06
+  },
+  {
+   "sourceSHA256": "21b3a475348dc87eb839422b2676e0f21338c1795fcf85b09d9d5bef2c9fff3d",
+   "audioSHA256": "ece96ffe51633555e4a8c0a05a344241515a4b46452357d98e6a9cb13b980296",
+   "voice": "en-US-AndrewNeural",
+   "profile": "sentence-packs-24khz-gap500ms-v1",
+   "file": "audio-packs/pack-057-21b3a475348d.mp3",
+   "duration": 341.6955
+  },
+  {
+   "sourceSHA256": "e145de6cde1d9d60a2c2ee9bd6ed719905fdc580bcb6948b1fd34adca184e66c",
+   "audioSHA256": "aec8fc48ce342240a0d32708fe9dcf085f2f295ceef15599424b35406593b011",
+   "voice": "en-US-AndrewNeural",
+   "profile": "sentence-packs-24khz-gap500ms-v1",
+   "file": "audio-packs/pack-058-e145de6cde1d.mp3",
+   "duration": 353.372
+  },
+  {
+   "sourceSHA256": "f9a121353b2b3aaa778c701d857df16762f1a267762fa5cf57b67fd9c89c4b7f",
+   "audioSHA256": "f9c885fa099004be16cdab892feebab5343de0c8221947c0f4fbd6493fe08957",
+   "voice": "en-US-AndrewNeural",
+   "profile": "sentence-packs-24khz-gap500ms-v1",
+   "file": "audio-packs/pack-059-f9a121353b2b.mp3",
+   "duration": 356.4555
+  },
+  {
+   "sourceSHA256": "8fcef9e9f229c033619fefc807fb22856575aec859b8df1f1f5c6dbbb31775fa",
+   "audioSHA256": "f8a24c1be53076aa842b92bee3b1cf82a0f67edeb4be27391de15cd1eb011c17",
+   "voice": "en-US-AndrewNeural",
+   "profile": "sentence-packs-24khz-gap500ms-v1",
+   "file": "audio-packs/pack-060-8fcef9e9f229.mp3",
+   "duration": 359.0715
+  },
+  {
+   "sourceSHA256": "b325f34b23f818415133a9338655544a8005c6a713b79d1ff7f501168491d1fc",
+   "audioSHA256": "22da0ee7cf6c98a9cbb5aa992db2474b6a08a1cda9a811340a83918999d228d0",
+   "voice": "en-US-AndrewNeural",
+   "profile": "sentence-packs-24khz-gap500ms-v1",
+   "file": "audio-packs/pack-061-b325f34b23f8.mp3",
+   "duration": 360.1275
+  },
+  {
+   "sourceSHA256": "3c3c08d2d5deb5a71dadcecb425324b214b92d087b0f53ddad4c8413cf7db591",
+   "audioSHA256": "996b9922f9da3b3212a73cada381990c4c5f85922a14fb929ddc5869069a724b",
+   "voice": "en-US-AndrewNeural",
+   "profile": "sentence-packs-24khz-gap500ms-v1",
+   "file": "audio-packs/pack-062-3c3c08d2d5de.mp3",
+   "duration": 340.916
+  },
+  {
+   "sourceSHA256": "092cd009fec8c99b70142b951fa7604d1a37dddbf78b95c7b705fd06b92bfae3",
+   "audioSHA256": "f6933afde2a5c77ccf1cb23d8ce85852ea9e61b01d85a2118c1023157eb626f9",
+   "voice": "en-US-AndrewNeural",
+   "profile": "sentence-packs-24khz-gap500ms-v1",
+   "file": "audio-packs/pack-063-092cd009fec8.mp3",
+   "duration": 341.5035
+  },
+  {
+   "sourceSHA256": "74b1bf1d6050c86d1ea0852493097ce77bdf51b990a63f856e735564f075716d",
+   "audioSHA256": "96cc415df64cf91c1ae7e2c4a61b4d08640500dc14023908d04dff176cfe19cd",
+   "voice": "en-US-AndrewNeural",
+   "profile": "sentence-packs-24khz-gap500ms-v1",
+   "file": "audio-packs/pack-064-74b1bf1d6050.mp3",
+   "duration": 348.0555
+  },
+  {
+   "sourceSHA256": "6f249b776c1af967bdf43a906d1e6218351fa77d3cb433ef0489aa35f08d6bbf",
+   "audioSHA256": "c7c1f4f9945c3277a483ad6528b313d1689c29e17b26b6eeaac524222db3a808",
+   "voice": "en-US-AndrewNeural",
+   "profile": "sentence-packs-24khz-gap500ms-v1",
+   "file": "audio-packs/pack-065-6f249b776c1a.mp3",
+   "duration": 334.0635
+  },
+  {
+   "sourceSHA256": "2d48c6d65d0df46b993942fa3d0d4941c58f5e4ca4a922e4243e8da80a8961af",
+   "audioSHA256": "ea08ed510755d426011d94bff8c9f9d80edf750517e82420b7f9a39834075325",
+   "voice": "en-US-AndrewNeural",
+   "profile": "sentence-packs-24khz-gap500ms-v1",
+   "file": "audio-packs/pack-066-2d48c6d65d0d.mp3",
+   "duration": 317.732
+  },
+  {
+   "sourceSHA256": "2d62def25eb4845e5e83b6430eb43b0cb04e9efc988f1045ae7440f44382db35",
+   "audioSHA256": "1e7a0192a7464a6ae99ead4dbbc855742be71e57278b0aaf903953bedc68ccfd",
+   "voice": "en-US-AndrewNeural",
+   "profile": "sentence-packs-24khz-gap500ms-v1",
+   "file": "audio-packs/pack-067-2d62def25eb4.mp3",
+   "duration": 323.036
+  },
+  {
+   "sourceSHA256": "846ae7bf1f52bb7e82263c20a06970d07f39d7d73799023fe75c3d9e2df29d5e",
+   "audioSHA256": "1e80805724a1e6109c2a3b18302c642b6241972741e7732d2caacc0da30189e5",
+   "voice": "en-US-AndrewNeural",
+   "profile": "sentence-packs-24khz-gap500ms-v1",
+   "file": "audio-packs/pack-068-846ae7bf1f52.mp3",
+   "duration": 328.2315
+  },
+  {
+   "sourceSHA256": "81312ea0e40713f2b7d0655283f868a6ec342eb9671b3acbbac047f1a6caabd7",
+   "audioSHA256": "23fa168c1c1e9630a2f31abd9bad0d87eca8b9b14cbf6b71a4a5e953dcda8430",
+   "voice": "en-US-AndrewNeural",
+   "profile": "sentence-packs-24khz-gap500ms-v1",
+   "file": "audio-packs/pack-069-81312ea0e407.mp3",
+   "duration": 356.1675
+  },
+  {
+   "sourceSHA256": "9e2408d2eabe9bcca7ac51942c1a2f23ac559fcb89890bf80da800666673a4a0",
+   "audioSHA256": "14a375b96f18f986987682832d0339873cd81117ff196c7258da098fa4c805fe",
+   "voice": "en-US-AndrewNeural",
+   "profile": "sentence-packs-24khz-gap500ms-v1",
+   "file": "audio-packs/pack-070-9e2408d2eabe.mp3",
+   "duration": 385.2795
+  }
+ ]
+}

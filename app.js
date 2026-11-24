@@ -1,3 +1,7 @@
+import {initLanguage} from './i18n.mjs';
+import {renderSettings} from './settings.mjs';
+import {guideHTML} from './guide.mjs';
+import {createThemeController} from './theme.mjs';
 import {BACKUP_SECTIONS,createBackup,createSafetySnapshot,parseBackup,restoreBackup} from './learning-backup.mjs';
 import {EXTERNAL_NOTEBOOK_KEY,restoreExternalNotebook,externalPhraseKey,toggleExternalPhrase,reviewExternalPhrase,externalPhraseURL} from './external-notebook.mjs';
 import {icon} from './icons.mjs';
@@ -10,13 +14,14 @@ const route=()=>location.hash.slice(1)||'home';
 const lessonURL=(id,step='listen')=>`#lesson/${id}/${step}`;
 const types={lesson:'主题练习',review:'跨课复习',assessment:'新任务周测',challenge:'综合挑战',diagnostic:'入门诊断'};
 const steps=[['listen','先听一听'],['understand','确认听懂'],['speak','轮到你说'],['review','回顾与复习']];
+let themeControls,languageControls;
 let course,lessons=[],byId={},memory,currentLesson,drafts={},audioRequest=0,segmentEnd=null;
 const timelines=new Map(), audio=$('#lesson-audio'),lineAudio=$('#line-audio');
 let recording=null,recordUrl=null,toastTimer;
 let externalNotebook=new Map(), externalPage=null, pendingBackup=null, backupRead=0;
 const externalSections={
  stories:{label:'故事听说',load:()=>import('./stories.mjs'),render:'renderStories',stop:'stopStories'},
- vocabulary:{label:'词汇练习',load:()=>import('./vocabulary.mjs'),render:'renderVocabulary',stop:'stopVocabulary'}
+ vocabulary:{label:'词汇练习',load:()=>import('./vocabulary.mjs?v=20261124-4'),render:'renderVocabulary',stop:'stopVocabulary'}
 };
 const externalSource=part=>part==='story'||part==='stories'?'stories':part==='vocabulary'?'vocabulary':null;
 const isExternalDue=(entry,today)=>!entry.review||entry.review.due<=today;
@@ -101,17 +106,19 @@ function render(){cleanup();pendingBackup=null;backupRead++;let r=route(),parts=
  if(parts[0]==='lesson'&&!byId[parts[1]]){if(steps.some(s=>s[0]===parts[1])||parts[1]==='complete'){go(`lesson/w01d1/${parts[1]}`);return;}}
  const source=externalSource(parts[0]);
  const nav=source||(['lesson','week'].includes(parts[0])?'path':parts[0]);document.querySelectorAll('[data-nav]').forEach(a=>{const active=a.dataset.nav===nav;a.classList.toggle('active',active);if(active)a.setAttribute('aria-current','page');else a.removeAttribute('aria-current');});
- $('#breadcrumb').textContent=(source&&externalSections[source].label)||({home:'今日学习',path:'学习路径',week:'本周课程',phrases:'我的表达本',method:'怎么学，更有效',progress:'学习记录备份',lesson:'听说练习'})[parts[0]]||'今日学习';
+ $('#breadcrumb').textContent=(source&&externalSections[source].label)||({home:'今日学习',path:'学习路径',week:'本周课程',phrases:'我的表达本',method:'怎么学，更有效',progress:'学习记录备份',guide:'学习地图与使用攻略',settings:'设置',lesson:'听说练习'})[parts[0]]||'今日学习';
  if(source)renderExternal(source,r);
  else if(parts[0]==='lesson'){const l=byId[parts[1]];if(l){currentLesson=l;setAudio(l);renderLesson(l,parts[2]||'listen')}else renderMissing();}
- else if(parts[0]==='week')renderWeek(Number(parts[1]));else if(r==='path')renderPath();else if(r==='phrases')renderPhrases();else if(r==='method')renderMethod();else if(r==='progress')renderProgress();else renderHome();
+ else if(parts[0]==='week')renderWeek(Number(parts[1]));else if(r==='path')renderPath();else if(r==='phrases')renderPhrases();else if(r==='method')renderMethod();else if(r==='progress')renderProgress();else if(parts[0]==='guide')app.innerHTML=guideHTML();else if(r==='settings')renderSettings(app,themeControls,toast);else renderHome();
  window.scrollTo({top:0,behavior:'instant'});
+ if(parts[0]==='guide'&&['map','pages','routine','help'].includes(parts[1]))document.getElementById('guide-'+parts[1])?.scrollIntoView();
 }
 function renderMissing(){app.innerHTML='<div class="white-card empty-state"><h1>这节课暂时找不到</h1><p>请从课程目录选择课程。</p><a class="primary" href="#path">打开课程目录</a></div>';}
-function weekCalendar(){const d=new Date(),offset=(d.getDay()+6)%7,monday=new Date(d);monday.setDate(d.getDate()-offset);return ['一','二','三','四','五','六','日'].map((name,i)=>{const v=new Date(monday);v.setDate(monday.getDate()+i);const done=memory.dates.includes(dateKey(v));return `<div class="day ${i===offset?'today':''} ${done?'done':''}"><span>${name}</span><b>${done?'✓':v.getDate()}</b></div>`}).join('');}
+function weekCalendar(){const d=new Date(),offset=(d.getDay()+6)%7,monday=new Date(d);monday.setDate(d.getDate()-offset);return (document.documentElement.lang==='en'?['Mon','Tue','Wed','Thu','Fri','Sat','Sun']:['一','二','三','四','五','六','日']).map((name,i)=>{const v=new Date(monday);v.setDate(monday.getDate()+i);const done=memory.dates.includes(dateKey(v));return `<div class="day ${i===offset?'today':''} ${done?'done':''}"><span>${name}</span><b>${done?'✓':v.getDate()}</b></div>`}).join('');}
 function weekCount(w){return w.lessons.filter(l=>memory.lessons[l.id]?.completed).length;}
 function renderHome(){const next=nextLesson(memory,lessons),l=next||lessons[0],count=lessons.filter(l=>memory.lessons[l.id]?.completed).length,today=dateKey(),due=dueReviews(memory,today).length+[...externalNotebook.values()].filter(entry=>isExternalDue(entry,today)).length;
  app.innerHTML=`<section class="welcome"><div><div class="eyebrow">A LITTLE PRACTICE, EVERY DAY</div><h1>${count?'很高兴，再次听见你。':'你好，今天也一起开口吧。'}</h1><p>每天一个真实对话，把认识的英语变成说得出口的日常。</p></div><span class="date-chip">12 周 · 72 个学习日</span></section>
+ <a class="guide-home-link" href="#guide">第一次来，先看学习地图与使用攻略 <span>→</span></a>
  <section class="hero"><div class="hero-copy"><span class="pill">${icon('leaf')} ${next?`第 ${l.week} 周 · 第 ${l.day} 天`:'全课程练习已完成'}</span><h2>${count?esc(l.title):'从一句 Hello，'}<br><em>${count?'把表达带进生活。':'到自在地聊下去。'}</em></h2><p>${esc(l.goal)}</p><div class="hero-bottom"><a class="primary" href="${next?lessonURL(l.id):'#path'}">${icon('play')}${next?'开始今天的练习':'选择一周，再练一次'}</a><span class="hero-duration">${icon('clock')} 约 30 分钟</span></div></div><div class="hero-art" aria-hidden="true"><div class="orbit"></div><span class="hero-spark">✳</span><div class="chat-card"><span class="chat-face">A</span><div><b>Hi, I'm Alex.</b><small>EVERY CONVERSATION</small></div></div><div class="chat-card second"><span class="chat-face">L</span><div><b>Nice to meet you.</b><small>STARTS WITH A HELLO.</small></div></div><span class="art-caption">SMALL WORDS. REAL CONNECTIONS.</span></div></section>
  <div class="diagnostic-banner"><div><strong>${memory.diagnostic.completed?'你的起点记录已保存':'开始前，先找到你的听说起点'}</strong><p>${memory.diagnostic.completed?esc(diagnosticAdvice(memory.diagnostic)):'约 15 分钟，分别观察听辨、文字理解和开口表达。'}</p></div><a class="secondary" href="${lessonURL('diagnostic',memory.diagnostic.completed?'complete':'listen')}">${memory.diagnostic.completed?'查看诊断':'开始入门诊断'}</a></div>
  <section class="practice-links" aria-label="更多听说练习">
@@ -225,7 +232,10 @@ document.addEventListener('input',event=>{if(event.target.id==='audio-progress'&
 ['timeupdate','loadedmetadata','play','pause','ended'].forEach(type=>audio.addEventListener(type,updatePlayer));
 lineAudio.addEventListener('timeupdate',()=>{if(segmentEnd!==null&&lineAudio.currentTime>=segmentEnd){lineAudio.pause();segmentEnd=null;}});
 window.addEventListener('hashchange',()=>{if(course)render()});window.addEventListener('pagehide',cleanup);window.addEventListener('pageshow',event=>{if(event.persisted&&course)render();});
-async function start(){try{const r=await fetch('course.json');if(!r.ok)throw Error('course');course=await r.json();lessons=course.weeks.flatMap(w=>w.lessons.map(l=>({...l,week:w.week})));byId=Object.fromEntries([...lessons,course.diagnostic].map(l=>[l.id,l]));externalNotebook=restoreExternalNotebook(readStorage(EXTERNAL_NOTEBOOK_KEY));memory=restoreState(readStorage('fluent-course-v2'),readStorage('fluent-preview-v1'),lessons);persist();document.querySelectorAll('[data-icon]').forEach(el=>el.outerHTML=icon(el.dataset.icon));render();}catch(err){app.innerHTML='<div class="white-card empty-state"><h1>课程暂时没有加载成功</h1><p>请检查网络后重试；也可以在系统浏览器打开本站。刷新不会主动清除已保存的学习记录。</p><button class="primary" onclick="location.reload()">重新加载</button></div>';console.error(err);}}
+async function start(){try{languageControls=await initLanguage({document,storage:{getItem:key=>localStorage.getItem(key)},notify:toast});themeControls=createThemeController({root:document.documentElement,media:window.matchMedia('(prefers-color-scheme: dark)'),storage:{getItem:key=>localStorage.getItem(key),setItem:(key,value)=>localStorage.setItem(key,value)},notify:toast});const r=await fetch('course.json');if(!r.ok)throw Error('course');course=await r.json();lessons=course.weeks.flatMap(w=>w.lessons.map(l=>({...l,week:w.week})));byId=Object.fromEntries([...lessons,course.diagnostic].map(l=>[l.id,l]));externalNotebook=restoreExternalNotebook(readStorage(EXTERNAL_NOTEBOOK_KEY));memory=restoreState(readStorage('fluent-course-v2'),readStorage('fluent-preview-v1'),lessons);persist();document.querySelectorAll('[data-icon]').forEach(el=>el.outerHTML=icon(el.dataset.icon));render();}catch(err){
+ const english=document.documentElement.lang==='en';
+ if(english&&!languageControls){document.title='Fluent · Connection needed';document.querySelectorAll('.sidebar,.topbar,footer,#module-dialog').forEach(el=>el.style.display='none');document.querySelector('.app-shell').style.marginLeft='0'}
+ app.innerHTML=english?'<div class="white-card empty-state"><h1>Learning content could not load</h1><p>Please check your connection and try again. Your saved learning records are preserved.</p><button class="primary" onclick="location.reload()">Try again</button></div>':'<div class="white-card empty-state"><h1>课程暂时没有加载成功</h1><p>请检查网络后重试；也可以在系统浏览器打开本站。刷新不会主动清除已保存的学习记录。</p><button class="primary" onclick="location.reload()">重新加载</button></div>';console.error(err);}}
 function renderMethod(){app.innerHTML=`<section class="page-intro"><div class="eyebrow">LESS PRESSURE. MORE CONVERSATION.</div><h1>把“知道”，慢慢变成“会用”。</h1><p>这里的每一步练习，都为下一次真实的对话做准备。</p></section><section class="white-card learning-guide"><h2>让单词留在记忆里的练法</h2><ol><li><strong>先弄懂：</strong>只学当前情景中的一个意思，听自然短句，把声音与用途联系起来。</li><li><strong>再想起：</strong>撤掉英文，从场景试着说。卡住时看一点提示；看答案后隔几个项目再试。</li><li><strong>换着用：</strong>换成自己的食物、地点或安排，明天用另一道题再回忆。</li></ol><p>每天词汇练习约 10–15 分钟；到期复习多时少加新词。听懂、无提示想起与开口自评分别记录。词条可查询不代表全部词义已经完成场景教学。</p><div class="storage-actions"><a class="primary" href="#vocabulary">开始场景记忆</a><a class="secondary" href="#stories">在故事中再遇见</a><a class="quiet" href="#phrases">复习收藏表达</a></div></section><div class="method-grid">${[
  ['headphones','先听意思，再看文本','先判断发生了什么，再定位没听懂的地方。核对文本后重新听，让声音与意思对应起来。','听力过程指导研究','https://onlinelibrary.wiley.com/doi/10.1111/j.1467-9922.2009.00559.x'],
  ['chat','把表达，放进自己的生活','学会一句话后，换成自己的城市、职业或兴趣。再换个问题，试试能不能接得上。','语块教学研究','https://files.eric.ed.gov/fulltext/EJ1174049.pdf'],

@@ -4,9 +4,12 @@
   <meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="theme-color" content="#173e34"><meta name="description" content="每天一个真实对话，把认识的英语变成说得出口的日常。">
   <title>开口 Fluent · 让英语成为日常</title>
-  <link rel="stylesheet" href="styles.css">
-  <link rel="stylesheet" href="stories.css">
-  <link rel="stylesheet" href="vocabulary.css">
+  <script>try{var skin=localStorage.getItem('fluent-skin');if(['sage','ocean','sand'].includes(skin))document.documentElement.dataset.skin=skin}catch{}</script>
+  <script>try{var t=localStorage.getItem('fluent-theme');document.documentElement.dataset.theme=t==='dark'||(t!=='light'&&matchMedia('(prefers-color-scheme: dark)').matches)?'dark':'light'}catch{document.documentElement.dataset.theme=matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light'}</script>
+  <link rel="stylesheet" href="styles.css?v=20261124-4">
+  <link rel="stylesheet" href="stories.css?v=20261124-4">
+  <link rel="stylesheet" href="vocabulary.css?v=20261124-4">
+  <link rel="stylesheet" href="guide-theme.css?v=20261124-4">
 </head>
 <body>
   <aside class="sidebar">
@@ -22,14 +25,14 @@
     <div class="sidebar-bottom"><div class="small-leaf">✳</div><strong>不用完美，先说出来。</strong><p>一次真实的表达，<br>就是一次小小的进步。</p><div class="side-divider"></div><span class="preview-label">12 周完整课程</span><small>72 个学习日 · 入门诊断</small></div>
   </aside>
   <div class="app-shell">
-    <header class="topbar"><span id="breadcrumb">我的学习 / 今日学习</span><div class="top-right"><a href="#progress" class="local-note"><i data-icon="shield"></i>学习记录与备份</a><span class="avatar">我</span></div></header>
+    <header class="topbar"><span id="breadcrumb">我的学习 / 今日学习</span><div class="top-right"><a class="guide-entry" href="#guide" data-nav="guide">使用攻略</a><a class="settings-entry" href="#settings" data-nav="settings" aria-label="设置">⚙ <span>设置</span></a><a href="#progress" class="local-note"><i data-icon="shield"></i>学习记录与备份</a></div></header>
     <main id="app"></main>
-    <footer><a href="#method" data-nav="method">怎么学，更有效</a><a href="#progress" data-nav="progress">学习记录备份</a><span>开口 FLUENT · 为真实交流而练习</span></footer>
+    <footer><a href="#settings" data-nav="settings">设置</a><a href="#guide" data-nav="guide">学习地图与攻略</a><a href="#method" data-nav="method">怎么学，更有效</a><a href="#progress" data-nav="progress">学习记录备份</a><span>开口 FLUENT · 为真实交流而练习</span></footer>
   </div>
   <dialog id="module-dialog"><button class="dialog-close icon-button" aria-label="关闭弹窗"><i data-icon="close"></i></button><div id="dialog-content"></div></dialog>
   <div id="toast" role="status" aria-live="polite"></div>
   <audio id="lesson-audio" preload="metadata"></audio>
   <audio id="line-audio" preload="none"></audio>
-  <script type="module" src="app.js?v=memory-2"></script>
+  <script type="module" src="app.js?v=20261124-4"></script>
 </body>
 </html>
