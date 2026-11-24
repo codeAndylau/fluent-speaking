@@ -25,3 +25,5 @@ html[lang=en] .sidebar nav a{font-size:13px;white-space:normal}html[lang=en] .si
 .vocabulary:has([data-memory=start]),.vocabulary:has(.memory-card){background:linear-gradient(135deg,var(--soft),var(--bg))}.memory-card{background:var(--surface)}
 .story-line button:hover,.story-line button[aria-pressed=true]{background:var(--soft)}.story-line button.story-playing{background:var(--lime);color:#193124}.story-line button.story-playing .story-zh{color:#193124}
 html[data-theme=dark] .story-controls button[aria-pressed=true],html[data-theme=dark] .story-phrase button[aria-pressed=true]{background:var(--lime);color:#193124}
+/* Touch browsers can retain :hover after tapping: keep primary contrast. */
+html[data-theme=dark] .vocabulary button:is([data-memory=start],[data-memory=next],[data-memory=check],[data-act=start],[data-act=known]):hover{background:var(--lime);color:#193124}

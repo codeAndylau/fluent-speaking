@@ -7,3 +7,35 @@
 .memory-card h2,.vocabulary:has([data-memory=start]) h1{line-height:1.17;letter-spacing:-.035em}
 .memory-card blockquote{font-size:1.3rem;line-height:1.5}
 .memory-card details{margin:1rem 0}.vocabulary .scene-context{padding:1.2rem;background:white;border-left:4px solid var(--lime);border-radius:8px}
+
+/* Keep audio, answer choices and progression distinct on touch screens. */
+.memory-audio{margin:18px 0 10px;padding:12px;background:var(--soft);border:1px solid var(--line);border-radius:12px;display:flex;flex-wrap:wrap;gap:8px}
+.vocabulary .memory-audio button{margin:0;min-height:44px;flex:1 1 auto}
+.vocabulary .memory-audio [hidden]{display:none}
+.vocabulary .memory-audio-status{flex-basis:100%;margin:4px 0 0;font-size:14px;line-height:1.5;color:var(--muted)}
+.memory-secondary,.memory-actions{display:flex;flex-wrap:wrap;gap:8px;margin:12px 0}
+.vocabulary .memory-secondary button,.vocabulary .memory-actions button{margin:0;min-height:44px}
+.memory-actions{padding-top:12px;border-top:1px solid var(--line)}
+.memory-choices{display:grid;gap:10px;margin:18px 0}
+.vocabulary .memory-choices button{width:100%;margin:0;min-height:48px;text-align:left;line-height:1.5}
+.memory-resume{margin:16px 0;padding:14px;border:1px solid var(--green);border-radius:12px;background:var(--soft)}
+.memory-resume p{font-size:14px;margin:0 0 8px}
+.memory-playback{width:100%;max-width:100%}
+.vocabulary input,.vocabulary select{font-size:16px}
+.vocabulary button,.vocabulary summary{touch-action:manipulation}
+.vocabulary button:focus-visible,.vocabulary input:focus-visible{outline:3px solid var(--green);outline-offset:3px}
+@media(max-width:760px){
+ .vocabulary{width:100%;min-width:0;padding:14px}
+ .vocabulary .memory-card{padding:16px;min-width:0}
+ .vocabulary h1{font-size:25px;line-height:1.3}
+ .vocabulary .memory-card h1{font-size:18px}
+ .vocabulary .memory-card h2{font-size:23px;line-height:1.3;overflow-wrap:anywhere}
+ .vocabulary .memory-card blockquote{font-size:19px;overflow-wrap:anywhere}
+ .vocabulary button,.vocabulary select,.vocabulary summary{min-height:44px}
+ .vocabulary label,.vocabulary select{max-width:100%}
+ .vocabulary .memory-answer{width:100%;min-width:0;box-sizing:border-box;margin-right:0}
+ .memory-actions{flex-direction:column}.memory-actions button{width:100%}
+ .vocabulary .memory-card label{display:block;margin-right:0}
+ .memory-card{scroll-margin-top:76px}
+ .topbar .settings-entry,.topbar .guide-entry{min-height:44px;display:inline-flex;align-items:center}
+}

@@ -1,6 +1,6 @@
 import {frequencyNotes} from './frequency-notes.mjs'
 import {curriculumScenes} from './curriculum.mjs'
-import {sceneMemory,recordRecall} from './vocabulary-memory.mjs?v=20261124-4'
+import {sceneMemory,recordRecall} from './vocabulary-memory.mjs?v=20261124-5'
 const base = new URL('./vocabulary/', import.meta.url)
 let corpus, active = 0, cleanup
 const key = 'fluent-vocabulary-v1'
@@ -36,7 +36,7 @@ export async function renderVocabulary({app, route, escape: esc, isPhraseSaved, 
   const version = active
   app.innerHTML = '<p>正在加载词库…</p>'
   corpus ??= Promise.all(['words','phrases','scenes','sources','frequency','rankings','curriculum'].map(async name => {
-    const res = await fetch(new URL(name+'.json?v=20261124-4',base))
+    const res = await fetch(new URL(name+'.json?v=20261124-5',base))
     if (!res.ok) throw Error(res.status)
     return res.json()
   })).catch(error => { corpus = null; throw error })
@@ -59,7 +59,7 @@ export async function renderVocabulary({app, route, escape: esc, isPhraseSaved, 
   const notes=Object.assign(Object.create(null),state.notes||{})
   const recalls=Object.assign(Object.create(null),state.recalls||{})
   let hints=0
-  cleanup=()=>{memory.stop()}
+  cleanup=()=>{memory.dispose()}
   const due=()=>words.filter(([w])=>Math.min(ratings[w]?.due??Infinity,recalls[w]?.due??Infinity)<=Date.now())
   const matches=(en,zh)=>en.toLowerCase().includes(query.toLowerCase())||zh.includes(query)
   const button=(action,label,value='')=>'<button type="button" data-act="'+action+'" data-val="'+value+'">'+label+'</button>'

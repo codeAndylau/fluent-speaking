@@ -1,5 +1,5 @@
-import {initLanguage} from './i18n.mjs';
-import {renderSettings} from './settings.mjs';
+import {initLanguage} from './i18n.mjs?v=20261124-5';
+import {renderSettings} from './settings.mjs?v=20261124-5';
 import {guideHTML} from './guide.mjs';
 import {createThemeController} from './theme.mjs';
 import {BACKUP_SECTIONS,createBackup,createSafetySnapshot,parseBackup,restoreBackup} from './learning-backup.mjs';
@@ -21,7 +21,7 @@ let recording=null,recordUrl=null,toastTimer;
 let externalNotebook=new Map(), externalPage=null, pendingBackup=null, backupRead=0;
 const externalSections={
  stories:{label:'故事听说',load:()=>import('./stories.mjs'),render:'renderStories',stop:'stopStories'},
- vocabulary:{label:'词汇练习',load:()=>import('./vocabulary.mjs?v=20261124-4'),render:'renderVocabulary',stop:'stopVocabulary'}
+ vocabulary:{label:'词汇练习',load:()=>import('./vocabulary.mjs?v=20261124-5'),render:'renderVocabulary',stop:'stopVocabulary'}
 };
 const externalSource=part=>part==='story'||part==='stories'?'stories':part==='vocabulary'?'vocabulary':null;
 const isExternalDue=(entry,today)=>!entry.review||entry.review.due<=today;
