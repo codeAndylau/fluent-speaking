@@ -1,6 +1,8 @@
-import {initLanguage} from './i18n.mjs?v=20261124-5';
-import {renderSettings} from './settings.mjs?v=20261124-5';
-import {guideHTML} from './guide.mjs';
+import {renderConversation} from './conversation.mjs?v=20261124-6';
+import {installMobileInput} from './mobile-input.mjs?v=20261124-6';
+import {initLanguage} from './i18n.mjs?v=20261124-6';
+import {renderSettings} from './settings.mjs?v=20261124-6';
+import {guideHTML} from './guide.mjs?v=20261124-6';
 import {createThemeController} from './theme.mjs';
 import {BACKUP_SECTIONS,createBackup,createSafetySnapshot,parseBackup,restoreBackup} from './learning-backup.mjs';
 import {EXTERNAL_NOTEBOOK_KEY,restoreExternalNotebook,externalPhraseKey,toggleExternalPhrase,reviewExternalPhrase,externalPhraseURL} from './external-notebook.mjs';
@@ -17,11 +19,11 @@ const steps=[['listen','先听一听'],['understand','确认听懂'],['speak','�
 let themeControls,languageControls;
 let course,lessons=[],byId={},memory,currentLesson,drafts={},audioRequest=0,segmentEnd=null;
 const timelines=new Map(), audio=$('#lesson-audio'),lineAudio=$('#line-audio');
-let recording=null,recordUrl=null,toastTimer;
+let recording=null,recordUrl=null,recordedAudio=null,toastTimer;
 let externalNotebook=new Map(), externalPage=null, pendingBackup=null, backupRead=0;
 const externalSections={
- stories:{label:'故事听说',load:()=>import('./stories.mjs'),render:'renderStories',stop:'stopStories'},
- vocabulary:{label:'词汇练习',load:()=>import('./vocabulary.mjs?v=20261124-5'),render:'renderVocabulary',stop:'stopVocabulary'}
+ stories:{label:'故事听说',load:()=>import('./stories.mjs?v=20261124-6'),render:'renderStories',stop:'stopStories'},
+ vocabulary:{label:'词汇练习',load:()=>import('./vocabulary.mjs?v=20261124-6'),render:'renderVocabulary',stop:'stopVocabulary'}
 };
 const externalSource=part=>part==='story'||part==='stories'?'stories':part==='vocabulary'?'vocabulary':null;
 const isExternalDue=(entry,today)=>!entry.review||entry.review.due<=today;
@@ -90,15 +92,48 @@ function releaseRecording(session){
  session.stream?.getTracks().forEach(track=>track.stop());
  session.stream=null;
 }
-function stopRecording(){
+function finishRecording(session){
+ try{
+  if(session.recorder?.state==='recording')session.recorder.stop();
+ }finally{releaseRecording(session);}
+}
+function resetRecordButton(button){
+ button.classList.remove('recording');
+ button.innerHTML=icon('mic');
+ button.setAttribute('aria-label','重新录音');
+}
+function stopRecording({keepResult=false}={}){
  const session=recording;
- recording=null;
  if(!session)return;
- if(session.recorder&&session.recorder.state!=='inactive')session.recorder.stop();
- releaseRecording(session);
+ if(!keepResult||!session.recorder)recording=null;
+ finishRecording(session);
+ if(keepResult&&!session.recorder){
+  resetRecordButton(session.button);
+  session.status.textContent='已取消录音';
+  session.help.textContent='录音不会上传；离开步骤前请下载。也可以用手机录音机完成。';
+ }
 }
 function stopPlayback(){audioRequest++;audio.pause();lineAudio.pause();segmentEnd=null;}
-function cleanup(){stopExternal();stopPlayback();stopRecording();if(recordUrl){URL.revokeObjectURL(recordUrl);recordUrl=null;}}
+function stopRecordedPlayback(){recordedAudio?.pause();}
+function clearRecordedPlayback(){
+ if(recordedAudio){
+  recordedAudio.pause();
+  recordedAudio.removeAttribute('src');
+  recordedAudio.load();
+  recordedAudio=null;
+ }
+ if(recordUrl){URL.revokeObjectURL(recordUrl);recordUrl=null;}
+}
+function prepareDemoPlayback(){
+ stopRecordedPlayback();
+ stopRecording({keepResult:true});
+}
+function pauseCourseMedia(){
+ stopPlayback();
+ stopRecordedPlayback();
+ stopRecording({keepResult:true});
+}
+function cleanup(){stopExternal();stopPlayback();stopRecording();clearRecordedPlayback();}
 function getTimeline(id){if(!timelines.has(id)){timelines.set(id,fetch(`audio/course/${id}.json`).then(r=>{if(!r.ok)throw Error('audio metadata');return r.json()}).catch(e=>{timelines.delete(id);throw e}));}return timelines.get(id);}
 function setAudio(l){if(audio.dataset.lesson!==l.id){audio.dataset.lesson=l.id;audio.src=`audio/course/${l.id}.mp3`;audio.load();}}
 function render(){cleanup();pendingBackup=null;backupRead++;let r=route(),parts=r.split('/');currentLesson=null;
@@ -106,10 +141,10 @@ function render(){cleanup();pendingBackup=null;backupRead++;let r=route(),parts=
  if(parts[0]==='lesson'&&!byId[parts[1]]){if(steps.some(s=>s[0]===parts[1])||parts[1]==='complete'){go(`lesson/w01d1/${parts[1]}`);return;}}
  const source=externalSource(parts[0]);
  const nav=source||(['lesson','week'].includes(parts[0])?'path':parts[0]);document.querySelectorAll('[data-nav]').forEach(a=>{const active=a.dataset.nav===nav;a.classList.toggle('active',active);if(active)a.setAttribute('aria-current','page');else a.removeAttribute('aria-current');});
- $('#breadcrumb').textContent=(source&&externalSections[source].label)||({home:'今日学习',path:'学习路径',week:'本周课程',phrases:'我的表达本',method:'怎么学，更有效',progress:'学习记录备份',guide:'学习地图与使用攻略',settings:'设置',lesson:'听说练习'})[parts[0]]||'今日学习';
+ $('#breadcrumb').textContent=(source&&externalSections[source].label)||({home:'今日学习',path:'学习路径',week:'本周课程',phrases:'我的表达本',method:'怎么学，更有效',progress:'学习记录备份',guide:'学习地图与使用攻略',settings:'设置',conversation:'英语对话练习',lesson:'听说练习'})[parts[0]]||'今日学习';
  if(source)renderExternal(source,r);
  else if(parts[0]==='lesson'){const l=byId[parts[1]];if(l){currentLesson=l;setAudio(l);renderLesson(l,parts[2]||'listen')}else renderMissing();}
- else if(parts[0]==='week')renderWeek(Number(parts[1]));else if(r==='path')renderPath();else if(r==='phrases')renderPhrases();else if(r==='method')renderMethod();else if(r==='progress')renderProgress();else if(parts[0]==='guide')app.innerHTML=guideHTML();else if(r==='settings')renderSettings(app,themeControls,toast);else renderHome();
+ else if(parts[0]==='week')renderWeek(Number(parts[1]));else if(r==='path')renderPath();else if(r==='phrases')renderPhrases();else if(r==='method')renderMethod();else if(r==='progress')renderProgress();else if(parts[0]==='guide')app.innerHTML=guideHTML();else if(r==='conversation')renderConversation(app,languageControls?.language);else if(r==='settings')renderSettings(app,themeControls,toast);else renderHome();
  window.scrollTo({top:0,behavior:'instant'});
  if(parts[0]==='guide'&&['map','pages','routine','help'].includes(parts[1]))document.getElementById('guide-'+parts[1])?.scrollIntoView();
 }
@@ -193,19 +228,113 @@ function completeLesson(){const l=currentLesson,d=draft(l),feedback=$('#review-f
  persist();go(`lesson/${l.id}/complete`);
 }
 function updatePlayer(){const b=$('[data-act="play"]');if(b){b.innerHTML=icon(audio.paused?'play':'pause');b.setAttribute('aria-label',audio.paused?'播放对话':'暂停对话');}const progress=$('#audio-progress');if(progress){progress.value=audio.duration?audio.currentTime/audio.duration*100:0;$('#current-time').textContent=formatTime(audio.currentTime);$('#duration').textContent=Number.isFinite(audio.duration)?formatTime(audio.duration):'加载中';}}
-async function playFull(){lineAudio.pause();segmentEnd=null;const token=++audioRequest;if(!audio.paused){audio.pause();return;}try{if(audio.ended)audio.currentTime=0;await audio.play();}catch{if(token===audioRequest)toast('音频暂时无法播放，请刷新后重试。')}if(token===audioRequest)updatePlayer();}
-async function playLine(id,index){stopPlayback();const token=audioRequest;try{const meta=await getTimeline(id);if(token!==audioRequest)return;const line=meta.lines[index];if(!line)throw Error();lineAudio.src=`audio/course/${id}.mp3`;lineAudio.playbackRate=audio.playbackRate;lineAudio.currentTime=line.start;segmentEnd=line.end;await lineAudio.play();}catch{if(token===audioRequest)toast('这句音频暂时无法播放，请重试。')}}
-async function toggleRecording(){if(recording?.recorder?.state==='recording'){recording.recorder.stop();releaseRecording(recording);return;}if(!navigator.mediaDevices?.getUserMedia||!window.MediaRecorder){$('#record-status').textContent='当前浏览器暂不支持页面录音';$('#record-help').textContent='可以用手机录音机完成，课程其他部分仍可正常学习。';return;}
- stopPlayback();stopRecording();
- const session={stream:null,recorder:null,timer:null},ownRoute=route(),lessonId=currentLesson.id,button=$('[data-act="record"]');
+async function playFull(){prepareDemoPlayback();lineAudio.pause();segmentEnd=null;const token=++audioRequest;if(!audio.paused){audio.pause();return;}try{if(audio.ended)audio.currentTime=0;await audio.play();}catch{if(token===audioRequest)toast('音频暂时无法播放，请刷新后重试。')}if(token===audioRequest)updatePlayer();}
+async function playLine(id,index){prepareDemoPlayback();stopPlayback();const token=audioRequest;try{const meta=await getTimeline(id);if(token!==audioRequest)return;const line=meta.lines[index];if(!line)throw Error();lineAudio.src=`audio/course/${id}.mp3`;lineAudio.playbackRate=audio.playbackRate;lineAudio.currentTime=line.start;segmentEnd=line.end;await lineAudio.play();}catch{if(token===audioRequest)toast('这句音频暂时无法播放，请重试。')}}
+async function toggleRecording(){
+ if(recording){stopRecording({keepResult:true});return;}
+ const button=$('[data-act="record"]'),status=$('#record-status'),help=$('#record-help');
+ if(window.isSecureContext===false){
+  status.textContent='需要安全连接才能使用麦克风';
+  help.textContent='请通过 HTTPS 打开课程，或使用手机录音机。';
+  return;
+ }
+ if(!navigator.mediaDevices?.getUserMedia||!window.MediaRecorder){
+  status.textContent='当前浏览器暂不支持页面录音';
+  help.textContent='可以用手机录音机完成，课程其他部分仍可正常学习。';
+  return;
+ }
+ stopPlayback();
+ stopRecordedPlayback();
+ const session={button,status,help,stream:null,recorder:null,timer:null};
+ const ownRoute=route(),lessonId=currentLesson.id;
  const isCurrent=()=>recording===session&&route()===ownRoute;
- recording=session;button.disabled=true;$('#record-status').textContent='请允许使用麦克风';
- try{session.stream=await navigator.mediaDevices.getUserMedia({audio:true});if(!isCurrent()){releaseRecording(session);return;}const chunks=[],localRecorder=new MediaRecorder(session.stream);session.recorder=localRecorder;
- localRecorder.ondataavailable=e=>{if(e.data.size)chunks.push(e.data)};
- localRecorder.onstop=()=>{releaseRecording(session);if(!isCurrent())return;recording=null;button.classList.remove('recording');button.innerHTML=icon('mic');button.setAttribute('aria-label','重新录音');if(!chunks.length){$('#record-status').textContent='没有录到声音，请再试一次';return;}if(recordUrl)URL.revokeObjectURL(recordUrl);const blob=new Blob(chunks,{type:localRecorder.mimeType||'audio/webm'});recordUrl=URL.createObjectURL(blob);const ext=blob.type.includes('mp4')?'m4a':blob.type.includes('ogg')?'ogg':'webm';$('#record-status').textContent='回听一次，挑一个地方再试';$('#record-result').innerHTML=`<audio controls src="${recordUrl}"></audio><a href="${recordUrl}" download="fluent-${lessonId}.${ext}">下载这次录音</a>`;$('#record-help').textContent='按本课目标检查表达是否清楚；此处不自动评分。';};
- localRecorder.onerror=()=>{if(isCurrent()){stopRecording();$('#record-status').textContent='录音出现问题，请重试';button.disabled=false;button.classList.remove('recording');button.innerHTML=icon('mic');button.setAttribute('aria-label','重新录音');}else releaseRecording(session);};
- localRecorder.start();const start=Date.now();button.disabled=false;button.classList.add('recording');button.innerHTML=icon('stop');button.setAttribute('aria-label','停止录音');$('#record-result').innerHTML='';$('#record-status').textContent='正在录音 · 0:00';$('#record-help').textContent='说完后点击停止，最长录制 2 分钟。';session.timer=setInterval(()=>{if(!isCurrent())return;const seconds=(Date.now()-start)/1000;if($('#record-status'))$('#record-status').textContent=`正在录音 · ${formatTime(seconds)}`;if(seconds>=120&&localRecorder.state==='recording')localRecorder.stop();},300);
- }catch(err){releaseRecording(session);if(!isCurrent())return;recording=null;button.disabled=false;$('#record-status').textContent=err.name==='NotAllowedError'?'麦克风权限尚未开启':'暂时无法使用麦克风';$('#record-help').textContent='可在浏览器设置中开启麦克风后重试，或使用手机录音机。';}}
+ recording=session;
+ button.disabled=false;
+ button.innerHTML=icon('stop');
+ button.setAttribute('aria-label','取消录音');
+ status.textContent='请允许使用麦克风';
+ help.textContent='再次点击可取消录音请求。';
+ try{
+  session.stream=await navigator.mediaDevices.getUserMedia({audio:true});
+  if(!isCurrent()){releaseRecording(session);return;}
+  const mimeType=['audio/mp4','audio/webm'].find(type=>MediaRecorder.isTypeSupported?.(type));
+  const localRecorder=new MediaRecorder(session.stream,mimeType?{mimeType}:undefined);
+  session.recorder=localRecorder;
+  const chunks=[];
+  localRecorder.ondataavailable=event=>{if(event.data.size)chunks.push(event.data);};
+  localRecorder.onstop=()=>{
+   releaseRecording(session);
+   if(!isCurrent())return;
+   recording=null;
+   resetRecordButton(button);
+   if(!chunks.length){
+    status.textContent='没有录到声音，请再试一次';
+    help.textContent='请检查麦克风，再重新录音。';
+    return;
+   }
+   const blob=new Blob(chunks,{type:localRecorder.mimeType||chunks[0].type||mimeType||'audio/webm'});
+   recordUrl=URL.createObjectURL(blob);
+   const ext=blob.type.includes('mp4')?'m4a':blob.type.includes('ogg')?'ogg':'webm';
+   status.textContent='回听一次，挑一个地方再试';
+   $('#record-result').innerHTML=`<audio controls src="${recordUrl}"></audio><a href="${recordUrl}" download="fluent-${lessonId}.${ext}">下载这次录音</a>`;
+   recordedAudio=$('#record-result audio');
+   const playback=recordedAudio;
+   playback.addEventListener('play',()=>{
+    if(playback!==recordedAudio||playback.paused)return;
+    if(recording)playback.pause();
+    else stopPlayback();
+   });
+   help.textContent='按本课目标检查表达是否清楚；此处不自动评分。';
+  };
+  localRecorder.onerror=()=>{
+   if(!isCurrent()){releaseRecording(session);return;}
+   stopRecording();
+   resetRecordButton(button);
+   status.textContent='录音出现问题，请重试';
+   help.textContent='请检查麦克风，再重新录音。';
+  };
+  // Permission can resolve after the learner starts another audio source.
+  stopPlayback();
+  localRecorder.start();
+  clearRecordedPlayback();
+  const start=Date.now();
+  button.classList.add('recording');
+  button.setAttribute('aria-label','停止录音');
+  $('#record-result').innerHTML='';
+  status.textContent='正在录音 · 0:00';
+  help.textContent='说完后点击停止，最长录制 2 分钟。';
+  session.timer=setInterval(()=>{
+   if(!isCurrent())return;
+   const seconds=(Date.now()-start)/1000;
+   status.textContent=`正在录音 · ${formatTime(seconds)}`;
+   if(seconds>=120)finishRecording(session);
+  },300);
+ }catch(error){
+  releaseRecording(session);
+  if(!isCurrent())return;
+  recording=null;
+  resetRecordButton(button);
+  switch(error.name){
+   case 'NotAllowedError':
+   case 'SecurityError':
+    status.textContent='麦克风权限尚未开启';
+    help.textContent='可在浏览器设置中开启麦克风后重试，或使用手机录音机。';
+    break;
+   case 'NotFoundError':
+    status.textContent='没有找到麦克风';
+    help.textContent='连接或启用麦克风后重试，或使用手机录音机。';
+    break;
+   case 'NotReadableError':
+    status.textContent='麦克风可能被占用或无法读取';
+    help.textContent='关闭其他正在使用麦克风的应用后重试。';
+    break;
+   default:
+    status.textContent='暂时无法使用麦克风';
+    help.textContent='请检查麦克风，再重新录音。';
+  }
+ }
+}
+
 document.addEventListener('click',event=>{const b=event.target.closest('[data-act]');if(!b)return;const act=b.dataset.act,l=currentLesson,d=l?draft(l):null;
  if(act==='backup-export'){exportLearning();return;}
  if(act==='backup-restore'){applyLearningBackup();return;}
@@ -231,8 +360,9 @@ document.addEventListener('change',event=>{if(!currentLesson)return;const d=draf
 document.addEventListener('input',event=>{if(event.target.id==='audio-progress'&&Number.isFinite(audio.duration))audio.currentTime=audio.duration*Number(event.target.value)/100;if(event.target.name==='note'&&currentLesson)draft(currentLesson).note=event.target.value;});
 ['timeupdate','loadedmetadata','play','pause','ended'].forEach(type=>audio.addEventListener(type,updatePlayer));
 lineAudio.addEventListener('timeupdate',()=>{if(segmentEnd!==null&&lineAudio.currentTime>=segmentEnd){lineAudio.pause();segmentEnd=null;}});
+document.addEventListener('visibilitychange',()=>{if(document.hidden)pauseCourseMedia();});
 window.addEventListener('hashchange',()=>{if(course)render()});window.addEventListener('pagehide',cleanup);window.addEventListener('pageshow',event=>{if(event.persisted&&course)render();});
-async function start(){try{languageControls=await initLanguage({document,storage:{getItem:key=>localStorage.getItem(key)},notify:toast});themeControls=createThemeController({root:document.documentElement,media:window.matchMedia('(prefers-color-scheme: dark)'),storage:{getItem:key=>localStorage.getItem(key),setItem:(key,value)=>localStorage.setItem(key,value)},notify:toast});const r=await fetch('course.json');if(!r.ok)throw Error('course');course=await r.json();lessons=course.weeks.flatMap(w=>w.lessons.map(l=>({...l,week:w.week})));byId=Object.fromEntries([...lessons,course.diagnostic].map(l=>[l.id,l]));externalNotebook=restoreExternalNotebook(readStorage(EXTERNAL_NOTEBOOK_KEY));memory=restoreState(readStorage('fluent-course-v2'),readStorage('fluent-preview-v1'),lessons);persist();document.querySelectorAll('[data-icon]').forEach(el=>el.outerHTML=icon(el.dataset.icon));render();}catch(err){
+async function start(){try{installMobileInput({window,document});languageControls=await initLanguage({document,storage:{getItem:key=>localStorage.getItem(key)},notify:toast});themeControls=createThemeController({root:document.documentElement,media:window.matchMedia('(prefers-color-scheme: dark)'),storage:{getItem:key=>localStorage.getItem(key),setItem:(key,value)=>localStorage.setItem(key,value)},notify:toast});const r=await fetch('course.json');if(!r.ok)throw Error('course');course=await r.json();lessons=course.weeks.flatMap(w=>w.lessons.map(l=>({...l,week:w.week})));byId=Object.fromEntries([...lessons,course.diagnostic].map(l=>[l.id,l]));externalNotebook=restoreExternalNotebook(readStorage(EXTERNAL_NOTEBOOK_KEY));memory=restoreState(readStorage('fluent-course-v2'),readStorage('fluent-preview-v1'),lessons);persist();document.querySelectorAll('[data-icon]').forEach(el=>el.outerHTML=icon(el.dataset.icon));render();}catch(err){
  const english=document.documentElement.lang==='en';
  if(english&&!languageControls){document.title='Fluent · Connection needed';document.querySelectorAll('.sidebar,.topbar,footer,#module-dialog').forEach(el=>el.style.display='none');document.querySelector('.app-shell').style.marginLeft='0'}
  app.innerHTML=english?'<div class="white-card empty-state"><h1>Learning content could not load</h1><p>Please check your connection and try again. Your saved learning records are preserved.</p><button class="primary" onclick="location.reload()">Try again</button></div>':'<div class="white-card empty-state"><h1>课程暂时没有加载成功</h1><p>请检查网络后重试；也可以在系统浏览器打开本站。刷新不会主动清除已保存的学习记录。</p><button class="primary" onclick="location.reload()">重新加载</button></div>';console.error(err);}}

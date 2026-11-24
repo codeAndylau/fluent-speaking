@@ -7,7 +7,8 @@ const pages=[
  ['06','表达本','#phrases','隔天把表达叫回来','收藏课程、故事和词汇中的表达。先看场景回忆，再展开英文。','如实标记是否需要提示，让下一次复习安排更符合实际。'],
  ['07','学习方法','#method','想知道为什么这样练','理解听辨、语块、提取和间隔练习的设计依据与适用范围。','用换题和延迟回忆检验自己，别把看过或自评当作已掌握。'],
  ['08','记录备份','#progress','换设备／清理浏览器前','将课程、故事、词汇及收藏导出为 JSON，再到另一浏览器恢复。','定期保存文件。网站不自动跨设备同步，录音不包含在备份中。'],
- ['09','设置','#settings','调整学习环境','切换明暗、配色皮肤和中英文。英文模式覆盖界面、课程提示和练习内容。','偏好保存在当前浏览器；切换语言前先保存未提交的输入和临时录音。']
+ ['09','设置','#settings','调整学习环境','切换明暗、配色皮肤和中英文。英文模式覆盖界面、课程提示和练习内容。','偏好保存在当前浏览器；切换语言前先保存未提交的输入和临时录音。'],
+ ['10','英语对话练习','#conversation','准备尝试真实问答时','选择场景并复制英文开场白，再前往 Nuance 外部网站练习。','先查看地区与年龄要求。练完带回一个想复用的表达，再到词汇或课程中巩固。']
 ];
 export function guideHTML(){return `<section class="guide-intro"><div class="eyebrow">YOUR LEARNING COMPASS</div><h1>先看懂这张地图，<br>再走好今天的一小步。</h1><p>一条口语主线，两条练习支线。所有内容最终都回到：<strong>听得懂，想得起，说得出。</strong></p><div class="guide-links"><a class="primary" href="#diagnostic">第一次来 · 找到起点</a><a class="secondary" href="#home">已经开始 · 继续学习</a></div></section>
  <nav class="guide-jump" aria-label="攻略目录"><a href="#guide/map">学习地图</a><a href="#guide/pages">页面说明</a><a href="#guide/routine">每天怎么练</a><a href="#guide/help">使用小贴士</a></nav>

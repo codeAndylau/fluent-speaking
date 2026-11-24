@@ -39,3 +39,8 @@
  .memory-card{scroll-margin-top:76px}
  .topbar .settings-entry,.topbar .guide-entry{min-height:44px;display:inline-flex;align-items:center}
 }
+
+.memory-shadow{margin-top:20px;padding:16px;border:1px solid var(--line);border-radius:12px;background:var(--soft)}
+.memory-shadow h3{margin:0;font-size:17px}.memory-shadow p{font-size:14px;line-height:1.7}
+.memory-shadow .memory-download{display:block;text-decoration:underline;padding:12px 0;min-height:44px}
+.memory-shadow [hidden]{display:none}.memory-shadow button{min-height:44px}

@@ -269,7 +269,9 @@ function renderChapter({app, esc, icon, onSavePhrase, isPhraseSaved, entry, chap
     }
   });
   listen(audio, 'error', () => { status.textContent = '音频加载失败，请重新播放。'; });
-  listen(window, 'pagehide', savePosition);
+  const pauseWhenHidden = () => { audio.pause(); savePosition(); };
+  listen(window, 'pagehide', pauseWhenHidden);
+  listen(document, 'visibilitychange', () => { if (document.hidden) pauseWhenHidden(); });
   audio.src = asset(entry.audio).href;
 
   function play(start) {

@@ -56,7 +56,7 @@ node --check dist/app.js
 
 ## 学习地图与设置
 
-从页首「使用攻略」进入可视化学习地图、九个页面的用途、每天10–15分钟词汇/约30分钟口语路线及FAQ。
+从页首「使用攻略」进入可视化学习地图、十个页面的用途、每天10–15分钟词汇/约30分钟口语路线及FAQ。
 
 从页首或页脚「设置」进入：
 
@@ -81,3 +81,12 @@ node scripts/audit-rendered-language.mjs
 ## 公开部署
 
 统一地址：[开口 Fluent](https://codeandylau.github.io/fluent-speaking/) 。GitHub Pages 仓库为 `codeAndylau/fluent-speaking`，发布资产仅为 `dist/` 及公开说明，不包含本机学习记录、录音或凭证。旧 `chatgpt.site` 地址曾被 Cloudflare 拦截，当前以 GitHub Pages 为准。
+
+
+## Nuance 对话与移动端录音
+
+设置 → Nuance 外部对话练习，或使用攻略 → 英语对话练习，可打开 `#conversation`：选择自我介绍、咖啡店点单或问路，复制原创英文开场白，再手动前往 Nuance。此入口不是 App 内原生 Nuance 通话；不自动发送学习记录、录音或用户信息。
+
+截至本次核查，官方说明为18岁及以上、英语对话、指定地区开放，公布名单不含中国大陆；可用性与费用以官方为准。依据：[官方使用说明](https://www.nuancelabs.ai/research/meet-emma-the-first-nuplex-persona)。后续原生接入需支持地区的开发者账号、协议/额度及服务端：服务端保管 API key，为浏览器签发短时单次会话 token，再接 LiveKit 音频。不能在当前纯静态前端放长期密钥，也不能保证区域受限的账号可用。依据：[密钥和会话令牌](https://docs.nuancelabs.ai/keys-and-tokens)、[连接流程](https://docs.nuancelabs.ai/connect)。
+
+词汇学习卡可听示范、录音、回听、下载并重说。最多2分钟；仅本页临时保留，离开前需下载。权限等待可取消；拒绝、无设备、占用、空结果分别提示。进入后台暂停示范/回听，并结束正在进行的录音，回到当前页仍可下载；离开步骤会清理临时音频。手机键盘适配使用 visualViewport，无法替代实体 iOS/Android 的兼容性验证。

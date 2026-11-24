@@ -1,6 +1,6 @@
 import {frequencyNotes} from './frequency-notes.mjs'
 import {curriculumScenes} from './curriculum.mjs'
-import {sceneMemory,recordRecall} from './vocabulary-memory.mjs?v=20261124-5'
+import {sceneMemory,recordRecall} from './vocabulary-memory.mjs?v=20261124-6'
 const base = new URL('./vocabulary/', import.meta.url)
 let corpus, active = 0, cleanup
 const key = 'fluent-vocabulary-v1'
@@ -36,7 +36,7 @@ export async function renderVocabulary({app, route, escape: esc, isPhraseSaved, 
   const version = active
   app.innerHTML = '<p>正在加载词库…</p>'
   corpus ??= Promise.all(['words','phrases','scenes','sources','frequency','rankings','curriculum'].map(async name => {
-    const res = await fetch(new URL(name+'.json?v=20261124-5',base))
+    const res = await fetch(new URL(name+'.json?v=20261124-6',base))
     if (!res.ok) throw Error(res.status)
     return res.json()
   })).catch(error => { corpus = null; throw error })

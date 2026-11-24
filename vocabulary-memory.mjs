@@ -30,37 +30,77 @@ export function sceneMemory(root,scenes,esc,dictionary,notify,wordSet=new Set())
   const btn=(action,label)=>'<button type="button" data-memory="'+action+'">'+esc(label)+'</button>'
   let tasks=[],position=0,hints=0,feedback=null,chosen=0,session=false,focusWord=null
   let audio=null, heard=false, recording=null, microphone=null, clip=null, attempt=0, audioTurn=0
-  function releaseMicrophone(){
-    attempt++
-    if(recording?.state==='recording'){recording.onstop=null;recording.stop()}
-    microphone?.getTracks().forEach(track=>track.stop())
-    recording=null;microphone=null
+  let recordPhase='idle',recordTimer=null
+  function recordState(message){
+    const label=root.querySelector('.memory-record-status')
+    if(label)label.textContent=message
+    const button=root.querySelector('[data-memory=record]')
+    if(button){button.disabled=recordPhase==='finishing';button.textContent=recordPhase==='requesting'?'取消麦克风请求':recordPhase==='recording'?'停止并回听':recordPhase==='finishing'?'正在保存录音…':clip?'重新录音':'录音回听（可选）'}
+  }
+  function clearReplay(){
+    const output=root.querySelector('.memory-playback')
+    if(output){output.pause?.();output.onplay=null;output.removeAttribute?.('src');output.load?.();output.hidden=true}
+    const download=root.querySelector('.memory-download')
+    if(download){download.hidden=true;download.removeAttribute?.('href')}
     if(clip){URL.revokeObjectURL(clip);clip=null}
   }
+  function releaseMicrophone(){
+    attempt++;clearInterval(recordTimer);recordTimer=null
+    if(recording){recording.onstop=null;recording.onerror=null;if(recording.state==='recording')recording.stop()}
+    microphone?.getTracks().forEach(track=>track.stop())
+    recording=null;microphone=null;recordPhase='idle'
+  }
+  function finishRecording(){
+    if(recording?.state!=='recording')return
+    recordPhase='finishing';recordState('正在保存录音…');clearInterval(recordTimer);recordTimer=null
+    recording.stop();microphone?.getTracks().forEach(track=>track.stop())
+  }
   async function record(){
-    if(recording?.state==='recording'){recording.stop();return}
-    if(!navigator.mediaDevices?.getUserMedia || !window.MediaRecorder)return notify('当前浏览器无法录音，可以直接开口练习。')
-    releaseMicrophone()
+    if(recordPhase==='requesting'){releaseMicrophone();recordState('已取消麦克风请求。');return}
+    if(recordPhase==='recording'){finishRecording();return}
+    if(recordPhase==='finishing')return
+    if(window.isSecureContext===false){recordState('请通过 HTTPS 打开页面，再使用麦克风。');return}
+    if(!navigator.mediaDevices?.getUserMedia || !window.MediaRecorder){recordState('当前浏览器无法录音，可以直接开口练习。');return}
+    stopSound();releaseMicrophone()
     const current=attempt
+    recordPhase='requesting';recordState('请允许使用麦克风；也可点击取消。')
     try{
       const stream=await navigator.mediaDevices.getUserMedia({audio:true})
       if(attempt!==current||!root.isConnected){stream.getTracks().forEach(t=>t.stop());return}
       microphone=stream
-      const parts=[]
-      recording=new MediaRecorder(stream)
-      recording.ondataavailable=e=>{if(e.data.size)parts.push(e.data)}
-      recording.onstop=()=>{
+      const parts=[],mimeType=['audio/mp4','audio/webm','audio/ogg'].find(t=>MediaRecorder.isTypeSupported?.(t))
+      const recorder=new MediaRecorder(stream,mimeType?{mimeType}:undefined)
+      recording=recorder
+      recorder.ondataavailable=e=>{if(e.data.size)parts.push(e.data)}
+      recorder.onstop=()=>{
         stream.getTracks().forEach(t=>t.stop())
         if(attempt!==current)return
-        clip=URL.createObjectURL(new Blob(parts,{type:recording.mimeType}))
-        const output=root.querySelector('.memory-playback')
+        clearInterval(recordTimer);recordTimer=null;recording=null;microphone=null;recordPhase='idle'
+        if(!parts.length){recordState('没有录到声音，请检查麦克风后再试。');return}
+        clearReplay()
+        const blob=new Blob(parts,{type:recorder.mimeType||parts[0].type||mimeType||'audio/webm'})
+        clip=URL.createObjectURL(blob)
+        const output=root.querySelector('.memory-playback'),download=root.querySelector('.memory-download')
         output.src=clip;output.hidden=false
-        root.querySelector('[data-memory=record]').textContent='重新录音'
+        output.onplay=()=>{if(recordPhase!=='idle'){output.pause();return}stopSound(false)}
+        download.href=clip;download.download='fluent-practice.'+(blob.type.includes('mp4')?'m4a':blob.type.includes('ogg')?'ogg':'webm');download.hidden=false
+        recordState('回听自己的录音，再听原句，挑一个地方重说。离开前可下载保存。')
       }
-      recording.start()
-      root.querySelector('[data-memory=record]').textContent='停止并回听'
-    }catch{if(attempt===current){releaseMicrophone();notify('未能使用麦克风，可以直接开口练习。')}}
+      recorder.onerror=()=>{if(attempt===current){releaseMicrophone();recordState('录音出现问题，请检查麦克风后重试。')}}
+      stopSound();recorder.start();recordPhase='recording'
+      const start=Date.now();recordState('正在录音 · 0:00')
+      recordTimer=setInterval(()=>{
+        if(attempt!==current)return
+        const seconds=Math.floor((Date.now()-start)/1000)
+        recordState('正在录音 · '+Math.floor(seconds/60)+':'+String(seconds%60).padStart(2,'0'))
+        if(seconds>=120)finishRecording()
+      },300)
+    }catch(error){if(attempt===current){
+      releaseMicrophone()
+      recordState(['NotAllowedError','SecurityError'].includes(error.name)?'麦克风权限未开启，请在浏览器的网站设置中允许麦克风后重试。':error.name==='NotFoundError'?'没有找到麦克风，请连接或启用后重试。':error.name==='NotReadableError'?'麦克风可能被其他应用占用，请关闭后重试。':'未能使用麦克风，可以直接开口练习。')
+    }}
   }
+  function recordingPanel(){return '<section class="memory-shadow"><h3>跟读与回听</h3><p>先听示范，再录自己。回听时比较重音、停顿和意思是否清楚，不要求一遍完美。</p>'+btn('record','录音回听（可选）')+'<p class="memory-record-status" role="status" aria-live="polite">录音仅保留在本页，不会上传。最长 2 分钟。</p><audio class="memory-playback" controls hidden></audio><a class="memory-download" hidden>下载这次录音</a><details><summary>麦克风无法使用？</summary><p>请在 Safari 或 Chrome 中打开 HTTPS 页面，在网站设置中允许麦克风。仍无法使用时，可用手机录音机或直接开口练习。</p></details></section>'}
   function audioState(message,busy=false){
     const label=root.querySelector('.memory-audio-status')
     if(label)label.textContent=message
@@ -85,11 +125,14 @@ export function sceneMemory(root,scenes,esc,dictionary,notify,wordSet=new Set())
       return d
     }catch{return null}
   }
-  function stop(){
-    snapshot();releaseMicrophone();audioTurn++
+  function stopSound(pauseReplay=true){
+    audioTurn++
     if(audio){for(const event of ['onended','onerror','ontimeupdate','onloadedmetadata','onplaying','onwaiting','onstalled'])audio[event]=null;audio.pause();audio=null}
     window.speechSynthesis?.cancel()
+    if(pauseReplay)root.querySelector('.memory-playback')?.pause?.()
+    audioState('已停止。可以重新播放。')
   }
+  function stop(){snapshot();releaseMicrophone();stopSound();clearReplay()}
   function save(item,updates){
     const next={...records,[item.key]:{...records[item.key],...updates}}
     try{localStorage.setItem(storageKey,JSON.stringify(next));records=next;return true}catch{return false}
@@ -124,14 +167,14 @@ export function sceneMemory(root,scenes,esc,dictionary,notify,wordSet=new Set())
     if(type==='learn'||type==='sound'||feedback!==null)exposed.add(x.key)
     const playback='<div class="memory-audio">'+btn('sentence',type==='learn'?'听整句':'播放情境句')+btn('slow','慢速听句')+'<button type="button" data-memory="stop-audio" hidden>停止播放</button><p class="memory-audio-status" role="status" aria-live="polite">点击播放，听完后再继续。</p></div>'
     let html='<h1>'+esc(x.scene.title)+'</h1>'+(x.topic?'<p class="eyebrow">'+esc(x.topic)+'</p>':'')+'<p>第 '+(position+1)+' / '+tasks.length+' 步</p>'
-    if(type==='learn')html+='<h2>'+esc(x.phrase)+'</h2><p>'+esc(x.meaning)+'</p><blockquote>'+esc(x.sentence)+'</blockquote><details><summary>查看整句中文</summary><p>'+esc(x.sentenceZh||x.scene.context)+'</p></details>'+playback+'<div class="memory-secondary">'+btn('word','听词')+btn('phrase','听搭配')+'</div><div class="memory-actions">'+btn('next','继续')+btn('familiar','认识这项，稍后直接提取')+'</div>'
+    if(type==='learn')html+='<h2>'+esc(x.phrase)+'</h2><p>'+esc(x.meaning)+'</p><blockquote>'+esc(x.sentence)+'</blockquote><details><summary>查看整句中文</summary><p>'+esc(x.sentenceZh||x.scene.context)+'</p></details>'+playback+'<div class="memory-secondary">'+btn('word','听词')+btn('phrase','听搭配')+'</div>'+recordingPanel()+'<div class="memory-actions">'+btn('next','继续')+btn('familiar','认识这项，稍后直接提取')+'</div>'
     else if(type==='sound'){
       const peers=all.filter(y=>y.scene===x.scene && y.meaning!==x.meaning)
       const other=peers[all.indexOf(x)%peers.length]||all.find(y=>y.meaning!==x.meaning)
       const choices=[x.meaning,other.meaning]
       if(all.indexOf(x)%2)choices.reverse()
       html+='<h2>听这句话，判断说话人的意思</h2>'+playback+'<div class="memory-choices">'+choices.map(c=>btn(c===x.meaning?'right':'wrong',c)).join('')+'</div>'+btn('skip','无法播放，跳过听辨')
-    }else if(type==='transfer')html+='<h2>换个场合，自己说一句</h2><p>'+esc(x.transfer)+'</p>'+btn('record','录音回听（可选）')+'<audio class="memory-playback" controls hidden></audio>'+btn('spoken','我已开口（自评）')+btn('skip','跳过')
+    }else if(type==='transfer')html+='<h2>换个场合，自己说一句</h2><p>'+esc(x.transfer)+'</p>'+recordingPanel()+btn('spoken','我已开口（自评）')+btn('skip','跳过')
     else html+='<h2>你会怎么说？</h2><p>'+esc(type==='review'?x.transfer:x.cue)+'</p><label>'+esc(x.answerLabel||'写下目标搭配')+' <input class="memory-answer" autocomplete="off" autocapitalize="none" spellcheck="false" enterkeyhint="done"></label>'+btn('check','核对目标表达')+btn('hint','给我一点提示')+btn('reveal','看参考表达')+'<p class="memory-hint"></p>'
     if(feedback!==null)html='<h1>练习反馈</h1><p>'+esc(feedback)+'</p><blockquote>'+esc(x.phrase)+'</blockquote>'+btn('next','继续')
     root.innerHTML='<article class="memory-card">'+html+'</article><p role="status" aria-live="polite"></p>'+btn('home','结束本轮')
@@ -152,14 +195,15 @@ export function sceneMemory(root,scenes,esc,dictionary,notify,wordSet=new Set())
       if(feedback===null&&['recall','review','retry'].includes(tasks[position].type))root.querySelector('.memory-answer').value=d.input
       snapshot();return
     }
-    if(action==='stop-audio'){stop();audioState('已停止。可以重新播放。');return}
+    if(action==='stop-audio'){stopSound();audioState('已停止。可以重新播放。');return}
     if(action==='dictionary'){stop();dictionary();return}
     if(action==='start'||action==='review'||action==='placement'){begin(action==='review',action==='placement');return}
     if(!session||!tasks[position])return
     const {item:x,type}=tasks[position]
     if(['word','phrase','sentence','slow'].includes(action)){
       const speed=action==='slow'?.8:1;if(action==='slow')action='sentence'
-      stop()
+      if(recordPhase!=='idle')return notify('先停止录音，再播放示范。')
+      stopSound()
       if(action==='sentence'){
         const player=new Audio(new URL(x.audio?.file?'./vocabulary/'+x.audio.file:'./vocabulary/audio/'+x.key.replace('/','-')+'.mp3',import.meta.url))
         audio=player;player.playbackRate=speed;player.preload='auto'
@@ -206,7 +250,7 @@ export function sceneMemory(root,scenes,esc,dictionary,notify,wordSet=new Set())
     }
     draw();if(!saved)notify('本机无法保存，这次练习结果未写入记录。')
   }
-  const onVisibility=()=>{if(globalThis.document?.hidden&&session){stop();audioState('已暂停播放。回到页面后可重新播放。')}}
+  const onVisibility=()=>{if(globalThis.document?.hidden&&session){snapshot();stopSound();if(recordPhase==='recording')finishRecording();else if(recordPhase==='requesting'){releaseMicrophone();recordState('已取消麦克风请求。')}audioState('已暂停播放。回到页面后可重新播放。')}}
   globalThis.document?.addEventListener?.('visibilitychange',onVisibility)
   const dispose=()=>{stop();globalThis.document?.removeEventListener?.('visibilitychange',onVisibility)}
   return {home,click,stop,dispose}
