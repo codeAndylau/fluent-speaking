@@ -1,12 +1,12 @@
-import {todayHTML,libraryHTML,meHTML} from './light-shell.mjs?v=20261125-2';
-import {isPracticeLesson,lessonStep,practiceProgress,savePractice} from './light-course.mjs?v=20261125-2';
-import {renderConversation} from './conversation.mjs?v=20261125-2';
-import {installMobileInput} from './mobile-input.mjs?v=20261125-2';
-import {initLanguage} from './i18n.mjs?v=20261125-2';
-import {renderSettings} from './settings.mjs?v=20261125-2';
-import {guideHTML} from './guide.mjs?v=20261125-2';
+import {todayHTML,libraryHTML,meHTML} from './light-shell.mjs?v=20261125-3';
+import {isPracticeLesson,lessonStep,practiceProgress,savePractice} from './light-course.mjs?v=20261125-3';
+import {renderConversation} from './conversation.mjs?v=20261125-3';
+import {installMobileInput} from './mobile-input.mjs?v=20261125-3';
+import {initLanguage} from './i18n.mjs?v=20261125-3';
+import {renderSettings} from './settings.mjs?v=20261125-3';
+import {guideHTML} from './guide.mjs?v=20261125-3';
 import {createThemeController} from './theme.mjs';
-import {BACKUP_SECTIONS,createBackup,createSafetySnapshot,parseBackup,restoreBackup} from './learning-backup.mjs?v=20261125-2';
+import {BACKUP_SECTIONS,createBackup,createSafetySnapshot,parseBackup,restoreBackup} from './learning-backup.mjs?v=20261125-3';
 import {EXTERNAL_NOTEBOOK_KEY,restoreExternalNotebook,externalPhraseKey,toggleExternalPhrase,reviewExternalPhrase,externalPhraseURL} from './external-notebook.mjs';
 import {icon} from './icons.mjs';
 import {restoreState,finishLesson,recordQuiz,nextLesson,dueReviews,reviewPhrase,diagnosticAdvice,recordDiagnosticQuiz,markTranscriptSeen} from './state.mjs';
@@ -24,8 +24,8 @@ const timelines=new Map(), audio=$('#lesson-audio'),lineAudio=$('#line-audio');
 let recording=null,recordUrl=null,recordedAudio=null,toastTimer;
 let externalNotebook=new Map(), externalPage=null, pendingBackup=null, backupRead=0;
 const externalSections={
- stories:{label:'故事听说',load:()=>import('./stories.mjs?v=20261125-2'),render:'renderStories',stop:'stopStories'},
- vocabulary:{label:'词汇练习',load:()=>import('./vocabulary.mjs?v=20261125-2'),render:'renderVocabulary',stop:'stopVocabulary'}
+ stories:{label:'故事听说',load:()=>import('./stories.mjs?v=20261125-3'),render:'renderStories',stop:'stopStories'},
+ vocabulary:{label:'词汇练习',load:()=>import('./vocabulary.mjs?v=20261125-3'),render:'renderVocabulary',stop:'stopVocabulary'}
 };
 const externalSource=part=>part==='story'||part==='stories'?'stories':part==='vocabulary'?'vocabulary':null;
 const isExternalDue=(entry,today)=>!entry.review||entry.review.due<=today;

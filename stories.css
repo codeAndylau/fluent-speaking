@@ -23,3 +23,6 @@
 .story-question p { margin: 0 0 8px; }
 .story-question blockquote { border-inline-start: 3px solid var(--lime); padding-inline-start: 12px; margin: 0 0 8px; }
 .story-question summary { cursor: pointer; }
+
+.story-translation{position:fixed;z-index:50;width:max-content;max-width:min(360px,calc(100vw - 24px));padding:10px 14px;border:1px solid var(--line);border-radius:10px;background:var(--surface,#fff);color:var(--ink);box-shadow:0 6px 24px #0003;font-size:15px;line-height:1.65;white-space:normal;overflow-wrap:anywhere;pointer-events:none}
+.story-translation[hidden]{display:none}

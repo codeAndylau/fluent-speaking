@@ -165,6 +165,7 @@ function renderChapter({app, esc, icon, onSavePhrase, isPhraseSaved, entry, chap
         <option value="en">英文原文</option><option value="both">英中双语</option><option value="zh">中文翻译</option>
       </select></label>
       <div class="story-prose" data-language="en">${storyMarkup(chapter, esc)}</div>
+      <div id="story-translation" class="story-translation" role="tooltip" lang="zh" hidden></div>
     </section>
     <section class="white-card story-practice" data-story-panel="practice" hidden>
       ${practiceMarkup(chapter, esc, id, isPhraseSaved)}
@@ -286,7 +287,8 @@ function renderChapter({app, esc, icon, onSavePhrase, isPhraseSaved, entry, chap
   }
 
   lines.forEach((button, index) => listen(button, 'click', () => selectLine(index)));
-  listen(find('select'), 'change', event => { find('.story-prose').dataset.language = event.target.value; });
+  const hideTranslation = installStoryTranslation({lines, prose:find('.story-prose'), tooltip:find('.story-translation'), listen});
+  listen(find('select'), 'change', event => { hideTranslation(); find('.story-prose').dataset.language = event.target.value; });
 
   listen(find('[data-story-play="chapter"]'), 'click', () => {
     clearRange();
@@ -314,6 +316,7 @@ function renderChapter({app, esc, icon, onSavePhrase, isPhraseSaved, entry, chap
   for (const button of app.querySelectorAll('[data-story-tab]')) {
     listen(button, 'click', () => {
       const tab = button.dataset.storyTab;
+      hideTranslation();
       app.querySelectorAll('[data-story-tab]').forEach(item => item.setAttribute('aria-pressed', String(item === button)));
       app.querySelectorAll('[data-story-panel]').forEach(panel => { panel.hidden = panel.dataset.storyPanel !== tab; });
     });
@@ -345,4 +348,41 @@ function renderChapter({app, esc, icon, onSavePhrase, isPhraseSaved, entry, chap
     event.currentTarget.setAttribute('aria-pressed', 'true');
   });
   if (autoplay) play(0);
+}
+
+// Keep translations outside the prose flow so revealing one does not move the sentence.
+export function installStoryTranslation({lines, prose, tooltip, listen, page=document, view=window}) {
+  let pinned=null, shown=null;
+  function hide() {
+    shown?.removeAttribute('aria-describedby');
+    shown=null;
+    tooltip.hidden=true;
+  }
+  function close() { pinned=null; hide(); }
+  function show(button) {
+    if(prose.dataset.language!=='en')return close();
+    const translation=button.querySelector('.story-zh')?.textContent?.trim();
+    if(!translation)return close();
+    hide();shown=button;
+    tooltip.textContent=translation;
+    tooltip.hidden=false;
+    button.setAttribute('aria-describedby',tooltip.id);
+    const rect=button.getBoundingClientRect(),gap=10,edge=12;
+    const width=tooltip.offsetWidth,height=tooltip.offsetHeight;
+    tooltip.style.left=Math.max(edge,Math.min(rect.left,view.innerWidth-width-edge))+'px';
+    const above=rect.top-height-gap;
+    tooltip.style.top=Math.max(edge,Math.min(above>=edge?above:rect.bottom+gap,view.innerHeight-height-edge))+'px';
+  }
+  for(const button of lines) {
+    listen(button,'pointerenter',event=>{if(event.pointerType!=='touch')show(button);});
+    listen(button,'pointerleave',()=>{if(pinned)show(pinned);else hide();});
+    listen(button,'focus',()=>show(button));
+    listen(button,'blur',()=>{if(!pinned)hide();});
+    listen(button,'click',()=>{if(pinned===button)close();else {pinned=button;show(button);}});
+  }
+  listen(page,'click',event=>{if(!lines.some(button=>button.contains(event.target)))close();});
+  listen(page,'keydown',event=>{if(event.key==='Escape')close();});
+  listen(view,'scroll',close);
+  listen(view,'resize',close);
+  return close;
 }
