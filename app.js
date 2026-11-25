@@ -1,12 +1,12 @@
-import {todayHTML,libraryHTML,meHTML} from './light-shell.mjs?v=20261125-1';
-import {isPracticeLesson,lessonStep,practiceProgress,savePractice} from './light-course.mjs?v=20261125-1';
-import {renderConversation} from './conversation.mjs?v=20261125-1';
-import {installMobileInput} from './mobile-input.mjs?v=20261125-1';
-import {initLanguage} from './i18n.mjs?v=20261125-1';
-import {renderSettings} from './settings.mjs?v=20261125-1';
-import {guideHTML} from './guide.mjs?v=20261125-1';
+import {todayHTML,libraryHTML,meHTML} from './light-shell.mjs?v=20261125-2';
+import {isPracticeLesson,lessonStep,practiceProgress,savePractice} from './light-course.mjs?v=20261125-2';
+import {renderConversation} from './conversation.mjs?v=20261125-2';
+import {installMobileInput} from './mobile-input.mjs?v=20261125-2';
+import {initLanguage} from './i18n.mjs?v=20261125-2';
+import {renderSettings} from './settings.mjs?v=20261125-2';
+import {guideHTML} from './guide.mjs?v=20261125-2';
 import {createThemeController} from './theme.mjs';
-import {BACKUP_SECTIONS,createBackup,createSafetySnapshot,parseBackup,restoreBackup} from './learning-backup.mjs?v=20261125-1';
+import {BACKUP_SECTIONS,createBackup,createSafetySnapshot,parseBackup,restoreBackup} from './learning-backup.mjs?v=20261125-2';
 import {EXTERNAL_NOTEBOOK_KEY,restoreExternalNotebook,externalPhraseKey,toggleExternalPhrase,reviewExternalPhrase,externalPhraseURL} from './external-notebook.mjs';
 import {icon} from './icons.mjs';
 import {restoreState,finishLesson,recordQuiz,nextLesson,dueReviews,reviewPhrase,diagnosticAdvice,recordDiagnosticQuiz,markTranscriptSeen} from './state.mjs';
@@ -24,8 +24,8 @@ const timelines=new Map(), audio=$('#lesson-audio'),lineAudio=$('#line-audio');
 let recording=null,recordUrl=null,recordedAudio=null,toastTimer;
 let externalNotebook=new Map(), externalPage=null, pendingBackup=null, backupRead=0;
 const externalSections={
- stories:{label:'故事听说',load:()=>import('./stories.mjs?v=20261125-1'),render:'renderStories',stop:'stopStories'},
- vocabulary:{label:'词汇练习',load:()=>import('./vocabulary.mjs?v=20261125-1'),render:'renderVocabulary',stop:'stopVocabulary'}
+ stories:{label:'故事听说',load:()=>import('./stories.mjs?v=20261125-2'),render:'renderStories',stop:'stopStories'},
+ vocabulary:{label:'词汇练习',load:()=>import('./vocabulary.mjs?v=20261125-2'),render:'renderVocabulary',stop:'stopVocabulary'}
 };
 const externalSource=part=>part==='story'||part==='stories'?'stories':part==='vocabulary'?'vocabulary':null;
 const isExternalDue=(entry,today)=>!entry.review||entry.review.due<=today;
@@ -142,7 +142,7 @@ function render(){cleanup();pendingBackup=null;backupRead++;let r=route(),parts=
  if(r==='diagnostic'){go('lesson/diagnostic/listen');return;}
  if(parts[0]==='lesson'&&!byId[parts[1]]){if(steps.some(s=>s[0]===parts[1])||parts[1]==='complete'){go(`lesson/w01d1/${parts[1]}`);return;}}
  const source=externalSource(parts[0]);
- const nav=['me','settings','phrases','progress'].includes(parts[0])?'me':parts[0]==='home'?'home':'library';document.querySelectorAll('[data-nav]').forEach(a=>{const active=a.dataset.nav===nav;a.classList.toggle('active',active);if(active)a.setAttribute('aria-current','page');else a.removeAttribute('aria-current');});
+ const nav=source||(['lesson','week'].includes(parts[0])?'path':parts[0]);document.querySelectorAll('[data-nav]').forEach(a=>{const active=a.dataset.nav===nav;a.classList.toggle('active',active);if(active)a.setAttribute('aria-current','page');else a.removeAttribute('aria-current');});
  $('#breadcrumb').textContent=(source&&externalSections[source].label)||({home:'今天',library:'内容库',me:'我的',path:'学习路径',week:'本周课程',phrases:'我的表达本',method:'怎么学，更有效',progress:'学习记录备份',guide:'学习地图与使用攻略',settings:'设置',conversation:'英语对话练习',lesson:'听说练习'})[parts[0]]||'今日学习';
  if(source)renderExternal(source,r);
  else if(parts[0]==='lesson'){const l=byId[parts[1]];if(l){currentLesson=l;setAudio(l);const step=lessonStep(l,parts[2]);if(step==='practice')renderPractice(l);else renderLesson(l,step)}else renderMissing();}

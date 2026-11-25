@@ -1203,5 +1203,12 @@
   "怎样切换语言和主题？": "How do I change language and theme?",
   "点右上角设置。切换语言后页面会重新加载；先保存临时录音，词汇轮次可以续接。": "Open Settings at the top right. Language changes reload the page. Save temporary recordings first; vocabulary rounds can resume.",
   "查看练习设计依据 →": "Read the evidence behind the practice →",
-  "找到你的听说起点 →": "Find your listening and speaking starting point →"
+  "找到你的听说起点 →": "Find your listening and speaking starting point →",
+  "从熟悉的入口开始": "Start from familiar tabs",
+  "→ 选择本周课程。": "→ Choose this week’s lessons.",
+  "→ 听故事、逐句跟读。": "→ Listen to stories and repeat sentence by sentence.",
+  "→ 情景学习与间隔回忆。": "→ Learn in context and recall later.",
+  "→ 收藏与复习常用表达。": "→ Save and review useful expressions.",
+  "普通练习在同一页完成。诊断和阶段检查单独保留，可从学习路径进入。": "Everyday practice stays on one page. Diagnostics and checkpoints remain separate in the learning path.",
+  "学习进度保存在当前浏览器。录音只临时保留在当前页面，离开前可下载。换设备前，从设置中导出学习记录。": "Learning progress stays in this browser. Recordings are temporary on the current page; download them before leaving. Export your learning records from Settings before changing devices."
 }

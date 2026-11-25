@@ -9,7 +9,6 @@
 .light-extras{margin-top:32px}.light-extras h2{font-size:17px}.light-account{padding:8px 24px;max-width:760px}.light-account>a{display:flex;justify-content:space-between;gap:24px;padding:24px 0;border-bottom:1px solid var(--line)}.light-account>a:last-child{border:0}.light-account span{color:var(--muted);font-size:14px}
 .light-guide{max-width:820px}.light-guide section{padding:24px;margin:18px 0}.light-guide h2{font-size:22px;margin-bottom:12px}.light-guide p,.light-guide li{line-height:1.8}.light-guide ol{padding-left:22px}.light-guide li{margin:8px 0}
 @media(max-width:760px){
- .sidebar nav{grid-template-columns:repeat(3,minmax(0,1fr))!important}.sidebar nav a{min-height:52px;font-size:12px}
  .light-today h1{font-size:29px}.today-practice{padding:24px 20px}.today-practice .primary{width:100%}.today-practice h2{font-size:21px}
  .light-library{grid-template-columns:1fr;gap:12px}.library-card{min-height:150px;padding:24px}.library-card h2{margin-top:14px}.library-card p{max-width:none}
  .light-account>a{flex-direction:column;gap:6px}.light-guide section{padding:20px}
