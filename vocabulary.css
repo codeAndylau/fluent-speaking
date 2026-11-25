@@ -44,3 +44,11 @@
 .memory-shadow h3{margin:0;font-size:17px}.memory-shadow p{font-size:14px;line-height:1.7}
 .memory-shadow .memory-download{display:block;text-decoration:underline;padding:12px 0;min-height:44px}
 .memory-shadow [hidden]{display:none}.memory-shadow button{min-height:44px}
+
+.vocabulary [data-memory=resume],.vocabulary [data-memory=reveal]{background:var(--green);color:white}
+.vocabulary .memory-options,.vocabulary .memory-typed{margin-block:14px}
+.vocabulary .memory-options summary,.vocabulary .memory-typed summary{cursor:pointer;padding:8px 0;color:var(--green);min-height:44px}
+.vocabulary .memory-options summary:focus-visible,.vocabulary .memory-typed summary:focus-visible{outline:3px solid var(--green);outline-offset:3px}
+.vocabulary .memory-options label{max-width:100%}
+.vocabulary .memory-options select{display:block;max-width:100%}
+.vocabulary .memory-options .memory-shadow{margin-top:8px}

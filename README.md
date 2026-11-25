@@ -90,3 +90,7 @@ node scripts/audit-rendered-language.mjs
 截至本次核查，官方说明为18岁及以上、英语对话、指定地区开放，公布名单不含中国大陆；可用性与费用以官方为准。依据：[官方使用说明](https://www.nuancelabs.ai/research/meet-emma-the-first-nuplex-persona)。后续原生接入需支持地区的开发者账号、协议/额度及服务端：服务端保管 API key，为浏览器签发短时单次会话 token，再接 LiveKit 音频。不能在当前纯静态前端放长期密钥，也不能保证区域受限的账号可用。依据：[密钥和会话令牌](https://docs.nuancelabs.ai/keys-and-tokens)、[连接流程](https://docs.nuancelabs.ai/connect)。
 
 词汇学习卡可听示范、录音、回听、下载并重说。最多2分钟；仅本页临时保留，离开前需下载。权限等待可取消；拒绝、无设备、占用、空结果分别提示。进入后台暂停示范/回听，并结束正在进行的录音，回到当前页仍可下载；离开步骤会清理临时音频。手机键盘适配使用 visualViewport，无法替代实体 iOS/Android 的兼容性验证。
+
+## 2026-11-25 轻量学习
+
+主导航改为今天/内容库/我的；普通课单页听说并自动保存轮次；7000词采用学习卡后间隔回忆，口头回想优先、打字和录音可选。保留全部内容、词频排序及原有学习记录。

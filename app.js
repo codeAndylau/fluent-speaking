@@ -1,10 +1,12 @@
-import {renderConversation} from './conversation.mjs?v=20261124-6';
-import {installMobileInput} from './mobile-input.mjs?v=20261124-6';
-import {initLanguage} from './i18n.mjs?v=20261124-7';
-import {renderSettings} from './settings.mjs?v=20261124-6';
-import {guideHTML} from './guide.mjs?v=20261124-6';
+import {todayHTML,libraryHTML,meHTML} from './light-shell.mjs?v=20261125-1';
+import {isPracticeLesson,lessonStep,practiceProgress,savePractice} from './light-course.mjs?v=20261125-1';
+import {renderConversation} from './conversation.mjs?v=20261125-1';
+import {installMobileInput} from './mobile-input.mjs?v=20261125-1';
+import {initLanguage} from './i18n.mjs?v=20261125-1';
+import {renderSettings} from './settings.mjs?v=20261125-1';
+import {guideHTML} from './guide.mjs?v=20261125-1';
 import {createThemeController} from './theme.mjs';
-import {BACKUP_SECTIONS,createBackup,createSafetySnapshot,parseBackup,restoreBackup} from './learning-backup.mjs';
+import {BACKUP_SECTIONS,createBackup,createSafetySnapshot,parseBackup,restoreBackup} from './learning-backup.mjs?v=20261125-1';
 import {EXTERNAL_NOTEBOOK_KEY,restoreExternalNotebook,externalPhraseKey,toggleExternalPhrase,reviewExternalPhrase,externalPhraseURL} from './external-notebook.mjs';
 import {icon} from './icons.mjs';
 import {restoreState,finishLesson,recordQuiz,nextLesson,dueReviews,reviewPhrase,diagnosticAdvice,recordDiagnosticQuiz,markTranscriptSeen} from './state.mjs';
@@ -13,7 +15,7 @@ const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&
 const dateKey=(d=new Date())=>`${d.getFullYear()}-${String(d.getMonth()+1).padStart(2,'0')}-${String(d.getDate()).padStart(2,'0')}`;
 const formatTime=n=>`${Math.floor((Number.isFinite(n)?n:0)/60)}:${String(Math.floor((Number.isFinite(n)?n:0)%60)).padStart(2,'0')}`;
 const route=()=>location.hash.slice(1)||'home';
-const lessonURL=(id,step='listen')=>`#lesson/${id}/${step}`;
+const lessonURL=(id,step)=>`#lesson/${id}/${lessonStep(byId[id],step)}`;
 const types={lesson:'主题练习',review:'跨课复习',assessment:'新任务周测',challenge:'综合挑战',diagnostic:'入门诊断'};
 const steps=[['listen','先听一听'],['understand','确认听懂'],['speak','轮到你说'],['review','回顾与复习']];
 let themeControls,languageControls;
@@ -22,8 +24,8 @@ const timelines=new Map(), audio=$('#lesson-audio'),lineAudio=$('#line-audio');
 let recording=null,recordUrl=null,recordedAudio=null,toastTimer;
 let externalNotebook=new Map(), externalPage=null, pendingBackup=null, backupRead=0;
 const externalSections={
- stories:{label:'故事听说',load:()=>import('./stories.mjs?v=20261124-6'),render:'renderStories',stop:'stopStories'},
- vocabulary:{label:'词汇练习',load:()=>import('./vocabulary.mjs?v=20261124-6'),render:'renderVocabulary',stop:'stopVocabulary'}
+ stories:{label:'故事听说',load:()=>import('./stories.mjs?v=20261125-1'),render:'renderStories',stop:'stopStories'},
+ vocabulary:{label:'词汇练习',load:()=>import('./vocabulary.mjs?v=20261125-1'),render:'renderVocabulary',stop:'stopVocabulary'}
 };
 const externalSource=part=>part==='story'||part==='stories'?'stories':part==='vocabulary'?'vocabulary':null;
 const isExternalDue=(entry,today)=>!entry.review||entry.review.due<=today;
@@ -140,33 +142,52 @@ function render(){cleanup();pendingBackup=null;backupRead++;let r=route(),parts=
  if(r==='diagnostic'){go('lesson/diagnostic/listen');return;}
  if(parts[0]==='lesson'&&!byId[parts[1]]){if(steps.some(s=>s[0]===parts[1])||parts[1]==='complete'){go(`lesson/w01d1/${parts[1]}`);return;}}
  const source=externalSource(parts[0]);
- const nav=source||(['lesson','week'].includes(parts[0])?'path':parts[0]);document.querySelectorAll('[data-nav]').forEach(a=>{const active=a.dataset.nav===nav;a.classList.toggle('active',active);if(active)a.setAttribute('aria-current','page');else a.removeAttribute('aria-current');});
- $('#breadcrumb').textContent=(source&&externalSections[source].label)||({home:'今日学习',path:'学习路径',week:'本周课程',phrases:'我的表达本',method:'怎么学，更有效',progress:'学习记录备份',guide:'学习地图与使用攻略',settings:'设置',conversation:'英语对话练习',lesson:'听说练习'})[parts[0]]||'今日学习';
+ const nav=['me','settings','phrases','progress'].includes(parts[0])?'me':parts[0]==='home'?'home':'library';document.querySelectorAll('[data-nav]').forEach(a=>{const active=a.dataset.nav===nav;a.classList.toggle('active',active);if(active)a.setAttribute('aria-current','page');else a.removeAttribute('aria-current');});
+ $('#breadcrumb').textContent=(source&&externalSections[source].label)||({home:'今天',library:'内容库',me:'我的',path:'学习路径',week:'本周课程',phrases:'我的表达本',method:'怎么学，更有效',progress:'学习记录备份',guide:'学习地图与使用攻略',settings:'设置',conversation:'英语对话练习',lesson:'听说练习'})[parts[0]]||'今日学习';
  if(source)renderExternal(source,r);
- else if(parts[0]==='lesson'){const l=byId[parts[1]];if(l){currentLesson=l;setAudio(l);renderLesson(l,parts[2]||'listen')}else renderMissing();}
- else if(parts[0]==='week')renderWeek(Number(parts[1]));else if(r==='path')renderPath();else if(r==='phrases')renderPhrases();else if(r==='method')renderMethod();else if(r==='progress')renderProgress();else if(parts[0]==='guide')app.innerHTML=guideHTML();else if(r==='conversation')renderConversation(app,languageControls?.language);else if(r==='settings')renderSettings(app,themeControls,toast);else renderHome();
+ else if(parts[0]==='lesson'){const l=byId[parts[1]];if(l){currentLesson=l;setAudio(l);const step=lessonStep(l,parts[2]);if(step==='practice')renderPractice(l);else renderLesson(l,step)}else renderMissing();}
+ else if(parts[0]==='week')renderWeek(Number(parts[1]));else if(r==='library')app.innerHTML=libraryHTML({esc});else if(r==='me')app.innerHTML=meHTML({memory,esc});else if(r==='path')renderPath();else if(r==='phrases')renderPhrases();else if(r==='method')renderMethod();else if(r==='progress')renderProgress();else if(parts[0]==='guide')app.innerHTML=guideHTML();else if(r==='conversation')renderConversation(app,languageControls?.language);else if(r==='settings')renderSettings(app,themeControls,toast);else renderHome();
  window.scrollTo({top:0,behavior:'instant'});
  if(parts[0]==='guide'&&['map','pages','routine','help'].includes(parts[1]))document.getElementById('guide-'+parts[1])?.scrollIntoView();
 }
 function renderMissing(){app.innerHTML='<div class="white-card empty-state"><h1>这节课暂时找不到</h1><p>请从课程目录选择课程。</p><a class="primary" href="#path">打开课程目录</a></div>';}
 function weekCalendar(){const d=new Date(),offset=(d.getDay()+6)%7,monday=new Date(d);monday.setDate(d.getDate()-offset);return (document.documentElement.lang==='en'?['Mon','Tue','Wed','Thu','Fri','Sat','Sun']:['一','二','三','四','五','六','日']).map((name,i)=>{const v=new Date(monday);v.setDate(monday.getDate()+i);const done=memory.dates.includes(dateKey(v));return `<div class="day ${i===offset?'today':''} ${done?'done':''}"><span>${name}</span><b>${done?'✓':v.getDate()}</b></div>`}).join('');}
-function weekCount(w){return w.lessons.filter(l=>memory.lessons[l.id]?.completed).length;}
-function renderHome(){const next=nextLesson(memory,lessons),l=next||lessons[0],count=lessons.filter(l=>memory.lessons[l.id]?.completed).length,today=dateKey(),due=dueReviews(memory,today).length+[...externalNotebook.values()].filter(entry=>isExternalDue(entry,today)).length;
- app.innerHTML=`<section class="welcome"><div><div class="eyebrow">A LITTLE PRACTICE, EVERY DAY</div><h1>${count?'很高兴，再次听见你。':'你好，今天也一起开口吧。'}</h1><p>每天一个真实对话，把认识的英语变成说得出口的日常。</p></div><span class="date-chip">12 周 · 72 个学习日</span></section>
- <a class="guide-home-link" href="#guide">第一次来，先看学习地图与使用攻略 <span>→</span></a>
- <section class="hero"><div class="hero-copy"><span class="pill">${icon('leaf')} ${next?`第 ${l.week} 周 · 第 ${l.day} 天`:'全课程练习已完成'}</span><h2>${count?esc(l.title):'从一句 Hello，'}<br><em>${count?'把表达带进生活。':'到自在地聊下去。'}</em></h2><p>${esc(l.goal)}</p><div class="hero-bottom"><a class="primary" href="${next?lessonURL(l.id):'#path'}">${icon('play')}${next?'开始今天的练习':'选择一周，再练一次'}</a><span class="hero-duration">${icon('clock')} 约 30 分钟</span></div></div><div class="hero-art" aria-hidden="true"><div class="orbit"></div><span class="hero-spark">✳</span><div class="chat-card"><span class="chat-face">A</span><div><b>Hi, I'm Alex.</b><small>EVERY CONVERSATION</small></div></div><div class="chat-card second"><span class="chat-face">L</span><div><b>Nice to meet you.</b><small>STARTS WITH A HELLO.</small></div></div><span class="art-caption">SMALL WORDS. REAL CONNECTIONS.</span></div></section>
- <div class="diagnostic-banner"><div><strong>${memory.diagnostic.completed?'你的起点记录已保存':'开始前，先找到你的听说起点'}</strong><p>${memory.diagnostic.completed?esc(diagnosticAdvice(memory.diagnostic)):'约 15 分钟，分别观察听辨、文字理解和开口表达。'}</p></div><a class="secondary" href="${lessonURL('diagnostic',memory.diagnostic.completed?'complete':'listen')}">${memory.diagnostic.completed?'查看诊断':'开始入门诊断'}</a></div>
- <section class="practice-links" aria-label="更多听说练习">
- <a class="task-card white-card" href="#stories"><span class="task-icon">${icon('headphones')}</span><div><h3>故事听说</h3><p>听一章故事，跟读并复述。</p></div></a>
- <a class="task-card white-card" href="#vocabulary"><span class="task-icon blue">${icon('book')}</span><div><h3>词汇练习</h3><p>先在生活场景中理解、回忆和开口，再按需查询 7000 词。</p></div></a>
- </section>
- <div class="route-note learning-route"><strong>把三类资料连起来</strong><p>先做一课日常对话 → 在词汇场景里练出一句自己的话 → 听故事时寻找熟悉的表达。收藏后隔天先回忆，再看答案。</p><a class="inline-link" href="#method">查看学习方法</a> · <a class="inline-link" href="#progress">备份学习记录</a></div>
- <div class="dashboard-grid"><section><div class="section-heading"><h2>今天，练好这三件小事</h2></div>${[['listen','headphones','先听懂，再核对信息','7 分钟'],['speak','mic','换成你，亲口说一说','15 分钟'],['review','repeat','回听一次，安排下次复习','8 分钟']].map(([s,i,t,time])=>`<a class="task-card white-card" href="${lessonURL(l.id,s)}"><span class="task-icon">${icon(i)}</span><div><h3>${t}</h3><p>${esc(l.title)}</p></div><span class="task-time">${time}</span></a>`).join('')}</section><aside class="dashboard-right"><section class="week-card white-card"><div class="week-top"><strong>我的练习节奏</strong><small>本周</small></div><div class="days">${weekCalendar()}</div><div class="week-stats"><div><b>${count}<span>/72</span></b><small>已完成练习</small></div><div><b>${due}<span>句</span></b><small>今天待复习</small></div></div><a class="quiet" href="#phrases">去表达本主动回忆 →</a></section><div class="gentle-note"><strong>完成，不等于掌握。</strong>用新问题、隔日复习和真实问答，看看自己能否用出来。</div></aside></div>
- <section class="path-preview"><div class="section-heading"><h2>一步一步，走进真实生活</h2><a href="#path">查看 12 周学习路径</a></div><div class="mini-path">${course.weeks.slice(0,3).map(w=>`<a class="mini-week white-card" href="#week/${w.week}"><span class="week-label">WEEK ${String(w.week).padStart(2,'0')}</span><h3>${esc(w.title)}</h3><p>已完成 ${weekCount(w)}/6 个学习日</p></a>`).join('')}</div></section>`;
+function weekCount(w){return w.lessons.filter(l=>memory.lessons[l.id]?.completed||practiceProgress(memory,l).done).length;}
+function renderHome(){
+ const today=dateKey(),due=dueReviews(memory,today).length+[...externalNotebook.values()].filter(entry=>isExternalDue(entry,today)).length;
+ app.innerHTML=todayHTML({lessons,memory,esc,due});
 }
-function renderPath(){app.innerHTML=`<section class="page-intro"><div class="eyebrow">YOUR PATH TO EVERYDAY ENGLISH</div><h1>从一句话，到日常生活。</h1><p>12 周，72 个学习日。每天约 30 分钟，每周 4 次主题练习、1 次复习和 1 次新任务周测。</p></section><div class="route-note">先做 <a class="inline-link" href="#diagnostic">入门诊断</a>。第 4、8、12 周回看阶段表现；根据新任务结果调整进度。36 小时是练习量，不是等级保证。</div><div class="course-grid">${course.weeks.map(w=>`<a class="white-card course-card ${w.week===1?'first':''}" href="#week/${w.week}"><span class="course-num">WEEK ${String(w.week).padStart(2,'0')}</span><h3>${esc(w.title)}</h3><p>${esc(w.description)}</p><small>${weekCount(w)}/6 已练习 · ${[4,8,12].includes(w.week)?'含阶段检查':'打开本周 6 课'}</small></a>`).join('')}</div>`;}
-function renderWeek(n){const w=course.weeks.find(w=>w.week===n);if(!w){renderMissing();return;}app.innerHTML=`<a class="back-link" href="#path">${icon('back')}回到 12 周路径</a><section class="page-intro"><div class="eyebrow">WEEK ${String(n).padStart(2,'0')}</div><h1>${esc(w.title)}</h1><p>${esc(w.outcome)}</p></section><div class="route-note">本周 ${weekCount(w)}/6 个学习日已完成。先尝试表达，再看提示；周测需要在新情境中完成任务。</div><div class="week-lessons">${w.lessons.map(l=>{const entry=memory.lessons[l.id];return `<a class="task-card white-card" href="${lessonURL(l.id)}"><span class="task-icon">${entry?.completed?icon('check'):l.day}</span><div><span class="eyebrow">DAY ${l.day} · ${types[l.type]}</span><h3>${esc(l.title)}</h3><p>${esc(l.goal)}</p>${entry?.quiz?`<small>首次理解题 ${esc(entry.quiz.first.score)}/${esc(entry.quiz.first.total)}${entry.quiz.first.assisted?'（看过文本）':'（未看文本）'} · ${entry.completed?'已保存自评':'待口语回顾'}</small>`:''}</div><span class="task-time">30 分钟</span></a>`}).join('')}</div>${[4,8,12].includes(n)?stageReport(n):''}`;}
+function renderPath(){app.innerHTML=`<section class="page-intro"><div class="eyebrow">YOUR PATH TO EVERYDAY ENGLISH</div><h1>从一句话，到日常生活。</h1><p>12 周，72 个学习日，包含主题练习、复习和周测。</p></section><div class="route-note">可选 <a class="inline-link" href="#diagnostic">入门诊断</a>。第 4、8、12 周可回看阶段检查。</div><div class="course-grid">${course.weeks.map(w=>`<a class="white-card course-card ${w.week===1?'first':''}" href="#week/${w.week}"><span class="course-num">WEEK ${String(w.week).padStart(2,'0')}</span><h3>${esc(w.title)}</h3><p>${esc(w.description)}</p><small>${weekCount(w)}/6 已练习 · ${[4,8,12].includes(w.week)?'含阶段检查':'打开本周 6 课'}</small></a>`).join('')}</div>`;}
+function renderWeek(n){const w=course.weeks.find(w=>w.week===n);if(!w){renderMissing();return;}app.innerHTML=`<a class="back-link" href="#path">${icon('back')}回到 12 周路径</a><section class="page-intro"><div class="eyebrow">WEEK ${String(n).padStart(2,'0')}</div><h1>${esc(w.title)}</h1><p>${esc(w.outcome)}</p></section><div class="route-note">本周 ${weekCount(w)}/6 个学习日已有练习记录。</div><div class="week-lessons">${w.lessons.map(l=>{const entry=memory.lessons[l.id];return `<a class="task-card white-card" href="${lessonURL(l.id)}"><span class="task-icon">${entry?.completed||practiceProgress(memory,l).done?icon('check'):l.day}</span><div><span class="eyebrow">DAY ${l.day} · ${types[l.type]}</span><h3>${esc(l.title)}</h3><p>${esc(l.goal)}</p>${entry?.quiz?`<small>首次理解题 ${esc(entry.quiz.first.score)}/${esc(entry.quiz.first.total)}${entry.quiz.first.assisted?'（看过文本）':'（未看文本）'} · ${entry.completed?'已保存自评':'待口语回顾'}</small>`:''}</div></a>`}).join('')}</div>${[4,8,12].includes(n)?stageReport(n):''}`;}
 function stageReport(n){const start=n-3,entries=lessons.filter(l=>l.week>=start&&l.week<=n&&l.type==='assessment');return `<section class="white-card stage-report"><h2>第 ${start}–${n} 周 · 阶段检查</h2><p>新任务周测记录与口语自评分开看；没有同伴反馈的记录，不能当作已验证的互动能力。</p>${entries.map(l=>{const e=memory.lessons[l.id];return `<div class="report-row"><a href="${lessonURL(l.id)}">第 ${l.week} 周周测</a><span>${e?.quiz?`理解题首次 ${esc(e.quiz.first.score)}/3${e.quiz.first.assisted?' · 看过文本':''}`:'尚未答题'} · ${e?.completed?(e.partner?'已做同伴问答':'仅独自练习'):'尚未保存口语自评'}</span></div>`}).join('')}<div class="prompt-box"><h3>隔周再提取</h3><p>不要先点开旧文本。用本阶段第一个主题课的表达，说一段自己的新情况，再检查哪里需要提示。</p><a class="quiet" href="${lessonURL(`w${String(start).padStart(2,'0')}d1`,'review')}">回看第 ${start} 周的复习任务 →</a></div></section>`;}
+function recordZone(){return `<div class="record-zone"><button class="record-button" data-act="record" aria-label="开始录音">${icon('mic')}</button><strong id="record-status">点一下，录下你的回答</strong><p id="record-help">录音不会上传；离开步骤前请下载。也可以用手机录音机完成。</p><div id="record-result"></div></div>`;}
+function renderPractice(l){
+ const progress=practiceProgress(memory,l),entry=memory.lessons[l.id],d=draft(l);
+ d.textSeen=true;
+ const before=memory;
+ if(!entry?.quiz&&!entry?.pendingTextSeen)memory=markTranscriptSeen(memory,l.id);
+ memory=savePractice(memory,l,{round:progress.round,touch:true});
+ if(memory!==before)persist();
+ const next=lessons.slice(lessons.indexOf(l)+1).find(isPracticeLesson);
+ app.innerHTML=`<a class="back-link" href="#week/${l.week}">${icon('back')}回到本周课程</a>
+ <div class="lesson-heading"><div><h1>${esc(l.title)}</h1><p>${esc(l.englishTitle)} · ${esc(l.goal)}</p></div></div>
+ <div class="light-course">
+  <section class="white-card lesson-panel"><h2>听对话</h2>${player(l)}${transcript(l)}</section>
+  <section class="white-card lesson-panel">
+   ${l.phrases.length?`<h2>常用表达</h2>${l.phrases.map((p,i)=>expressionCard(l,p,i)).join('')}`:''}
+   <h2>换成你来说</h2>
+   <div class="round-buttons">${l.rounds.map((r,i)=>`<button type="button" class="${i===progress.round?'primary':'secondary'}" data-act="practice-round" data-index="${i}" aria-pressed="${i===progress.round}">${i+1}. ${esc(r.title)}</button>`).join('')}</div>
+   <div id="practice-round-area">${practiceRound(l,progress.round)}</div>
+   <details class="details-card"><summary>录音回听（可选）</summary>${recordZone()}</details>
+   <div class="lesson-bottom"><button class="primary" type="button" data-act="practice-done" ${progress.done?'hidden':''}>这段练过了</button><span id="practice-done" role="status">${progress.done?'已记录练习':''}</span><a class="secondary" href="${next?lessonURL(next.id):'#path'}" ${progress.done?'':'hidden'} data-practice-next>${next?'继续下一段':'回到课程目录'}</a></div>
+  </section>
+ </div>`;
+ updatePlayer();
+}
+function practiceRound(l,index){
+ const round=l.rounds[index];
+ return `<div class="prompt-box"><p>${esc(round.prompt)}</p><details><summary>需要一点提示</summary><p>${esc(round.hint)}</p></details><details><summary>说完后看参考表达</summary><p lang="en">${esc(round.sample)}</p></details></div>`;
+}
 function renderLesson(l,step){if(!steps.some(s=>s[0]===step)&&step!=='complete')step='listen';const d=draft(l),lock=['speak','review'].includes(step)&&!canSpeak(l);
  app.innerHTML=`<a class="back-link" href="${l.week?'#week/'+l.week:'#home'}">${icon('back')}${l.week?'回到本周课程':'回到今日学习'}</a><div class="lesson-heading"><div><div class="eyebrow">${l.week?`WEEK ${String(l.week).padStart(2,'0')} / DAY ${l.day}`:'YOUR STARTING POINT'}</div><h1>${esc(l.title)}</h1><p>${esc(l.englishTitle)} · ${esc(l.goal)}</p></div><span class="lesson-level">${types[l.type]} · ${l.minutes} 分钟</span></div><nav class="step-tabs" aria-label="课程步骤">${steps.map(([s,t],i)=>`<a href="${lessonURL(l.id,s)}" class="step-tab ${s===step?'active':''}" ${s===step?'aria-current="step"':''}><b>${i+1}</b>${t}</a>`).join('')}</nav><div class="lesson-grid"><section class="white-card lesson-panel" id="lesson-panel">${lock?`<h2>先完成独立听力尝试</h2><p>${l.id==='diagnostic'?'请先保存听力和阅读辅助后的回答，再进入开口任务。':'先听新对话、提交理解题，再展开示例和表达。'}</p><a class="primary" href="${lessonURL(l.id,'understand')}">去确认听懂</a>`:stepContent(l,step)}</section><aside class="white-card lesson-aside"><h3>今天的小目标</h3><ul class="goal-list">${(restricted(l)&&!firstQuiz(l)?['听出人物的需要与限制','抓住最终确认的信息','提交后再做变化情境下的开口任务']:l.goals).map(g=>`<li>${esc(g)}</li>`).join('')}</ul><div class="aside-line"></div><p class="aside-caption">示范音色：${voice(l)} 美式英语（AI 合成）。<br>录音仅在当前页面内存，不会上传；离开步骤前请下载。</p><div class="aside-line"></div><p class="aside-caption">理解题有参考答案；口语记录来自你的自评和同伴反馈，不自动判定等级。</p></aside></div>`;
  updatePlayer();
@@ -176,13 +197,13 @@ function player(l){return `<div class="audio-scene"><div class="speaker-pair">${
 function stepContent(l,step){const d=draft(l),diag=l.id==='diagnostic';
  if(step==='listen'){const locked=restricted(l)&&!firstQuiz(l);return `<div class="eyebrow">LISTEN FIRST</div><h2>先听意思，不急着看答案。</h2><p>${diag?'先听两遍，不查词。答完以后，再看文字观察理解是否改善。':restricted(l)?'这是本周的新对话。先听两遍并作答，再查看文本与解析。':'先听两遍，想想他们在做什么，需要解决什么问题。'}</p>${player(l)}<div class="player-actions"><button data-act="transcript" ${locked?'disabled':''} aria-expanded="${!!d.showText}">${icon('text')}${locked?'提交理解题后显示文本':d.showText?'收起对话文本':'需要帮助？展开文本'}</button></div><div id="transcript-area">${d.showText&&!locked?transcript(l):''}</div><div class="lesson-bottom"><span>逐句重听也有帮助，但先抓住整体意思。</span><a class="primary" href="${lessonURL(l.id,'understand')}">听好了，确认一下</a></div>`;}
  if(step==='understand'){const reading=diag&&firstQuiz(l);if(reading&&!d.readingStarted){d.readingStarted=true;d.answers={};d.checked=Number.isInteger(memory.diagnostic.reading);d.textSeen=true;}return `<div class="eyebrow">${reading?'READ AND COMPARE':'CHECK THE MEANING'}</div><h2>${reading?'看过文字后，再核对一次。':'你听懂了哪些信息？'}</h2><p>${reading?'用同一组题观察文字能否帮助理解；这包含重复作答的影响，不能当作标准诊断。':d.textSeen?'你已经看过文本，本次会标记为借助文本作答。':'先选答案，再查看解释。答错也可以继续学习。'}</p>${player(l)}${reading?transcript(l):''}${l.questions.map((q,i)=>`<fieldset class="question-block"><legend>${i+1}. ${esc(q.prompt)}</legend><div class="quiz-options">${q.options.map((o,j)=>`<label class="quiz-option"><input type="radio" name="question-${i}" value="${j}" ${d.answers[i]===j?'checked':''} ${d.checked?'disabled':''}>${esc(o)}</label>`).join('')}</div></fieldset>`).join('')}<div id="quiz-feedback" role="status">${d.checked?quizFeedback(l):''}</div><div class="lesson-bottom"><a class="quiet" href="${lessonURL(l.id,'listen')}">返回听力</a>${d.checked?`<a class="primary" href="${lessonURL(l.id,'speak')}">轮到我开口了</a><button class="secondary" data-act="retry-quiz">再练理解题</button>`:`<button class="primary" data-act="check-quiz">${reading?'保存阅读辅助结果':'提交我的回答'}</button>`}</div>`;}
- if(step==='speak'){return `<div class="eyebrow">MAKE IT YOURS · 约 15 分钟</div><h2>这一次，换成你自己。</h2><p>每轮先说，再看提示。录音回听后，挑一个问题重说一次。</p>${l.phrases.length?`<details class="details-card" ${d.round===0?'open':''}><summary>本课 3 个常用表达</summary>${l.phrases.map((p,i)=>expressionCard(l,p,i)).join('')}</details>`:''}<div id="round-area">${roundContent(l)}</div><div class="record-zone"><button class="record-button" data-act="record" aria-label="开始录音">${icon('mic')}</button><strong id="record-status">点一下，录下你的回答</strong><p id="record-help">录音不会上传；离开步骤前请下载。也可以用手机录音机完成。</p><div id="record-result"></div></div><div class="prompt-box"><h3>听辨与发音 · ${esc(l.pronunciation.focus)}</h3><p>${esc(l.pronunciation.tip)}</p></div><details class="details-card"><summary>检查一个常见表达问题</summary><p class="correction-before">${esc(l.correction.before)}</p><p class="correction-after">${esc(l.correction.after)}</p><p>${esc(l.correction.reason)}</p></details><section class="partner-box"><h3>同伴任务 · 让对方提供新信息</h3><p><strong>你的任务：</strong>${esc(l.partnerTask.roleA)}</p><details><summary>角色 B 信息卡 · 请同伴单独看</summary><p>${esc(l.partnerTask.roleB)}</p></details><p><strong>完成标准：</strong>${esc(l.partnerTask.success)}</p><small>独自练习可以模拟回应，但不能验证临场听懂和互动。</small></section><div class="lesson-bottom"><span>三轮都试过，再保存真实表现。</span><a class="primary" href="${lessonURL(l.id,'review')}">回听与自评</a></div>`;}
+ if(step==='speak'){return `<div class="eyebrow">MAKE IT YOURS · 约 15 分钟</div><h2>这一次，换成你自己。</h2><p>每轮先说，再看提示。录音回听后，挑一个问题重说一次。</p>${l.phrases.length?`<details class="details-card" ${d.round===0?'open':''}><summary>本课 3 个常用表达</summary>${l.phrases.map((p,i)=>expressionCard(l,p,i)).join('')}</details>`:''}<div id="round-area">${roundContent(l)}</div>${recordZone()}<div class="prompt-box"><h3>听辨与发音 · ${esc(l.pronunciation.focus)}</h3><p>${esc(l.pronunciation.tip)}</p></div><details class="details-card"><summary>检查一个常见表达问题</summary><p class="correction-before">${esc(l.correction.before)}</p><p class="correction-after">${esc(l.correction.after)}</p><p>${esc(l.correction.reason)}</p></details><section class="partner-box"><h3>同伴任务 · 让对方提供新信息</h3><p><strong>你的任务：</strong>${esc(l.partnerTask.roleA)}</p><details><summary>角色 B 信息卡 · 请同伴单独看</summary><p>${esc(l.partnerTask.roleB)}</p></details><p><strong>完成标准：</strong>${esc(l.partnerTask.success)}</p><small>独自练习可以模拟回应，但不能验证临场听懂和互动。</small></section><div class="lesson-bottom"><span>三轮都试过，再保存真实表现。</span><a class="primary" href="${lessonURL(l.id,'review')}">回听与自评</a></div>`;}
  if(step==='review'){const entry=diag?memory.diagnostic:memory.lessons[l.id];return `<div class="eyebrow">NOTICE YOUR PROGRESS</div><h2>记录这一次，你能做到什么。</h2><p>每项选择实际表现。自评不会自动换算为口语分数或 CEFR 等级。</p>${l.rubric.map((r,i)=>`<label class="rating-row"><span>${i+1}. ${esc(r)}</span><select name="rating-${i}" aria-label="目标 ${i+1} 的表现"><option value="">请选择实际表现</option>${['还做不到','需要句子提示','能独立完成，有停顿','能完成并应对一个追问'].map((t,v)=>`<option value="${v}" ${d.ratings[i]===v?'selected':''}>${t}</option>`).join('')}</select></label>`).join('')}<div class="checklist"><label><input type="checkbox" name="spoken" ${d.spoken?'checked':''}>我已经实际开口练过三轮，并回听或自查</label><label><input type="checkbox" name="partner" ${d.partner?'checked':''}>我与同伴完成了信息差问答（独练请不勾选）</label></div><label class="note-label">下次想改进的一点（可选）<textarea name="note" maxlength="500" rows="3" placeholder="例如：没听清时间时，先请求重复">${esc(d.note)}</textarea></label>${entry?.quiz?`<p class="record-summary">理解题首次：${esc(entry.quiz.first.score)}/3${entry.quiz.first.assisted?' · 看过文本':' · 未看文本'}</p>`:''}<div class="prompt-box"><h3>明天，再主动说一次</h3><p>${esc(l.review.prompt)}</p><p><strong>换个情境：</strong>${esc(l.review.transfer)}</p></div>${sourceLinks(l)}${l.phrases.length?`<h3 class="subheading">收藏想复习的表达</h3>${l.phrases.map((p,i)=>expressionCard(l,p,i)).join('')}`:''}<div id="review-feedback" role="status"></div><div class="lesson-bottom"><a class="quiet" href="${lessonURL(l.id,'speak')}">回去再练</a><button class="primary" data-act="complete">保存本次练习</button></div>`;}
  if(diag)return diagnosticResult();
  const entry=memory.lessons[l.id];if(!entry?.completed)return `<h2>先保存你的练习记录</h2><p>完成回顾后，这里会显示本次记录。</p><a class="primary" href="${lessonURL(l.id,'review')}">去回顾</a>`;
  const next=lessons[lessons.findIndex(v=>v.id===l.id)+1];return `<div class="complete-panel"><div class="complete-mark">${icon('check')}</div><div class="eyebrow">ONE SMALL STEP, WELL DONE.</div><h2>本次练习已保存。</h2><p>记录的是练习和自评。明天换个情境，再看看能否独立表达。</p><div class="route-note">${entry.quiz?`理解题首次 ${esc(entry.quiz.first.score)}/3 · `:''}${entry.partner?'已记录同伴问答':'本次为独自练习'}<br>自评：${(entry.ratings||[]).map(v=>['还做不到','需提示','能独立完成','能回应追问'][v]).join(' / ')}</div>${next?`<a class="primary" href="${lessonURL(next.id)}">下一学习日：${esc(next.title)}</a>`:'<a class="primary" href="#path">查看完整学习记录</a>'}<br><a class="quiet" href="#phrases">去表达本复习</a></div>`;
 }
-function sourceLinks(l){return l.review.sourceIds.length?`<details class="details-card"><summary>本次复习关联 ${l.review.sourceIds.length} 节课 · 先回忆再打开</summary>${l.review.sourceIds.map(id=>`<a class="source-link" href="${lessonURL(id,'speak')}">${esc(byId[id]?.title||id)}</a>`).join('')}</details>`:'';}
+function sourceLinks(l){return l.review.sourceIds.length?`<details class="details-card"><summary>本次复习关联 ${l.review.sourceIds.length} 节课 · 先回忆再打开</summary>${l.review.sourceIds.map(id=>`<a class="source-link" href="${lessonURL(id)}">${esc(byId[id]?.title||id)}</a>`).join('')}</details>`:'';}
 function roundContent(l){const d=draft(l),r=l.rounds[d.round];return `<div class="prompt-box"><div class="player-actions"><h3>${esc(r.title)}</h3><span>${d.round+1}/3</span></div><p>${esc(r.prompt)}</p><details><summary>需要一点提示</summary><p>${esc(r.hint)}</p></details><details><summary>说完后看参考表达</summary><p lang="en">${esc(r.sample)}</p></details><div class="round-buttons">${l.rounds.map((r,i)=>`<button class="${i===d.round?'primary':'secondary'}" data-act="round" data-index="${i}" aria-pressed="${i===d.round}">第 ${i+1} 轮</button>`).join('')}</div></div>`;}
 function quizFeedback(l){const d=draft(l);return `<div class="feedback">${l.questions.map((q,i)=>`<p><strong>${i+1}. ${d.answers[i]===undefined?'参考答案':d.answers[i]===q.answer?'回答正确':'再留意一下'}：${esc(q.options[q.answer])}</strong><br>${esc(q.explanation)}</p>`).join('')}</div>`;}
 function checkQuiz(){const l=currentLesson,d=draft(l);if(d.checked)return;if(Object.keys(d.answers).length!==3){toast('请先回答全部 3 题，不确定也可以尝试。');return;}const score=l.questions.reduce((sum,q,i)=>sum+(d.answers[i]===q.answer),0);
@@ -195,7 +216,7 @@ function renderPhrases(){
  const today=dateKey(),due=new Set(dueReviews(memory,today));
  const cards=memory.saved.map(id=>{
   const [lid,pid]=id.split(':'),l=byId[lid],i=Number(pid.slice(1)),p=l.phrases[i];
-  return {due:due.has(id),html:`<article class="white-card recall-card"><span class="eyebrow">${due.has(id)?'今天复习':`下次 ${memory.reviews[id]?.due}`}</span><h3>${esc(p.zh)}</h3><p>不看英文，换成自己的信息说一句。</p><details><summary>说完了，查看参考</summary>${expressionCard(l,p,i)}<p class="example" lang="en">${esc(p.example)}</p><div class="round-buttons"><button class="primary" data-act="recall" data-id="${id}" data-success="yes">独立说出来了</button><button class="secondary" data-act="recall" data-id="${id}" data-success="no">还需要提示</button></div></details><a class="quiet" href="${lessonURL(l.id,'speak')}">回到课程：${esc(l.title)}</a></article>`}
+  return {due:due.has(id),html:`<article class="white-card recall-card"><span class="eyebrow">${due.has(id)?'今天复习':`下次 ${memory.reviews[id]?.due}`}</span><h3>${esc(p.zh)}</h3><p>不看英文，换成自己的信息说一句。</p><details><summary>说完了，查看参考</summary>${expressionCard(l,p,i)}<p class="example" lang="en">${esc(p.example)}</p><div class="round-buttons"><button class="primary" data-act="recall" data-id="${id}" data-success="yes">独立说出来了</button><button class="secondary" data-act="recall" data-id="${id}" data-success="no">还需要提示</button></div></details><a class="quiet" href="${lessonURL(l.id)}">回到课程：${esc(l.title)}</a></article>`}
  });
  for(const [id,entry] of externalNotebook){
   const isDue=isExternalDue(entry,today),key=esc(id);
@@ -220,7 +241,7 @@ function renderPhrases(){
  app.innerHTML=`<section class="page-intro"><div class="eyebrow">WORDS YOU CAN ACTUALLY USE</div><h1>属于你的日常表达。</h1><p>先看情境，自己说一句，再展开参考。按实际回忆安排下次复习。</p></section>
  <div class="route-note">已收藏 ${cards.length} 句 · 今天待复习 ${dueCount} 句。成功回忆后按 1、3、7、14、30 天间隔复习；需要提示时回到次日。</div>
  ${cards.length?`<div class="phrase-grid">${cards.sort((a,b)=>Number(b.due)-Number(a.due)).map(card=>card.html).join('')}</div>`:
- `<div class="white-card empty-state">${icon('bookmark')}<h2>从一句对你有用的话开始。</h2><p>在课程、故事或词汇练习中点击收藏，表达就会留在这里。</p><a class="primary" href="${lessonURL('w01d1','speak')}">去练习第一课</a></div>`}`;
+ `<div class="white-card empty-state">${icon('bookmark')}<h2>从一句对你有用的话开始。</h2><p>在课程、故事或词汇练习中点击收藏，表达就会留在这里。</p><a class="primary" href="${lessonURL('w01d1')}">去练习第一课</a></div>`}`;
 }
 function saveExpression(id){const [lid,p]=id.split(':');if(!byId[lid]?.phrases[Number(p?.slice(1))])return;const had=memory.saved.includes(id);memory.saved=had?memory.saved.filter(v=>v!==id):[...memory.saved,id];persist();if(route()==='phrases')renderPhrases();else document.querySelectorAll('[data-act="save"]').forEach(b=>{if(b.dataset.id===id){b.classList.toggle('saved',!had);b.setAttribute('aria-pressed',String(!had));b.setAttribute('aria-label',`${had?'收藏':'取消收藏'}：${byId[lid].phrases[Number(p.slice(1))].en}`);b.innerHTML=icon(had?'bookmark':'check');}});toast(had?'已移出表达本':'已加入表达本；复习时先主动回忆。');}
 function completeLesson(){const l=currentLesson,d=draft(l),feedback=$('#review-feedback');if(!d.spoken||d.ratings.some(n=>n===null)||!firstQuiz(l)){feedback.innerHTML='<div class="feedback warning">请先完成理解题、三轮开口练习，并为三项目标选择实际表现。还做不到也可以如实记录。</div>';return;}
@@ -386,6 +407,22 @@ document.addEventListener('click',event=>{const b=event.target.closest('[data-ac
  else if(act==='transcript'){if(restricted(l)&&!firstQuiz(l))return;d.showText=!d.showText;if(d.showText){d.textSeen=true;if(l.id!=='diagnostic'){memory=markTranscriptSeen(memory,l.id);persist();}}$('#transcript-area').innerHTML=d.showText?transcript(l):'';b.textContent=d.showText?'收起对话文本':'需要帮助？展开文本';b.setAttribute('aria-expanded',String(d.showText));}
  else if(act==='translation'){d.translation=!d.translation;document.querySelectorAll('.translation').forEach(el=>el.hidden=!d.translation);b.textContent=d.translation?'隐藏中文':'显示中文';}
  else if(act==='save')saveExpression(b.dataset.id);else if(act==='check-quiz')checkQuiz();else if(act==='retry-quiz'){d.answers={};d.checked=false;d.textSeen=true;renderLesson(l,'understand');}
+ else if(act==='practice-round'&&isPracticeLesson(l)&&$('#practice-round-area')){
+  const round=Number(b.dataset.index);
+  memory=savePractice(memory,l,{round});persist();
+  const progress=practiceProgress(memory,l);
+  $('#practice-round-area').innerHTML=practiceRound(l,progress.round);
+  app.querySelectorAll('[data-act="practice-round"]').forEach(button=>{
+   const selected=Number(button.dataset.index)===progress.round;
+   button.classList.toggle('primary',selected);button.classList.toggle('secondary',!selected);
+   button.setAttribute('aria-pressed',String(selected));
+  });
+ }else if(act==='practice-done'&&isPracticeLesson(l)&&$('#practice-done')){
+  memory=savePractice(memory,l,{done:true});persist();
+  b.hidden=true;
+  $('#practice-done').textContent='已记录练习';
+  const next=$('[data-practice-next]');next.hidden=false;next.focus();
+ }
  else if(act==='round'){d.round=Number(b.dataset.index);$('#round-area').innerHTML=roundContent(l);const expressions=$('.details-card');if(expressions)expressions.open=false;}
  else if(act==='record')toggleRecording();else if(act==='complete')completeLesson();else if(act==='recall'){memory=reviewPhrase(memory,b.dataset.id,b.dataset.success==='yes',dateKey());persist();renderPhrases();toast('已安排下一次复习。');}
 });

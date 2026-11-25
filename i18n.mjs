@@ -45,7 +45,7 @@ export async function initLanguage({document,storage,notify=()=>{},messages={}})
  const missing=new Set();
  const dictionaries=await Promise.all(['i18n-ui.json','i18n-content.json'].map(async file=>{
   try {
-   const response=await fetch(new URL(file+'?v=20261124-7',import.meta.url));
+   const response=await fetch(new URL(file+'?v=20261125-1',import.meta.url));
    if(!response.ok)throw new Error(String(response.status));
    return await response.json();
   }catch{throw new Error('English content could not load: '+file)}

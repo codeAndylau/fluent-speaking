@@ -20,10 +20,10 @@ const ratings=arrayOf(value=>integer(value)&&value<=3);
 const review=value=>fields(value,{count:integer,due:date,last:date,success:boolean})&&integer(value.count)&&date(value.due);
 const attempt=value=>fields(value,{score:integer,total:integer,assisted:boolean,date})&&integer(value.score)&&integer(value.total)&&value.total>0&&value.score<=value.total;
 const quiz=value=>fields(value,{first:attempt,last:attempt,attempts:integer})&&attempt(value.first);
-const lesson=value=>fields(value,{completed:boolean,completedDate:date,lastPracticed:date,migrated:boolean,pendingTextSeen:boolean,ratings,partner:boolean,note:text,quiz});
+const lesson=value=>fields(value,{practiceDone:boolean,practiceUpdatedAt:timestamp,practiceRound:v=>integer(v)&&v<=2,completed:boolean,completedDate:date,lastPracticed:date,migrated:boolean,pendingTextSeen:boolean,ratings,partner:boolean,note:text,quiz});
 const diagnostic=value=>fields(value,{completed:boolean,listening:v=>integer(v)&&v<=3,reading:v=>integer(v)&&v<=3,ratings,partner:boolean,note:text,date,lastPractice:v=>fields(v,{score:n=>integer(n)&&n<=3,date})});
 const recall=value=>fields(value,{
- level:v=>integer(v)&&v<=4,due:timestamp,lastRecall:timestamp,hints:integer,matched:boolean,
+ lastPracticed:timestamp,selfAssessment:v=>['remembered','again'].includes(v),level:v=>integer(v)&&v<=4,due:timestamp,lastRecall:timestamp,hints:integer,matched:boolean,
  independent:integer,delayed:integer,listening:boolean,listeningAttempts:integer,listeningCorrect:integer,spoken:boolean
 });
 function validSection(key,value) {

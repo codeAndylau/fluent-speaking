@@ -6,26 +6,25 @@
   <title>开口 Fluent · 让英语成为日常</title>
   <script>try{var skin=localStorage.getItem('fluent-skin');if(['sage','ocean','sand'].includes(skin))document.documentElement.dataset.skin=skin}catch{}</script>
   <script>try{var t=localStorage.getItem('fluent-theme');document.documentElement.dataset.theme=t==='dark'||(t!=='light'&&matchMedia('(prefers-color-scheme: dark)').matches)?'dark':'light'}catch{document.documentElement.dataset.theme=matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light'}</script>
-  <link rel="stylesheet" href="styles.css?v=20261124-7">
-  <link rel="stylesheet" href="stories.css?v=20261124-7">
-  <link rel="stylesheet" href="vocabulary.css?v=20261124-7">
-  <link rel="stylesheet" href="guide-theme.css?v=20261124-7">
+  <link rel="stylesheet" href="styles.css?v=20261125-1">
+  <link rel="stylesheet" href="stories.css?v=20261125-1">
+  <link rel="stylesheet" href="vocabulary.css?v=20261125-1">
+  <link rel="stylesheet" href="guide-theme.css?v=20261125-1">
+  <link rel="stylesheet" href="light-learning.css?v=20261125-1">
 </head>
 <body>
   <aside class="sidebar">
     <a href="#home" class="brand" aria-label="开口 Fluent 首页"><span class="brand-icon">f<span>●</span></span><span>开口<span class="brand-en">FLUENT</span></span></a>
     <div class="side-caption">一点点练习，一点点自在。</div>
     <nav aria-label="主导航">
-      <a href="#home" data-nav="home"><i data-icon="home"></i>今日学习</a>
-      <a href="#path" data-nav="path"><i data-icon="map"></i>学习路径<span class="nav-tag">12 周</span></a>
-      <a href="#stories" data-nav="stories"><i data-icon="headphones"></i>故事听说</a>
-      <a href="#vocabulary" data-nav="vocabulary"><i data-icon="book"></i>词汇练习</a>
-      <a href="#phrases" data-nav="phrases"><i data-icon="bookmark"></i>表达本</a>
+      <a href="#home" data-nav="home"><i data-icon="home"></i>今天</a>
+      <a href="#library" data-nav="library"><i data-icon="book"></i>内容库</a>
+      <a href="#me" data-nav="me"><i data-icon="bookmark"></i>我的</a>
     </nav>
-    <div class="sidebar-bottom"><div class="small-leaf">✳</div><strong>不用完美，先说出来。</strong><p>一次真实的表达，<br>就是一次小小的进步。</p><div class="side-divider"></div><span class="preview-label">12 周完整课程</span><small>72 个学习日 · 入门诊断</small></div>
+
   </aside>
   <div class="app-shell">
-    <header class="topbar"><span id="breadcrumb">我的学习 / 今日学习</span><div class="top-right"><a class="guide-entry" href="#guide" data-nav="guide">使用攻略</a><a class="settings-entry" href="#settings" data-nav="settings" aria-label="设置">⚙ <span>设置</span></a><a href="#progress" class="local-note"><i data-icon="shield"></i>学习记录与备份</a></div></header>
+    <header class="topbar"><span id="breadcrumb">我的学习 / 今日学习</span><div class="top-right"><a class="settings-entry" href="#settings" data-nav="settings" aria-label="设置">⚙ <span>设置</span></a></div></header>
     <main id="app"></main>
     <footer><a href="#settings" data-nav="settings">设置</a><a href="#guide" data-nav="guide">学习地图与攻略</a><a href="#method" data-nav="method">怎么学，更有效</a><a href="#progress" data-nav="progress">学习记录备份</a><span>开口 FLUENT · 为真实交流而练习</span></footer>
   </div>
@@ -33,6 +32,6 @@
   <div id="toast" role="status" aria-live="polite"></div>
   <audio id="lesson-audio" preload="metadata"></audio>
   <audio id="line-audio" preload="none"></audio>
-  <script type="module" src="app.js?v=20261124-7"></script>
+  <script type="module" src="app.js?v=20261125-1"></script>
 </body>
 </html>
