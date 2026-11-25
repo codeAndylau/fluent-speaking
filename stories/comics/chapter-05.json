@@ -1,0 +1,169 @@
+{
+  "chapterId": 5,
+  "title": "Not Tonight",
+  "image": "chapter-05.png",
+  "panels": [
+    {
+      "number": 1,
+      "sceneZh": "Rui帮Andy把沉重的二手台灯搬回家，到家时大约八点五十分。",
+      "sceneEn": "Rui helps Andy carry a heavy second-hand lamp home. They arrive at about ten to nine.",
+      "keywords": [
+        "help",
+        "heavy lamp",
+        "late"
+      ],
+      "promptZh": "这一格发生了什么？请用自己的话说明原因或结果。",
+      "promptEn": "What happens here? Explain the reason or result in your own words.",
+      "sampleEn": "Rui helps Andy carry a heavy second-hand lamp home. They arrive at about ten to nine.",
+      "sampleZh": "Rui帮Andy把沉重的二手台灯搬回家，到家时大约八点五十分。",
+      "crop": {
+        "x": 5,
+        "y": 99,
+        "width": 499,
+        "height": 329
+      }
+    },
+    {
+      "number": 2,
+      "sceneZh": "Andy邀请Rui进屋喝茶，他们越聊越热闹，笑声也越来越大。",
+      "sceneEn": "Andy invites Rui in for tea. Their conversation and laughter become louder.",
+      "keywords": [
+        "invite",
+        "tea",
+        "noise"
+      ],
+      "promptZh": "这一格发生了什么？请用自己的话说明原因或结果。",
+      "promptEn": "What happens here? Explain the reason or result in your own words.",
+      "sampleEn": "Andy invites Rui in for tea. Their conversation and laughter become louder.",
+      "sampleZh": "Andy邀请Rui进屋喝茶，他们越聊越热闹，笑声也越来越大。",
+      "crop": {
+        "x": 520,
+        "y": 99,
+        "width": 499,
+        "height": 329
+      }
+    },
+    {
+      "number": 3,
+      "sceneZh": "Maya戴着耳机走出来。她工作通话需要安静，便请Andy单独聊聊。",
+      "sceneEn": "Maya comes out wearing headphones. She needs quiet for work calls and asks to speak privately.",
+      "keywords": [
+        "headphones",
+        "quiet",
+        "work call"
+      ],
+      "promptZh": "这一格发生了什么？请用自己的话说明原因或结果。",
+      "promptEn": "What happens here? Explain the reason or result in your own words.",
+      "sampleEn": "Maya comes out wearing headphones. She needs quiet for work calls and asks to speak privately.",
+      "sampleZh": "Maya戴着耳机走出来。她工作通话需要安静，便请Andy单独聊聊。",
+      "crop": {
+        "x": 6,
+        "y": 441,
+        "width": 499,
+        "height": 332
+      }
+    },
+    {
+      "number": 4,
+      "sceneZh": "Andy有些抵触，但Maya解释说，她希望晚些时候带客人回来前先商量。",
+      "sceneEn": "Andy feels defensive, but Maya explains that she wants them to check first when it is late.",
+      "keywords": [
+        "defensive",
+        "late",
+        "check first"
+      ],
+      "promptZh": "这一格发生了什么？请用自己的话说明原因或结果。",
+      "promptEn": "What happens here? Explain the reason or result in your own words.",
+      "sampleEn": "Andy feels defensive, but Maya explains that she wants them to check first when it is late.",
+      "sampleZh": "Andy有些抵触，但Maya解释说，她希望晚些时候带客人回来前先商量。",
+      "crop": {
+        "x": 520,
+        "y": 441,
+        "width": 498,
+        "height": 332
+      }
+    },
+    {
+      "number": 5,
+      "sceneZh": "Andy道歉，并提议和Rui一起去楼下咖啡馆。",
+      "sceneEn": "Andy apologises and suggests going to the café downstairs with Rui.",
+      "keywords": [
+        "apologise",
+        "downstairs",
+        "solution"
+      ],
+      "promptZh": "这一格发生了什么？请用自己的话说明原因或结果。",
+      "promptEn": "What happens here? Explain the reason or result in your own words.",
+      "sampleEn": "Andy apologises and suggests going to the café downstairs with Rui.",
+      "sampleZh": "Andy道歉，并提议和Rui一起去楼下咖啡馆。",
+      "crop": {
+        "x": 6,
+        "y": 786,
+        "width": 499,
+        "height": 360
+      }
+    },
+    {
+      "number": 6,
+      "sceneZh": "他们同意工作日晚八点后先商量，周末的安排留到第二天再谈。",
+      "sceneEn": "They agree to check after eight on work nights and discuss weekends the next day.",
+      "keywords": [
+        "after eight",
+        "work nights",
+        "tomorrow"
+      ],
+      "promptZh": "这一格发生了什么？请用自己的话说明原因或结果。",
+      "promptEn": "What happens here? Explain the reason or result in your own words.",
+      "sampleEn": "They agree to check after eight on work nights and discuss weekends the next day.",
+      "sampleZh": "他们同意工作日晚八点后先商量，周末的安排留到第二天再谈。",
+      "crop": {
+        "x": 520,
+        "y": 786,
+        "width": 498,
+        "height": 360
+      }
+    },
+    {
+      "number": 7,
+      "sceneZh": "Andy和Rui在楼下吃面。Rui安慰他，一起出来并没有关系。",
+      "sceneEn": "Andy and Rui eat noodles downstairs. Rui reassures him that leaving together is fine.",
+      "keywords": [
+        "noodles",
+        "together",
+        "reassure"
+      ],
+      "promptZh": "这一格发生了什么？请用自己的话说明原因或结果。",
+      "promptEn": "What happens here? Explain the reason or result in your own words.",
+      "sampleEn": "Andy and Rui eat noodles downstairs. Rui reassures him that leaving together is fine.",
+      "sampleZh": "Andy和Rui在楼下吃面。Rui安慰他，一起出来并没有关系。",
+      "crop": {
+        "x": 7,
+        "y": 1160,
+        "width": 497,
+        "height": 364
+      }
+    },
+    {
+      "number": 8,
+      "sceneZh": "第二天早上，Andy和Maya一起约定待客规则。Andy打开了新台灯。",
+      "sceneEn": "The next morning, Andy and Maya agree on a visitor plan for both of them. Andy turns on his new lamp.",
+      "keywords": [
+        "visitor plan",
+        "both",
+        "lamp"
+      ],
+      "promptZh": "这一格发生了什么？请用自己的话说明原因或结果。",
+      "promptEn": "What happens here? Explain the reason or result in your own words.",
+      "sampleEn": "The next morning, Andy and Maya agree on a visitor plan for both of them. Andy turns on his new lamp.",
+      "sampleZh": "第二天早上，Andy和Maya一起约定待客规则。Andy打开了新台灯。",
+      "crop": {
+        "x": 520,
+        "y": 1160,
+        "width": 498,
+        "height": 364
+      }
+    }
+  ],
+  "imageWidth": 1024,
+  "imageHeight": 1536
+}

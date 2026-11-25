@@ -1,0 +1,169 @@
+{
+  "chapterId": 21,
+  "title": "The Cost of Friday",
+  "image": "chapter-21.png",
+  "panels": [
+    {
+      "number": 1,
+      "sceneZh": "日程上周五绿色方框看似确定，但只是候选试点日。",
+      "sceneEn": "Friday looks certain on the schedule, but it is only a possible pilot date.",
+      "keywords": [
+        "Friday",
+        "provisional date",
+        "readiness"
+      ],
+      "promptZh": "看这一格：发生了什么？人物为什么这样做？",
+      "promptEn": "What happens here, and why does the person act this way?",
+      "sampleEn": "Friday looks certain on the schedule, but it is only a possible pilot date.",
+      "sampleZh": "日程上周五绿色方框看似确定，但只是候选试点日。",
+      "crop": {
+        "x": 6,
+        "y": 99,
+        "width": 500,
+        "height": 329
+      }
+    },
+    {
+      "number": 2,
+      "sceneZh": "邮件测试虽通过，员工访问和下午班备用流程演练仍缺。",
+      "sceneEn": "Notification tests pass, but staff access and the afternoon fallback rehearsal are not yet complete.",
+      "keywords": [
+        "passed tests",
+        "access",
+        "fallback rehearsal"
+      ],
+      "promptZh": "看这一格：发生了什么？人物为什么这样做？",
+      "promptEn": "What happens here, and why does the person act this way?",
+      "sampleEn": "Notification tests pass, but staff access and the afternoon fallback rehearsal are not yet complete.",
+      "sampleZh": "邮件测试虽通过，员工访问和下午班备用流程演练仍缺。",
+      "crop": {
+        "x": 520,
+        "y": 99,
+        "width": 500,
+        "height": 329
+      }
+    },
+    {
+      "number": 3,
+      "sceneZh": "Andy提出有条件的两班监督试点，或推迟准备。",
+      "sceneEn": "Andy offers a supervised pilot for two classes if checks pass, or a delay for further preparation.",
+      "keywords": [
+        "two classes",
+        "conditional pilot",
+        "delay"
+      ],
+      "promptZh": "看这一格：发生了什么？人物为什么这样做？",
+      "promptEn": "What happens here, and why does the person act this way?",
+      "sampleEn": "Andy offers a supervised pilot for two classes if checks pass, or a delay for further preparation.",
+      "sampleZh": "Andy提出有条件的两班监督试点，或推迟准备。",
+      "crop": {
+        "x": 6,
+        "y": 441,
+        "width": 499,
+        "height": 362
+      }
+    },
+    {
+      "number": 4,
+      "sceneZh": "伦敦与上海时间重叠需要晚间支持，Andy和Rui明确可用时间。",
+      "sceneEn": "The team calculates support hours across London and Shanghai, and Andy and Rui state their availability limits.",
+      "keywords": [
+        "time zones",
+        "support hours",
+        "limits"
+      ],
+      "promptZh": "看这一格：发生了什么？人物为什么这样做？",
+      "promptEn": "What happens here, and why does the person act this way?",
+      "sampleEn": "The team calculates support hours across London and Shanghai, and Andy and Rui state their availability limits.",
+      "sampleZh": "伦敦与上海时间重叠需要晚间支持，Andy和Rui明确可用时间。",
+      "crop": {
+        "x": 520,
+        "y": 441,
+        "width": 499,
+        "height": 362
+      }
+    },
+    {
+      "number": 5,
+      "sceneZh": "Elena指出推迟也会增加排班成本，两班观察也不能代表全部中心。",
+      "sceneEn": "Elena explains the costs of rearranging shifts, while Andy limits what evidence two classes can provide.",
+      "keywords": [
+        "delay costs",
+        "shift cover",
+        "limited evidence"
+      ],
+      "promptZh": "看这一格：发生了什么？人物为什么这样做？",
+      "promptEn": "What happens here, and why does the person act this way?",
+      "sampleEn": "Elena explains the costs of rearranging shifts, while Andy limits what evidence two classes can provide.",
+      "sampleZh": "Elena指出推迟也会增加排班成本，两班观察也不能代表全部中心。",
+      "crop": {
+        "x": 6,
+        "y": 818,
+        "width": 499,
+        "height": 329
+      }
+    },
+    {
+      "number": 6,
+      "sceneZh": "团队区分必要条件与改进项，仍未决定上线日期。",
+      "sceneEn": "They separate essential access and fallback checks from optional improvements; no launch date is chosen.",
+      "keywords": [
+        "essential checks",
+        "optional improvements",
+        "no date"
+      ],
+      "promptZh": "看这一格：发生了什么？人物为什么这样做？",
+      "promptEn": "What happens here, and why does the person act this way?",
+      "sampleEn": "They separate essential access and fallback checks from optional improvements; no launch date is chosen.",
+      "sampleZh": "团队区分必要条件与改进项，仍未决定上线日期。",
+      "crop": {
+        "x": 520,
+        "y": 818,
+        "width": 499,
+        "height": 329
+      }
+    },
+    {
+      "number": 7,
+      "sceneZh": "Daniel的批评令Andy受伤，他约次日十点半私下沟通。",
+      "sceneEn": "Daniel’s comment upsets Andy, who asks for a private conversation at half past ten the next day.",
+      "keywords": [
+        "frustration",
+        "private conversation",
+        "10:30"
+      ],
+      "promptZh": "看这一格：发生了什么？人物为什么这样做？",
+      "promptEn": "What happens here, and why does the person act this way?",
+      "sampleEn": "Daniel’s comment upsets Andy, who asks for a private conversation at half past ten the next day.",
+      "sampleZh": "Daniel的批评令Andy受伤，他约次日十点半私下沟通。",
+      "crop": {
+        "x": 6,
+        "y": 1161,
+        "width": 498,
+        "height": 362
+      }
+    },
+    {
+      "number": 8,
+      "sceneZh": "晚饭时Andy放下手机，倾听Maya想亲自讲研究的心愿。",
+      "sceneEn": "At dinner, Andy puts down his phone and listens as Maya says she wants to present her own research.",
+      "keywords": [
+        "put phone down",
+        "listen",
+        "research voice"
+      ],
+      "promptZh": "看这一格：发生了什么？人物为什么这样做？",
+      "promptEn": "What happens here, and why does the person act this way?",
+      "sampleEn": "At dinner, Andy puts down his phone and listens as Maya says she wants to present her own research.",
+      "sampleZh": "晚饭时Andy放下手机，倾听Maya想亲自讲研究的心愿。",
+      "crop": {
+        "x": 520,
+        "y": 1161,
+        "width": 499,
+        "height": 362
+      }
+    }
+  ],
+  "imageWidth": 1024,
+  "imageHeight": 1536
+}

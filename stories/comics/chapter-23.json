@@ -1,0 +1,169 @@
+{
+  "chapterId": 23,
+  "title": "Good Enough to Launch?",
+  "image": "chapter-23.png",
+  "panels": [
+    {
+      "number": 1,
+      "sceneZh": "试点前还缺下午班备用流程演练，Elena要求完成后再批准。",
+      "sceneEn": "Elena requires the afternoon fallback rehearsal before approving the pilot.",
+      "keywords": [
+        "readiness",
+        "afternoon rehearsal",
+        "approval"
+      ],
+      "promptZh": "看这一格：发生了什么？人物为什么这样做？",
+      "promptEn": "What happens here, and why does the person act this way?",
+      "sampleEn": "Elena requires the afternoon fallback rehearsal before approving the pilot.",
+      "sampleZh": "试点前还缺下午班备用流程演练，Elena要求完成后再批准。",
+      "crop": {
+        "x": 6,
+        "y": 78,
+        "width": 501,
+        "height": 368
+      }
+    },
+    {
+      "number": 2,
+      "sceneZh": "工作人员演练暴露一步不清楚，Noor改说明并由Priya核对。",
+      "sceneEn": "The rehearsal reveals an unclear step; Noor revises the guide and Priya checks it with staff.",
+      "keywords": [
+        "rehearsal",
+        "revise guide",
+        "confirm wording"
+      ],
+      "promptZh": "看这一格：发生了什么？人物为什么这样做？",
+      "promptEn": "What happens here, and why does the person act this way?",
+      "sampleEn": "The rehearsal reveals an unclear step; Noor revises the guide and Priya checks it with staff.",
+      "sampleZh": "工作人员演练暴露一步不清楚，Noor改说明并由Priya核对。",
+      "crop": {
+        "x": 519,
+        "y": 78,
+        "width": 500,
+        "height": 368
+      }
+    },
+    {
+      "number": 3,
+      "sceneZh": "周五仅一个中心两班自愿参与，保留电话和旧流程。",
+      "sceneEn": "Friday’s optional pilot covers two classes at one centre, with telephone contact and existing arrangements retained.",
+      "keywords": [
+        "two classes",
+        "optional participation",
+        "telephone"
+      ],
+      "promptZh": "看这一格：发生了什么？人物为什么这样做？",
+      "promptEn": "What happens here, and why does the person act this way?",
+      "sampleEn": "Friday’s optional pilot covers two classes at one centre, with telephone contact and existing arrangements retained.",
+      "sampleZh": "周五仅一个中心两班自愿参与，保留电话和旧流程。",
+      "crop": {
+        "x": 6,
+        "y": 459,
+        "width": 500,
+        "height": 341
+      }
+    },
+    {
+      "number": 4,
+      "sceneZh": "一次改课时间正确，邮件只发一次，工作人员开始电话跟进。",
+      "sceneEn": "A real class-time change saves correctly and sends emails once, followed by telephone calls.",
+      "keywords": [
+        "correct time",
+        "one email",
+        "phone follow-up"
+      ],
+      "promptZh": "看这一格：发生了什么？人物为什么这样做？",
+      "promptEn": "What happens here, and why does the person act this way?",
+      "sampleEn": "A real class-time change saves correctly and sends emails once, followed by telephone calls.",
+      "sampleZh": "一次改课时间正确，邮件只发一次，工作人员开始电话跟进。",
+      "crop": {
+        "x": 520,
+        "y": 459,
+        "width": 499,
+        "height": 341
+      }
+    },
+    {
+      "number": 5,
+      "sceneZh": "换班时两份纸表导致一位学员收到两次电话，团队暂停相关联系。",
+      "sceneEn": "Two paper sheets at handover cause a duplicate call, so the affected contacts are paused.",
+      "keywords": [
+        "two sheets",
+        "duplicate call",
+        "pause"
+      ],
+      "promptZh": "看这一格：发生了什么？人物为什么这样做？",
+      "promptEn": "What happens here, and why does the person act this way?",
+      "sampleEn": "Two paper sheets at handover cause a duplicate call, so the affected contacts are paused.",
+      "sampleZh": "换班时两份纸表导致一位学员收到两次电话，团队暂停相关联系。",
+      "crop": {
+        "x": 6,
+        "y": 813,
+        "width": 500,
+        "height": 341
+      }
+    },
+    {
+      "number": 6,
+      "sceneZh": "Priya监督核对成一份记录，并向赶公交的学员重申只改过一次。",
+      "sceneEn": "Priya supervises one reconciled record and confirms to a learner at a bus stop that the class changed only once.",
+      "keywords": [
+        "one agreed record",
+        "bus stop",
+        "confirm time"
+      ],
+      "promptZh": "看这一格：发生了什么？人物为什么这样做？",
+      "promptEn": "What happens here, and why does the person act this way?",
+      "sampleEn": "Priya supervises one reconciled record and confirms to a learner at a bus stop that the class changed only once.",
+      "sampleZh": "Priya监督核对成一份记录，并向赶公交的学员重申只改过一次。",
+      "crop": {
+        "x": 520,
+        "y": 813,
+        "width": 499,
+        "height": 341
+      }
+    },
+    {
+      "number": 7,
+      "sceneZh": "两位员工确认同一张表后，Elena明确同意恢复这两班电话联系。",
+      "sceneEn": "After both receptionists agree on the same sheet, Elena explicitly authorises calls to resume for the two classes.",
+      "keywords": [
+        "both agree",
+        "explicit restart",
+        "two classes"
+      ],
+      "promptZh": "看这一格：发生了什么？人物为什么这样做？",
+      "promptEn": "What happens here, and why does the person act this way?",
+      "sampleEn": "After both receptionists agree on the same sheet, Elena explicitly authorises calls to resume for the two classes.",
+      "sampleZh": "两位员工确认同一张表后，Elena明确同意恢复这两班电话联系。",
+      "crop": {
+        "x": 6,
+        "y": 1168,
+        "width": 500,
+        "height": 360
+      }
+    },
+    {
+      "number": 8,
+      "sceneZh": "下周只决定继续有限试点，不推广全部中心，还要再收集证据。",
+      "sceneEn": "The next review continues only the limited pilot with revised handover instructions and further evidence to collect.",
+      "keywords": [
+        "limited continuation",
+        "no broad rollout",
+        "further review"
+      ],
+      "promptZh": "看这一格：发生了什么？人物为什么这样做？",
+      "promptEn": "What happens here, and why does the person act this way?",
+      "sampleEn": "The next review continues only the limited pilot with revised handover instructions and further evidence to collect.",
+      "sampleZh": "下周只决定继续有限试点，不推广全部中心，还要再收集证据。",
+      "crop": {
+        "x": 519,
+        "y": 1168,
+        "width": 500,
+        "height": 361
+      }
+    }
+  ],
+  "imageWidth": 1024,
+  "imageHeight": 1536
+}

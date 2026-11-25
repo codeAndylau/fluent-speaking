@@ -1,0 +1,169 @@
+{
+  "chapterId": 1,
+  "title": "The Second Question",
+  "image": "chapter-01.png",
+  "panels": [
+    {
+      "number": 1,
+      "sceneZh": "Andy带着包来到4B号公寓，Maya开门欢迎他。",
+      "sceneEn": "Andy arrives at apartment 4B with his bag. Maya opens the door and welcomes him.",
+      "keywords": [
+        "arrive",
+        "apartment",
+        "welcome"
+      ],
+      "promptZh": "这一格发生了什么？请用自己的话说明原因或结果。",
+      "promptEn": "What happens here? Explain the reason or result in your own words.",
+      "sampleEn": "Andy arrives at apartment 4B with his bag. Maya opens the door and welcomes him.",
+      "sampleZh": "Andy带着包来到4B号公寓，Maya开门欢迎他。",
+      "crop": {
+        "x": 6,
+        "y": 100,
+        "width": 499,
+        "height": 327
+      }
+    },
+    {
+      "number": 2,
+      "sceneZh": "Maya带Andy看他的小卧室，他把包放在床边。",
+      "sceneEn": "Maya shows Andy his small bedroom. He puts his bag beside the bed.",
+      "keywords": [
+        "bedroom",
+        "small",
+        "bag"
+      ],
+      "promptZh": "这一格发生了什么？请用自己的话说明原因或结果。",
+      "promptEn": "What happens here? Explain the reason or result in your own words.",
+      "sampleEn": "Maya shows Andy his small bedroom. He puts his bag beside the bed.",
+      "sampleZh": "Maya带Andy看他的小卧室，他把包放在床边。",
+      "crop": {
+        "x": 520,
+        "y": 100,
+        "width": 499,
+        "height": 327
+      }
+    },
+    {
+      "number": 3,
+      "sceneZh": "Maya给Andy看她画的公交车上共披外套的两个人，随后工作打断了她。",
+      "sceneEn": "Maya shows Andy her drawing of two people sharing a coat on a bus. Then work interrupts her.",
+      "keywords": [
+        "drawing",
+        "bus",
+        "work"
+      ],
+      "promptZh": "这一格发生了什么？请用自己的话说明原因或结果。",
+      "promptEn": "What happens here? Explain the reason or result in your own words.",
+      "sampleEn": "Maya shows Andy her drawing of two people sharing a coat on a bus. Then work interrupts her.",
+      "sampleZh": "Maya给Andy看她画的公交车上共披外套的两个人，随后工作打断了她。",
+      "crop": {
+        "x": 6,
+        "y": 441,
+        "width": 498,
+        "height": 330
+      }
+    },
+    {
+      "number": 4,
+      "sceneZh": "厨房水龙头坏了，Maya请Andy明天八点到十二点在家等维修。",
+      "sceneEn": "The kitchen tap is broken. Maya asks Andy to stay home for a repair tomorrow, between eight and twelve.",
+      "keywords": [
+        "broken tap",
+        "tomorrow",
+        "eight to twelve"
+      ],
+      "promptZh": "这一格发生了什么？请用自己的话说明原因或结果。",
+      "promptEn": "What happens here? Explain the reason or result in your own words.",
+      "sampleEn": "The kitchen tap is broken. Maya asks Andy to stay home for a repair tomorrow, between eight and twelve.",
+      "sampleZh": "厨房水龙头坏了，Maya请Andy明天八点到十二点在家等维修。",
+      "crop": {
+        "x": 520,
+        "y": 441,
+        "width": 497,
+        "height": 330
+      }
+    },
+    {
+      "number": 5,
+      "sceneZh": "Andy已经答应了，但他十点有会，九点就得出门。",
+      "sceneEn": "Andy has already said yes, but he has a meeting at ten and needs to leave at nine.",
+      "keywords": [
+        "meeting",
+        "ten",
+        "leave at nine"
+      ],
+      "promptZh": "这一格发生了什么？请用自己的话说明原因或结果。",
+      "promptEn": "What happens here? Explain the reason or result in your own words.",
+      "sampleEn": "Andy has already said yes, but he has a meeting at ten and needs to leave at nine.",
+      "sampleZh": "Andy已经答应了，但他十点有会，九点就得出门。",
+      "crop": {
+        "x": 7,
+        "y": 787,
+        "width": 497,
+        "height": 359
+      }
+    },
+    {
+      "number": 6,
+      "sceneZh": "他请Maya重复时间，并解释自己不能整个上午都待在家。",
+      "sceneEn": "He asks Maya to repeat the time and explains that he cannot stay all morning.",
+      "keywords": [
+        "repeat",
+        "time",
+        "explain"
+      ],
+      "promptZh": "这一格发生了什么？请用自己的话说明原因或结果。",
+      "promptEn": "What happens here? Explain the reason or result in your own words.",
+      "sampleEn": "He asks Maya to repeat the time and explains that he cannot stay all morning.",
+      "sampleZh": "他请Maya重复时间，并解释自己不能整个上午都待在家。",
+      "crop": {
+        "x": 520,
+        "y": 787,
+        "width": 497,
+        "height": 359
+      }
+    },
+    {
+      "number": 7,
+      "sceneZh": "Andy询问能否改到下午。Maya确认后，同意下午两点到四点由她在家等候。",
+      "sceneEn": "Andy asks about the afternoon. Maya checks and agrees to be home between two and four.",
+      "keywords": [
+        "afternoon",
+        "check",
+        "two to four"
+      ],
+      "promptZh": "这一格发生了什么？请用自己的话说明原因或结果。",
+      "promptEn": "What happens here? Explain the reason or result in your own words.",
+      "sampleEn": "Andy asks about the afternoon. Maya checks and agrees to be home between two and four.",
+      "sampleZh": "Andy询问能否改到下午。Maya确认后，同意下午两点到四点由她在家等候。",
+      "crop": {
+        "x": 7,
+        "y": 1162,
+        "width": 496,
+        "height": 361
+      }
+    },
+    {
+      "number": 8,
+      "sceneZh": "Andy先问能否移动书本，然后在窗边坐下，喝着还温热的茶。",
+      "sceneEn": "Andy asks before moving the books, then sits by the window with his warm tea.",
+      "keywords": [
+        "ask",
+        "books",
+        "warm tea"
+      ],
+      "promptZh": "这一格发生了什么？请用自己的话说明原因或结果。",
+      "promptEn": "What happens here? Explain the reason or result in your own words.",
+      "sampleEn": "Andy asks before moving the books, then sits by the window with his warm tea.",
+      "sampleZh": "Andy先问能否移动书本，然后在窗边坐下，喝着还温热的茶。",
+      "crop": {
+        "x": 520,
+        "y": 1162,
+        "width": 498,
+        "height": 361
+      }
+    }
+  ],
+  "imageWidth": 1024,
+  "imageHeight": 1536
+}

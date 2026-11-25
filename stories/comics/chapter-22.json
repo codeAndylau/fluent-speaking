@@ -1,0 +1,169 @@
+{
+  "chapterId": 22,
+  "title": "A Difficult Conversation",
+  "image": "chapter-22.png",
+  "panels": [
+    {
+      "number": 1,
+      "sceneZh": "Andy带着笔记与Daniel私下谈昨天那句话的影响。",
+      "sceneEn": "Andy meets Daniel privately and describes the effect of yesterday’s comment.",
+      "keywords": [
+        "private meeting",
+        "impact",
+        "opening"
+      ],
+      "promptZh": "看这一格：发生了什么？人物为什么这样做？",
+      "promptEn": "What happens here, and why does the person act this way?",
+      "sampleEn": "Andy meets Daniel privately and describes the effect of yesterday’s comment.",
+      "sampleZh": "Andy带着笔记与Daniel私下谈昨天那句话的影响。",
+      "crop": {
+        "x": 6,
+        "y": 100,
+        "width": 501,
+        "height": 328
+      }
+    },
+    {
+      "number": 2,
+      "sceneZh": "他说明这不是猜测动机，而是自己更不愿解释风险。",
+      "sceneEn": "Andy distinguishes Daniel’s intention from the effect: he became less willing to explain risks.",
+      "keywords": [
+        "intention",
+        "effect",
+        "risk discussion"
+      ],
+      "promptZh": "看这一格：发生了什么？人物为什么这样做？",
+      "promptEn": "What happens here, and why does the person act this way?",
+      "sampleEn": "Andy distinguishes Daniel’s intention from the effect: he became less willing to explain risks.",
+      "sampleZh": "他说明这不是猜测动机，而是自己更不愿解释风险。",
+      "crop": {
+        "x": 520,
+        "y": 100,
+        "width": 498,
+        "height": 328
+      }
+    },
+    {
+      "number": 3,
+      "sceneZh": "Daniel需要可向客户解释的建议，Andy仍坚持必要条件。",
+      "sceneEn": "Daniel needs a defensible recommendation, and Andy keeps the essential conditions attached to his advice.",
+      "keywords": [
+        "recommendation",
+        "conditions",
+        "evidence"
+      ],
+      "promptZh": "看这一格：发生了什么？人物为什么这样做？",
+      "promptEn": "What happens here, and why does the person act this way?",
+      "sampleEn": "Daniel needs a defensible recommendation, and Andy keeps the essential conditions attached to his advice.",
+      "sampleZh": "Daniel需要可向客户解释的建议，Andy仍坚持必要条件。",
+      "crop": {
+        "x": 6,
+        "y": 442,
+        "width": 499,
+        "height": 330
+      }
+    },
+    {
+      "number": 4,
+      "sceneZh": "两人逐项看证据，发现一位负责人还没同意截止时间。",
+      "sceneEn": "They review the evidence and discover that one owner has not agreed to the deadline.",
+      "keywords": [
+        "owners",
+        "deadline",
+        "check agreement"
+      ],
+      "promptZh": "看这一格：发生了什么？人物为什么这样做？",
+      "promptEn": "What happens here, and why does the person act this way?",
+      "sampleEn": "They review the evidence and discover that one owner has not agreed to the deadline.",
+      "sampleZh": "两人逐项看证据，发现一位负责人还没同意截止时间。",
+      "crop": {
+        "x": 520,
+        "y": 442,
+        "width": 497,
+        "height": 330
+      }
+    },
+    {
+      "number": 5,
+      "sceneZh": "两人承认各自焦虑，以及把沉默当同意的误会。",
+      "sceneEn": "They acknowledge their anxieties and the misunderstanding created when silence is treated as agreement.",
+      "keywords": [
+        "anxiety",
+        "silence",
+        "agreement"
+      ],
+      "promptZh": "看这一格：发生了什么？人物为什么这样做？",
+      "promptEn": "What happens here, and why does the person act this way?",
+      "sampleEn": "They acknowledge their anxieties and the misunderstanding created when silence is treated as agreement.",
+      "sampleZh": "两人承认各自焦虑，以及把沉默当同意的误会。",
+      "crop": {
+        "x": 7,
+        "y": 786,
+        "width": 498,
+        "height": 361
+      }
+    },
+    {
+      "number": 6,
+      "sceneZh": "约定明确表达同意或待核查，并把报告任务挪到明天。",
+      "sceneEn": "They agree to state positions explicitly and move reporting work to tomorrow so Andy can revise the recommendation.",
+      "keywords": [
+        "explicit response",
+        "trade-off",
+        "revised recommendation"
+      ],
+      "promptZh": "看这一格：发生了什么？人物为什么这样做？",
+      "promptEn": "What happens here, and why does the person act this way?",
+      "sampleEn": "They agree to state positions explicitly and move reporting work to tomorrow so Andy can revise the recommendation.",
+      "sampleZh": "约定明确表达同意或待核查，并把报告任务挪到明天。",
+      "crop": {
+        "x": 520,
+        "y": 786,
+        "width": 497,
+        "height": 361
+      }
+    },
+    {
+      "number": 7,
+      "sceneZh": "Andy随后向同事道歉，先前未经她同意就给了交付时间。",
+      "sceneEn": "Andy apologises to a colleague for offering her time before asking and obtains separate preparation and checking estimates.",
+      "keywords": [
+        "ask colleague",
+        "preparation",
+        "checking"
+      ],
+      "promptZh": "看这一格：发生了什么？人物为什么这样做？",
+      "promptEn": "What happens here, and why does the person act this way?",
+      "sampleEn": "Andy apologises to a colleague for offering her time before asking and obtains separate preparation and checking estimates.",
+      "sampleZh": "Andy随后向同事道歉，先前未经她同意就给了交付时间。",
+      "crop": {
+        "x": 7,
+        "y": 1161,
+        "width": 498,
+        "height": 364
+      }
+    },
+    {
+      "number": 8,
+      "sceneZh": "Daniel核实时间来自同事本人，再联系Elena修正承诺。",
+      "sceneEn": "Daniel checks that the colleague supplied the new times and makes another call to correct what he told Elena.",
+      "keywords": [
+        "confirmed times",
+        "correct commitment",
+        "second call"
+      ],
+      "promptZh": "看这一格：发生了什么？人物为什么这样做？",
+      "promptEn": "What happens here, and why does the person act this way?",
+      "sampleEn": "Daniel checks that the colleague supplied the new times and makes another call to correct what he told Elena.",
+      "sampleZh": "Daniel核实时间来自同事本人，再联系Elena修正承诺。",
+      "crop": {
+        "x": 520,
+        "y": 1161,
+        "width": 496,
+        "height": 363
+      }
+    }
+  ],
+  "imageWidth": 1024,
+  "imageHeight": 1536
+}

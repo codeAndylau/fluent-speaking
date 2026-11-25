@@ -1,0 +1,169 @@
+{
+  "chapterId": 6,
+  "title": "The Message from Work",
+  "image": "chapter-06.png",
+  "panels": [
+    {
+      "number": 1,
+      "sceneZh": "Andy意外收到十点开团队会议的通知。",
+      "sceneEn": "Andy receives an unexpected invitation to a team meeting at ten.",
+      "keywords": [
+        "message",
+        "meeting",
+        "ten"
+      ],
+      "promptZh": "这一格发生了什么？请用自己的话说明原因或结果。",
+      "promptEn": "What happens here? Explain the reason or result in your own words.",
+      "sampleEn": "Andy receives an unexpected invitation to a team meeting at ten.",
+      "sampleZh": "Andy意外收到十点开团队会议的通知。",
+      "crop": {
+        "x": 6,
+        "y": 99,
+        "width": 499,
+        "height": 328
+      }
+    },
+    {
+      "number": 2,
+      "sceneZh": "Wei解释说团队将在下个月底解散，书面细节之后会发来。",
+      "sceneEn": "Wei explains that the team will close at the end of next month. Written details will follow.",
+      "keywords": [
+        "team closing",
+        "next month",
+        "details"
+      ],
+      "promptZh": "这一格发生了什么？请用自己的话说明原因或结果。",
+      "promptEn": "What happens here? Explain the reason or result in your own words.",
+      "sampleEn": "Wei explains that the team will close at the end of next month. Written details will follow.",
+      "sampleZh": "Wei解释说团队将在下个月底解散，书面细节之后会发来。",
+      "crop": {
+        "x": 521,
+        "y": 99,
+        "width": 498,
+        "height": 328
+      }
+    },
+    {
+      "number": 3,
+      "sceneZh": "Andy无法集中精神。他先拒绝苹果，随后改变主意，和同事分着吃。",
+      "sceneEn": "Andy cannot concentrate. After refusing an apple, he changes his mind and shares it with a colleague.",
+      "keywords": [
+        "concentrate",
+        "apple",
+        "colleague"
+      ],
+      "promptZh": "这一格发生了什么？请用自己的话说明原因或结果。",
+      "promptEn": "What happens here? Explain the reason or result in your own words.",
+      "sampleEn": "Andy cannot concentrate. After refusing an apple, he changes his mind and shares it with a colleague.",
+      "sampleZh": "Andy无法集中精神。他先拒绝苹果，随后改变主意，和同事分着吃。",
+      "crop": {
+        "x": 6,
+        "y": 441,
+        "width": 499,
+        "height": 330
+      }
+    },
+    {
+      "number": 4,
+      "sceneZh": "他把消息告诉Rui。Rui建议仔细读书面通知，晚上再聊。",
+      "sceneEn": "He tells Rui the news. Rui suggests reading the written details carefully and talking that evening.",
+      "keywords": [
+        "tell",
+        "read carefully",
+        "evening"
+      ],
+      "promptZh": "这一格发生了什么？请用自己的话说明原因或结果。",
+      "promptEn": "What happens here? Explain the reason or result in your own words.",
+      "sampleEn": "He tells Rui the news. Rui suggests reading the written details carefully and talking that evening.",
+      "sampleZh": "他把消息告诉Rui。Rui建议仔细读书面通知，晚上再聊。",
+      "crop": {
+        "x": 521,
+        "y": 441,
+        "width": 498,
+        "height": 330
+      }
+    },
+    {
+      "number": 5,
+      "sceneZh": "回家后，Andy告诉Maya自己需要找新工作。她听着，并先给他准备吃的。",
+      "sceneEn": "At home, Andy tells Maya that he needs a new job. She listens and offers him food.",
+      "keywords": [
+        "new job",
+        "listen",
+        "food"
+      ],
+      "promptZh": "这一格发生了什么？请用自己的话说明原因或结果。",
+      "promptEn": "What happens here? Explain the reason or result in your own words.",
+      "sampleEn": "At home, Andy tells Maya that he needs a new job. She listens and offers him food.",
+      "sampleZh": "回家后，Andy告诉Maya自己需要找新工作。她听着，并先给他准备吃的。",
+      "crop": {
+        "x": 6,
+        "y": 786,
+        "width": 499,
+        "height": 360
+      }
+    },
+    {
+      "number": 6,
+      "sceneZh": "Andy检查存款。他还能付几个月房租，但需要节省开支。",
+      "sceneEn": "Andy checks his savings. He can still pay rent for several months, but he must spend less.",
+      "keywords": [
+        "savings",
+        "rent",
+        "spend less"
+      ],
+      "promptZh": "这一格发生了什么？请用自己的话说明原因或结果。",
+      "promptEn": "What happens here? Explain the reason or result in your own words.",
+      "sampleEn": "Andy checks his savings. He can still pay rent for several months, but he must spend less.",
+      "sampleZh": "Andy检查存款。他还能付几个月房租，但需要节省开支。",
+      "crop": {
+        "x": 521,
+        "y": 786,
+        "width": 497,
+        "height": 360
+      }
+    },
+    {
+      "number": 7,
+      "sceneZh": "他担心自己的英语。Maya建议先看看不同软件职位实际要求什么。",
+      "sceneEn": "He worries about his English. Maya suggests checking what different software jobs actually require.",
+      "keywords": [
+        "English",
+        "software",
+        "requirements"
+      ],
+      "promptZh": "这一格发生了什么？请用自己的话说明原因或结果。",
+      "promptEn": "What happens here? Explain the reason or result in your own words.",
+      "sampleEn": "He worries about his English. Maya suggests checking what different software jobs actually require.",
+      "sampleZh": "他担心自己的英语。Maya建议先看看不同软件职位实际要求什么。",
+      "crop": {
+        "x": 6,
+        "y": 1161,
+        "width": 499,
+        "height": 363
+      }
+    },
+    {
+      "number": 8,
+      "sceneZh": "八点和Rui通话后，Andy写下三步计划：读通知、更新简历、查看三个职位。",
+      "sceneEn": "After an eight o'clock call with Rui, Andy writes three next steps: read the letter, update his CV and look at three jobs.",
+      "keywords": [
+        "letter",
+        "CV",
+        "three jobs"
+      ],
+      "promptZh": "这一格发生了什么？请用自己的话说明原因或结果。",
+      "promptEn": "What happens here? Explain the reason or result in your own words.",
+      "sampleEn": "After an eight o'clock call with Rui, Andy writes three next steps: read the letter, update his CV and look at three jobs.",
+      "sampleZh": "八点和Rui通话后，Andy写下三步计划：读通知、更新简历、查看三个职位。",
+      "crop": {
+        "x": 521,
+        "y": 1161,
+        "width": 498,
+        "height": 363
+      }
+    }
+  ],
+  "imageWidth": 1024,
+  "imageHeight": 1536
+}

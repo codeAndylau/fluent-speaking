@@ -1,0 +1,169 @@
+{
+  "chapterId": 4,
+  "title": "The Wrong Order",
+  "image": "chapter-04.png",
+  "panels": [
+    {
+      "number": 1,
+      "sceneZh": "Andy和Rui在河边咖啡馆吃午饭，Andy点了鸡肉三明治和热茶。",
+      "sceneEn": "Andy and Rui have lunch at a café by the river. Andy orders a chicken sandwich and hot tea.",
+      "keywords": [
+        "café",
+        "sandwich",
+        "hot tea"
+      ],
+      "promptZh": "这一格发生了什么？请用自己的话说明原因或结果。",
+      "promptEn": "What happens here? Explain the reason or result in your own words.",
+      "sampleEn": "Andy and Rui have lunch at a café by the river. Andy orders a chicken sandwich and hot tea.",
+      "sampleZh": "Andy和Rui在河边咖啡馆吃午饭，Andy点了鸡肉三明治和热茶。",
+      "crop": {
+        "x": 6,
+        "y": 101,
+        "width": 499,
+        "height": 359
+      }
+    },
+    {
+      "number": 2,
+      "sceneZh": "厨房机器的噪声让Andy没听清重复的订单，结果来了两杯冰咖啡。",
+      "sceneEn": "A noisy kitchen machine makes Andy miss part of the repeated order. Two cold coffees arrive.",
+      "keywords": [
+        "noise",
+        "miss",
+        "cold coffee"
+      ],
+      "promptZh": "这一格发生了什么？请用自己的话说明原因或结果。",
+      "promptEn": "What happens here? Explain the reason or result in your own words.",
+      "sampleEn": "A noisy kitchen machine makes Andy miss part of the repeated order. Two cold coffees arrive.",
+      "sampleZh": "厨房机器的噪声让Andy没听清重复的订单，结果来了两杯冰咖啡。",
+      "crop": {
+        "x": 520,
+        "y": 101,
+        "width": 499,
+        "height": 359
+      }
+    },
+    {
+      "number": 3,
+      "sceneZh": "Andy不想麻烦忙碌的服务员，Rui问咖啡是否真是他想要的。",
+      "sceneEn": "Andy does not want to bother the busy waiter. Rui asks if coffee is really what he wants.",
+      "keywords": [
+        "busy",
+        "hesitate",
+        "want"
+      ],
+      "promptZh": "这一格发生了什么？请用自己的话说明原因或结果。",
+      "promptEn": "What happens here? Explain the reason or result in your own words.",
+      "sampleEn": "Andy does not want to bother the busy waiter. Rui asks if coffee is really what he wants.",
+      "sampleZh": "Andy不想麻烦忙碌的服务员，Rui问咖啡是否真是他想要的。",
+      "crop": {
+        "x": 6,
+        "y": 473,
+        "width": 499,
+        "height": 329
+      }
+    },
+    {
+      "number": 4,
+      "sceneZh": "Andy说明自己点的是茶，并礼貌地请求更换。",
+      "sceneEn": "Andy explains that he ordered tea and politely asks for a replacement.",
+      "keywords": [
+        "explain",
+        "tea",
+        "instead"
+      ],
+      "promptZh": "这一格发生了什么？请用自己的话说明原因或结果。",
+      "promptEn": "What happens here? Explain the reason or result in your own words.",
+      "sampleEn": "Andy explains that he ordered tea and politely asks for a replacement.",
+      "sampleZh": "Andy说明自己点的是茶，并礼貌地请求更换。",
+      "crop": {
+        "x": 521,
+        "y": 473,
+        "width": 498,
+        "height": 329
+      }
+    },
+    {
+      "number": 5,
+      "sceneZh": "服务员换了饮品。Andy确认自己只需要付茶的钱。",
+      "sceneEn": "The waiter changes the drink. Andy checks that he only needs to pay for the tea.",
+      "keywords": [
+        "change",
+        "pay",
+        "only"
+      ],
+      "promptZh": "这一格发生了什么？请用自己的话说明原因或结果。",
+      "promptEn": "What happens here? Explain the reason or result in your own words.",
+      "sampleEn": "The waiter changes the drink. Andy checks that he only needs to pay for the tea.",
+      "sampleZh": "服务员换了饮品。Andy确认自己只需要付茶的钱。",
+      "crop": {
+        "x": 6,
+        "y": 815,
+        "width": 498,
+        "height": 338
+      }
+    },
+    {
+      "number": 6,
+      "sceneZh": "聊天时Andy请Rui说慢一点，并重复测试之后发生的部分。",
+      "sceneEn": "While they talk, Andy asks Rui to slow down and repeat the part after the test.",
+      "keywords": [
+        "slow down",
+        "repeat",
+        "test"
+      ],
+      "promptZh": "这一格发生了什么？请用自己的话说明原因或结果。",
+      "promptEn": "What happens here? Explain the reason or result in your own words.",
+      "sampleEn": "While they talk, Andy asks Rui to slow down and repeat the part after the test.",
+      "sampleZh": "聊天时Andy请Rui说慢一点，并重复测试之后发生的部分。",
+      "crop": {
+        "x": 520,
+        "y": 815,
+        "width": 499,
+        "height": 338
+      }
+    },
+    {
+      "number": 7,
+      "sceneZh": "Rui也听不清一条语速很快的语音，于是让发信人用文字说明。",
+      "sceneEn": "Rui cannot understand a fast voice message either. He asks the sender to clarify by text.",
+      "keywords": [
+        "voice message",
+        "clarify",
+        "text"
+      ],
+      "promptZh": "这一格发生了什么？请用自己的话说明原因或结果。",
+      "promptEn": "What happens here? Explain the reason or result in your own words.",
+      "sampleEn": "Rui cannot understand a fast voice message either. He asks the sender to clarify by text.",
+      "sampleZh": "Rui也听不清一条语速很快的语音，于是让发信人用文字说明。",
+      "crop": {
+        "x": 6,
+        "y": 1167,
+        "width": 498,
+        "height": 360
+      }
+    },
+    {
+      "number": 8,
+      "sceneZh": "回复说用的是旧文件。之后Andy核对账单：一杯咖啡和一杯茶。",
+      "sceneEn": "The reply says the old file was used. Later, Andy checks the bill: one coffee and one tea.",
+      "keywords": [
+        "old file",
+        "bill",
+        "check"
+      ],
+      "promptZh": "这一格发生了什么？请用自己的话说明原因或结果。",
+      "promptEn": "What happens here? Explain the reason or result in your own words.",
+      "sampleEn": "The reply says the old file was used. Later, Andy checks the bill: one coffee and one tea.",
+      "sampleZh": "回复说用的是旧文件。之后Andy核对账单：一杯咖啡和一杯茶。",
+      "crop": {
+        "x": 520,
+        "y": 1167,
+        "width": 499,
+        "height": 360
+      }
+    }
+  ],
+  "imageWidth": 1024,
+  "imageHeight": 1536
+}

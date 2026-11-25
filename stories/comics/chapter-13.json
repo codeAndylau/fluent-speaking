@@ -1,0 +1,169 @@
+{
+  "chapterId": 13,
+  "title": "The First Monday",
+  "image": "chapter-13.png",
+  "panels": [
+    {
+      "number": 1,
+      "sceneZh": "Andy的门卡刷不开，Rui让他翻过来再试。",
+      "sceneEn": "Andy cannot open the office door until Rui tells him to turn the card over.",
+      "keywords": [
+        "card",
+        "red light",
+        "turn over"
+      ],
+      "promptZh": "看这一格：发生了什么？人物为什么这样做？",
+      "promptEn": "What happens here, and why does the person act this way?",
+      "sampleEn": "Andy cannot open the office door until Rui tells him to turn the card over.",
+      "sampleZh": "Andy的门卡刷不开，Rui让他翻过来再试。",
+      "crop": {
+        "x": 6,
+        "y": 99,
+        "width": 501,
+        "height": 351
+      }
+    },
+    {
+      "number": 2,
+      "sceneZh": "Daniel安排他读项目资料，并在四点半旁听客户会议。",
+      "sceneEn": "Daniel asks Andy to read the project notes and listen to the client call at four thirty.",
+      "keywords": [
+        "project notes",
+        "client call",
+        "four thirty"
+      ],
+      "promptZh": "看这一格：发生了什么？人物为什么这样做？",
+      "promptEn": "What happens here, and why does the person act this way?",
+      "sampleEn": "Daniel asks Andy to read the project notes and listen to the client call at four thirty.",
+      "sampleZh": "Daniel安排他读项目资料，并在四点半旁听客户会议。",
+      "crop": {
+        "x": 522,
+        "y": 99,
+        "width": 497,
+        "height": 351
+      }
+    },
+    {
+      "number": 3,
+      "sceneZh": "旧安装说明漏了步骤，Andy和Rui一起修正。",
+      "sceneEn": "The setup instructions are out of date, so Andy and Rui find and add the missing step.",
+      "keywords": [
+        "old instructions",
+        "database",
+        "missing step"
+      ],
+      "promptZh": "看这一格：发生了什么？人物为什么这样做？",
+      "promptEn": "What happens here, and why does the person act this way?",
+      "sampleEn": "The setup instructions are out of date, so Andy and Rui find and add the missing step.",
+      "sampleZh": "旧安装说明漏了步骤，Andy和Rui一起修正。",
+      "crop": {
+        "x": 7,
+        "y": 462,
+        "width": 501,
+        "height": 342
+      }
+    },
+    {
+      "number": 4,
+      "sceneZh": "Rui还有别的工作，Andy回到自己的桌旁先整理问题。",
+      "sceneEn": "Rui has other commitments, so Andy returns to his desk and writes down his questions.",
+      "keywords": [
+        "other commitments",
+        "notebook",
+        "questions"
+      ],
+      "promptZh": "看这一格：发生了什么？人物为什么这样做？",
+      "promptEn": "What happens here, and why does the person act this way?",
+      "sampleEn": "Rui has other commitments, so Andy returns to his desk and writes down his questions.",
+      "sampleZh": "Rui还有别的工作，Andy回到自己的桌旁先整理问题。",
+      "crop": {
+        "x": 522,
+        "y": 462,
+        "width": 497,
+        "height": 342
+      }
+    },
+    {
+      "number": 5,
+      "sceneZh": "Andy发现两门同名绘画课上课日期不同，记下问题：变更通知该如何说明是哪一门课？",
+      "sceneEn": "Two classes have the same name but meet on different days, so Andy writes down a question about how a change message will identify the right one.",
+      "keywords": [
+        "same name",
+        "Tuesday",
+        "Thursday"
+      ],
+      "promptZh": "看这一格：发生了什么？人物为什么这样做？",
+      "promptEn": "What happens here, and why does the person act this way?",
+      "sampleEn": "Two classes have the same name but meet on different days, so Andy writes down a question about how a change message will identify the right one.",
+      "sampleZh": "Andy发现两门同名绘画课上课日期不同，记下问题：变更通知该如何说明是哪一门课？",
+      "crop": {
+        "x": 7,
+        "y": 818,
+        "width": 503,
+        "height": 319
+      }
+    },
+    {
+      "number": 6,
+      "sceneZh": "客户会议中，Andy重新介绍自己，并记下没听懂的问题。",
+      "sceneEn": "On the call, Andy repeats his introduction and notes a question about conflicting records.",
+      "keywords": [
+        "introduction",
+        "repeat",
+        "conflicting records"
+      ],
+      "promptZh": "看这一格：发生了什么？人物为什么这样做？",
+      "promptEn": "What happens here, and why does the person act this way?",
+      "sampleEn": "On the call, Andy repeats his introduction and notes a question about conflicting records.",
+      "sampleZh": "客户会议中，Andy重新介绍自己，并记下没听懂的问题。",
+      "crop": {
+        "x": 525,
+        "y": 818,
+        "width": 494,
+        "height": 319
+      }
+    },
+    {
+      "number": 7,
+      "sceneZh": "Daniel说哪个记录优先还未约定，不要自行写规则。",
+      "sceneEn": "Daniel explains that the team has not agreed which record takes priority and tells Andy not to invent a rule.",
+      "keywords": [
+        "not agreed",
+        "priority",
+        "no assumption"
+      ],
+      "promptZh": "看这一格：发生了什么？人物为什么这样做？",
+      "promptEn": "What happens here, and why does the person act this way?",
+      "sampleEn": "Daniel explains that the team has not agreed which record takes priority and tells Andy not to invent a rule.",
+      "sampleZh": "Daniel说哪个记录优先还未约定，不要自行写规则。",
+      "crop": {
+        "x": 7,
+        "y": 1150,
+        "width": 497,
+        "height": 372
+      }
+    },
+    {
+      "number": 8,
+      "sceneZh": "在Maya提醒下，Andy第二天询问本周目标，接下确认时间窗口。",
+      "sceneEn": "After talking with Maya, Andy asks Daniel what to finish and takes on the class-change confirmation window.",
+      "keywords": [
+        "weekly goal",
+        "ask Daniel",
+        "confirmation window"
+      ],
+      "promptZh": "看这一格：发生了什么？人物为什么这样做？",
+      "promptEn": "What happens here, and why does the person act this way?",
+      "sampleEn": "After talking with Maya, Andy asks Daniel what to finish and takes on the class-change confirmation window.",
+      "sampleZh": "在Maya提醒下，Andy第二天询问本周目标，接下确认时间窗口。",
+      "crop": {
+        "x": 524,
+        "y": 1150,
+        "width": 495,
+        "height": 372
+      }
+    }
+  ],
+  "imageWidth": 1024,
+  "imageHeight": 1536
+}

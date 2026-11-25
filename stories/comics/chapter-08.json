@@ -1,0 +1,169 @@
+{
+  "chapterId": 8,
+  "title": "A Small Favour",
+  "image": "chapter-08.png",
+  "panels": [
+    {
+      "number": 1,
+      "sceneZh": "Andy请Maya当晚帮看四页简历，但她还有自己的工作。",
+      "sceneEn": "Andy asks Maya to check his four-page CV that evening. She already has work to finish.",
+      "keywords": [
+        "four pages",
+        "CV",
+        "tonight"
+      ],
+      "promptZh": "这一格发生了什么？请用自己的话说明原因或结果。",
+      "promptEn": "What happens here? Explain the reason or result in your own words.",
+      "sampleEn": "Andy asks Maya to check his four-page CV that evening. She already has work to finish.",
+      "sampleZh": "Andy请Maya当晚帮看四页简历，但她还有自己的工作。",
+      "crop": {
+        "x": 6,
+        "y": 100,
+        "width": 500,
+        "height": 327
+      }
+    },
+    {
+      "number": 2,
+      "sceneZh": "Maya提出明晚饭后帮忙二十分钟。Andy同意挑出最需要帮助的部分。",
+      "sceneEn": "Maya offers twenty minutes after dinner tomorrow. Andy agrees to choose the most important part.",
+      "keywords": [
+        "twenty minutes",
+        "tomorrow",
+        "choose"
+      ],
+      "promptZh": "这一格发生了什么？请用自己的话说明原因或结果。",
+      "promptEn": "What happens here? Explain the reason or result in your own words.",
+      "sampleEn": "Maya offers twenty minutes after dinner tomorrow. Andy agrees to choose the most important part.",
+      "sampleZh": "Maya提出明晚饭后帮忙二十分钟。Andy同意挑出最需要帮助的部分。",
+      "crop": {
+        "x": 520,
+        "y": 100,
+        "width": 498,
+        "height": 327
+      }
+    },
+    {
+      "number": 3,
+      "sceneZh": "在图书馆，Andy先保存副本，再把简历缩为两页，删掉不真实的描述。",
+      "sceneEn": "At the library, Andy saves a copy and cuts the CV to two pages. He removes claims that are not true.",
+      "keywords": [
+        "library",
+        "two pages",
+        "honest"
+      ],
+      "promptZh": "这一格发生了什么？请用自己的话说明原因或结果。",
+      "promptEn": "What happens here? Explain the reason or result in your own words.",
+      "sampleEn": "At the library, Andy saves a copy and cuts the CV to two pages. He removes claims that are not true.",
+      "sampleZh": "在图书馆，Andy先保存副本，再把简历缩为两页，删掉不真实的描述。",
+      "crop": {
+        "x": 6,
+        "y": 441,
+        "width": 499,
+        "height": 331
+      }
+    },
+    {
+      "number": 4,
+      "sceneZh": "Maya启动计时器。两人把库存系统的例子写清楚，也说明同事提供的帮助。",
+      "sceneEn": "Maya starts a timer. They make his stock-system example clearer and name the help he received.",
+      "keywords": [
+        "timer",
+        "example",
+        "teamwork"
+      ],
+      "promptZh": "这一格发生了什么？请用自己的话说明原因或结果。",
+      "promptEn": "What happens here? Explain the reason or result in your own words.",
+      "sampleEn": "Maya starts a timer. They make his stock-system example clearer and name the help he received.",
+      "sampleZh": "Maya启动计时器。两人把库存系统的例子写清楚，也说明同事提供的帮助。",
+      "crop": {
+        "x": 520,
+        "y": 441,
+        "width": 498,
+        "height": 331
+      }
+    },
+    {
+      "number": 5,
+      "sceneZh": "Andy修改了让人误以为他领导整个项目的说法。时间到后，他感谢Maya并停下来。",
+      "sceneEn": "Andy changes a misleading claim that he led the project. When time is up, he thanks Maya and stops.",
+      "keywords": [
+        "accurate",
+        "project",
+        "time limit"
+      ],
+      "promptZh": "这一格发生了什么？请用自己的话说明原因或结果。",
+      "promptEn": "What happens here? Explain the reason or result in your own words.",
+      "sampleEn": "Andy changes a misleading claim that he led the project. When time is up, he thanks Maya and stops.",
+      "sampleZh": "Andy修改了让人误以为他领导整个项目的说法。时间到后，他感谢Maya并停下来。",
+      "crop": {
+        "x": 7,
+        "y": 786,
+        "width": 499,
+        "height": 360
+      }
+    },
+    {
+      "number": 6,
+      "sceneZh": "Maya想把画稿铺在桌上。Andy腾出空间，把自己的东西搬到厨房。",
+      "sceneEn": "Maya asks to spread her drawings on the table. Andy makes space and moves his things to the kitchen.",
+      "keywords": [
+        "drawings",
+        "space",
+        "help back"
+      ],
+      "promptZh": "这一格发生了什么？请用自己的话说明原因或结果。",
+      "promptEn": "What happens here? Explain the reason or result in your own words.",
+      "sampleEn": "Maya asks to spread her drawings on the table. Andy makes space and moves his things to the kitchen.",
+      "sampleZh": "Maya想把画稿铺在桌上。Andy腾出空间，把自己的东西搬到厨房。",
+      "crop": {
+        "x": 520,
+        "y": 786,
+        "width": 498,
+        "height": 360
+      }
+    },
+    {
+      "number": 7,
+      "sceneZh": "Andy自己核对职位要求，并为每条要求选一个例子。",
+      "sceneEn": "Andy checks the job requirements himself and chooses an example for each one.",
+      "keywords": [
+        "requirements",
+        "examples",
+        "check"
+      ],
+      "promptZh": "这一格发生了什么？请用自己的话说明原因或结果。",
+      "promptEn": "What happens here? Explain the reason or result in your own words.",
+      "sampleEn": "Andy checks the job requirements himself and chooses an example for each one.",
+      "sampleZh": "Andy自己核对职位要求，并为每条要求选一个例子。",
+      "crop": {
+        "x": 7,
+        "y": 1161,
+        "width": 498,
+        "height": 364
+      }
+    },
+    {
+      "number": 8,
+      "sceneZh": "他核对日期、名称和附件，改正旧电话号码后，向Meridian提交申请。",
+      "sceneEn": "He checks dates, names and the attachment, fixes an old phone number, then sends his application to Meridian.",
+      "keywords": [
+        "phone number",
+        "attachment",
+        "send"
+      ],
+      "promptZh": "这一格发生了什么？请用自己的话说明原因或结果。",
+      "promptEn": "What happens here? Explain the reason or result in your own words.",
+      "sampleEn": "He checks dates, names and the attachment, fixes an old phone number, then sends his application to Meridian.",
+      "sampleZh": "他核对日期、名称和附件，改正旧电话号码后，向Meridian提交申请。",
+      "crop": {
+        "x": 520,
+        "y": 1161,
+        "width": 498,
+        "height": 364
+      }
+    }
+  ],
+  "imageWidth": 1024,
+  "imageHeight": 1536
+}

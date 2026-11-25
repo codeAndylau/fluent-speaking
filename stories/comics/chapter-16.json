@@ -1,0 +1,169 @@
+{
+  "chapterId": 16,
+  "title": "The Update",
+  "image": "chapter-16.png",
+  "panels": [
+    {
+      "number": 1,
+      "sceneZh": "客户端测试服务拒绝报名记录请求，Andy不断重试。",
+      "sceneEn": "The client test service refuses the enrolment request, and Andy keeps retrying.",
+      "keywords": [
+        "access denied",
+        "test service",
+        "retry"
+      ],
+      "promptZh": "看这一格：发生了什么？人物为什么这样做？",
+      "promptEn": "What happens here, and why does the person act this way?",
+      "sampleEn": "The client test service refuses the enrolment request, and Andy keeps retrying.",
+      "sampleZh": "客户端测试服务拒绝报名记录请求，Andy不断重试。",
+      "crop": {
+        "x": 7,
+        "y": 86,
+        "width": 497,
+        "height": 343
+      }
+    },
+    {
+      "number": 2,
+      "sceneZh": "Mei按约过来比较名单，却等到午前仍没有可用结果。",
+      "sceneEn": "Mei waits to compare the lists, but the connection is still blocked and she has to leave.",
+      "keywords": [
+        "Mei",
+        "waiting",
+        "time lost"
+      ],
+      "promptZh": "看这一格：发生了什么？人物为什么这样做？",
+      "promptEn": "What happens here, and why does the person act this way?",
+      "sampleEn": "Mei waits to compare the lists, but the connection is still blocked and she has to leave.",
+      "sampleZh": "Mei按约过来比较名单，却等到午前仍没有可用结果。",
+      "crop": {
+        "x": 521,
+        "y": 86,
+        "width": 497,
+        "height": 343
+      }
+    },
+    {
+      "number": 3,
+      "sceneZh": "Rui提醒Andy，别人知道他在做不等于知道他受阻。",
+      "sceneEn": "Rui reminds Andy that knowing he is working is not the same as knowing he is blocked.",
+      "keywords": [
+        "blocked",
+        "report sooner",
+        "Rui"
+      ],
+      "promptZh": "看这一格：发生了什么？人物为什么这样做？",
+      "promptEn": "What happens here, and why does the person act this way?",
+      "sampleEn": "Rui reminds Andy that knowing he is working is not the same as knowing he is blocked.",
+      "sampleZh": "Rui提醒Andy，别人知道他在做不等于知道他受阻。",
+      "crop": {
+        "x": 7,
+        "y": 441,
+        "width": 497,
+        "height": 330
+      }
+    },
+    {
+      "number": 4,
+      "sceneZh": "两人核对地址和账号，确认基础连接成功但记录请求被拒。",
+      "sceneEn": "They verify the address and account details: the service is reachable, but the records request is refused.",
+      "keywords": [
+        "facts",
+        "reachable",
+        "permission"
+      ],
+      "promptZh": "看这一格：发生了什么？人物为什么这样做？",
+      "promptEn": "What happens here, and why does the person act this way?",
+      "sampleEn": "They verify the address and account details: the service is reachable, but the records request is refused.",
+      "sampleZh": "两人核对地址和账号，确认基础连接成功但记录请求被拒。",
+      "crop": {
+        "x": 520,
+        "y": 441,
+        "width": 497,
+        "height": 330
+      }
+    },
+    {
+      "number": 5,
+      "sceneZh": "三点更新中，Andy区分可做的本地测试和受阻的完整验证。",
+      "sceneEn": "At the update, Andy explains what can still be tested locally and why the full journey cannot be verified.",
+      "keywords": [
+        "local tests",
+        "full journey",
+        "impact"
+      ],
+      "promptZh": "看这一格：发生了什么？人物为什么这样做？",
+      "promptEn": "What happens here, and why does the person act this way?",
+      "sampleEn": "At the update, Andy explains what can still be tested locally and why the full journey cannot be verified.",
+      "sampleZh": "三点更新中，Andy区分可做的本地测试和受阻的完整验证。",
+      "crop": {
+        "x": 7,
+        "y": 785,
+        "width": 497,
+        "height": 354
+      }
+    },
+    {
+      "number": 6,
+      "sceneZh": "Daniel联系Elena找权限负责人，Andy分享去掉密钥的事实记录。",
+      "sceneEn": "Daniel asks Elena for a permissions contact, and Andy shares the checked facts without secrets.",
+      "keywords": [
+        "permissions contact",
+        "facts",
+        "no secrets"
+      ],
+      "promptZh": "看这一格：发生了什么？人物为什么这样做？",
+      "promptEn": "What happens here, and why does the person act this way?",
+      "sampleEn": "Daniel asks Elena for a permissions contact, and Andy shares the checked facts without secrets.",
+      "sampleZh": "Daniel联系Elena找权限负责人，Andy分享去掉密钥的事实记录。",
+      "crop": {
+        "x": 520,
+        "y": 785,
+        "width": 497,
+        "height": 354
+      }
+    },
+    {
+      "number": 7,
+      "sceneZh": "对方次日才能检查，团队约定明天四点继续更新。",
+      "sceneEn": "The contact cannot investigate until the next day, so they agree on another update at four even if it remains blocked.",
+      "keywords": [
+        "external dependency",
+        "tomorrow four",
+        "uncertain"
+      ],
+      "promptZh": "看这一格：发生了什么？人物为什么这样做？",
+      "promptEn": "What happens here, and why does the person act this way?",
+      "sampleEn": "The contact cannot investigate until the next day, so they agree on another update at four even if it remains blocked.",
+      "sampleZh": "对方次日才能检查，团队约定明天四点继续更新。",
+      "crop": {
+        "x": 7,
+        "y": 1153,
+        "width": 496,
+        "height": 371
+      }
+    },
+    {
+      "number": 8,
+      "sceneZh": "次日仍受阻，Andy先告知Mei不必空等，再按时更新Daniel。",
+      "sceneEn": "The next day, access is still blocked; Andy tells Mei not to reserve another hour and updates Daniel on time.",
+      "keywords": [
+        "still blocked",
+        "respect time",
+        "honest update"
+      ],
+      "promptZh": "看这一格：发生了什么？人物为什么这样做？",
+      "promptEn": "What happens here, and why does the person act this way?",
+      "sampleEn": "The next day, access is still blocked; Andy tells Mei not to reserve another hour and updates Daniel on time.",
+      "sampleZh": "次日仍受阻，Andy先告知Mei不必空等，再按时更新Daniel。",
+      "crop": {
+        "x": 520,
+        "y": 1153,
+        "width": 498,
+        "height": 371
+      }
+    }
+  ],
+  "imageWidth": 1024,
+  "imageHeight": 1536
+}

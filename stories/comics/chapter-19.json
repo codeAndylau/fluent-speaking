@@ -1,0 +1,170 @@
+{
+  "chapterId": 19,
+  "title": "What the Customer Didn’t Say",
+  "image": "chapter-19.png",
+  "panels": [
+    {
+      "number": 1,
+      "sceneZh": "Elena问谁承担试点额外工作，漂亮流程图没有答案。",
+      "sceneEn": "Elena asks who will do the extra pilot work, and Andy realises the neat diagram does not answer her.",
+      "keywords": [
+        "extra work",
+        "diagram",
+        "staff burden"
+      ],
+      "promptZh": "看这一格：发生了什么？人物为什么这样做？",
+      "promptEn": "What happens here, and why does the person act this way?",
+      "sampleEn": "Elena asks who will do the extra pilot work, and Andy realises the neat diagram does not answer her.",
+      "sampleZh": "Elena问谁承担试点额外工作，漂亮流程图没有答案。",
+      "crop": {
+        "x": 6,
+        "y": 99,
+        "width": 499,
+        "height": 329
+      }
+    },
+    {
+      "number": 2,
+      "sceneZh": "Andy请她从软件之前讲起：老师请假、改时间、核名单。",
+      "sceneEn": "Andy asks Elena to describe a normal change from the beginning, including staff decisions and enrolment checks.",
+      "keywords": [
+        "normal change",
+        "tutor",
+        "learner list"
+      ],
+      "promptZh": "看这一格：发生了什么？人物为什么这样做？",
+      "promptEn": "What happens here, and why does the person act this way?",
+      "sampleEn": "Andy asks Elena to describe a normal change from the beginning, including staff decisions and enrolment checks.",
+      "sampleZh": "Andy请她从软件之前讲起：老师请假、改时间、核名单。",
+      "crop": {
+        "x": 520,
+        "y": 99,
+        "width": 498,
+        "height": 329
+      }
+    },
+    {
+      "number": 3,
+      "sceneZh": "Elena说明邮件、电话、公告板和回电都可能由不同人负责。",
+      "sceneEn": "Elena describes emails, calls, noticeboards and callbacks handled by different staff members.",
+      "keywords": [
+        "email",
+        "telephone",
+        "noticeboard",
+        "handover"
+      ],
+      "promptZh": "看这一格：发生了什么？人物为什么这样做？",
+      "promptEn": "What happens here, and why does the person act this way?",
+      "sampleEn": "Elena describes emails, calls, noticeboards and callbacks handled by different staff members.",
+      "sampleZh": "Elena说明邮件、电话、公告板和回电都可能由不同人负责。",
+      "crop": {
+        "x": 6,
+        "y": 442,
+        "width": 498,
+        "height": 330
+      }
+    },
+    {
+      "number": 4,
+      "sceneZh": "团队意识到邮件服务接收不代表学员已经理解。",
+      "sceneEn": "The team recognises that an accepted email is not proof that a learner understood the change.",
+      "keywords": [
+        "accepted message",
+        "understood",
+        "not informed"
+      ],
+      "promptZh": "看这一格：发生了什么？人物为什么这样做？",
+      "promptEn": "What happens here, and why does the person act this way?",
+      "sampleEn": "The team recognises that an accepted email is not proof that a learner understood the change.",
+      "sampleZh": "团队意识到邮件服务接收不代表学员已经理解。",
+      "crop": {
+        "x": 520,
+        "y": 441,
+        "width": 498,
+        "height": 331
+      }
+    },
+    {
+      "number": 5,
+      "sceneZh": "Andy没有急着承诺自动电话，而是要求先听前台意见。",
+      "sceneEn": "Instead of promising an automatic-calling feature, Andy asks to speak with reception staff first.",
+      "keywords": [
+        "listen first",
+        "no quick promise",
+        "reception"
+      ],
+      "promptZh": "看这一格：发生了什么？人物为什么这样做？",
+      "promptEn": "What happens here, and why does the person act this way?",
+      "sampleEn": "Instead of promising an automatic-calling feature, Andy asks to speak with reception staff first.",
+      "sampleZh": "Andy没有急着承诺自动电话，而是要求先听前台意见。",
+      "crop": {
+        "x": 6,
+        "y": 786,
+        "width": 498,
+        "height": 355
+      }
+    },
+    {
+      "number": 6,
+      "sceneZh": "Elena推荐Priya参加，Daniel打开日历，准备找一个她不用值守前台的时间。",
+      "sceneEn": "Elena suggests Priya, and Daniel opens his calendar to find a time when she is not covering reception.",
+      "keywords": [
+        "Priya",
+        "reception duty",
+        "check calendar"
+      ],
+      "promptZh": "看这一格：发生了什么？人物为什么这样做？",
+      "promptEn": "What happens here, and why does the person act this way?",
+      "sampleEn": "Elena suggests Priya, and Daniel opens his calendar to find a time when she is not covering reception.",
+      "sampleZh": "Elena推荐Priya参加，Daniel打开日历，准备找一个她不用值守前台的时间。",
+      "crop": {
+        "x": 520,
+        "y": 786,
+        "width": 497,
+        "height": 355
+      }
+    },
+    {
+      "number": 7,
+      "sceneZh": "Andy复述需求，中心必须有权说试点无法承担。",
+      "sceneEn": "Andy checks his understanding, and the group accepts that the centre must be able to reject an unmanageable pilot.",
+      "keywords": [
+        "check understanding",
+        "manageable",
+        "right to decline"
+      ],
+      "promptZh": "看这一格：发生了什么？人物为什么这样做？",
+      "promptEn": "What happens here, and why does the person act this way?",
+      "sampleEn": "Andy checks his understanding, and the group accepts that the centre must be able to reject an unmanageable pilot.",
+      "sampleZh": "Andy复述需求，中心必须有权说试点无法承担。",
+      "crop": {
+        "x": 6,
+        "y": 1154,
+        "width": 498,
+        "height": 370
+      }
+    },
+    {
+      "number": 8,
+      "sceneZh": "在家Maya测试版面，Andy记住图片却没记住受访者的话。",
+      "sceneEn": "At home, Maya tests a page on Andy; he remembers the picture but misses the woman’s words, giving Maya useful evidence.",
+      "keywords": [
+        "page test",
+        "remembered picture",
+        "missing words"
+      ],
+      "promptZh": "看这一格：发生了什么？人物为什么这样做？",
+      "promptEn": "What happens here, and why does the person act this way?",
+      "sampleEn": "At home, Maya tests a page on Andy; he remembers the picture but misses the woman’s words, giving Maya useful evidence.",
+      "sampleZh": "在家Maya测试版面，Andy记住图片却没记住受访者的话。",
+      "crop": {
+        "x": 520,
+        "y": 1154,
+        "width": 498,
+        "height": 370
+      }
+    }
+  ],
+  "imageWidth": 1024,
+  "imageHeight": 1536
+}

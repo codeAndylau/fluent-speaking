@@ -1,0 +1,169 @@
+{
+  "chapterId": 15,
+  "title": "Friday, Which Friday?",
+  "image": "chapter-15.png",
+  "panels": [
+    {
+      "number": 1,
+      "sceneZh": "Andy收到周五演示邀请，却发现周五上午准备好的要求不清楚。",
+      "sceneEn": "Andy pauses before promising that the version will be ready on Friday morning.",
+      "keywords": [
+        "Friday",
+        "ready",
+        "clarify"
+      ],
+      "promptZh": "看这一格：发生了什么？人物为什么这样做？",
+      "promptEn": "What happens here, and why does the person act this way?",
+      "sampleEn": "Andy pauses before promising that the version will be ready on Friday morning.",
+      "sampleZh": "Andy收到周五演示邀请，却发现周五上午准备好的要求不清楚。",
+      "crop": {
+        "x": 6,
+        "y": 74,
+        "width": 499,
+        "height": 354
+      }
+    },
+    {
+      "number": 2,
+      "sceneZh": "Daniel解释：本周客户预检，下周工作人员演示，都是伦敦上午。",
+      "sceneEn": "Daniel explains that the client check is this Friday and the staff session is the following Friday.",
+      "keywords": [
+        "two sessions",
+        "this Friday",
+        "next Friday"
+      ],
+      "promptZh": "看这一格：发生了什么？人物为什么这样做？",
+      "promptEn": "What happens here, and why does the person act this way?",
+      "sampleEn": "Daniel explains that the client check is this Friday and the staff session is the following Friday.",
+      "sampleZh": "Daniel解释：本周客户预检，下周工作人员演示，都是伦敦上午。",
+      "crop": {
+        "x": 520,
+        "y": 74,
+        "width": 498,
+        "height": 354
+      }
+    },
+    {
+      "number": 3,
+      "sceneZh": "Andy核对日历，把伦敦九点和上海十七点写清。",
+      "sceneEn": "Andy checks the calendar and writes both dates and the London nine a.m. and Shanghai five p.m. times.",
+      "keywords": [
+        "London 09:00",
+        "Shanghai 17:00",
+        "two dates"
+      ],
+      "promptZh": "看这一格：发生了什么？人物为什么这样做？",
+      "promptEn": "What happens here, and why does the person act this way?",
+      "sampleEn": "Andy checks the calendar and writes both dates and the London nine a.m. and Shanghai five p.m. times.",
+      "sampleZh": "Andy核对日历，把伦敦九点和上海十七点写清。",
+      "crop": {
+        "x": 6,
+        "y": 441,
+        "width": 499,
+        "height": 374
+      }
+    },
+    {
+      "number": 4,
+      "sceneZh": "团队写明使用测试环境，不是上线，并准备独立测试账号。",
+      "sceneEn": "The team specifies test accounts and a test environment, not a launch, and prepares staff to try it.",
+      "keywords": [
+        "test accounts",
+        "test environment",
+        "not a launch"
+      ],
+      "promptZh": "看这一格：发生了什么？人物为什么这样做？",
+      "promptEn": "What happens here, and why does the person act this way?",
+      "sampleEn": "The team specifies test accounts and a test environment, not a launch, and prepares staff to try it.",
+      "sampleZh": "团队写明使用测试环境，不是上线，并准备独立测试账号。",
+      "crop": {
+        "x": 520,
+        "y": 441,
+        "width": 498,
+        "height": 374
+      }
+    },
+    {
+      "number": 5,
+      "sceneZh": "预检时通知成功到达测试邮箱，Elena建议突出旧时间。",
+      "sceneEn": "During the client check, a test email arrives and Elena asks them to make the old time easier to notice.",
+      "keywords": [
+        "test inbox",
+        "old time",
+        "feedback"
+      ],
+      "promptZh": "看这一格：发生了什么？人物为什么这样做？",
+      "promptEn": "What happens here, and why does the person act this way?",
+      "sampleEn": "During the client check, a test email arrives and Elena asks them to make the old time easier to notice.",
+      "sampleZh": "预检时通知成功到达测试邮箱，Elena建议突出旧时间。",
+      "crop": {
+        "x": 7,
+        "y": 828,
+        "width": 497,
+        "height": 320
+      }
+    },
+    {
+      "number": 6,
+      "sceneZh": "Andy和Rui都只能待到六点，Daniel把支持讨论提前。",
+      "sceneEn": "Andy and Rui can stay only until six, so Daniel moves the support discussion earlier.",
+      "keywords": [
+        "until six",
+        "commitments",
+        "reorder agenda"
+      ],
+      "promptZh": "看这一格：发生了什么？人物为什么这样做？",
+      "promptEn": "What happens here, and why does the person act this way?",
+      "sampleEn": "Andy and Rui can stay only until six, so Daniel moves the support discussion earlier.",
+      "sampleZh": "Andy和Rui都只能待到六点，Daniel把支持讨论提前。",
+      "crop": {
+        "x": 520,
+        "y": 828,
+        "width": 497,
+        "height": 320
+      }
+    },
+    {
+      "number": 7,
+      "sceneZh": "下周工作人员模拟接电话后返回，问如何确认收件人名单。",
+      "sceneEn": "At the staff session, a receptionist simulates an interruption and asks how the correct learner list is established.",
+      "keywords": [
+        "interruption",
+        "learner list",
+        "staff session"
+      ],
+      "promptZh": "看这一格：发生了什么？人物为什么这样做？",
+      "promptEn": "What happens here, and why does the person act this way?",
+      "sampleEn": "At the staff session, a receptionist simulates an interruption and asks how the correct learner list is established.",
+      "sampleZh": "下周工作人员模拟接电话后返回，问如何确认收件人名单。",
+      "crop": {
+        "x": 7,
+        "y": 1161,
+        "width": 498,
+        "height": 362
+      }
+    },
+    {
+      "number": 8,
+      "sceneZh": "六点两人按约离开，Daniel留下收集最后的问题。",
+      "sceneEn": "At six, Andy and Rui leave as agreed while Daniel stays to collect the final questions.",
+      "keywords": [
+        "six o’clock",
+        "leave as agreed",
+        "final questions"
+      ],
+      "promptZh": "看这一格：发生了什么？人物为什么这样做？",
+      "promptEn": "What happens here, and why does the person act this way?",
+      "sampleEn": "At six, Andy and Rui leave as agreed while Daniel stays to collect the final questions.",
+      "sampleZh": "六点两人按约离开，Daniel留下收集最后的问题。",
+      "crop": {
+        "x": 521,
+        "y": 1161,
+        "width": 497,
+        "height": 362
+      }
+    }
+  ],
+  "imageWidth": 1024,
+  "imageHeight": 1536
+}

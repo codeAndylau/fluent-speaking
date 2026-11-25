@@ -1,0 +1,169 @@
+{
+  "chapterId": 14,
+  "title": "What Does “Done” Mean?",
+  "image": "chapter-14.png",
+  "panels": [
+    {
+      "number": 1,
+      "sceneZh": "Andy把自己的任务标成完成，Daniel以为整个通知流程都能演示。",
+      "sceneEn": "Andy marks his task done, but Daniel expects the entire change-and-notify journey to work.",
+      "keywords": [
+        "done",
+        "task",
+        "different expectations"
+      ],
+      "promptZh": "看这一格：发生了什么？人物为什么这样做？",
+      "promptEn": "What happens here, and why does the person act this way?",
+      "sampleEn": "Andy marks his task done, but Daniel expects the entire change-and-notify journey to work.",
+      "sampleZh": "Andy把自己的任务标成完成，Daniel以为整个通知流程都能演示。",
+      "crop": {
+        "x": 6,
+        "y": 99,
+        "width": 499,
+        "height": 329
+      }
+    },
+    {
+      "number": 2,
+      "sceneZh": "白板上的改时间、保存、通知三步暴露了缺口。",
+      "sceneEn": "The team draws change, save and notify on a whiteboard; the notification connection is still missing.",
+      "keywords": [
+        "change",
+        "save",
+        "notify"
+      ],
+      "promptZh": "看这一格：发生了什么？人物为什么这样做？",
+      "promptEn": "What happens here, and why does the person act this way?",
+      "sampleEn": "The team draws change, save and notify on a whiteboard; the notification connection is still missing.",
+      "sampleZh": "白板上的改时间、保存、通知三步暴露了缺口。",
+      "crop": {
+        "x": 521,
+        "y": 99,
+        "width": 498,
+        "height": 329
+      }
+    },
+    {
+      "number": 3,
+      "sceneZh": "保存失败提示也没有说明旧时间是否保留。",
+      "sceneEn": "Rui notices that the error message does not explain whether the old time remains after a failed save.",
+      "keywords": [
+        "save failure",
+        "old time",
+        "error message"
+      ],
+      "promptZh": "看这一格：发生了什么？人物为什么这样做？",
+      "promptEn": "What happens here, and why does the person act this way?",
+      "sampleEn": "Rui notices that the error message does not explain whether the old time remains after a failed save.",
+      "sampleZh": "保存失败提示也没有说明旧时间是否保留。",
+      "crop": {
+        "x": 6,
+        "y": 441,
+        "width": 499,
+        "height": 331
+      }
+    },
+    {
+      "number": 4,
+      "sceneZh": "大家约定验收清单，包括正确收件人和他人审查。",
+      "sceneEn": "They agree a checklist covering saved times, failures, correct test recipients and another engineer’s review.",
+      "keywords": [
+        "checklist",
+        "test recipients",
+        "review"
+      ],
+      "promptZh": "看这一格：发生了什么？人物为什么这样做？",
+      "promptEn": "What happens here, and why does the person act this way?",
+      "sampleEn": "They agree a checklist covering saved times, failures, correct test recipients and another engineer’s review.",
+      "sampleZh": "大家约定验收清单，包括正确收件人和他人审查。",
+      "crop": {
+        "x": 521,
+        "y": 441,
+        "width": 498,
+        "height": 331
+      }
+    },
+    {
+      "number": 5,
+      "sceneZh": "任务改回进行中，Daniel缩小当天演示范围。",
+      "sceneEn": "Daniel changes the status to in progress and limits the demonstration to the calendar.",
+      "keywords": [
+        "in progress",
+        "smaller demo",
+        "calendar"
+      ],
+      "promptZh": "看这一格：发生了什么？人物为什么这样做？",
+      "promptEn": "What happens here, and why does the person act this way?",
+      "sampleEn": "Daniel changes the status to in progress and limits the demonstration to the calendar.",
+      "sampleZh": "任务改回进行中，Daniel缩小当天演示范围。",
+      "crop": {
+        "x": 6,
+        "y": 787,
+        "width": 499,
+        "height": 328
+      }
+    },
+    {
+      "number": 6,
+      "sceneZh": "Andy修正提示并报告已完成和未完成的部分。",
+      "sceneEn": "Andy improves the error message and reports that email connection and review are still outstanding.",
+      "keywords": [
+        "specific update",
+        "email connection",
+        "outstanding"
+      ],
+      "promptZh": "看这一格：发生了什么？人物为什么这样做？",
+      "promptEn": "What happens here, and why does the person act this way?",
+      "sampleEn": "Andy improves the error message and reports that email connection and review are still outstanding.",
+      "sampleZh": "Andy修正提示并报告已完成和未完成的部分。",
+      "crop": {
+        "x": 521,
+        "y": 787,
+        "width": 498,
+        "height": 328
+      }
+    },
+    {
+      "number": 7,
+      "sceneZh": "中心工作人员问：接完电话回来，怎么知道哪些人已被通知？",
+      "sceneEn": "A centre worker asks how she can tell who has been contacted after returning from a phone interruption.",
+      "keywords": [
+        "phone interruption",
+        "contact status",
+        "staff question"
+      ],
+      "promptZh": "看这一格：发生了什么？人物为什么这样做？",
+      "promptEn": "What happens here, and why does the person act this way?",
+      "sampleEn": "A centre worker asks how she can tell who has been contacted after returning from a phone interruption.",
+      "sampleZh": "中心工作人员问：接完电话回来，怎么知道哪些人已被通知？",
+      "crop": {
+        "x": 6,
+        "y": 1129,
+        "width": 499,
+        "height": 395
+      }
+    },
+    {
+      "number": 8,
+      "sceneZh": "Andy承认还不知道，Daniel把问题加入后续工作人员演示。",
+      "sceneEn": "Andy admits that they do not yet have an answer, and Daniel adds the question to the staff demonstration.",
+      "keywords": [
+        "not yet known",
+        "staff demo",
+        "next question"
+      ],
+      "promptZh": "看这一格：发生了什么？人物为什么这样做？",
+      "promptEn": "What happens here, and why does the person act this way?",
+      "sampleEn": "Andy admits that they do not yet have an answer, and Daniel adds the question to the staff demonstration.",
+      "sampleZh": "Andy承认还不知道，Daniel把问题加入后续工作人员演示。",
+      "crop": {
+        "x": 521,
+        "y": 1129,
+        "width": 498,
+        "height": 395
+      }
+    }
+  ],
+  "imageWidth": 1024,
+  "imageHeight": 1536
+}

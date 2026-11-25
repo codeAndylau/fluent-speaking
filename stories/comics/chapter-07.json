@@ -1,0 +1,169 @@
+{
+  "chapterId": 7,
+  "title": "What Do You Do?",
+  "image": "chapter-07.png",
+  "panels": [
+    {
+      "number": 1,
+      "sceneZh": "团队解散一个月后，Andy和Rui、Jo喝咖啡。Jo问他做什么工作。",
+      "sceneEn": "A month after his team closes, Andy meets Rui and Jo for coffee. Jo asks what he does.",
+      "keywords": [
+        "coffee",
+        "Jo",
+        "work"
+      ],
+      "promptZh": "这一格发生了什么？请用自己的话说明原因或结果。",
+      "promptEn": "What happens here? Explain the reason or result in your own words.",
+      "sampleEn": "A month after his team closes, Andy meets Rui and Jo for coffee. Jo asks what he does.",
+      "sampleZh": "团队解散一个月后，Andy和Rui、Jo喝咖啡。Jo问他做什么工作。",
+      "crop": {
+        "x": 6,
+        "y": 101,
+        "width": 500,
+        "height": 339
+      }
+    },
+    {
+      "number": 2,
+      "sceneZh": "Andy先说自己正在找工作，Rui提醒大家Andy是做软件的。",
+      "sceneEn": "Andy first says he is between jobs. Rui reminds the group that Andy builds software.",
+      "keywords": [
+        "between jobs",
+        "software",
+        "explain"
+      ],
+      "promptZh": "这一格发生了什么？请用自己的话说明原因或结果。",
+      "promptEn": "What happens here? Explain the reason or result in your own words.",
+      "sampleEn": "Andy first says he is between jobs. Rui reminds the group that Andy builds software.",
+      "sampleZh": "Andy先说自己正在找工作，Rui提醒大家Andy是做软件的。",
+      "crop": {
+        "x": 521,
+        "y": 101,
+        "width": 498,
+        "height": 339
+      }
+    },
+    {
+      "number": 3,
+      "sceneZh": "Andy介绍一个帮助商店统计商品数量的库存系统。",
+      "sceneEn": "Andy describes a stock system that helps shops count their products.",
+      "keywords": [
+        "stock system",
+        "shop",
+        "products"
+      ],
+      "promptZh": "这一格发生了什么？请用自己的话说明原因或结果。",
+      "promptEn": "What happens here? Explain the reason or result in your own words.",
+      "sampleEn": "Andy describes a stock system that helps shops count their products.",
+      "sampleZh": "Andy介绍一个帮助商店统计商品数量的库存系统。",
+      "crop": {
+        "x": 6,
+        "y": 454,
+        "width": 499,
+        "height": 338
+      }
+    },
+    {
+      "number": 4,
+      "sceneZh": "他解释两个人同时改数字引发的问题。Jo说起类似的会议室预订问题。",
+      "sceneEn": "He explains a problem caused by two people changing numbers together. Jo describes a similar room-booking problem.",
+      "keywords": [
+        "same time",
+        "numbers",
+        "room bookings"
+      ],
+      "promptZh": "这一格发生了什么？请用自己的话说明原因或结果。",
+      "promptEn": "What happens here? Explain the reason or result in your own words.",
+      "sampleEn": "He explains a problem caused by two people changing numbers together. Jo describes a similar room-booking problem.",
+      "sampleZh": "他解释两个人同时改数字引发的问题。Jo说起类似的会议室预订问题。",
+      "crop": {
+        "x": 521,
+        "y": 454,
+        "width": 498,
+        "height": 338
+      }
+    },
+    {
+      "number": 5,
+      "sceneZh": "Andy说自己想加入国际团队，向不同地方的人学习。",
+      "sceneEn": "Andy says he wants to work in an international team and learn from people in different places.",
+      "keywords": [
+        "international team",
+        "learn",
+        "different places"
+      ],
+      "promptZh": "这一格发生了什么？请用自己的话说明原因或结果。",
+      "promptEn": "What happens here? Explain the reason or result in your own words.",
+      "sampleEn": "Andy says he wants to work in an international team and learn from people in different places.",
+      "sampleZh": "Andy说自己想加入国际团队，向不同地方的人学习。",
+      "crop": {
+        "x": 6,
+        "y": 806,
+        "width": 500,
+        "height": 312
+      }
+    },
+    {
+      "number": 6,
+      "sceneZh": "出来后，Rui说自己也可能换工作。Andy问他对下一份工作有什么期待。",
+      "sceneEn": "Outside, Rui says he may change jobs too. Andy asks what Rui wants from his next role.",
+      "keywords": [
+        "change jobs",
+        "ask",
+        "next role"
+      ],
+      "promptZh": "这一格发生了什么？请用自己的话说明原因或结果。",
+      "promptEn": "What happens here? Explain the reason or result in your own words.",
+      "sampleEn": "Outside, Rui says he may change jobs too. Andy asks what Rui wants from his next role.",
+      "sampleZh": "出来后，Rui说自己也可能换工作。Andy问他对下一份工作有什么期待。",
+      "crop": {
+        "x": 521,
+        "y": 806,
+        "width": 498,
+        "height": 312
+      }
+    },
+    {
+      "number": 7,
+      "sceneZh": "回家后，Maya在桌边做设计。Andy先问能否使用一端，并把茶放远些。",
+      "sceneEn": "At home, Andy asks to use part of the table while Maya works on her designs. He keeps his tea away from them.",
+      "keywords": [
+        "shared table",
+        "ask",
+        "designs"
+      ],
+      "promptZh": "这一格发生了什么？请用自己的话说明原因或结果。",
+      "promptEn": "What happens here? Explain the reason or result in your own words.",
+      "sampleEn": "At home, Andy asks to use part of the table while Maya works on her designs. He keeps his tea away from them.",
+      "sampleZh": "回家后，Maya在桌边做设计。Andy先问能否使用一端，并把茶放远些。",
+      "crop": {
+        "x": 6,
+        "y": 1132,
+        "width": 500,
+        "height": 394
+      }
+    },
+    {
+      "number": 8,
+      "sceneZh": "Andy写下清楚的自我介绍并出声练习。他仍然需要工作，但能更好地介绍经验了。",
+      "sceneEn": "Andy writes a clear introduction and practises it aloud. He still needs a job, but can describe his experience better.",
+      "keywords": [
+        "introduction",
+        "practise",
+        "experience"
+      ],
+      "promptZh": "这一格发生了什么？请用自己的话说明原因或结果。",
+      "promptEn": "What happens here? Explain the reason or result in your own words.",
+      "sampleEn": "Andy writes a clear introduction and practises it aloud. He still needs a job, but can describe his experience better.",
+      "sampleZh": "Andy写下清楚的自我介绍并出声练习。他仍然需要工作，但能更好地介绍经验了。",
+      "crop": {
+        "x": 521,
+        "y": 1132,
+        "width": 498,
+        "height": 394
+      }
+    }
+  ],
+  "imageWidth": 1024,
+  "imageHeight": 1536
+}

@@ -1,0 +1,169 @@
+{
+  "chapterId": 3,
+  "title": "Dinner at Seven",
+  "image": "chapter-03.png",
+  "panels": [
+    {
+      "number": 1,
+      "sceneZh": "Maya把蛋糕带去上班，后来发给Andy一张厨房新水龙头的照片。",
+      "sceneEn": "Maya takes the cake to work. Later she sends Andy a photo of the new kitchen tap.",
+      "keywords": [
+        "cake",
+        "new tap",
+        "photo"
+      ],
+      "promptZh": "这一格发生了什么？请用自己的话说明原因或结果。",
+      "promptEn": "What happens here? Explain the reason or result in your own words.",
+      "sampleEn": "Maya takes the cake to work. Later she sends Andy a photo of the new kitchen tap.",
+      "sampleZh": "Maya把蛋糕带去上班，后来发给Andy一张厨房新水龙头的照片。",
+      "crop": {
+        "x": 6,
+        "y": 101,
+        "width": 500,
+        "height": 341
+      }
+    },
+    {
+      "number": 2,
+      "sceneZh": "她邀请Andy和Rui七点吃晚饭，并发来餐馆位置。",
+      "sceneEn": "She invites Andy and Rui to dinner at seven and sends the restaurant's location.",
+      "keywords": [
+        "invite",
+        "seven",
+        "restaurant"
+      ],
+      "promptZh": "这一格发生了什么？请用自己的话说明原因或结果。",
+      "promptEn": "What happens here? Explain the reason or result in your own words.",
+      "sampleEn": "She invites Andy and Rui to dinner at seven and sends the restaurant's location.",
+      "sampleZh": "她邀请Andy和Rui七点吃晚饭，并发来餐馆位置。",
+      "crop": {
+        "x": 520,
+        "y": 101,
+        "width": 499,
+        "height": 341
+      }
+    },
+    {
+      "number": 3,
+      "sceneZh": "Maya还在工作，想改成七点半。Andy问能否先点东西吃。",
+      "sceneEn": "Maya is still at work and asks to meet at half past seven. Andy asks if he can order first.",
+      "keywords": [
+        "late",
+        "half past seven",
+        "order first"
+      ],
+      "promptZh": "这一格发生了什么？请用自己的话说明原因或结果。",
+      "promptEn": "What happens here? Explain the reason or result in your own words.",
+      "sampleEn": "Maya is still at work and asks to meet at half past seven. Andy asks if he can order first.",
+      "sampleZh": "Maya还在工作，想改成七点半。Andy问能否先点东西吃。",
+      "crop": {
+        "x": 6,
+        "y": 455,
+        "width": 500,
+        "height": 324
+      }
+    },
+    {
+      "number": 4,
+      "sceneZh": "Andy走错车站出口，告诉Rui自己在二号出口的花店旁。",
+      "sceneEn": "Andy leaves the station through the wrong exit. He tells Rui he is at exit two, by a flower shop.",
+      "keywords": [
+        "wrong exit",
+        "exit two",
+        "flower shop"
+      ],
+      "promptZh": "这一格发生了什么？请用自己的话说明原因或结果。",
+      "promptEn": "What happens here? Explain the reason or result in your own words.",
+      "sampleEn": "Andy leaves the station through the wrong exit. He tells Rui he is at exit two, by a flower shop.",
+      "sampleZh": "Andy走错车站出口，告诉Rui自己在二号出口的花店旁。",
+      "crop": {
+        "x": 520,
+        "y": 455,
+        "width": 499,
+        "height": 324
+      }
+    },
+    {
+      "number": 5,
+      "sceneZh": "Rui找到Andy，带他到过街处，两人一起走到餐馆。",
+      "sceneEn": "Rui finds Andy and takes him to the crossing. They walk to the restaurant together.",
+      "keywords": [
+        "find",
+        "crossing",
+        "together"
+      ],
+      "promptZh": "这一格发生了什么？请用自己的话说明原因或结果。",
+      "promptEn": "What happens here? Explain the reason or result in your own words.",
+      "sampleEn": "Rui finds Andy and takes him to the crossing. They walk to the restaurant together.",
+      "sampleZh": "Rui找到Andy，带他到过街处，两人一起走到餐馆。",
+      "crop": {
+        "x": 7,
+        "y": 792,
+        "width": 498,
+        "height": 347
+      }
+    },
+    {
+      "number": 6,
+      "sceneZh": "他们一边等一边吃饺子、分享汤。Andy忘记bucket这个词时，用描述来解释。",
+      "sceneEn": "They order dumplings and share soup while waiting. Andy describes a bucket when he forgets the word.",
+      "keywords": [
+        "dumplings",
+        "soup",
+        "describe"
+      ],
+      "promptZh": "这一格发生了什么？请用自己的话说明原因或结果。",
+      "promptEn": "What happens here? Explain the reason or result in your own words.",
+      "sampleEn": "They order dumplings and share soup while waiting. Andy describes a bucket when he forgets the word.",
+      "sampleZh": "他们一边等一边吃饺子、分享汤。Andy忘记bucket这个词时，用描述来解释。",
+      "crop": {
+        "x": 520,
+        "y": 792,
+        "width": 499,
+        "height": 347
+      }
+    },
+    {
+      "number": 7,
+      "sceneZh": "他们因为喝汤的小插曲笑起来。Andy知道Rui不喜欢鱼，便问能否自己选主菜。",
+      "sceneEn": "They laugh over the soup. Andy learns Rui dislikes fish and asks to choose his own main dish.",
+      "keywords": [
+        "laugh",
+        "fish",
+        "choose"
+      ],
+      "promptZh": "这一格发生了什么？请用自己的话说明原因或结果。",
+      "promptEn": "What happens here? Explain the reason or result in your own words.",
+      "sampleEn": "They laugh over the soup. Andy learns Rui dislikes fish and asks to choose his own main dish.",
+      "sampleZh": "他们因为喝汤的小插曲笑起来。Andy知道Rui不喜欢鱼，便问能否自己选主菜。",
+      "crop": {
+        "x": 7,
+        "y": 1153,
+        "width": 498,
+        "height": 368
+      }
+    },
+    {
+      "number": 8,
+      "sceneZh": "Maya七点三十五分到了。Andy把最后一个饺子给她，并聊起自己的一天。",
+      "sceneEn": "Maya arrives at seven thirty-five. Andy gives her the last dumpling and talks about his day.",
+      "keywords": [
+        "arrive",
+        "last dumpling",
+        "share"
+      ],
+      "promptZh": "这一格发生了什么？请用自己的话说明原因或结果。",
+      "promptEn": "What happens here? Explain the reason or result in your own words.",
+      "sampleEn": "Maya arrives at seven thirty-five. Andy gives her the last dumpling and talks about his day.",
+      "sampleZh": "Maya七点三十五分到了。Andy把最后一个饺子给她，并聊起自己的一天。",
+      "crop": {
+        "x": 520,
+        "y": 1153,
+        "width": 499,
+        "height": 368
+      }
+    }
+  ],
+  "imageWidth": 1024,
+  "imageHeight": 1536
+}

@@ -1,0 +1,169 @@
+{
+  "chapterId": 2,
+  "title": "Two Shelves",
+  "image": "chapter-02.png",
+  "panels": [
+    {
+      "number": 1,
+      "sceneZh": "Andy买了牛奶、鸡蛋、番茄和面包，准备早餐。",
+      "sceneEn": "Andy buys milk, eggs, tomatoes and bread for breakfast.",
+      "keywords": [
+        "buy",
+        "breakfast",
+        "food"
+      ],
+      "promptZh": "这一格发生了什么？请用自己的话说明原因或结果。",
+      "promptEn": "What happens here? Explain the reason or result in your own words.",
+      "sampleEn": "Andy buys milk, eggs, tomatoes and bread for breakfast.",
+      "sampleZh": "Andy买了牛奶、鸡蛋、番茄和面包，准备早餐。",
+      "crop": {
+        "x": 6,
+        "y": 99,
+        "width": 501,
+        "height": 331
+      }
+    },
+    {
+      "number": 2,
+      "sceneZh": "他以为空着的下层是自己的，就把食物放了进去。",
+      "sceneEn": "He thinks the empty bottom shelf is his and puts his food there.",
+      "keywords": [
+        "empty",
+        "bottom shelf",
+        "assume"
+      ],
+      "promptZh": "这一格发生了什么？请用自己的话说明原因或结果。",
+      "promptEn": "What happens here? Explain the reason or result in your own words.",
+      "sampleEn": "He thinks the empty bottom shelf is his and puts his food there.",
+      "sampleZh": "他以为空着的下层是自己的，就把食物放了进去。",
+      "crop": {
+        "x": 520,
+        "y": 99,
+        "width": 498,
+        "height": 331
+      }
+    },
+    {
+      "number": 3,
+      "sceneZh": "Maya今晚要用那层放蛋糕，她忘了告诉Andy。",
+      "sceneEn": "Maya needs that shelf tonight for a cake. She forgot to tell Andy.",
+      "keywords": [
+        "cake",
+        "tonight",
+        "forgot"
+      ],
+      "promptZh": "这一格发生了什么？请用自己的话说明原因或结果。",
+      "promptEn": "What happens here? Explain the reason or result in your own words.",
+      "sampleEn": "Maya needs that shelf tonight for a cake. She forgot to tell Andy.",
+      "sampleZh": "Maya今晚要用那层放蛋糕，她忘了告诉Andy。",
+      "crop": {
+        "x": 6,
+        "y": 441,
+        "width": 501,
+        "height": 334
+      }
+    },
+    {
+      "number": 4,
+      "sceneZh": "他们在上层腾出空间，但牛奶瓶太高了。",
+      "sceneEn": "They make space on the top shelf. The milk bottle is too tall.",
+      "keywords": [
+        "make space",
+        "top shelf",
+        "too tall"
+      ],
+      "promptZh": "这一格发生了什么？请用自己的话说明原因或结果。",
+      "promptEn": "What happens here? Explain the reason or result in your own words.",
+      "sampleEn": "They make space on the top shelf. The milk bottle is too tall.",
+      "sampleZh": "他们在上层腾出空间，但牛奶瓶太高了。",
+      "crop": {
+        "x": 521,
+        "y": 441,
+        "width": 497,
+        "height": 334
+      }
+    },
+    {
+      "number": 5,
+      "sceneZh": "Andy先征求同意，再挪走Maya的水，把牛奶放进冰箱门。",
+      "sceneEn": "Andy asks before moving Maya's water. The milk fits in the fridge door.",
+      "keywords": [
+        "ask first",
+        "water",
+        "fridge door"
+      ],
+      "promptZh": "这一格发生了什么？请用自己的话说明原因或结果。",
+      "promptEn": "What happens here? Explain the reason or result in your own words.",
+      "sampleEn": "Andy asks before moving Maya's water. The milk fits in the fridge door.",
+      "sampleZh": "Andy先征求同意，再挪走Maya的水，把牛奶放进冰箱门。",
+      "crop": {
+        "x": 6,
+        "y": 787,
+        "width": 501,
+        "height": 359
+      }
+    },
+    {
+      "number": 6,
+      "sceneZh": "他们可以共用一层，但拿对方的食物前要先问。",
+      "sceneEn": "They can share a shelf, but they must ask before taking each other's food.",
+      "keywords": [
+        "share",
+        "shelf",
+        "ask first"
+      ],
+      "promptZh": "这一格发生了什么？请用自己的话说明原因或结果。",
+      "promptEn": "What happens here? Explain the reason or result in your own words.",
+      "sampleEn": "They can share a shelf, but they must ask before taking each other's food.",
+      "sampleZh": "他们可以共用一层，但拿对方的食物前要先问。",
+      "crop": {
+        "x": 521,
+        "y": 787,
+        "width": 497,
+        "height": 359
+      }
+    },
+    {
+      "number": 7,
+      "sceneZh": "蛋糕盒太大了。Andy扶着盖子，Maya裁小盒子，让它放得进去。",
+      "sceneEn": "The cake box is too big. Andy holds the lid while Maya cuts the box so it fits.",
+      "keywords": [
+        "cake box",
+        "too big",
+        "cut"
+      ],
+      "promptZh": "这一格发生了什么？请用自己的话说明原因或结果。",
+      "promptEn": "What happens here? Explain the reason or result in your own words.",
+      "sampleEn": "The cake box is too big. Andy holds the lid while Maya cuts the box so it fits.",
+      "sampleZh": "蛋糕盒太大了。Andy扶着盖子，Maya裁小盒子，让它放得进去。",
+      "crop": {
+        "x": 6,
+        "y": 1160,
+        "width": 501,
+        "height": 367
+      }
+    },
+    {
+      "number": 8,
+      "sceneZh": "他们在窗边分享面包，并记得水龙头会在明天下午两点到四点之间维修。",
+      "sceneEn": "They share bread by the window and remember the tap repair is tomorrow, between two and four.",
+      "keywords": [
+        "share bread",
+        "tomorrow",
+        "two to four"
+      ],
+      "promptZh": "这一格发生了什么？请用自己的话说明原因或结果。",
+      "promptEn": "What happens here? Explain the reason or result in your own words.",
+      "sampleEn": "They share bread by the window and remember the tap repair is tomorrow, between two and four.",
+      "sampleZh": "他们在窗边分享面包，并记得水龙头会在明天下午两点到四点之间维修。",
+      "crop": {
+        "x": 521,
+        "y": 1160,
+        "width": 497,
+        "height": 367
+      }
+    }
+  ],
+  "imageWidth": 1024,
+  "imageHeight": 1536
+}

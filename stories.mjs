@@ -158,6 +158,7 @@ function renderChapter({app, esc, icon, onSavePhrase, isPhraseSaved, entry, chap
     </section>
     <div class="story-controls story-tabs" aria-label="章节内容">
       <button class="secondary" data-story-tab="read" aria-pressed="true">听读</button>
+      <button class="secondary" data-story-tab="comic" aria-pressed="false">漫画复述</button>
       <button class="secondary" data-story-tab="practice" aria-pressed="false">口语练习</button>
     </div>
     <section class="white-card story-body" data-story-panel="read">
@@ -172,6 +173,7 @@ function renderChapter({app, esc, icon, onSavePhrase, isPhraseSaved, entry, chap
       <button class="primary" data-story-done aria-pressed="${Boolean(progress.practiced)}">${progress.practiced ? '已记录口语练习' : '记录口语练习完成'}</button>
       <p class="story-status" data-story-practice-status role="status"></p>
     </section>
+    <section class="white-card story-comic" data-story-panel="comic" hidden><div data-comic-content></div><div data-comic-recording></div></section>
     <nav class="story-controls story-navigation" aria-label="相邻章节">
       ${id > 1 ? `<a class="secondary" href="#story/${id - 1}">上一章</a>` : ''}
       ${next ? `<a class="secondary" href="#story/${next.id}">下一章 · ${esc(next.title)}</a>` : ''}
@@ -202,7 +204,9 @@ function renderChapter({app, esc, icon, onSavePhrase, isPhraseSaved, entry, chap
       saveProgress(id, {time: audio.currentTime});
     }
   };
+  let comicDispose, recorderDispose, recorderStop, comicLoading=false, comicReady=false;
   current.dispose = () => {
+    comicDispose?.(); recorderDispose?.();
     savePosition();
     audio.pause();
     audio.removeAttribute('src');
@@ -270,7 +274,7 @@ function renderChapter({app, esc, icon, onSavePhrase, isPhraseSaved, entry, chap
     }
   });
   listen(audio, 'error', () => { status.textContent = '音频加载失败，请重新播放。'; });
-  const pauseWhenHidden = () => { audio.pause(); savePosition(); };
+  const pauseWhenHidden = () => { audio.pause(); recorderStop?.(); savePosition(); };
   listen(window, 'pagehide', pauseWhenHidden);
   listen(document, 'visibilitychange', () => { if (document.hidden) pauseWhenHidden(); });
   audio.src = asset(entry.audio).href;
@@ -313,10 +317,31 @@ function renderChapter({app, esc, icon, onSavePhrase, isPhraseSaved, entry, chap
     loopButton.setAttribute('aria-pressed', 'true');
     play(range.start);
   });
+  async function openComic() {
+    if(comicReady||comicLoading)return;
+    comicLoading=true;
+    const root=find('[data-comic-content]'),english=document.documentElement.lang==='en';
+    root.innerHTML='<p role="status">'+(english?'Loading comic…':'正在加载漫画…')+'</p>';
+    try {
+      const [module,data,recordModule]=await Promise.all([import('./story-comics.mjs?v=20261125-5'),fetchData(`comics/chapter-${String(id).padStart(2,'0')}.json`,signal),import('./comic-recorder.mjs?v=20261125-5')]);
+      if(signal.aborted)return;
+      if(!module.validComic(data,id))throw new Error('invalid comic');
+      comicDispose=module.mountComic(root,data,english?'en':'zh');
+      const recording=recordModule.mountComicRecorder(find('[data-comic-recording]'),{english,beforeRecord:()=>{clearRange();audio.pause();}});
+      recorderDispose=recording.dispose;recorderStop=recording.stop;
+      comicReady=true;
+    } catch(error) {
+      if(signal.aborted)return;
+      root.innerHTML='<p role="alert">'+(english?'Comic could not load. Please retry.':'漫画加载失败，请重试。')+'</p><button class="secondary" type="button">'+(english?'Retry':'重新加载')+'</button>';
+      listen(root.querySelector('button'),'click',openComic);
+    } finally {comicLoading=false;}
+  }
+  listen(audio,'play',()=>recorderStop?.());
   for (const button of app.querySelectorAll('[data-story-tab]')) {
     listen(button, 'click', () => {
       const tab = button.dataset.storyTab;
       hideTranslation();
+      if(tab==='comic'){clearRange();audio.pause();openComic();}else recorderStop?.();
       app.querySelectorAll('[data-story-tab]').forEach(item => item.setAttribute('aria-pressed', String(item === button)));
       app.querySelectorAll('[data-story-panel]').forEach(panel => { panel.hidden = panel.dataset.storyPanel !== tab; });
     });

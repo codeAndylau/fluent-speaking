@@ -1,0 +1,169 @@
+{
+  "chapterId": 17,
+  "title": "I Should Have Asked",
+  "image": "chapter-17.png",
+  "panels": [
+    {
+      "number": 1,
+      "sceneZh": "三次修改竟产生六封测试邮件，Andy检查日志。",
+      "sceneEn": "Three class changes produce six emails in the test inbox, so Andy checks the logs.",
+      "keywords": [
+        "three changes",
+        "six emails",
+        "logs"
+      ],
+      "promptZh": "看这一格：发生了什么？人物为什么这样做？",
+      "promptEn": "What happens here, and why does the person act this way?",
+      "sampleEn": "Three class changes produce six emails in the test inbox, so Andy checks the logs.",
+      "sampleZh": "三次修改竟产生六封测试邮件，Andy检查日志。",
+      "crop": {
+        "x": 6,
+        "y": 100,
+        "width": 500,
+        "height": 354
+      }
+    },
+    {
+      "number": 2,
+      "sceneZh": "Andy叫停内部测试并暂停任务，确认收件人全是团队测试账号。",
+      "sceneEn": "Andy stops the internal test and pauses its jobs; all recipients are team-controlled test accounts.",
+      "keywords": [
+        "pause jobs",
+        "test accounts",
+        "no real learners"
+      ],
+      "promptZh": "看这一格：发生了什么？人物为什么这样做？",
+      "promptEn": "What happens here, and why does the person act this way?",
+      "sampleEn": "Andy stops the internal test and pauses its jobs; all recipients are team-controlled test accounts.",
+      "sampleZh": "Andy叫停内部测试并暂停任务，确认收件人全是团队测试账号。",
+      "crop": {
+        "x": 520,
+        "y": 100,
+        "width": 499,
+        "height": 354
+      }
+    },
+    {
+      "number": 3,
+      "sceneZh": "他承认自己擅自把历史变更再次通知。",
+      "sceneEn": "Andy explains that his code recreates jobs for earlier changes because he made an unchecked assumption.",
+      "keywords": [
+        "own mistake",
+        "earlier changes",
+        "assumption"
+      ],
+      "promptZh": "看这一格：发生了什么？人物为什么这样做？",
+      "promptEn": "What happens here, and why does the person act this way?",
+      "sampleEn": "Andy explains that his code recreates jobs for earlier changes because he made an unchecked assumption.",
+      "sampleZh": "他承认自己擅自把历史变更再次通知。",
+      "crop": {
+        "x": 6,
+        "y": 467,
+        "width": 500,
+        "height": 345
+      }
+    },
+    {
+      "number": 4,
+      "sceneZh": "团队记录证据并向Elena确认规则，不先承诺通宵修好。",
+      "sceneEn": "They record the evidence and ask Elena to confirm the rule before estimating the full repair.",
+      "keywords": [
+        "evidence",
+        "confirm rule",
+        "estimate"
+      ],
+      "promptZh": "看这一格：发生了什么？人物为什么这样做？",
+      "promptEn": "What happens here, and why does the person act this way?",
+      "sampleEn": "They record the evidence and ask Elena to confirm the rule before estimating the full repair.",
+      "sampleZh": "团队记录证据并向Elena确认规则，不先承诺通宵修好。",
+      "crop": {
+        "x": 520,
+        "y": 467,
+        "width": 500,
+        "height": 345
+      }
+    },
+    {
+      "number": 5,
+      "sceneZh": "规则明确：每次新变更只通知该次，失败重试另算。",
+      "sceneEn": "Elena confirms that each saved change needs its own notice; retrying delivery is a separate case.",
+      "keywords": [
+        "one change",
+        "one notice",
+        "retry"
+      ],
+      "promptZh": "看这一格：发生了什么？人物为什么这样做？",
+      "promptEn": "What happens here, and why does the person act this way?",
+      "sampleEn": "Elena confirms that each saved change needs its own notice; retrying delivery is a separate case.",
+      "sampleZh": "规则明确：每次新变更只通知该次，失败重试另算。",
+      "crop": {
+        "x": 6,
+        "y": 825,
+        "width": 500,
+        "height": 323
+      }
+    },
+    {
+      "number": 6,
+      "sceneZh": "初次修正漏了另一条路径，Rui指出后再补改。",
+      "sceneEn": "The first new test fails because another job-creation path was missed, and Andy corrects it.",
+      "keywords": [
+        "failed test",
+        "missed path",
+        "second correction"
+      ],
+      "promptZh": "看这一格：发生了什么？人物为什么这样做？",
+      "promptEn": "What happens here, and why does the person act this way?",
+      "sampleEn": "The first new test fails because another job-creation path was missed, and Andy corrects it.",
+      "sampleZh": "初次修正漏了另一条路径，Rui指出后再补改。",
+      "crop": {
+        "x": 520,
+        "y": 825,
+        "width": 499,
+        "height": 323
+      }
+    },
+    {
+      "number": 7,
+      "sceneZh": "受控测试变成三次变更三封邮件，但还需要他人审查。",
+      "sceneEn": "The controlled test now produces three notices for three changes, but another engineer still needs to review it.",
+      "keywords": [
+        "three notices",
+        "controlled test",
+        "further review"
+      ],
+      "promptZh": "看这一格：发生了什么？人物为什么这样做？",
+      "promptEn": "What happens here, and why does the person act this way?",
+      "sampleEn": "The controlled test now produces three notices for three changes, but another engineer still needs to review it.",
+      "sampleZh": "受控测试变成三次变更三封邮件，但还需要他人审查。",
+      "crop": {
+        "x": 6,
+        "y": 1161,
+        "width": 499,
+        "height": 365
+      }
+    },
+    {
+      "number": 8,
+      "sceneZh": "Rui承认审查也有遗漏，两人道歉；回家后Andy和Maya分吐司。",
+      "sceneEn": "Rui acknowledges his part in the review, and they apologise; at home Andy shares toast with Maya.",
+      "keywords": [
+        "shared responsibility",
+        "apology",
+        "toast"
+      ],
+      "promptZh": "看这一格：发生了什么？人物为什么这样做？",
+      "promptEn": "What happens here, and why does the person act this way?",
+      "sampleEn": "Rui acknowledges his part in the review, and they apologise; at home Andy shares toast with Maya.",
+      "sampleZh": "Rui承认审查也有遗漏，两人道歉；回家后Andy和Maya分吐司。",
+      "crop": {
+        "x": 520,
+        "y": 1161,
+        "width": 499,
+        "height": 365
+      }
+    }
+  ],
+  "imageWidth": 1024,
+  "imageHeight": 1536
+}

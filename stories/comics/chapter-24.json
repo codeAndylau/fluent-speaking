@@ -1,0 +1,169 @@
+{
+  "chapterId": 24,
+  "title": "The Empty Chair",
+  "image": "chapter-24.png",
+  "panels": [
+    {
+      "number": 1,
+      "sceneZh": "新同事Sam安静记笔记，Andy提醒自己不要猜测沉默含义。",
+      "sceneEn": "New colleague Sam sits quietly, and Andy reminds himself not to assume what the silence means.",
+      "keywords": [
+        "Sam",
+        "silence",
+        "no assumptions"
+      ],
+      "promptZh": "看这一格：发生了什么？人物为什么这样做？",
+      "promptEn": "What happens here, and why does the person act this way?",
+      "sampleEn": "New colleague Sam sits quietly, and Andy reminds himself not to assume what the silence means.",
+      "sampleZh": "新同事Sam安静记笔记，Andy提醒自己不要猜测沉默含义。",
+      "crop": {
+        "x": 6,
+        "y": 78,
+        "width": 498,
+        "height": 337
+      }
+    },
+    {
+      "number": 2,
+      "sceneZh": "Andy听不懂依赖关系，主动请Rui换种说法。",
+      "sceneEn": "Andy asks Rui to explain a technical dependency another way, and Rui draws two connected boxes.",
+      "keywords": [
+        "clarification",
+        "dependency",
+        "two boxes"
+      ],
+      "promptZh": "看这一格：发生了什么？人物为什么这样做？",
+      "promptEn": "What happens here, and why does the person act this way?",
+      "sampleEn": "Andy asks Rui to explain a technical dependency another way, and Rui draws two connected boxes.",
+      "sampleZh": "Andy听不懂依赖关系，主动请Rui换种说法。",
+      "crop": {
+        "x": 521,
+        "y": 78,
+        "width": 498,
+        "height": 337
+      }
+    },
+    {
+      "number": 3,
+      "sceneZh": "Andy给Sam选择发言或后补评论，Sam指出同一操作有两个名字。",
+      "sceneEn": "Andy offers Sam space to speak or comment later, and Sam identifies two names for the same action.",
+      "keywords": [
+        "choice",
+        "two names",
+        "clear wording"
+      ],
+      "promptZh": "看这一格：发生了什么？人物为什么这样做？",
+      "promptEn": "What happens here, and why does the person act this way?",
+      "sampleEn": "Andy offers Sam space to speak or comment later, and Sam identifies two names for the same action.",
+      "sampleZh": "Andy给Sam选择发言或后补评论，Sam指出同一操作有两个名字。",
+      "crop": {
+        "x": 6,
+        "y": 428,
+        "width": 497,
+        "height": 336
+      }
+    },
+    {
+      "number": 4,
+      "sceneZh": "Andy先查任务，只答应周二四十五分钟帮助。",
+      "sceneEn": "Andy checks his workload and offers Sam forty-five minutes on Tuesday.",
+      "keywords": [
+        "check workload",
+        "Tuesday",
+        "45 minutes"
+      ],
+      "promptZh": "看这一格：发生了什么？人物为什么这样做？",
+      "promptEn": "What happens here, and why does the person act this way?",
+      "sampleEn": "Andy checks his workload and offers Sam forty-five minutes on Tuesday.",
+      "sampleZh": "Andy先查任务，只答应周二四十五分钟帮助。",
+      "crop": {
+        "x": 521,
+        "y": 428,
+        "width": 498,
+        "height": 336
+      }
+    },
+    {
+      "number": 5,
+      "sceneZh": "Sam提议在空前台用假名字演练交班，穿着外套模拟要离岗。",
+      "sceneEn": "Sam suggests a handover role-play at an empty desk using fake names and keeps his coat on as the departing worker.",
+      "keywords": [
+        "role-play",
+        "fake names",
+        "coat on"
+      ],
+      "promptZh": "看这一格：发生了什么？人物为什么这样做？",
+      "promptEn": "What happens here, and why does the person act this way?",
+      "sampleEn": "Sam suggests a handover role-play at an empty desk using fake names and keeps his coat on as the departing worker.",
+      "sampleZh": "Sam提议在空前台用假名字演练交班，穿着外套模拟要离岗。",
+      "crop": {
+        "x": 6,
+        "y": 777,
+        "width": 498,
+        "height": 352
+      }
+    },
+    {
+      "number": 6,
+      "sceneZh": "两人发现真实桌面限制，询问Priya纸表放哪；最后十一分钟留给Sam独自画图。",
+      "sceneEn": "They ask Priya where the shared sheet lives, then Andy leaves Sam the final eleven minutes to draw for himself.",
+      "keywords": [
+        "actual workspace",
+        "ask Priya",
+        "eleven minutes"
+      ],
+      "promptZh": "看这一格：发生了什么？人物为什么这样做？",
+      "promptEn": "What happens here, and why does the person act this way?",
+      "sampleEn": "They ask Priya where the shared sheet lives, then Andy leaves Sam the final eleven minutes to draw for himself.",
+      "sampleZh": "两人发现真实桌面限制，询问Priya纸表放哪；最后十一分钟留给Sam独自画图。",
+      "crop": {
+        "x": 521,
+        "y": 777,
+        "width": 498,
+        "height": 352
+      }
+    },
+    {
+      "number": 7,
+      "sceneZh": "家中Andy帮Maya找螺丝，她争取到亲自展示研究的机会。",
+      "sceneEn": "At home, Andy helps Maya find a screw, and she explains that she will present her research herself.",
+      "keywords": [
+        "missing screw",
+        "research presentation",
+        "responsibility"
+      ],
+      "promptZh": "看这一格：发生了什么？人物为什么这样做？",
+      "promptEn": "What happens here, and why does the person act this way?",
+      "sampleEn": "At home, Andy helps Maya find a screw, and she explains that she will present her research herself.",
+      "sampleZh": "家中Andy帮Maya找螺丝，她争取到亲自展示研究的机会。",
+      "crop": {
+        "x": 6,
+        "y": 1143,
+        "width": 497,
+        "height": 382
+      }
+    },
+    {
+      "number": 8,
+      "sceneZh": "水龙头已修好，Andy主动清空自己占的椅子，两人吃饭交流。",
+      "sceneEn": "The tap is now repaired; Andy clears his books from the second chair and joins Maya for dinner.",
+      "keywords": [
+        "repaired tap",
+        "clear chair",
+        "shared table"
+      ],
+      "promptZh": "看这一格：发生了什么？人物为什么这样做？",
+      "promptEn": "What happens here, and why does the person act this way?",
+      "sampleEn": "The tap is now repaired; Andy clears his books from the second chair and joins Maya for dinner.",
+      "sampleZh": "水龙头已修好，Andy主动清空自己占的椅子，两人吃饭交流。",
+      "crop": {
+        "x": 521,
+        "y": 1143,
+        "width": 497,
+        "height": 382
+      }
+    }
+  ],
+  "imageWidth": 1024,
+  "imageHeight": 1536
+}

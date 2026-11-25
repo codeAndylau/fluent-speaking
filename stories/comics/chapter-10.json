@@ -1,0 +1,169 @@
+{
+  "chapterId": 10,
+  "title": "The Call I Missed",
+  "image": "chapter-10.png",
+  "panels": [
+    {
+      "number": 1,
+      "sceneZh": "Andy买东西时漏接电话，交通噪声让语音留言很难听清。",
+      "sceneEn": "Andy misses a call while shopping. Traffic noise makes the voicemail hard to understand.",
+      "keywords": [
+        "missed call",
+        "shopping",
+        "noise"
+      ],
+      "promptZh": "这一格发生了什么？请用自己的话说明原因或结果。",
+      "promptEn": "What happens here? Explain the reason or result in your own words.",
+      "sampleEn": "Andy misses a call while shopping. Traffic noise makes the voicemail hard to understand.",
+      "sampleZh": "Andy买东西时漏接电话，交通噪声让语音留言很难听清。",
+      "crop": {
+        "x": 6,
+        "y": 99,
+        "width": 501,
+        "height": 332
+      }
+    },
+    {
+      "number": 2,
+      "sceneZh": "他听到Meridian的Lucy提到反馈电话，却不知道结果是什么。",
+      "sceneEn": "He hears Lucy from Meridian mention a feedback call, but does not know the outcome.",
+      "keywords": [
+        "Lucy",
+        "Meridian",
+        "feedback"
+      ],
+      "promptZh": "这一格发生了什么？请用自己的话说明原因或结果。",
+      "promptEn": "What happens here? Explain the reason or result in your own words.",
+      "sampleEn": "He hears Lucy from Meridian mention a feedback call, but does not know the outcome.",
+      "sampleZh": "他听到Meridian的Lucy提到反馈电话，却不知道结果是什么。",
+      "crop": {
+        "x": 520,
+        "y": 99,
+        "width": 499,
+        "height": 332
+      }
+    },
+    {
+      "number": 3,
+      "sceneZh": "回家后，Andy放好冷冻食品，写下三个提醒，再准备回电话。",
+      "sceneEn": "At home, Andy puts away frozen food and writes three reminders before calling back.",
+      "keywords": [
+        "prepare",
+        "name",
+        "missed call"
+      ],
+      "promptZh": "这一格发生了什么？请用自己的话说明原因或结果。",
+      "promptEn": "What happens here? Explain the reason or result in your own words.",
+      "sampleEn": "At home, Andy puts away frozen food and writes three reminders before calling back.",
+      "sampleZh": "回家后，Andy放好冷冻食品，写下三个提醒，再准备回电话。",
+      "crop": {
+        "x": 6,
+        "y": 443,
+        "width": 500,
+        "height": 329
+      }
+    },
+    {
+      "number": 4,
+      "sceneZh": "他介绍自己，并请求与Lucy谈面试的事。",
+      "sceneEn": "He introduces himself and asks to speak to Lucy about his interview.",
+      "keywords": [
+        "introduce",
+        "return a call",
+        "interview"
+      ],
+      "promptZh": "这一格发生了什么？请用自己的话说明原因或结果。",
+      "promptEn": "What happens here? Explain the reason or result in your own words.",
+      "sampleEn": "He introduces himself and asks to speak to Lucy about his interview.",
+      "sampleZh": "他介绍自己，并请求与Lucy谈面试的事。",
+      "crop": {
+        "x": 519,
+        "y": 443,
+        "width": 500,
+        "height": 329
+      }
+    },
+    {
+      "number": 5,
+      "sceneZh": "Andy确认是十点十五分还是十五分钟通话，结果是周四十点通话十五分钟。",
+      "sceneEn": "Andy checks whether she means ten fifteen or a fifteen-minute call. It is fifteen minutes at ten on Thursday.",
+      "keywords": [
+        "clarify",
+        "Thursday",
+        "ten"
+      ],
+      "promptZh": "这一格发生了什么？请用自己的话说明原因或结果。",
+      "promptEn": "What happens here? Explain the reason or result in your own words.",
+      "sampleEn": "Andy checks whether she means ten fifteen or a fifteen-minute call. It is fifteen minutes at ten on Thursday.",
+      "sampleZh": "Andy确认是十点十五分还是十五分钟通话，结果是周四十点通话十五分钟。",
+      "crop": {
+        "x": 6,
+        "y": 785,
+        "width": 500,
+        "height": 314
+      }
+    },
+    {
+      "number": 6,
+      "sceneZh": "他确认是上海时间，并询问准备事项。Sara会说明面试结果。",
+      "sceneEn": "He confirms Shanghai time and asks about preparation. Sara will explain the interview outcome.",
+      "keywords": [
+        "Shanghai time",
+        "prepare",
+        "outcome"
+      ],
+      "promptZh": "这一格发生了什么？请用自己的话说明原因或结果。",
+      "promptEn": "What happens here? Explain the reason or result in your own words.",
+      "sampleEn": "He confirms Shanghai time and asks about preparation. Sara will explain the interview outcome.",
+      "sampleZh": "他确认是上海时间，并询问准备事项。Sara会说明面试结果。",
+      "crop": {
+        "x": 520,
+        "y": 785,
+        "width": 499,
+        "height": 314
+      }
+    },
+    {
+      "number": 7,
+      "sceneZh": "Andy把日历邀请与笔记对照，并设置提醒。结果仍然未知。",
+      "sceneEn": "Andy checks the calendar invitation against his notes and sets a reminder. The decision is still unknown.",
+      "keywords": [
+        "calendar",
+        "notes",
+        "reminder"
+      ],
+      "promptZh": "这一格发生了什么？请用自己的话说明原因或结果。",
+      "promptEn": "What happens here? Explain the reason or result in your own words.",
+      "sampleEn": "Andy checks the calendar invitation against his notes and sets a reminder. The decision is still unknown.",
+      "sampleZh": "Andy把日历邀请与笔记对照，并设置提醒。结果仍然未知。",
+      "crop": {
+        "x": 7,
+        "y": 1112,
+        "width": 498,
+        "height": 414
+      }
+    },
+    {
+      "number": 8,
+      "sceneZh": "第二天晚上，烤箱计时器吓了他一跳。帮Maya检查打印设计，让他暂时不再盯着电话。",
+      "sceneEn": "The next evening, an oven timer startles him. Helping Maya check her printed design gives him a break from waiting.",
+      "keywords": [
+        "oven timer",
+        "prints",
+        "waiting"
+      ],
+      "promptZh": "这一格发生了什么？请用自己的话说明原因或结果。",
+      "promptEn": "What happens here? Explain the reason or result in your own words.",
+      "sampleEn": "The next evening, an oven timer startles him. Helping Maya check her printed design gives him a break from waiting.",
+      "sampleZh": "第二天晚上，烤箱计时器吓了他一跳。帮Maya检查打印设计，让他暂时不再盯着电话。",
+      "crop": {
+        "x": 520,
+        "y": 1112,
+        "width": 498,
+        "height": 414
+      }
+    }
+  ],
+  "imageWidth": 1024,
+  "imageHeight": 1536
+}

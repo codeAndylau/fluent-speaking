@@ -1,0 +1,169 @@
+{
+  "chapterId": 11,
+  "title": "Not This Time",
+  "image": "chapter-11.png",
+  "panels": [
+    {
+      "number": 1,
+      "sceneZh": "周四早上Andy参加Sara的反馈电话。Meridian不会继续考虑他的申请。",
+      "sceneEn": "Andy joins Sara's feedback call on Thursday morning. Meridian will not take his application forward.",
+      "keywords": [
+        "feedback",
+        "rejection",
+        "Thursday"
+      ],
+      "promptZh": "这一格发生了什么？请用自己的话说明原因或结果。",
+      "promptEn": "What happens here? Explain the reason or result in your own words.",
+      "sampleEn": "Andy joins Sara's feedback call on Thursday morning. Meridian will not take his application forward.",
+      "sampleZh": "周四早上Andy参加Sara的反馈电话。Meridian不会继续考虑他的申请。",
+      "crop": {
+        "x": 6,
+        "y": 99,
+        "width": 499,
+        "height": 350
+      }
+    },
+    {
+      "number": 2,
+      "sceneZh": "Sara说岗位需要能立即主持客户通话的人，也肯定了Andy的技术经验。",
+      "sceneEn": "Sara says the role needs someone ready to lead customer calls. She also recognises Andy's technical experience.",
+      "keywords": [
+        "customer calls",
+        "ready",
+        "technical experience"
+      ],
+      "promptZh": "这一格发生了什么？请用自己的话说明原因或结果。",
+      "promptEn": "What happens here? Explain the reason or result in your own words.",
+      "sampleEn": "Sara says the role needs someone ready to lead customer calls. She also recognises Andy's technical experience.",
+      "sampleZh": "Sara说岗位需要能立即主持客户通话的人，也肯定了Andy的技术经验。",
+      "crop": {
+        "x": 520,
+        "y": 99,
+        "width": 499,
+        "height": 350
+      }
+    },
+    {
+      "number": 3,
+      "sceneZh": "Andy询问具体反馈。他需要更清楚的结构，并应先确认问题再回答。",
+      "sceneEn": "Andy asks for specific feedback. He needs a clearer structure and should check questions before answering.",
+      "keywords": [
+        "specific feedback",
+        "structure",
+        "clarify"
+      ],
+      "promptZh": "这一格发生了什么？请用自己的话说明原因或结果。",
+      "promptEn": "What happens here? Explain the reason or result in your own words.",
+      "sampleEn": "Andy asks for specific feedback. He needs a clearer structure and should check questions before answering.",
+      "sampleZh": "Andy询问具体反馈。他需要更清楚的结构，并应先确认问题再回答。",
+      "crop": {
+        "x": 6,
+        "y": 461,
+        "width": 500,
+        "height": 330
+      }
+    },
+    {
+      "number": 4,
+      "sceneZh": "Rui告诉Andy自己已接受Northstar的工作。Andy心情复杂，但仍向他祝贺。",
+      "sceneEn": "Rui tells Andy he has accepted a job at Northstar. Andy congratulates him despite mixed feelings.",
+      "keywords": [
+        "Northstar",
+        "congratulate",
+        "mixed feelings"
+      ],
+      "promptZh": "这一格发生了什么？请用自己的话说明原因或结果。",
+      "promptEn": "What happens here? Explain the reason or result in your own words.",
+      "sampleEn": "Rui tells Andy he has accepted a job at Northstar. Andy congratulates him despite mixed feelings.",
+      "sampleZh": "Rui告诉Andy自己已接受Northstar的工作。Andy心情复杂，但仍向他祝贺。",
+      "crop": {
+        "x": 521,
+        "y": 461,
+        "width": 498,
+        "height": 330
+      }
+    },
+    {
+      "number": 5,
+      "sceneZh": "Andy意识到自己忘了关心Rui的求职，于是补发一条关心他的消息。",
+      "sceneEn": "Andy realises he forgot to ask about Rui's own search, so he sends a thoughtful follow-up message.",
+      "keywords": [
+        "notice",
+        "ask",
+        "friend"
+      ],
+      "promptZh": "这一格发生了什么？请用自己的话说明原因或结果。",
+      "promptEn": "What happens here? Explain the reason or result in your own words.",
+      "sampleEn": "Andy realises he forgot to ask about Rui's own search, so he sends a thoughtful follow-up message.",
+      "sampleZh": "Andy意识到自己忘了关心Rui的求职，于是补发一条关心他的消息。",
+      "crop": {
+        "x": 6,
+        "y": 803,
+        "width": 500,
+        "height": 336
+      }
+    },
+    {
+      "number": 6,
+      "sceneZh": "他多次录下项目故事，清楚保留自己的行动、结果和客户需要。",
+      "sceneEn": "He records his project story several times, keeping his actions, the result and the customer's needs clear.",
+      "keywords": [
+        "record",
+        "own actions",
+        "customer"
+      ],
+      "promptZh": "这一格发生了什么？请用自己的话说明原因或结果。",
+      "promptEn": "What happens here? Explain the reason or result in your own words.",
+      "sampleEn": "He records his project story several times, keeping his actions, the result and the customer's needs clear.",
+      "sampleZh": "他多次录下项目故事，清楚保留自己的行动、结果和客户需要。",
+      "crop": {
+        "x": 520,
+        "y": 803,
+        "width": 499,
+        "height": 336
+      }
+    },
+    {
+      "number": 7,
+      "sceneZh": "两周后，Rui发来Northstar另一个空缺，但没有作出承诺。Andy仔细阅读。",
+      "sceneEn": "Two weeks later, Rui shares another Northstar vacancy without promising anything. Andy reads it carefully.",
+      "keywords": [
+        "vacancy",
+        "read carefully",
+        "no promise"
+      ],
+      "promptZh": "这一格发生了什么？请用自己的话说明原因或结果。",
+      "promptEn": "What happens here? Explain the reason or result in your own words.",
+      "sampleEn": "Two weeks later, Rui shares another Northstar vacancy without promising anything. Andy reads it carefully.",
+      "sampleZh": "两周后，Rui发来Northstar另一个空缺，但没有作出承诺。Andy仔细阅读。",
+      "crop": {
+        "x": 6,
+        "y": 1151,
+        "width": 499,
+        "height": 375
+      }
+    },
+    {
+      "number": 8,
+      "sceneZh": "这个岗位会有项目负责人陪同参与客户通话。Andy用自己的真实经验开始新申请。",
+      "sceneEn": "This role includes client calls with a project lead. Andy begins a new application using his own experience.",
+      "keywords": [
+        "with support",
+        "application",
+        "experience"
+      ],
+      "promptZh": "这一格发生了什么？请用自己的话说明原因或结果。",
+      "promptEn": "What happens here? Explain the reason or result in your own words.",
+      "sampleEn": "This role includes client calls with a project lead. Andy begins a new application using his own experience.",
+      "sampleZh": "这个岗位会有项目负责人陪同参与客户通话。Andy用自己的真实经验开始新申请。",
+      "crop": {
+        "x": 521,
+        "y": 1151,
+        "width": 498,
+        "height": 375
+      }
+    }
+  ],
+  "imageWidth": 1024,
+  "imageHeight": 1536
+}

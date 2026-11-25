@@ -1,0 +1,169 @@
+{
+  "chapterId": 18,
+  "title": "A Different Plan",
+  "image": "chapter-18.png",
+  "panels": [
+    {
+      "number": 1,
+      "sceneZh": "Daniel在白板上列出所有中心，考虑同一周推广。",
+      "sceneEn": "Daniel lists all the centres on a whiteboard and asks whether they could change in the same week.",
+      "keywords": [
+        "all centres",
+        "same week",
+        "question"
+      ],
+      "promptZh": "看这一格：发生了什么？人物为什么这样做？",
+      "promptEn": "What happens here, and why does the person act this way?",
+      "sampleEn": "Daniel lists all the centres on a whiteboard and asks whether they could change in the same week.",
+      "sampleZh": "Daniel在白板上列出所有中心，考虑同一周推广。",
+      "crop": {
+        "x": 6,
+        "y": 71,
+        "width": 499,
+        "height": 342
+      }
+    },
+    {
+      "number": 2,
+      "sceneZh": "Andy提出先做一个中心的小范围试点，但还需明确目标。",
+      "sceneEn": "Andy proposes a limited one-centre pilot but says its learning goals and participation still need agreement.",
+      "keywords": [
+        "one centre",
+        "limited pilot",
+        "learning goals"
+      ],
+      "promptZh": "看这一格：发生了什么？人物为什么这样做？",
+      "promptEn": "What happens here, and why does the person act this way?",
+      "sampleEn": "Andy proposes a limited one-centre pilot but says its learning goals and participation still need agreement.",
+      "sampleZh": "Andy提出先做一个中心的小范围试点，但还需明确目标。",
+      "crop": {
+        "x": 520,
+        "y": 72,
+        "width": 499,
+        "height": 341
+      }
+    },
+    {
+      "number": 3,
+      "sceneZh": "他和Rui画出工作人员从改课到联系学员的完整步骤。",
+      "sceneEn": "Andy and Rui map the staff journey from changing a class to contacting learners.",
+      "keywords": [
+        "staff journey",
+        "change record",
+        "contact learners"
+      ],
+      "promptZh": "看这一格：发生了什么？人物为什么这样做？",
+      "promptEn": "What happens here, and why does the person act this way?",
+      "sampleEn": "Andy and Rui map the staff journey from changing a class to contacting learners.",
+      "sampleZh": "他和Rui画出工作人员从改课到联系学员的完整步骤。",
+      "crop": {
+        "x": 6,
+        "y": 426,
+        "width": 499,
+        "height": 346
+      }
+    },
+    {
+      "number": 4,
+      "sceneZh": "两人用纸演练换教室，发现两张记录很快失去一致。",
+      "sceneEn": "A paper role-play of a room change quickly leaves two records out of step.",
+      "keywords": [
+        "role-play",
+        "two sheets",
+        "conflicting records"
+      ],
+      "promptZh": "看这一格：发生了什么？人物为什么这样做？",
+      "promptEn": "What happens here, and why does the person act this way?",
+      "sampleEn": "A paper role-play of a room change quickly leaves two records out of step.",
+      "sampleZh": "两人用纸演练换教室，发现两张记录很快失去一致。",
+      "crop": {
+        "x": 520,
+        "y": 426,
+        "width": 499,
+        "height": 346
+      }
+    },
+    {
+      "number": 5,
+      "sceneZh": "Andy比较全面推广、等待和试点，各项都有人员成本。",
+      "sceneEn": "Andy compares a broad rollout, waiting and a pilot, including staff time under every option.",
+      "keywords": [
+        "three options",
+        "staff time",
+        "trade-offs"
+      ],
+      "promptZh": "看这一格：发生了什么？人物为什么这样做？",
+      "promptEn": "What happens here, and why does the person act this way?",
+      "sampleEn": "Andy compares a broad rollout, waiting and a pilot, including staff time under every option.",
+      "sampleZh": "Andy比较全面推广、等待和试点，各项都有人员成本。",
+      "crop": {
+        "x": 6,
+        "y": 787,
+        "width": 499,
+        "height": 351
+      }
+    },
+    {
+      "number": 6,
+      "sceneZh": "他补充邮件发出不等于读过，并列出拟议停止条件。",
+      "sceneEn": "He notes that a sent email does not prove it was read and proposes stop conditions and a fallback.",
+      "keywords": [
+        "not proof of reading",
+        "stop conditions",
+        "fallback"
+      ],
+      "promptZh": "看这一格：发生了什么？人物为什么这样做？",
+      "promptEn": "What happens here, and why does the person act this way?",
+      "sampleEn": "He notes that a sent email does not prove it was read and proposes stop conditions and a fallback.",
+      "sampleZh": "他补充邮件发出不等于读过，并列出拟议停止条件。",
+      "crop": {
+        "x": 521,
+        "y": 787,
+        "width": 497,
+        "height": 351
+      }
+    },
+    {
+      "number": 7,
+      "sceneZh": "Daniel同意与Elena评估单中心方案，但未定上线日期。",
+      "sceneEn": "Daniel agrees to evaluate the one-centre option with Elena, not to approve a launch date.",
+      "keywords": [
+        "evaluate",
+        "Elena",
+        "no launch date"
+      ],
+      "promptZh": "看这一格：发生了什么？人物为什么这样做？",
+      "promptEn": "What happens here, and why does the person act this way?",
+      "sampleEn": "Daniel agrees to evaluate the one-centre option with Elena, not to approve a launch date.",
+      "sampleZh": "Daniel同意与Elena评估单中心方案，但未定上线日期。",
+      "crop": {
+        "x": 6,
+        "y": 1153,
+        "width": 499,
+        "height": 374
+      }
+    },
+    {
+      "number": 8,
+      "sceneZh": "打印机卡纸后Andy补写人员成本，Elena只腾出二十分钟讨论。",
+      "sceneEn": "After a printer jam, Andy rewrites the staff-cost line; Elena offers twenty minutes to discuss the options.",
+      "keywords": [
+        "printer jam",
+        "staff costs",
+        "twenty minutes"
+      ],
+      "promptZh": "看这一格：发生了什么？人物为什么这样做？",
+      "promptEn": "What happens here, and why does the person act this way?",
+      "sampleEn": "After a printer jam, Andy rewrites the staff-cost line; Elena offers twenty minutes to discuss the options.",
+      "sampleZh": "打印机卡纸后Andy补写人员成本，Elena只腾出二十分钟讨论。",
+      "crop": {
+        "x": 521,
+        "y": 1153,
+        "width": 498,
+        "height": 374
+      }
+    }
+  ],
+  "imageWidth": 1024,
+  "imageHeight": 1536
+}

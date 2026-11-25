@@ -1,0 +1,169 @@
+{
+  "chapterId": 12,
+  "title": "One More Interview",
+  "image": "chapter-12.png",
+  "panels": [
+    {
+      "number": 1,
+      "sceneZh": "在Northstar，Andy见到Daniel、Mei和Omar，坦诚说明自己需要适应的地方。",
+      "sceneEn": "At Northstar, Andy meets Daniel, Mei and Omar. He honestly explains what would be new for him.",
+      "keywords": [
+        "Northstar",
+        "honest",
+        "new challenges"
+      ],
+      "promptZh": "这一格发生了什么？请用自己的话说明原因或结果。",
+      "promptEn": "What happens here? Explain the reason or result in your own words.",
+      "sampleEn": "At Northstar, Andy meets Daniel, Mei and Omar. He honestly explains what would be new for him.",
+      "sampleZh": "在Northstar，Andy见到Daniel、Mei和Omar，坦诚说明自己需要适应的地方。",
+      "crop": {
+        "x": 5,
+        "y": 99,
+        "width": 502,
+        "height": 339
+      }
+    },
+    {
+      "number": 2,
+      "sceneZh": "他清楚介绍慢报表项目，包括自己的工作和队友的帮助。",
+      "sceneEn": "He explains the slow-report project clearly, including his own work and his teammates' help.",
+      "keywords": [
+        "slow report",
+        "own work",
+        "teamwork"
+      ],
+      "promptZh": "这一格发生了什么？请用自己的话说明原因或结果。",
+      "promptEn": "What happens here? Explain the reason or result in your own words.",
+      "sampleEn": "He explains the slow-report project clearly, including his own work and his teammates' help.",
+      "sampleZh": "他清楚介绍慢报表项目，包括自己的工作和队友的帮助。",
+      "crop": {
+        "x": 519,
+        "y": 99,
+        "width": 499,
+        "height": 339
+      }
+    },
+    {
+      "number": 3,
+      "sceneZh": "Mei展示预订问题。Andy先确认conflict是指两个人同时预订同一房间。",
+      "sceneEn": "Mei shows a booking problem. Andy first checks that conflict means two people booking the same room and time.",
+      "keywords": [
+        "clarify",
+        "booking",
+        "same time"
+      ],
+      "promptZh": "这一格发生了什么？请用自己的话说明原因或结果。",
+      "promptEn": "What happens here? Explain the reason or result in your own words.",
+      "sampleEn": "Mei shows a booking problem. Andy first checks that conflict means two people booking the same room and time.",
+      "sampleZh": "Mei展示预订问题。Andy先确认conflict是指两个人同时预订同一房间。",
+      "crop": {
+        "x": 6,
+        "y": 451,
+        "width": 501,
+        "height": 333
+      }
+    },
+    {
+      "number": 4,
+      "sceneZh": "Andy解释最后确认预订时的检查。忘记术语时，他用描述表达意思并继续讨论。",
+      "sceneEn": "Andy explains the final booking check. When he forgets a term, he describes the idea and continues.",
+      "keywords": [
+        "final check",
+        "describe",
+        "continue"
+      ],
+      "promptZh": "这一格发生了什么？请用自己的话说明原因或结果。",
+      "promptEn": "What happens here? Explain the reason or result in your own words.",
+      "sampleEn": "Andy explains the final booking check. When he forgets a term, he describes the idea and continues.",
+      "sampleZh": "Andy解释最后确认预订时的检查。忘记术语时，他用描述表达意思并继续讨论。",
+      "crop": {
+        "x": 520,
+        "y": 451,
+        "width": 498,
+        "height": 333
+      }
+    },
+    {
+      "number": 5,
+      "sceneZh": "他询问客户通话中的支持。Daniel说开始时会有有经验的同事一起参加。",
+      "sceneEn": "He asks what support he would receive on client calls. Daniel says an experienced colleague would join at first.",
+      "keywords": [
+        "client calls",
+        "support",
+        "colleague"
+      ],
+      "promptZh": "这一格发生了什么？请用自己的话说明原因或结果。",
+      "promptEn": "What happens here? Explain the reason or result in your own words.",
+      "sampleEn": "He asks what support he would receive on client calls. Daniel says an experienced colleague would join at first.",
+      "sampleZh": "他询问客户通话中的支持。Daniel说开始时会有有经验的同事一起参加。",
+      "crop": {
+        "x": 6,
+        "y": 796,
+        "width": 500,
+        "height": 328
+      }
+    },
+    {
+      "number": 6,
+      "sceneZh": "又经过两周招聘流程后，录用通知到了。Andy核对细节后才接受。",
+      "sceneEn": "After more recruitment steps over two weeks, an offer arrives. Andy checks the details before accepting.",
+      "keywords": [
+        "two weeks",
+        "offer",
+        "check details"
+      ],
+      "promptZh": "这一格发生了什么？请用自己的话说明原因或结果。",
+      "promptEn": "What happens here? Explain the reason or result in your own words.",
+      "sampleEn": "After more recruitment steps over two weeks, an offer arrives. Andy checks the details before accepting.",
+      "sampleZh": "又经过两周招聘流程后，录用通知到了。Andy核对细节后才接受。",
+      "crop": {
+        "x": 520,
+        "y": 796,
+        "width": 498,
+        "height": 328
+      }
+    },
+    {
+      "number": 7,
+      "sceneZh": "Andy把消息告诉Maya。他将在三周后入职，也关心她的展示进展。",
+      "sceneEn": "Andy shares the news with Maya. His start date is three weeks away, and he also asks about her presentation.",
+      "keywords": [
+        "good news",
+        "three weeks",
+        "presentation"
+      ],
+      "promptZh": "这一格发生了什么？请用自己的话说明原因或结果。",
+      "promptEn": "What happens here? Explain the reason or result in your own words.",
+      "sampleEn": "Andy shares the news with Maya. His start date is three weeks away, and he also asks about her presentation.",
+      "sampleZh": "Andy把消息告诉Maya。他将在三周后入职，也关心她的展示进展。",
+      "crop": {
+        "x": 7,
+        "y": 1137,
+        "width": 500,
+        "height": 386
+      }
+    },
+    {
+      "number": 8,
+      "sceneZh": "Andy没有继续给她不需要的建议，而是听她讲经历。两人一起吃饭，分享锅底焦黄的米饭。",
+      "sceneEn": "Instead of giving unwanted advice, Andy listens to Maya's experience. They share dinner and the browned rice.",
+      "keywords": [
+        "listen",
+        "share",
+        "dinner"
+      ],
+      "promptZh": "这一格发生了什么？请用自己的话说明原因或结果。",
+      "promptEn": "What happens here? Explain the reason or result in your own words.",
+      "sampleEn": "Instead of giving unwanted advice, Andy listens to Maya's experience. They share dinner and the browned rice.",
+      "sampleZh": "Andy没有继续给她不需要的建议，而是听她讲经历。两人一起吃饭，分享锅底焦黄的米饭。",
+      "crop": {
+        "x": 521,
+        "y": 1137,
+        "width": 497,
+        "height": 386
+      }
+    }
+  ],
+  "imageWidth": 1024,
+  "imageHeight": 1536
+}

@@ -1,0 +1,169 @@
+{
+  "chapterId": 9,
+  "title": "Tell Me About a Time",
+  "image": "chapter-09.png",
+  "panels": [
+    {
+      "number": 1,
+      "sceneZh": "Andy参加Sara和Ben的面试，能够清楚解释库存系统的问题。",
+      "sceneEn": "Andy attends an interview with Sara and Ben. He can explain the stock-system problem clearly.",
+      "keywords": [
+        "interview",
+        "stock system",
+        "explain"
+      ],
+      "promptZh": "这一格发生了什么？请用自己的话说明原因或结果。",
+      "promptEn": "What happens here? Explain the reason or result in your own words.",
+      "sampleEn": "Andy attends an interview with Sara and Ben. He can explain the stock-system problem clearly.",
+      "sampleZh": "Andy参加Sara和Ben的面试，能够清楚解释库存系统的问题。",
+      "crop": {
+        "x": 6,
+        "y": 100,
+        "width": 501,
+        "height": 329
+      }
+    },
+    {
+      "number": 2,
+      "sceneZh": "Sara问起一个困难项目时，Andy忘了准备好的开头，回答得很笼统。",
+      "sceneEn": "When Sara asks about a difficult project, Andy forgets his prepared opening and gives a vague answer.",
+      "keywords": [
+        "project",
+        "nervous",
+        "vague"
+      ],
+      "promptZh": "这一格发生了什么？请用自己的话说明原因或结果。",
+      "promptEn": "What happens here? Explain the reason or result in your own words.",
+      "sampleEn": "When Sara asks about a difficult project, Andy forgets his prepared opening and gives a vague answer.",
+      "sampleZh": "Sara问起一个困难项目时，Andy忘了准备好的开头，回答得很笼统。",
+      "crop": {
+        "x": 520,
+        "y": 100,
+        "width": 499,
+        "height": 329
+      }
+    },
+    {
+      "number": 3,
+      "sceneZh": "他讲了太多背景。Sara追问他本人做了什么。",
+      "sceneEn": "He describes too much background. Sara asks what his own part was.",
+      "keywords": [
+        "background",
+        "own part",
+        "focus"
+      ],
+      "promptZh": "这一格发生了什么？请用自己的话说明原因或结果。",
+      "promptEn": "What happens here? Explain the reason or result in your own words.",
+      "sampleEn": "He describes too much background. Sara asks what his own part was.",
+      "sampleZh": "他讲了太多背景。Sara追问他本人做了什么。",
+      "crop": {
+        "x": 6,
+        "y": 441,
+        "width": 498,
+        "height": 331
+      }
+    },
+    {
+      "number": 4,
+      "sceneZh": "Andy解释慢报表、自己的测试及缩小首版范围的决定。他也曾帮助店长取得暂时缺少的月度数据。",
+      "sceneEn": "Andy explains the slow report, his tests and a smaller first release. He also helped a shop manager get missing monthly numbers.",
+      "keywords": [
+        "slow report",
+        "smaller release",
+        "customer"
+      ],
+      "promptZh": "这一格发生了什么？请用自己的话说明原因或结果。",
+      "promptEn": "What happens here? Explain the reason or result in your own words.",
+      "sampleEn": "Andy explains the slow report, his tests and a smaller first release. He also helped a shop manager get missing monthly numbers.",
+      "sampleZh": "Andy解释慢报表、自己的测试及缩小首版范围的决定。他也曾帮助店长取得暂时缺少的月度数据。",
+      "crop": {
+        "x": 520,
+        "y": 441,
+        "width": 499,
+        "height": 331
+      }
+    },
+    {
+      "number": 5,
+      "sceneZh": "他误解了Ben关于周五的问题。请求重复后，他才回答了真正的问题。",
+      "sceneEn": "He misunderstands Ben's question about Friday. After asking for repetition, he answers the actual question.",
+      "keywords": [
+        "misunderstand",
+        "repeat",
+        "Friday"
+      ],
+      "promptZh": "这一格发生了什么？请用自己的话说明原因或结果。",
+      "promptEn": "What happens here? Explain the reason or result in your own words.",
+      "sampleEn": "He misunderstands Ben's question about Friday. After asking for repetition, he answers the actual question.",
+      "sampleZh": "他误解了Ben关于周五的问题。请求重复后，他才回答了真正的问题。",
+      "crop": {
+        "x": 6,
+        "y": 786,
+        "width": 499,
+        "height": 330
+      }
+    },
+    {
+      "number": 6,
+      "sceneZh": "面试后，Andy告诉Rui有些技术题答得不错，但有一个回答讲乱了。",
+      "sceneEn": "After the interview, Andy tells Rui that some technical answers went well but one answer became confused.",
+      "keywords": [
+        "technical answers",
+        "confused",
+        "reflect"
+      ],
+      "promptZh": "这一格发生了什么？请用自己的话说明原因或结果。",
+      "promptEn": "What happens here? Explain the reason or result in your own words.",
+      "sampleEn": "After the interview, Andy tells Rui that some technical answers went well but one answer became confused.",
+      "sampleZh": "面试后，Andy告诉Rui有些技术题答得不错，但有一个回答讲乱了。",
+      "crop": {
+        "x": 521,
+        "y": 786,
+        "width": 497,
+        "height": 330
+      }
+    },
+    {
+      "number": 7,
+      "sceneZh": "Rui让Andy聚焦自己做了什么、结果怎样。Andy重新讲了一遍报表故事。",
+      "sceneEn": "Rui asks Andy to focus on what he did and what happened. Andy tries the report story again.",
+      "keywords": [
+        "my actions",
+        "result",
+        "try again"
+      ],
+      "promptZh": "这一格发生了什么？请用自己的话说明原因或结果。",
+      "promptEn": "What happens here? Explain the reason or result in your own words.",
+      "sampleEn": "Rui asks Andy to focus on what he did and what happened. Andy tries the report story again.",
+      "sampleZh": "Rui让Andy聚焦自己做了什么、结果怎样。Andy重新讲了一遍报表故事。",
+      "crop": {
+        "x": 6,
+        "y": 1129,
+        "width": 498,
+        "height": 395
+      }
+    },
+    {
+      "number": 8,
+      "sceneZh": "Andy写下四条简短线索，不看稿练习，并记得加入店长的实际需要。",
+      "sceneEn": "Andy writes four short lines, practises without reading, and remembers to include the shop manager's needs.",
+      "keywords": [
+        "four lines",
+        "practise",
+        "customer needs"
+      ],
+      "promptZh": "这一格发生了什么？请用自己的话说明原因或结果。",
+      "promptEn": "What happens here? Explain the reason or result in your own words.",
+      "sampleEn": "Andy writes four short lines, practises without reading, and remembers to include the shop manager's needs.",
+      "sampleZh": "Andy写下四条简短线索，不看稿练习，并记得加入店长的实际需要。",
+      "crop": {
+        "x": 521,
+        "y": 1129,
+        "width": 497,
+        "height": 395
+      }
+    }
+  ],
+  "imageWidth": 1024,
+  "imageHeight": 1536
+}

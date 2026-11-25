@@ -1,0 +1,169 @@
+{
+  "chapterId": 20,
+  "title": "Who Gets to Speak?",
+  "image": "chapter-20.png",
+  "panels": [
+    {
+      "number": 1,
+      "sceneZh": "线上会议中Priya几次想开口都被盖住。",
+      "sceneEn": "Priya repeatedly tries to speak during the call but is talked over.",
+      "keywords": [
+        "Priya",
+        "raised hand",
+        "interrupted"
+      ],
+      "promptZh": "看这一格：发生了什么？人物为什么这样做？",
+      "promptEn": "What happens here, and why does the person act this way?",
+      "sampleEn": "Priya repeatedly tries to speak during the call but is talked over.",
+      "sampleZh": "线上会议中Priya几次想开口都被盖住。",
+      "crop": {
+        "x": 8,
+        "y": 80,
+        "width": 497,
+        "height": 353
+      }
+    },
+    {
+      "number": 2,
+      "sceneZh": "Andy提醒Daniel先让Priya说完。",
+      "sceneEn": "Andy interrupts politely and asks Daniel to let Priya finish her point.",
+      "keywords": [
+        "make space",
+        "finish speaking",
+        "listen"
+      ],
+      "promptZh": "看这一格：发生了什么？人物为什么这样做？",
+      "promptEn": "What happens here, and why does the person act this way?",
+      "sampleEn": "Andy interrupts politely and asks Daniel to let Priya finish her point.",
+      "sampleZh": "Andy提醒Daniel先让Priya说完。",
+      "crop": {
+        "x": 520,
+        "y": 80,
+        "width": 495,
+        "height": 354
+      }
+    },
+    {
+      "number": 3,
+      "sceneZh": "Priya指出下午班没有全部独立邮箱，访问安排必须先解决。",
+      "sceneEn": "Priya explains that not all afternoon staff have individual email accounts, exposing an access gap.",
+      "keywords": [
+        "afternoon staff",
+        "email accounts",
+        "access"
+      ],
+      "promptZh": "看这一格：发生了什么？人物为什么这样做？",
+      "promptEn": "What happens here, and why does the person act this way?",
+      "sampleEn": "Priya explains that not all afternoon staff have individual email accounts, exposing an access gap.",
+      "sampleZh": "Priya指出下午班没有全部独立邮箱，访问安排必须先解决。",
+      "crop": {
+        "x": 7,
+        "y": 449,
+        "width": 498,
+        "height": 330
+      }
+    },
+    {
+      "number": 4,
+      "sceneZh": "她建议两次短培训和桌旁指南，不能要求下班后无偿练。",
+      "sceneEn": "She proposes two short training sessions and a desk guide that fit paid shifts.",
+      "keywords": [
+        "two sessions",
+        "desk guide",
+        "paid shifts"
+      ],
+      "promptZh": "看这一格：发生了什么？人物为什么这样做？",
+      "promptEn": "What happens here, and why does the person act this way?",
+      "sampleEn": "She proposes two short training sessions and a desk guide that fit paid shifts.",
+      "sampleZh": "她建议两次短培训和桌旁指南，不能要求下班后无偿练。",
+      "crop": {
+        "x": 519,
+        "y": 449,
+        "width": 497,
+        "height": 329
+      }
+    },
+    {
+      "number": 5,
+      "sceneZh": "Noor指出指南只写成功步骤，没有写什么时候停止。",
+      "sceneEn": "Noor explains that the instructions cover success but not when staff should stop.",
+      "keywords": [
+        "Noor",
+        "instructions",
+        "stop points"
+      ],
+      "promptZh": "看这一格：发生了什么？人物为什么这样做？",
+      "promptEn": "What happens here, and why does the person act this way?",
+      "sampleEn": "Noor explains that the instructions cover success but not when staff should stop.",
+      "sampleZh": "Noor指出指南只写成功步骤，没有写什么时候停止。",
+      "crop": {
+        "x": 8,
+        "y": 793,
+        "width": 498,
+        "height": 313
+      }
+    },
+    {
+      "number": 6,
+      "sceneZh": "团队补充拟议停止点，并先处理Priya离开前必须回答的问题。",
+      "sceneEn": "They draft stopping points and move Priya’s decisions earlier so she can return to reception on time.",
+      "keywords": [
+        "draft guidance",
+        "reorder agenda",
+        "leave on time"
+      ],
+      "promptZh": "看这一格：发生了什么？人物为什么这样做？",
+      "promptEn": "What happens here, and why does the person act this way?",
+      "sampleEn": "They draft stopping points and move Priya’s decisions earlier so she can return to reception on time.",
+      "sampleZh": "团队补充拟议停止点，并先处理Priya离开前必须回答的问题。",
+      "crop": {
+        "x": 520,
+        "y": 793,
+        "width": 495,
+        "height": 313
+      }
+    },
+    {
+      "number": 7,
+      "sceneZh": "Noor提醒Andy不要把沉默一概看成等待别人解救。",
+      "sceneEn": "Noor tells Andy that silence does not always mean she needs someone to speak for her.",
+      "keywords": [
+        "silence",
+        "do not assume",
+        "written comments"
+      ],
+      "promptZh": "看这一格：发生了什么？人物为什么这样做？",
+      "promptEn": "What happens here, and why does the person act this way?",
+      "sampleEn": "Noor tells Andy that silence does not always mean she needs someone to speak for her.",
+      "sampleZh": "Noor提醒Andy不要把沉默一概看成等待别人解救。",
+      "crop": {
+        "x": 8,
+        "y": 1124,
+        "width": 495,
+        "height": 397
+      }
+    },
+    {
+      "number": 8,
+      "sceneZh": "Elena替前台值班前也要学新电话，团队再调整五分钟。",
+      "sceneEn": "Elena needs to practise the new desk phone before covering reception, so the invitation moves by five minutes.",
+      "keywords": [
+        "desk phone",
+        "practise first",
+        "five minutes"
+      ],
+      "promptZh": "看这一格：发生了什么？人物为什么这样做？",
+      "promptEn": "What happens here, and why does the person act this way?",
+      "sampleEn": "Elena needs to practise the new desk phone before covering reception, so the invitation moves by five minutes.",
+      "sampleZh": "Elena替前台值班前也要学新电话，团队再调整五分钟。",
+      "crop": {
+        "x": 519,
+        "y": 1124,
+        "width": 496,
+        "height": 398
+      }
+    }
+  ],
+  "imageWidth": 1024,
+  "imageHeight": 1536
+}
